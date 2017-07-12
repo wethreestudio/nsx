@@ -1,0 +1,239 @@
+/* special IPO tile */
+
+.ipo-tile-inner {
+  width: 100%;
+  flex: none;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.feature-block-content.ipo-tile {
+  a:hover {
+    text-decoration: none;
+  }
+  .top-box {
+    text-transform: uppercase;
+    color: $color-brand-typography;
+    color: #ffffff;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+  }
+  .date-box {
+    text-transform: uppercase;
+    color: $color-brand-typography;
+    color: #ffffff;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+  }
+  .title {
+    text-transform: uppercase;
+    color: $color-brand-typography;
+    color: #ffffff;
+    font-size: 50px;
+    display: block;
+    width: 100%;
+  }
+  .lower-box {
+    text-transform: uppercase;
+    color: $color-brand-typography;
+    color: #ffffff;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+  }
+  .link-box {
+    text-transform: none;
+    color: $color-brand-typography;
+    color: #ffffff;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+
+.feature-noimage > {
+  .feature-block-bar {
+    background-color: rgba(239, 244, 247, 1) !important;
+    color: $color-brand-typography;
+  }
+  a > .feature-block-bar {
+    background-color: rgba(239, 244, 247, 1) !important;
+    color: $color-brand-typography;
+    > {
+      .feature-title, .feature-date {
+        color: $color-brand-typography;
+      }
+    }
+  }
+  .feature-block-bar > .feature-date {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+.date-circle {
+  position: absolute;
+  bottom: 40%;
+  width: 100px;
+  /* background-color: #fff; */
+  height: 100px;
+  text-align: center;
+  padding: 42px 5px 0 5px;
+  left: 10px;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  border-radius: 60px;
+  /* box-shadow: 0 0 2px #888; */
+  height: 116px;
+  width: 116px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feature-title {
+  float: left;
+  padding: 7px 0 0 0;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 33px;
+  bottom: 10px;
+  position: absolute;
+  width: 90%;
+}
+
+.market-data h2 {
+  color: $color-brand-typography;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.data-graph h2 {
+  font-size: 24px;
+  margin: 0 0 0 12px;
+}
+
+.market-announcements h2 {
+  font-size: 26px;
+  margin: 0 0 30px 0;
+  color: $color-brand-typography;
+  font-size: 24px;
+}
+
+.data-graph .graph {
+  height: 312px;
+  margin-top: 27px;
+}
+
+.end-section {
+  background-color: #fff;
+  color: $color-brand-typography;
+  min-height: 240px;
+  margin: 45px 0px;
+  > div {
+    padding: 0px 0 10px 0px;
+    text-align: center;
+    > {
+      h3 {
+        font-size: 13px;
+        font-weight: bold;
+      }
+      span {
+        font-size: 68px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.stat-section {
+  color: $color-brand-typography;
+  min-height: 240px;
+  padding: 10px 0 0 0;
+  text-align: center;
+  > {
+    h3 {
+      font-size: 12px;
+      font-weight: bold;
+    }
+    span {
+      font-size: 60px;
+      font-weight: bold;
+    }
+  }
+}
+
+.end-section > h2 {
+  text-align: left;
+  padding: 22px 0 18px 22px;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.lower-blocks {
+  padding-top: 18px;
+}
+
+.market-data-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #003661;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #003661;
+    li {
+      /* height: 32px; */
+      font-size: 11px;
+      color: #fff;
+      /* line-height: 32px; */
+      float: left;
+      padding: 11px 20px 11px 25px;
+      text-transform: uppercase;
+      font-size: 11px;
+      &.first {
+        background-color: #787d82;
+        padding: 11px 125px 11px 25px;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.data-graph {
+  .field_box {
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 4px;
+  }
+  .rightBox {
+    float: left;
+    .inputtxtbox3 {
+      padding: 2px 6px;
+      border: 0;
+      background-color: transparent;
+    }
+  }
+}
+
+.index_graph {
+  margin: 5px 0 0 0;
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+  }
+}

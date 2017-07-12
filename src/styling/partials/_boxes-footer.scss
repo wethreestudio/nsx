@@ -1,0 +1,121 @@
+/* footer feature box */
+
+.footer-feature-box {
+  img {
+    max-height: 331px !important;
+    width: 100% !important;
+  }
+  padding: 0;
+  position: relative;
+  margin: 0 0px 0 12px;
+  min-width: 376px;
+}
+
+.footer-feature-box-inner {
+  padding-bottom: 30px;
+  position: relative;
+  top: 0;
+}
+
+.footer-feature-box h3 {
+  text-transform: none;
+}
+
+.footer-blue-link {
+  color: $color-brand-picton;
+  border: 3px solid $color-brand-picton;
+  padding: 8px 18px;
+  font-size: 20px;
+}
+
+/*.footer-blue-link:hover {background-color:$color-brand-picton; color:$color-brand-typography; text-decoration:none}*/
+
+.why_list {
+  position: absolute;
+  bottom: 0;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  padding: 30px 30px 30px 25%;
+  h3 {
+    font-size: 42px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .alternate {
+    background-color: #c7c9c7;
+  }
+}
+
+h3.why_list_heading.chinese {
+  font-size: 15px !important;
+  color: #15224f !important;
+}
+
+.solid-blue-link-button {
+  background-color: $color-brand-java;
+  color: $color-brand-typography;
+  padding: 14px 20px;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+p.container_para {
+  color: #000 !important;
+}
+
+h3.why_list_heading {
+  text-transform: Capitalize !important;
+}
+
+.aqua-back {
+  background-color: rgba(33, 226, 208, 0.6);
+}
+
+.top-mobile-logo {
+  display: none;
+}
+
+.company-details {
+  .title {
+    display: block;
+    margin: 30px 0 0 0;
+    font-weight: bold;
+    color: $color-brand-typography;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .text {
+    display: block;
+    margin: 0 0 30px 0;
+    color: $color-brand-typography;
+    
+    .uppercase {
+      text-transform: uppercase;
+    }
+  }
+  &.lower h2 {
+    border-top: 2px solid #abc5d6;
+    padding: 50px 0 0 0;
+    width: 90%;
+  }
+}
+
+.feature-box {
+  height: 490px;
+  border: 1px solid #ababab;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.feature-box-image {
+  height: 100px;
+  width: 100%;
+  background-position: center;
+}
+
+.feature-box-content {
+  padding: 12px;
+}

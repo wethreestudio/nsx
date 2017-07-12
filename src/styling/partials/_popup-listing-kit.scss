@@ -1,0 +1,299 @@
+/* popup modal listing kit */
+
+#request-kit-holder {
+  margin-bottom: 0;
+  position: relative;
+  width: 230px;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+#request-kit {
+  font-size: 13px;
+  font-weight: lighter;
+  list-style: none outside none;
+  margin: 10px;
+  padding: 0;
+  li {
+    display: block;
+    float: left;
+    padding: 3px;
+    position: relative;
+    z-index: 500;
+    a {
+      background: none repeat scroll 0 0 #EF9F00;
+      border-radius: 4px;
+      color: #FFF;
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 10px 45px;
+    }
+  }
+  ul {
+    background-color: #FFF;
+    background: -moz-linear-gradient(center top, #F0EEEF 5%, #FFF 100%) repeat scroll 0 0 #F0EEEF;
+    border-bottom: 5px solid #9CD2FD;
+    border-radius: 0;
+    box-shadow: 0 0 20px #CCC;
+    display: none;
+    left: 3px;
+    list-style: none outside none;
+    padding: 0;
+    position: absolute;
+    top: 40px;
+    width: 198px;
+    li {
+      padding: 5px 11px;
+    }
+    input {
+      -moz-transition: all .5s ease 0s;
+      border: 1px solid #D3D3D3;
+      font-size: 11px;
+      padding: 8px 5px;
+      width: 162px;
+      &:focus {
+        border: 1px solid #2467EF;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px #2467EF;
+        color: #000;
+        outline: medium none;
+      }
+    }
+    a {
+      background: none repeat scroll 0 0 transparent;
+      border: medium none;
+      color: #666;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 2px;
+    }
+    li a.request-kit-send {
+      background: none repeat scroll 0 0 #9CD2FD;
+      border-radius: 0;
+      color: #00366E;
+      padding: 8px 15px;
+      &:hover {
+        background: none repeat scroll 0 0 #06F;
+        color: #FFF;
+      }
+    }
+  }
+}
+
+#Listing-PopUp {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  background-image: url(https://www.nsx.com.au/img/bg-mask.png);
+  z-index: 3000;
+}
+
+#Listing-PopUp-body {
+  z-index: 3001;
+  margin: 10% auto;
+  background: #fff;
+  * h2 {
+    line-height: 35px;
+  }
+  > * {}
+}
+
+.popup-holder {
+  position: relative;
+}
+
+.popup-left {
+  background-color: $color-brand-botticelli;
+  padding: 10px 20px 30px 20px;
+}
+
+.popup-right {
+  padding: 10px 20px 30px 20px;
+}
+
+#Listing-PopUp-body p {
+  &#title {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #edebeb;
+    padding: 22px 35px;
+    border-top: $color-brand-java 5px solid;
+    border-bottom: $color-brand-typography 4px solid;
+  }
+  &#txt {
+    line-height: 1.3em;
+  }
+}
+
+ul#Pop-up-list {
+  
+  padding: 0 0 20px 20px;
+  margin-bottom: 0;
+  li {
+    padding: 12px 0;
+  }
+  span {
+    display: block;
+    margin-right: 6px;
+    float: left;
+    width: 18px;
+    height: 18px;
+    background-position: -396px -71px;
+  }
+}
+
+#pop-up-logo {
+  float: right;
+  width: 187px;
+  height: 128px;
+  background-position: -0px -73px;
+  margin-top: -16px;
+}
+
+#Listing-PopUp-body {
+  > .fieldset {
+    border: none;
+    margin-bottom: 15px;
+    .row {
+      margin-bottom: 15px;
+    }
+  }
+  * {
+    input {
+      width: 100%;
+      padding: 6px 0 6px 0;
+      outline: none;
+      border: 0;
+      border-bottom: 2px solid #ccc;
+      padding: 5px 0 5px 0;
+      margin: 0 0 20px 0;
+    }
+    label {
+      display: block;
+      width: 100%;
+      color: $color-brand-typography;
+      font-size: 12px;
+      border: 0;
+      margin: 23px 0 0 0;
+    }
+  }
+  > .fieldset label.nsx-sprite {
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    background-color: #fff;
+    border: #d3d2d2 1px solid;
+  }
+}
+
+label.nsx-sprite {
+  &.required {
+    background-color: #e9e6e6 !important;
+  }
+  &.name {
+    background-position: -432px -69px;
+  }
+  &.phone {
+    background-position: -469px -68px;
+  }
+  &.mail {
+    background-position: -505px -68px;
+  }
+  &.company {
+    background-position: -541px -69px;
+  }
+}
+
+#Listing-PopUp-body > {
+  .fieldset button#get-list {
+    padding: 8px 15px;
+  }
+  p#call {
+    background-color: #edebeb;
+    padding: 10px 35px;
+    border-bottom: $color-brand-typography 5px solid;
+    border-top: #c7c5c5 1px solid;
+    margin-bottom: 0;
+    span {
+      
+      font-weight: bold;
+      padding: 0 10px;
+    }
+  }
+  .popup-left {
+    min-height: 560px;
+  }
+  a#close {
+    display: block;
+    width: 37px;
+    height: 38px;
+    background-position: -537px -103px;
+    margin: 0;
+    padding: 0;
+    float: right;
+    position: relative;
+    top: -17px;
+    right: -17px;
+  }
+}
+
+.listingformerror {
+  color: red;
+  padding-bottom: 4px;
+  padding-top: 8px;
+}
+
+.nsx-sprite {
+  height: 35px;
+  width: 35px;
+  right: 17px;
+  display: block;
+  position: absolute;
+  z-index: 9999;
+  top: 7px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 32px;
+  color: $color-brand-typography;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+a.btn-blue {
+  &:hover, &.active {
+    background: -moz-linear-gradient(center top, #2A9AE0 0, #1871C4 100%) repeat scroll 0 0 transparent;
+    background: linear-gradient(to top, #1871C4, #2A9AE0);
+    background: -webkit-linear-gradient(#2A9AE0, #1871C4);
+    background: -o-linear-gradient(top, #1871C4, #2A9AE0);
+  }
+  background: -moz-linear-gradient(center top, #1A76B1 0, #104B84 100%) repeat scroll 0 0 transparent;
+  border-bottom: 1px solid #041322;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 50px;
+  text-shadow: 1px 1px #000;
+  background-color: $color-brand-typography;
+  background: -moz-linear-gradient(center top, #1A76B1 0, #104B84 100%) repeat scroll 0 0 transparent;
+  /* background: linear-gradient(to bottom,#1A76B1,#104B84); */
+  background: -o-linear-gradient(top, #1A76B1, #104B84);
+  /* background: -webkit-linear-gradient(#1A76B1,#104B84); */
+  border-bottom: 0;
+  border-radius: 0;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  text-shadow: none;
+}
