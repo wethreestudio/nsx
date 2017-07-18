@@ -1,0 +1,29 @@
+.feature-blocks {
+	margin-top: $grid-gutter-width;
+	padding: 23px 10px;
+
+	&-row {
+		margin: $grid-gutter-width*2 0 $grid-gutter-width 0;
+	}
+}
+
+.feature-block {
+	&-bar {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: $grid-gutter-width/2;
+		font-weight: 900;
+		background-color: rgba(0, 56, 101, 0.1);
+
+		&:hover {
+			background-color: rgba(0, 56, 101, 0);
+			transition: background .25s ease;
+		}
+	}
+}

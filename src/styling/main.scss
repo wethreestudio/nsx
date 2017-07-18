@@ -1,11 +1,10 @@
-// Core variables and mixins
+/* Bootstrap */
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+// BOOTSTRAP OVERRIDES
+$grid-gutter-width: 24px;
+// BOOTSTRAP OVERRIDES END
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
-
-// Reset and dependencies
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
-
-// Core CSS
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables";
@@ -13,8 +12,6 @@
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs";
-
-// Utility classes
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
 
@@ -38,6 +35,8 @@
 @import 'partials/footer';
 @import 'partials/boxes-footer';
 @import 'partials/content';
+
+@import 'partials/feature-blocks';
 
 /* responsive css */
 /* desktop / tablets */
