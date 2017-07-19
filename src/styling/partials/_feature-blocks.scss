@@ -33,11 +33,7 @@
 	&-content {
 		position: relative;
 		margin-bottom: 1.5384615rem;
-		padding-top: 60%;
-
-		@media (min-width: $screen-sm) {
-			padding-top: 80%;
-		}
+		padding-top: 80%;
 
 		@media (min-width: $screen-md) {
 			margin-bottom: 1.5rem;

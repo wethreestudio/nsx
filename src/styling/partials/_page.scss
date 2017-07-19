@@ -1,0 +1,15 @@
+.container {
+	&.subpage {
+		margin: 1.5384615rem auto;
+
+		@media (min-width: $screen-md) {
+			margin: 1.5rem auto;
+		}
+	}
+}
+
+.main-content-blue {
+	margin: 0px auto !important;
+	padding: 20px 24px;
+	background-color: $color-brand-botticelli;
+}
