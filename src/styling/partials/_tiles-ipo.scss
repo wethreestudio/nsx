@@ -1,62 +1,5 @@
 /* special IPO tile */
 
-.ipo-tile-inner {
-  width: 100%;
-  flex: none;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: auto;
-}
-
-.feature-block-content.ipo-tile {
-  a:hover {
-    text-decoration: none;
-  }
-  .top-box {
-    text-transform: uppercase;
-    color: $color-brand-typography;
-    color: #ffffff;
-    font-size: 12px;
-    display: block;
-    width: 100%;
-  }
-  .date-box {
-    text-transform: uppercase;
-    color: $color-brand-typography;
-    color: #ffffff;
-    font-size: 12px;
-    display: block;
-    width: 100%;
-    margin-top: 24px;
-  }
-  .title {
-    text-transform: uppercase;
-    color: $color-brand-typography;
-    color: #ffffff;
-    font-size: 50px;
-    display: block;
-    width: 100%;
-  }
-  .lower-box {
-    text-transform: uppercase;
-    color: $color-brand-typography;
-    color: #ffffff;
-    font-size: 12px;
-    display: block;
-    width: 100%;
-    margin-top: 24px;
-  }
-  .link-box {
-    text-transform: none;
-    color: $color-brand-typography;
-    color: #ffffff;
-    font-size: 12px;
-    display: block;
-    width: 100%;
-    margin-top: 24px;
-  }
-}
-
 .feature-noimage > {
   .feature-block-bar {
     background-color: rgba(239, 244, 247, 1) !important;
@@ -95,18 +38,6 @@
   color: #fff;
   font-size: 20px;
   font-weight: bold;
-}
-
-.feature-title {
-  float: left;
-  padding: 7px 0 0 0;
-  color: #fff;
-  font-size: 30px;
-  text-transform: uppercase;
-  line-height: 33px;
-  bottom: 10px;
-  position: absolute;
-  width: 90%;
 }
 
 .market-data h2 {

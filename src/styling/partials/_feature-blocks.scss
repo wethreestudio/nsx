@@ -1,29 +1,130 @@
+/* Home Tiles */
+
 .feature-blocks {
-	margin-top: $grid-gutter-width;
-	padding: 23px 10px;
+	margin-top: 1.5384615rem;
+
+	@media (min-width: $screen-md) {
+		margin-top: 1.5rem;
+	}
 
 	&-row {
-		margin: $grid-gutter-width*2 0 $grid-gutter-width 0;
+		margin: 3.076923rem 0 1.5384615rem 0;
+
+		@media (min-width: $screen-md) {
+			margin: 3rem 0 1.5rem 0;
+		}
+
+		& > div {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			align-items: flex-start;
+		}
+
+		.col-sm-4 {
+			@media (max-width: $screen-xs-max) {
+				width: 100%;
+			}
+		}
 	}
 }
 
 .feature-block {
+	&-content {
+		position: relative;
+		margin-bottom: 1.5384615rem;
+		padding-top: 60%;
+
+		@media (min-width: $screen-sm) {
+			padding-top: 80%;
+		}
+
+		@media (min-width: $screen-md) {
+			margin-bottom: 1.5rem;
+		}
+
+		a {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			text-decoration: none;
+			line-height: 1.5384615rem;
+
+			&:hover,
+			&:focus {
+				text-decoration: none;
+			}
+
+			@media (min-width: $screen-md) {
+				line-height: 1.5rem;
+			}
+		}
+		
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
 	&-bar {
 		position: absolute;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		justify-content: center;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		padding: $grid-gutter-width/2;
+		padding: 0.75rem;
 		font-weight: 900;
-		background-color: rgba(0, 56, 101, 0.1);
+		background-color: rgba($color-bg-dark-blue, 0.3);
+		transition: background .25s ease-in-out;
 
 		&:hover {
-			background-color: rgba(0, 56, 101, 0);
-			transition: background .25s ease;
+			background-color: rgba($color-bg-dark-blue, 0.15);
+		}
+	}
+}
+
+.feature-title {
+	@extend .h2;
+	margin: 0;
+	overflow: hidden;
+	color: #fff;
+	text-transform: uppercase;
+	text-overflow: ellipsis;
+}
+
+/* IPO Tile */
+.feature-block-content.ipo-tile {
+	background-color: $color-brand-java;
+
+	a {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0.75rem;
+		font-weight: 900;
+		color: white;
+		background-color: transparent;
+		transition: background .25s ease-in-out;
+		text-transform: uppercase;
+
+		&:hover {
+			background-color: rgba($color-bg-dark-blue, 0.15);
+		}
+
+		div {
+			line-height: 1.25rem;
+		}
+
+		.title {
+			@extend .h2;
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
 		}
 	}
 }

@@ -402,22 +402,3 @@ span.red {
   color: #fff;
   font-size: 12px;
 }
-
-.feature-block-content {
-  position: relative;
-  margin-bottom: 30px;
-  height: 364px;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  &.ipo-tile {
-    background: $color-brand-java;
-    text-align: center;
-    font-weight: bold;
-    padding: 16px;
-    display: flex;
-    align-items: center;
-  }
-}
