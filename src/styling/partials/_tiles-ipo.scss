@@ -64,27 +64,6 @@
   margin-top: 27px;
 }
 
-.end-section {
-  background-color: #fff;
-  color: $color-brand-typography;
-  min-height: 240px;
-  margin: 45px 0px;
-  > div {
-    padding: 0px 0 10px 0px;
-    text-align: center;
-    > {
-      h3 {
-        font-size: 13px;
-        font-weight: bold;
-      }
-      span {
-        font-size: 68px;
-        font-weight: bold;
-      }
-    }
-  }
-}
-
 .stat-section {
   color: $color-brand-typography;
   min-height: 240px;
@@ -100,17 +79,6 @@
       font-weight: bold;
     }
   }
-}
-
-.end-section > h2 {
-  text-align: left;
-  padding: 22px 0 18px 22px;
-  margin-top: 0;
-  font-size: 24px;
-}
-
-.lower-blocks {
-  padding-top: 18px;
 }
 
 .market-data-nav {

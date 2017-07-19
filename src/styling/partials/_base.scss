@@ -11,8 +11,8 @@ body {
 	color: $color-brand-typography;
 }
 h1, .h1 {
-	font-size: 4.2307692rem;
-	line-height: 4.6153846rem;
+	font-size: 3.0769231rem;
+	line-height: 3.4615385rem;
 	margin-top: 1.5384615rem;
 	margin-bottom: 3.076923rem;
 }
@@ -24,7 +24,7 @@ h2, .h2 {
 }
 h3, .h3 {
 	font-size: 1.6153846rem;
-	line-height: 3.0769231rem;
+	line-height: 2rem;
 	margin-top: 1.5384615rem;
 	margin-bottom: 0rem;
 }
@@ -67,6 +67,13 @@ sup {
 }
 sub {
 	bottom: -0.25em;
+}
+
+@media (min-width: $screen-sm) {
+	h1, .h1 {
+		font-size: 4.2307692rem;
+		line-height: 4.6153846rem;
+	}
 }
 
 @media (min-width: $screen-md) {

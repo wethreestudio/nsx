@@ -1,0 +1,30 @@
+.end-section {
+	background-color: #fff;
+	overflow: hidden;
+	padding: $grid-gutter-width/2 $grid-gutter-width $grid-gutter-width;
+
+	h2 {
+		@extend .h3;
+	}
+
+	h3 {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0 0 0.325rem;
+	}
+
+	.large-text {
+		@extend .h1;
+		font-weight: bold;
+		text-align: center;
+		display: block;
+		margin: 0;
+	}
+}
+
+.lower-blocks {
+	padding-top: 18px;
+}

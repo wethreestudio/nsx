@@ -575,25 +575,6 @@ a {
 	}
 }
 
-.hero-blue-link {
-	color: $color-brand-java;
-	color: #ffffff;
-
-	/*border:3px solid $color-brand-java;
-	border: 3px solid #93dbf1;*/
-	border: 3px solid #ffffff;
-	padding: 8px 18px;
-	font-size: 20px;
-
-	&:hover {
-		/*background-color:#93dbf1; */
-		background-color: #ffffff;
-		border: 3px solid #ffffff;
-		color: $color-brand-typography;
-		text-decoration: none;
-	}
-}
-
 .btn {
 	&.nsx-orange {
 		padding: 10px 38px;

@@ -62,6 +62,7 @@ gulp.task('serve', ['clean', 'copy', 'sass'], function() {
         server: "./build"
     });
 
+    gulp.watch("./src/styling/*.scss", ['sass']);
     gulp.watch("./src/styling/**/*.scss", ['sass']);
     gulp.watch("./src/**/*.html", ['clean', 'copy']);
 });

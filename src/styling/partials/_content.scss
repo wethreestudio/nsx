@@ -13,14 +13,16 @@ ul.checkmark {
 }
 
 .numbered-table.row {
-  margin-bottom: 30px;
-  padding-bottom: 30px;
   border-bottom: 1px solid #B0B0B0;
+
+  &:last-of-type {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .large-number {
-  font-weight: 800;
-  font-size: 32px;
+  @extend .h2;
+  font-weight: bold;
   color: $color-brand-regal;
 }
 

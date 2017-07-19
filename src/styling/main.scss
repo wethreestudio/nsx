@@ -21,6 +21,9 @@ $grid-gutter-width: 24px;
 @import 'partials/base';
 @import 'partials/page';
 @import 'partials/navigation';
+@import 'partials/breadcrumb';
+@import 'partials/hero';
+@import 'partials/listing';
 @import 'partials/pagination';
 @import 'partials/banners';
 @import 'partials/tables';
@@ -34,6 +37,7 @@ $grid-gutter-width: 24px;
 @import 'partials/footer';
 @import 'partials/boxes-footer';
 @import 'partials/content';
+@import 'partials/home';
 
 @import 'partials/feature-blocks';
 
@@ -222,9 +226,6 @@ $grid-gutter-width: 24px;
     background-color: #787d82;
     padding: 11px 20px 11px 20px;
   }
-  .hero-banner-content-holder {
-    width: 100%;
-  }
 }
 
 @media (max-width: 994px) {
@@ -244,10 +245,6 @@ $grid-gutter-width: 24px;
     left: 0px !important;
     top: -50px !important;
     width: 100% !important;
-  }
-  .breadcrumb-nav {
-    top: 10px;
-    padding: 0 7px 0 7px;
   }
   .container.subpage img {
     /*object-fit: cover;width: 100%*/
@@ -292,9 +289,6 @@ $grid-gutter-width: 24px;
   .navbar-nav {
     float: left;
   }
-  .hero-banner-content-holder {
-    width: 90%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -303,47 +297,13 @@ $grid-gutter-width: 24px;
   }
 }
 
-@media (min-width: 1024px) {
-  .hero-banner-content-holder {
-    width: 1024px;
-  }
-}
-
-@media (min-width: 1170px) {
-  .topnav {
-    /* min-width: 1170px */
-  }
-  .hero-banner-content-holder {
-    width: 1170px;
-  }
-}
-
 @media (min-width: 1024px) and (max-width: 1200px) {
   .topnav {
     width: 100%;
   }
-  .hero-banner-content-holder {
-    width: 83%;
-    padding: 0;
-  }
 }
 
 @media screen and (min-width: 430px) and (max-width: 993px) {
-  .hero-banner-content-holder {
-    top: 30px;
-    padding: 0 0 0 55px;
-    width: 80%;
-    &.subpage {
-      top: 30px;
-      padding: 0;
-      width: 100%;
-      .hero-banner-left {
-        padding: 0;
-        width: 100%;
-        margin: 0 auto;
-      }
-    }
-  }
   .topnav {
     max-width: 100%;
   }
@@ -398,89 +358,12 @@ $grid-gutter-width: 24px;
     padding: 0 0 0 0;
     width: 90%;
   }
-  .hero-banner-left > h1 {
-    font-size: 50px;
-  }
-}
-
-@media screen and (min-width: 512px) and (max-width: 993px) {
-  .hero-banner-content-holder {
-    top: 70px;
-  }
-}
-
-@media screen and (min-width: 990px) {
-  .hero-banner-content-holder.subpage {
-    top: 40px;
-  }
-}
-
-@media screen and (max-width: 993px) and (min-width: 430px) {
-  .hero-banner-content-holder {
-    width: 85%;
-  }
 }
 
 /* phone plus size*/
 @media (max-width: 430px) {
-  .end-section > h2 {}
   .index_graph {
     height: 225px;
-  }
-  div {
-    &.container.hero-banner-content-holder.subpage .hero-banner-left {
-      h1 {
-        line-height: 60px;
-        font-size: 40px;
-      }
-      &.comp-info h1 {
-        margin: 30px 0 0 0;
-      }
-    }
-  }
-  .comp-info-large {
-    float: none;
-    width: 100%;
-    text-align: center;
-    font-weight: 900;
-    font-size: 40px !important;
-  }
-  .comp-info-small {
-    float: none;
-    width: 95%;
-    padding: 0;
-    margin: 0 auto;
-  }
-  .comp-info-large {
-    float: left;
-    width: 100%;
-    text-align: center;
-    font-weight: 900;
-  }
-  .comp-info-small ul {
-    display: inline-block;
-    margin: 0 0 0 0;
-    padding: 0;
-    width: 100%;
-  }
-  .comp-info {
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-  }
-  .comp-info-small ul li {
-    color: #fff;
-    float: left;
-    list-style: none;
-    text-align: left;
-    padding: 0 10px 0 0;
-    font-size: 14px;
-    width: 21%;
-    &:last-child {
-      width: 34%;
-    }
   }
   .securities-table ul li {
     font-size: 18px;
@@ -501,9 +384,6 @@ $grid-gutter-width: 24px;
     padding-left: 12px;
     padding-right: 12px;
   }
-  .end-section > div > span {
-    font-size: 78px !important;
-  }
   .content-page-subnav ul.side-bar-menu li {
     width: auto;
     a {
@@ -517,10 +397,6 @@ $grid-gutter-width: 24px;
     left: 0px !important;
     top: -50px !important;
     width: 100% !important;
-  }
-  .breadcrumb-nav {
-    top: 10px;
-    padding: 0 7px 0 7px;
   }
   .container.subpage img {
     /*object-fit: cover;width: 100%*/
@@ -563,12 +439,6 @@ $grid-gutter-width: 24px;
   .sec_one {
     padding: 5px !important;
   }
-  .end-section div {
-    &:first-child {
-      display: block;
-    }
-    display: block;
-  }
   .lower-blocks {
     /* padding:10px 0 !important */
     div div:first-child {
@@ -593,10 +463,6 @@ $grid-gutter-width: 24px;
     }
     padding: 15px;
   }
-  .end-section {
-    margin: 20px 7px 0 7px;
-    padding: 20px 0 0 0;
-  }
   span.spacer {
     padding-left: 0px;
   }
@@ -609,9 +475,6 @@ $grid-gutter-width: 24px;
       font-size: 12px;
     }
     padding: 0 !important;
-  }
-  .hero-banner-content-holder {
-    width: 420px;
   }
   .navbar-nav {
     margin: 8px;
@@ -704,55 +567,12 @@ $grid-gutter-width: 24px;
   .topnav {
     width: 100%;
   }
-  .hero-banner-content-holder {
-    top: 50px;
-    padding: 0 10px 0 10px;
-    width: 100%;
-    &.subpage {
-      top: 30px;
-      padding: 0 10px 0 10px;
-      width: 100%;
-    }
-  }
-  .hero-banner-text-right {
-    font-size: 18px;
-  }
-  .hero-banner-content {
-    position: absolute;
-    padding: 0 20px 0 0;
-    top: 160px;
-    
-    height: 50px;
-    width: 100%;
-    padding: 0;
-  }
   .why_heading {
     color: #fff !important;
     font-size: 20px !important;
     font-weight: bold !important;
     padding: 12px;
     margin: 0;
-  }
-  .hero-banner-right {
-    float: right;
-    padding: 4px 0 4px 0;
-  }
-  .hero-banner-left {
-    margin-top: 0px;
-    padding: 0 20px 0 0;
-  }
-  .hero-banner-content-left {
-    float: left;
-    position: absolute;
-    padding: 0 2px 0 0;
-    top: 220px;
-    width: 100%;
-  }
-  .hero-banner-content-holder.subpage .hero-banner-left {
-    margin: 0 0 0 0;
-    padding: 0;
-    width: 100%;
-    text-align: center;
   }
   #Listing-PopUp {
     top: 80px;
@@ -782,10 +602,6 @@ $grid-gutter-width: 24px;
     transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
   }
-  .hero-banner-left > h1 {
-    width: 100%;
-    font-size: 44px;
-  }
   .market-top-line {
     margin-bottom: 15px;
   }
@@ -795,9 +611,6 @@ $grid-gutter-width: 24px;
 }
 
 @media (max-width: 375px) {
-  .hero-banner-content-holder {
-    width: 100%;
-  }
   .topnav {
     max-width: 100%;
     width: 100%;
@@ -805,9 +618,6 @@ $grid-gutter-width: 24px;
 }
 
 @media (max-width: 320px) {
-  .hero-banner-content-holder {
-    width: 100%;
-  }
   .topnav {
     max-width: 100%;
     width: 100%;
