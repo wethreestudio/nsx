@@ -1,10 +1,12 @@
 .end-section {
 	background-color: #fff;
 	overflow: hidden;
-	padding: $grid-gutter-width/2 $grid-gutter-width $grid-gutter-width;
+	padding: $grid-gutter-width/2 $grid-gutter-width;
+	margin: $grid-gutter-width*2 0;
 
 	h2 {
 		@extend .h3;
+		margin-bottom: 1.5rem;
 	}
 
 	h3 {
@@ -13,7 +15,10 @@
 		text-align: center;
 		font-weight: bold;
 		text-transform: uppercase;
-		margin: 0 0 0.325rem;
+	}
+
+	> div {
+		padding-bottom: $grid-gutter-width/2;
 	}
 
 	.large-text {

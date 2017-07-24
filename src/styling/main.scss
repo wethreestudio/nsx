@@ -1,11 +1,31 @@
 /* Bootstrap */
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+/* NSX Variables */
+@import 'variables';
+/* NSX Variables End */
 
 // BOOTSTRAP OVERRIDES
 $grid-gutter-width: 24px;
+$navbar-height: $grid-gutter-width*4;
+$navbar-margin-bottom: 0;
+$navbar-border-radius: 0;
+$navbar-padding-horizontal: $grid-gutter-width/2;
+$navbar-padding-vertical: $grid-gutter-width*1.25;
+$navbar-collapse-max-height: 340px;
+$navbar-default-color: $color-brand-typography;
+$navbar-default-bg: transparent;
+$navbar-default-border: transparent;
+$navbar-default-link-color: $color-brand-typography;
+$navbar-default-link-hover-color: white;
+$navbar-default-link-hover-bg: transparent;
+$navbar-default-link-active-color: $color-brand-typography;
+$navbar-default-link-active-bg: transparent;
+$navbar-default-link-disabled-color: #ccc;
+$navbar-default-link-disabled-bg: transparent;
 // BOOTSTRAP OVERRIDES END
 
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
@@ -17,7 +37,6 @@ $grid-gutter-width: 24px;
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
 /* NSX Core */
-@import 'variables';
 @import 'partials/base';
 @import 'partials/page';
 @import 'partials/navigation';
@@ -38,128 +57,14 @@ $grid-gutter-width: 24px;
 @import 'partials/boxes-footer';
 @import 'partials/content';
 @import 'partials/home';
-
+@import 'partials/search';
 @import 'partials/feature-blocks';
 
 /* responsive css */
 /* desktop / tablets */
-
-.navbar-toggle {
-  position: relative;
-  float: right;
-  padding: 9px 10px;
-  margin: 33px 12px 0 0;
-  background-color: transparent;
-  /* background: url('/images/mobile_nav_icon.png') center center no-repeat; */
-  border: 0px solid transparent;
-  border-radius: 0;
-  height: 30px;
-  width: 30px;
-  /*display: inline-block;*/
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
 @media (max-width: 991px) {
-  .navbar-toggle:before {
-    content: "\f036";
-    color: $color-brand-typography;
-    
-  }
-  .blue-back {
-    .navbar-toggle:before {
-      color: #fff;
-    }
-    .menu-open .navbar-toggle {
-      color: #fff;
-      padding: 2px 0 0 0;
-      margin: 33px 10px 0 0;
-    }
-  }
-  .toplogo {
-    margin: 29px 0 16px 10px;
-    width: 260px;
-  }
-  .topnav {
-    z-index: 9999;
-    .navbar-nav {
-      margin: 0 0 0 0;
-      width: 100%;
-    }
-    div.container {
-      padding: 0;
-      div.navbar-collapse {
-        padding: 0;
-        -webkit-transition: none;
-        -webkit-transform: none;
-        -webkit-transition: none;
-        transition: none;
-      }
-    }
-    .navbar-nav > li > a {
-      color: $color-brand-botticelli;
-    }
-    div.container div.navbar-collapse li {
-      &.dropdown {
-        padding: 8px;
-        margin: 0;
-        height: auto;
-        float: none;
-        width: 100%;
-        color: $color-brand-botticelli;
-        background-color: $color-brand-typography;
-      }
-      a {
-        padding: 8px 8px 13px 0px !important;
-        margin: 0 8px 0px 8px;
-        border-bottom: 3px solid #abc5d6;
-      }
-    }
-    .navbar-collapse.in {
-      /*overflow-y: hidden; overflow-x:visible*/
-    }
-  }
   .topsearch {
     display: none;
-  }
-  .topnav .navbar-collapse.in li.dropdown {
-    background-color: $color-brand-typography;
-    a {
-      color: $color-brand-botticelli;
-    }
-  }
-  .dropdown-holder {
-    min-width: 0;
-    position: relative;
-    min-height: 0;
-    height: 100%;
-    /*display:block*/
-  }
-  .navbar-default .navbar-nav > li:hover > {
-    div.dropdown-holder > ul.dropdown-menu {
-      display: block;
-      height: 100%;
-      margin: 0;
-      width: 100%;
-    }
-    .dropdown-holder {
-      display: block;
-    }
-  }
-  .topnav div.container div.navbar-collapse ul li div ul {
-    li ul li {
-      line-height: normal;
-      border: 0;
-      padding: 0;
-    }
-    &.dropdown-menu li ul.nav-popup-menu li a {
-      padding: 10px 8px 10px 0px !important;
-      color: #fff;
-      margin: 0;
-      border: 0;
-    }
   }
   span.login {
     color: $color-brand-botticelli;
@@ -175,34 +80,6 @@ $grid-gutter-width: 24px;
   }
 }
 
-@media (min-width: 991px) {}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .navbar-nav {
-    float: none;
-  }
-  .navbar-collapse.collapse {
-    display: none !important;
-    &.in {
-      display: block !important;
-      overflow-y: auto !important;
-      width: 100%;
-    }
-  }
-  .navbar-toggle {
-    display: block;
-  }
-  .navbar-header {
-    width: 100%;
-  }
-}
-
-@media (min-width: 990px) and (max-width: 1200px) {
-  .topnav .navbar-nav > li > a {
-    margin: 39px 10px 15px 10px;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 992px) {
   .why_list {
     h3 {
@@ -213,9 +90,6 @@ $grid-gutter-width: 24px;
 }
 
 @media (min-width: 768px) {
-  .topnav .container {
-    margin: 0 auto;
-  }
   input.topsearch-input {
     width: 100% !important;
   }
@@ -285,28 +159,13 @@ $grid-gutter-width: 24px;
   }
 }
 
-@media (min-width: 900px) {
-  .navbar-nav {
-    float: left;
-  }
-}
-
 @media (max-width: 768px) {
   .index_graph {
     height: 100%;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
-  .topnav {
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 430px) and (max-width: 993px) {
-  .topnav {
-    max-width: 100%;
-  }
   .container.content_sec {
     padding: 0px !important;
   }
@@ -349,14 +208,6 @@ $grid-gutter-width: 24px;
   .sec_three {
     padding: 0px !important;
     margin-top: 15px !important;
-  }
-  .nav-popup-menu {
-    float: left;
-    margin: 0px 10px 20px 8px;
-    padding-left: 0px;
-    border-top: 0px solid #abc5d6;
-    padding: 0 0 0 0;
-    width: 90%;
   }
 }
 
@@ -476,39 +327,6 @@ $grid-gutter-width: 24px;
     }
     padding: 0 !important;
   }
-  .navbar-nav {
-    margin: 8px;
-  }
-  .nav > li.dropdown .dropdown-menu {
-    width: 100%;
-    left: 0;
-    right: 0;
-  }
-  .nav-popup-menu {
-    float: left;
-    margin: 8px 8px 8px 8px;
-    padding: 0;
-    font-size: 12px;
-    width: 95%;
-    border-top: 0;
-  }
-  .nav-popup-heading {
-    margin-bottom: 2px;
-  }
-  .dropdown-menu {
-    width: 100%;
-    border-radius: 0;
-    border: 0;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  a.top-mobile-logo {
-    float: left;
-    display: block;
-    padding: 3px 0 0 8px;
-    width: 90px;
-  }
   .market-announcements > ul > li > span.date {
     width: 25%;
   }
@@ -547,25 +365,6 @@ $grid-gutter-width: 24px;
   .data-graph {
     margin-top: 10px;
     padding: 0;
-  }
-  .navbar.navbar-default.second_navbar {
-    position: absolute;
-    top: 0;
-    background-color: $color-brand-typography;
-    border-radius: 0px !important;
-    margin-bottom: 0px !important;
-    min-height: 0;
-    width: 100%;
-    z-index: 9999;
-    border: 0;
-    .nav > li > a {
-      color: #fff;
-      border-bottom: 1px solid #ccc;
-      padding: 17px 30px 13px 10px !important;
-    }
-  }
-  .topnav {
-    width: 100%;
   }
   .why_heading {
     color: #fff !important;
@@ -607,20 +406,6 @@ $grid-gutter-width: 24px;
   }
   .market-announcements h2 {
     margin: 0;
-  }
-}
-
-@media (max-width: 375px) {
-  .topnav {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
-@media (max-width: 320px) {
-  .topnav {
-    max-width: 100%;
-    width: 100%;
   }
 }
 

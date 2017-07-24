@@ -70,12 +70,12 @@
 		position: absolute;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		padding: 0.75rem;
+		padding: 3rem 0.75rem 0.75rem;
 		font-weight: 900;
 		background-color: rgba($color-bg-dark-blue, 0.3);
 		transition: background .25s ease-in-out;

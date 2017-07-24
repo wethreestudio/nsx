@@ -15,18 +15,16 @@
 	}
 
 	&-cont {
-		padding-top: 1.5384615rem;
-		padding-bottom: 1.5384615rem;
-
-		@media (min-width: $screen-sm) {
-			padding-top: 1.5rem;
-			padding-bottom: 1.5rem;
-		}
+		padding-top: $grid-gutter-width*1.5;
+		padding-bottom: $grid-gutter-width*1.5;
 
 		h3 {
 			text-transform: uppercase;
+			margin-bottom: 1rem;
+			font-size: 1rem;
 			
 			@media (min-width: $screen-sm) {
+				margin-bottom: 1rem;
 				margin-top: 0;
 			}
 		}
@@ -40,10 +38,13 @@
 
 	&:before {
 		content: '';
-		width: 75%;
 		height: 2px;
 		background: white;
 		display: block;
+
+		@media (min-width: $screen-sm) {
+			margin-right: $grid-gutter-width;
+		}
 	}
 
 	li {
@@ -60,10 +61,11 @@
 	&-cont {
 		padding-top: 1.5384615rem;
 		padding-bottom: 1.5384615rem;
+		font-size: 0.7692308rem;
 		overflow: hidden;
 
 		@media (min-width: $screen-sm) {
-			font-size: 0.7692308rem;
+			font-size: 0.75rem;
 			padding-top: 1.5rem;
 			padding-bottom: 1.5rem;
 		}
@@ -110,7 +112,7 @@
 	padding-top: 50%;
 
 	@media (min-width: $screen-sm) {
-		margin-right: 10%;
+		margin-right: $grid-gutter-width;
 		padding-top: 60%;
 	}
 
