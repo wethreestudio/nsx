@@ -1,35 +1,200 @@
-.end-section {
-	background-color: #fff;
-	overflow: hidden;
-	padding: $grid-gutter-width/2 $grid-gutter-width;
-	margin: $grid-gutter-width*2 0;
+.lower-blocks {
+	padding-top: $grid-gutter-width/2;
+	padding-bottom: $grid-gutter-width/2;
+
+	@media (min-width: $screen-sm) {
+		padding-top: $grid-gutter-width;
+		padding-bottom: $grid-gutter-width;
+	}
 
 	h2 {
 		@extend .h3;
 		margin-bottom: 1.5rem;
 	}
 
-	h3 {
-		font-size: 1rem;
-		line-height: 1.5rem;
-		text-align: center;
-		font-weight: bold;
-		text-transform: uppercase;
+	h4 {
+		float: right;
+		margin-top: 0.75rem;
+
+		a {
+			border-bottom: 2px solid $color-brand-java;
+			text-decoration: none;
+		}
 	}
 
-	> div {
-		padding-bottom: $grid-gutter-width/2;
-	}
-
-	.large-text {
-		@extend .h1;
-		font-weight: bold;
-		text-align: center;
-		display: block;
+	ul {
+		list-style: none;
 		margin: 0;
-	}
-}
+		padding: 0;
 
-.lower-blocks {
-	padding-top: 18px;
+		li {
+			padding: 0 0 1.5rem;
+
+			&:last-of-type {
+				padding: 0 0 0.75rem;				
+			}
+		}
+	}
+
+	.row > div > div {
+		margin: 0 0 $grid-gutter-width 0;
+		overflow: hidden;
+
+		@media (min-width: $screen-sm) {
+			margin: 0 0 $grid-gutter-width*2 0;
+		}
+	}
+
+	.row > div > div.right_side_bar_one {
+		background-color: $color-bg-dark-blue;
+
+		.right_side_bar_one_inner {
+			padding: 0 $grid-gutter-width/2;
+			color: white;
+			overflow: hidden;
+		}
+
+		> div:first-of-type {
+			max-width: none !important;
+			min-height: auto !important;
+
+			> div {
+				max-width: none !important;
+			}
+		}
+	}
+
+	.market-announcements {
+		padding: 0;
+
+		@media (min-width: $screen-sm) {
+			padding: 0 0.75rem;
+		}
+
+		.market-top-line {
+			font-weight: bold;
+
+			span {
+				display: inline-block;
+
+				&:first-of-type {
+					text-transform: uppercase;
+					margin-right: 1.5rem;
+					min-width: 30%;
+				}
+			}
+		}
+
+		.disclaimer {
+			display: none;
+			padding: 0.75rem 0;
+			font-size: 75%;
+		}
+	}
+
+	.market-data-cont {
+		margin: 0 0 $grid-gutter-width 0;
+
+		h2 {
+			padding: 0;
+
+			@media (min-width: $screen-sm) {
+				padding: 0 0.75rem;
+			}
+		}
+
+		.market-data {
+			background-color: white;
+			padding: 0 0.75rem;
+
+			.list_title {
+				padding: 0.75rem 0;
+				border-bottom: 1px solid $color-brand-botticelli;
+				display: flex;
+				font-weight: bold;
+			}
+
+			.items > .item {
+				padding: 0.75rem 0;
+				border-bottom: 1px solid $color-brand-botticelli;
+				display: flex;
+
+				.box1 {
+					font-weight: 500;
+				}
+			}
+
+			.disclaimer {
+				padding: 0.75rem 0;
+				font-size: 75%;
+			}
+
+			.box1 {
+				flex-basis: 20%;
+			}
+
+			.box2,
+			.box3 {
+				flex-basis: 25%;
+			}
+
+			.box4 {
+				flex-basis: 30%;
+			}
+
+			.box2,
+			.box3,
+			.box4 {
+				text-align: right;
+			}
+		}
+	}
+
+	.data-graph {
+		h2 {
+			padding: 0;
+
+			@media (min-width: $screen-sm) {
+				padding: 0 0.75rem;
+			}
+		}
+
+		.index_graph {
+			display: block !important;
+			min-width: 100%;
+			height: auto;
+		}
+	}
+
+	.end-section {
+		background-color: #fff;
+		overflow: hidden;
+		margin: 0 0 $grid-gutter-width 0;
+		padding: 0 $grid-gutter-width/2 $grid-gutter-width/2;
+
+		@media (min-width: $screen-sm) {
+			padding: 0 $grid-gutter-width/2 $grid-gutter-width;
+		}
+
+		h3 {
+			font-size: 1rem;
+			line-height: 1.5rem;
+			text-align: center;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-top: 0.75rem;
+		}
+
+		> div {
+			padding-bottom: $grid-gutter-width/2;
+		}
+
+		.large-text {
+			@extend .h1;
+			font-weight: bold;
+			text-align: center;
+			display: block;
+			margin: 0;
+		}
+	}
 }

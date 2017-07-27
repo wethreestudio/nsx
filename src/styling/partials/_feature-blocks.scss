@@ -8,10 +8,12 @@
 	}
 
 	&-row {
-		margin: $grid-gutter-width*2 0 $grid-gutter-width*1.5 0;
+		margin-top: $grid-gutter-width*1;
+		margin-bottom: $grid-gutter-width*0.75;
 
 		@media (min-width: $screen-md) {
-			margin: $grid-gutter-width*2 0 $grid-gutter-width 0;
+			margin-top: $grid-gutter-width*2;
+			margin-bottom: $grid-gutter-width;
 		}
 
 		& > div {
@@ -75,13 +77,21 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		padding: 3rem 0.75rem 0.75rem;
+		padding: 2.75rem 0.75rem 0.75rem;
 		font-weight: 900;
 		background-color: rgba($color-bg-dark-blue, 0.3);
 		transition: background .25s ease-in-out;
 
 		&:hover {
 			background-color: rgba($color-bg-dark-blue, 0.15);
+		}
+
+		@media (min-width: $screen-md) {
+			padding: 1.5rem 0.75rem 0.75rem;
+		}
+
+		@media (min-width: $screen-lg) {
+			padding: 3rem 0.75rem 0.75rem;
 		}
 	}
 }

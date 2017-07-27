@@ -5,6 +5,7 @@ var watch = require('gulp-watch');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var uncss = require('postcss-uncss');
+var cssnano = require('cssnano');
 var clean = require('gulp-clean');
 var browserSync = require('browser-sync').create();
 
@@ -24,7 +25,8 @@ gulp.task('sass', ['copy'], function () {
 	var plugins = [
         autoprefixer({
             browsers: ['last 2 versions']
-        })//,
+        }),
+        cssnano()//,
         //uncss({
         //    html: ['./build/**/*.html'],
         //    stylesheets: ['./build/css/main.css'],
