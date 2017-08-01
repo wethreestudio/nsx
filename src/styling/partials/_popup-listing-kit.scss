@@ -92,16 +92,6 @@
   z-index: 3000;
 }
 
-#Listing-PopUp-body {
-  z-index: 3001;
-  margin: 10% auto;
-  background: #fff;
-  * h2 {
-    line-height: 35px;
-  }
-  > * {}
-}
-
 .popup-holder {
   position: relative;
 }
@@ -269,31 +259,4 @@ label.nsx-sprite {
 
 .left {
   float: left;
-}
-
-a.btn-blue {
-  &:hover, &.active {
-    background: -moz-linear-gradient(center top, #2A9AE0 0, #1871C4 100%) repeat scroll 0 0 transparent;
-    background: linear-gradient(to top, #1871C4, #2A9AE0);
-    background: -webkit-linear-gradient(#2A9AE0, #1871C4);
-    background: -o-linear-gradient(top, #1871C4, #2A9AE0);
-  }
-  background: -moz-linear-gradient(center top, #1A76B1 0, #104B84 100%) repeat scroll 0 0 transparent;
-  border-bottom: 1px solid #041322;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 12px;
-  padding: 10px 50px;
-  text-shadow: 1px 1px #000;
-  background-color: $color-brand-typography;
-  background: -moz-linear-gradient(center top, #1A76B1 0, #104B84 100%) repeat scroll 0 0 transparent;
-  /* background: linear-gradient(to bottom,#1A76B1,#104B84); */
-  background: -o-linear-gradient(top, #1A76B1, #104B84);
-  /* background: -webkit-linear-gradient(#1A76B1,#104B84); */
-  border-bottom: 0;
-  border-radius: 0;
-  color: #fff;
-  font-size: 14px;
-  padding: 8px 20px;
-  text-shadow: none;
 }

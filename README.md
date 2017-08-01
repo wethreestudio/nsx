@@ -18,4 +18,6 @@ All initial sass files were created by converting the latest live css into sass.
 1. Clone the repo to your machine
 2. Terminal into the directory
 3. Run command `yarn install`
-4. Once installed, run command `gulp` to build, start server and watch.
+4. Once installed, run command the desired command:
+  - `npm run dev` to build, start server and watch a local dev build
+  - `npm run preview` to build a preview for upload to S3
