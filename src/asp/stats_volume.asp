@@ -1,0 +1,122 @@
+<%@ LANGUAGE="VBSCRIPT" %>
+<%
+Response.Buffer = False
+response.expires = 0
+response.expiresabsolute = #JAN 2, 2000 00:00:00#
+response.cachecontrol = "PRIVATE"
+
+%>
+
+<html>
+
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>NSX National Stock Exchange of Australia</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="ROBOTS" content="INDEX">
+<meta http-equiv="Expiry" content="0">
+<meta http-equiv="expires" content="0">
+<meta name="description" content="The National Stock Exchange of Australia - Operates a Stock Exchange in Australia focussing on small to medium and high technology companies.">
+<meta name="keywords" content="small, medium, company, companies, companys, australia, Australia, Newcastle, enterprises, high technology, stock, exchange, stock exchange, Australian, NSX, nsx">
+<link rel="stylesheet" href="newsx2.css" type="text/css">
+
+
+
+<meta name="Microsoft Border" content="none">
+<link rel="shortcut icon" href="favicon.ico" ></head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" style="background-color: #FFFFFF" >
+
+<div align==center>
+<table cellspacing=0 border="0" width="165" id="table100" cellpadding="5" >
+	<tr>
+		<td class=plaintext bgcolor=#959CA0><font color="#FFFFFF"><b>Volume</b></font></td>
+		<td class=plaintext bgcolor=#959CA0 align=right><font color="#FFFFFF"><b>Last</b></font></td>
+		<td class=plaintext bgcolor=#959CA0 align=right><font color="#FFFFFF"><b>No.</b></font></td>
+	</tr>
+
+<%
+
+
+cr=vbCRLF
+qu=""""
+tb=","
+
+Set ConnPasswords = Server.CreateObject("ADODB.Connection")
+Set CmdDD = Server.CreateObject("ADODB.Recordset")
+ 
+
+ConnPasswords.Open Application("nsx_ReaderConnectionString")
+SQL = "SELECT TOP 7 tradingcode, tradedatetime, [open], last, sessionmode, volume,prvclose"
+SQL = SQL & " FROM pricescurrent  "
+SQL = SQL & " WHERE (issuestatus='Active') and volume>0"
+SQL = SQL & " ORDER BY volume DESC, tradingcode ASC"
+
+'response.write SQL & CR
+CmdDD.CacheSize=100 
+CmdDD.Open SQL, ConnPasswords,1,3
+
+WEOF = CmdDD.EOF
+'can only do getrows if there is more than one record.
+if not WEOF then 
+	alldata = cmddd.getrows
+	rc = ubound(alldata,2) 
+	else
+	rc = -1
+end if
+
+CmdDD.Close
+Set CmdDD = Nothing
+IF WEOF THEN 
+ eml="No Change"
+ELSE
+    	eml =  ""
+  lap=0
+       FOR jj = 0 TO rc
+      	  nsxcode = ucase(alldata(0,jj))
+
+
+       	  	last = alldata(3,jj)
+
+
+       	  	volume=alldata(5,jj)
+       	  	prvclose = alldata(6,jj)
+       	  	if len(trim(prvclose & " ")) = 0 then prvclose=last
+       	  	if prvclose=0 then prvclose=last
+       	  	pchange = 100 * (last - prvclose)/prvclose
+       	  	if pchange >0 then colr=green
+       	  	if pchange <0 then colr=red
+       	  	if pchange=0 then colr=navy
+    
+
+
+   	cl = array("#EEEEEE","#FFFFFF")
+	lap = (-lap)+1
+				
+    %>
+  <tr bgcolor="<%=cl(lap)%>" onMouseOver="this.bgColor='#CCCCDD'" onmouseout="this.bgColor='<%=cl(lap)%>'">
+		<td class=plaintext ><font size="1"><%=nsxcode%></font></td>
+		<td class=plaintext align=right><font size="1"><%=formatnumber(last,3)%></font></td>
+		<td class=plaintext align=right><font size="1" color=<%=colr%>><%=formatnumber(volume,0)%></font></td>
+	</tr>
+	
+<%		  	
+    	  NEXT
+  
+END IF
+if len(eml)>0 then
+	response.write "<tr><td class=plaintext><font size=1>" & eml & "</font></td></tr>"
+end if
+
+
+%>
+
+</table>
+</div>
+</body>
+</html>

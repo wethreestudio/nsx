@@ -1,0 +1,1 @@
+<%response.redirect "prices_index.asp"%>
