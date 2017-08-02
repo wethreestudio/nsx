@@ -15,3 +15,5 @@ $color-text-danger: #C03D41 !default;
 $color-bg-blue: $color-brand-regal;
 $color-bg-dark-blue: darken($color-brand-regal, 7.5%);
 
+/* Border */
+$color-border: darken($color-brand-botticelli, 20%);

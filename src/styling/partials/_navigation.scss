@@ -5,7 +5,7 @@
 	margin-bottom: 0;
 	background-color: $color-brand-botticelli;
 	z-index: 9999;
-	outline: 2px solid rgba($color-brand-botticelli, 0.75);
+	outline: 2px solid $color-border;
 	transform: translate3d(0,0,0);
 
 	@media (max-width: $screen-sm-max) {
@@ -49,7 +49,7 @@
 			float: none;
 			margin-right: -$grid-gutter-width/2;
 			margin-left: -$grid-gutter-width/2;
-			height: $grid-gutter-width*2.5;
+			height: $grid-gutter-width*3;
 
 			&:before,
 			&:after {
@@ -66,7 +66,7 @@
 			display: block;
 		}
 
-		@media (min-width: $screen-sm) {
+		@media (min-width: $screen-md) {
 			margin-right: 0;
 		}
 
@@ -83,8 +83,8 @@
 	.navbar-nav {
 		@media (max-width: $screen-sm-max) {
 			float: none;
-			overflow: hidden;
 			margin: 0;
+			border-top: 2px solid $color-border;
 		}
 
 		@media (min-width: $screen-md) {
@@ -96,14 +96,24 @@
 		> li {
 			float: none;
 			position: relative;
+			border-bottom: 2px solid $color-border;
 
 			@media (min-width: $screen-md) {
 				height: $navbar-height;
 				position: static;
+				border-bottom: 0;
 			}
 
 			> a,
 			> .login-item {
+				padding: $grid-gutter-width/2 0;
+				display: block;
+
+				@media (max-width: $screen-sm-max) {
+					font-size: 1.5rem;
+					margin-right: $grid-gutter-width*1.5;
+				}
+
 				@media (min-width: $screen-md) {
 					height: $navbar-height;
 					font-weight: 500;
@@ -124,7 +134,15 @@
 			}
 
 			> button {
-				min-width: $grid-gutter-width;
+				position: absolute;
+				width: $grid-gutter-width*1.5;
+				background-color: transparent;
+				outline: none;
+				top: 0;
+				right: 0;
+				font-size: 1.5rem;
+				padding: $grid-gutter-width/2;
+				border: 0;
 
 				@media (min-width: $screen-md) {
 					display: none;
@@ -158,8 +176,23 @@
 					list-style: none;
 					padding: 0;
 				}
+
+				@media (max-width: $screen-sm-max) {
+					> .container {
+						padding: 0;
+						width: 100%;
+
+						> .row {
+							margin: 0;
+							display: flex;
+							flex-wrap: wrap;
+							justify-content: flex-start;
+						}
+					}
+				}
 				
 				@media (min-width: $screen-md) {
+					min-height: 150px;
 					color: white;
 					display: none;
 					padding-bottom: 1rem;				
@@ -190,6 +223,48 @@
 				}
 			}
 
+			@media (max-width: $screen-sm-max) {
+				ul.sub-nav {
+					padding: 0.5rem 0 1rem;
+
+					> li {
+						padding: 0.5rem 0;
+						font-size: 1.25rem;
+
+						h4 {
+							margin: 0.5rem 0;
+							font-size: 1.25rem;
+						}
+
+						li {
+							padding: 0.5rem 0;
+						}
+					}
+
+					&.vertical {
+						padding: 0;
+
+						> li {
+							margin: 0.5rem 0 0;
+
+							&:last-child {
+								margin: 0.5rem 0 1rem;
+							}
+						}
+					}
+				}
+
+				.login-dropdown {
+					h4 {
+						margin: 1.5rem 0 1rem;
+					}
+
+					.login-form {
+						padding: 0;
+					}
+				}
+			}
+
 			@media (min-width: $screen-md) {
 				ul.sub-nav {
 					border-top: 2px solid rgba($color-brand-botticelli, 0.75);
@@ -202,10 +277,6 @@
 
 						&:first-child {
 							padding-left: 0;
-						}
-
-						h4 {
-							margin: 0 0 0.5rem;
 						}
 
 						li {
@@ -244,10 +315,29 @@
 
 					p {
 						margin: 1rem 0 0.5rem;
+						font-size: 0.9em;
 					}
 
 					form {
 						padding-right: 1rem;
+					}
+				}
+			}
+
+			&.dropdown {
+				@media (max-width: $screen-sm-max) {
+					> button .close {
+						display: none;
+					}
+
+					&.open {
+						> button .open {
+							display: none;
+						}
+
+						> button .close {
+							display: inline-block;
+						}
 					}
 				}
 			}

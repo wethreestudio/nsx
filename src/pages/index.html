@@ -151,7 +151,11 @@
 					<ul class="nav navbar-nav" id="topnavul">
 						<li class="dropdown">
 							<a href="/listing/">LISTING</a>
-							<button data-toggle="dropdown" aria-expanded="false"><span class="sr-only">Toggle Listing menu</span></button>
+							<button data-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-plus open" aria-hidden="true"></i>
+								<i class="fa fa-minus close" aria-hidden="true"></i>
+								<span class="sr-only">Toggle Listing menu</span>
+							</button>
 							<div class="dropdown-menu">
 								<div class="container">
 									<ul class="sub-nav horizontal">
@@ -166,7 +170,11 @@
 						</li>
 						<li class="dropdown ">
 							<a href="/investing/">INVESTING</a>
-							<button data-toggle="dropdown" aria-expanded="false"><span class="sr-only">Toggle Investing menu</span></button>
+							<button data-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-plus open" aria-hidden="true"></i>
+								<i class="fa fa-minus close" aria-hidden="true"></i>
+								<span class="sr-only">Toggle Investing menu</span>
+							</button>
 							<div class="dropdown-menu">
 								<div class="container">
 									<ul class="sub-nav horizontal">
@@ -181,7 +189,11 @@
 						</li>
 						<li class="dropdown">
 							<a href="/marketdata/">MARKET DATA</a>
-							<button data-toggle="dropdown" aria-expanded="false"><span class="sr-only">Toggle Market Data menu</span></button>
+							<button data-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-plus open" aria-hidden="true"></i>
+								<i class="fa fa-minus close" aria-hidden="true"></i>
+								<span class="sr-only">Toggle Market Data menu</span>
+							</button>
 							<div class="dropdown-menu">
 								<div class="container">
 									<ul class="sub-nav horizontal">
@@ -198,7 +210,11 @@
 						</li>
 						<li class="dropdown">
 							<a href="/regulation/">REGULATION</a>
-							<button data-toggle="dropdown" aria-expanded="false"><span class="sr-only">Toggle Regulation menu</span></button>
+							<button data-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-plus open" aria-hidden="true"></i>
+								<i class="fa fa-minus close" aria-hidden="true"></i>
+								<span class="sr-only">Toggle Regulation menu</span>
+							</button>
 							<div class="dropdown-menu">
 								<div class="container">
 									<ul class="row sub-nav vertical">
@@ -246,11 +262,15 @@
 						</li>
 						<li class="dropdown">
 							<span class="login-item" tabindex="0"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Account</span>
-							<button data-toggle="dropdown" aria-expanded="false"><span class="sr-only">Toggle Login menu</span></button>
+							<button data-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-plus open" aria-hidden="true"></i>
+								<i class="fa fa-minus close" aria-hidden="true"></i>
+								<span class="sr-only">Toggle Login menu</span>
+							</button>
 							<div class="dropdown-menu">
 								<div class="container">
-									<div class="row login-dropdown">
-										<div id="lin" class="login-form col-xs-12 col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8">
+									<!--<div class="row login-dropdown">
+										<div id="lin" class="login-form col-xs-12 col-sm-6 col-md-4 col-md-offset-8">
 											<h4>Member Login</h4>
 											<form id="loginform" name="loginform" action="http://staging.nsx.com.au/member_pass.asp" method="post" class="noAutoComplete" autocomplete="off" _lpchecked="1">
 												<input name="STATUS" id="STATUS" type="hidden" value="CHKLOGIN">
@@ -264,14 +284,14 @@
 												</div>
 												<button type="submit" class="btn btn-primary">Submit</button>
 												<p>
-													<small><a href="http://staging.nsx.com.au/member_forgot.asp">Forgot Password?</a><br />
-													<a href="user_save_registration.asp">Don't have an account? Register</a></small>
+													<a href="http://staging.nsx.com.au/member_forgot.asp">Forgot Password?</a><br />
+													<a href="user_save_registration.asp">Don't have an account? Register</a>
 												</p>
 											</form>
 										</div>
-									</div>
+									</div>-->
 
-									<!--<ul class="sub-nav sub-nav-right">
+									<ul class="sub-nav sub-nav-right">
 										<li>
 											<a href="/<%=user_url%>">Account:&nbsp;<strong>Test Name</strong><span class="msgNo" style="display: none;">&nbsp; (2)</span></a>
 										</li>
@@ -281,7 +301,7 @@
 										<li>
 											<a href="/member_end1.asp">Logout</a>
 										</li>
-									</ul>-->
+									</ul>
 								</div>
 							</div>
 						</li>
@@ -291,13 +311,18 @@
 						<button class="topsearch-toggle" data-toggle="dropdown" ria-expanded="false">
 							<i class="fa fa-search open" aria-hidden="true"></i>
 							<i class="fa fa-times close" aria-hidden="true"></i>
+							<span class="sr-only">Toggle search</span>
 						</button>
 						<div class="topsearch-form dropdown-menu" id="nsx-primary-nav-search">
 							<form class="form" role="search" id="marketsearch" name="marketsearch" action="search.asp" method="get">
 								<input name="id" type="hidden" id="id">
 								<input name="t" type="hidden" id="t">
-								<input type="text" id="searchbox" name="q" class="form-control topsearch-input" value="" placeholder="Company code or name">
-								<button class="btn btn-primary" type="button" onclick="$('#marketsearch').submit()">Search</button>
+								<div class="input-group">
+									<input type="text" class="form-control" id="searchbox" name="q" value="" placeholder="Company code or name">
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-primary" onclick="$('#marketsearch').submit()">Search</button>
+									</div>
+								</div>
 							</form>
 						</div>
 					</div>

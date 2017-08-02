@@ -1,11 +1,15 @@
 .topsearch {
-	margin: 0;
+	margin: $grid-gutter-width/2 0;
 	padding: 0;
 	display: flex;
 	justify-items: stretch;
 
 	@media (max-width: $screen-sm-max) {
 		width: 100%;
+	}
+
+	@media (min-width: $screen-md) {
+		margin: 0;
 	}
 
 	&-form {
@@ -29,6 +33,15 @@
 			height: 100%;
 			align-items: center;
 		}
+
+		.input-group {
+			display: flex;
+			width: 100%;
+
+			@media (min-width: $screen-md) {
+				width: 350px;
+			}
+		}
 	}
 
 	&-toggle {
@@ -50,22 +63,6 @@
 			.close {
 				display: none;
 			}
-		}
-	}
-
-	.topsearch-input {
-		border: 0;
-		border-radius: 0;
-		box-shadow: none;
-		color: $color-brand-typography;
-		font-weight: bold;
-		border-bottom: 2px solid #abc5d6;
-		padding: $grid-gutter-width/2 $grid-gutter-width/2 $grid-gutter-width/2 0;
-		background-color: transparent;
-
-		@media (min-width: $screen-md) {
-			padding: $grid-gutter-width/2;
-			min-width: 255px;
 		}
 	}
 
