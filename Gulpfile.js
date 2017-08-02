@@ -37,15 +37,12 @@ gulp.task('replace', ['copy'], function(){
 gulp.task('sass', ['replace'], function () {
 	var plugins = [
 		autoprefixer({
-			browsers: ['last 2 versions']
-		}),
-		cssnano()//,
-		//uncss({
-		//    html: ['./build/**/*.html'],
-		//    stylesheets: ['./build/css/main.css'],
-		//    ignore: [/\.blue-back/, /\.visible-search/]
-		//})
+			browsers: ['last 3 versions', 'ie > 9']
+		})
 	];
+	if ( !isDev ){
+		plugins.push(cssnano());
+	}
 	return gulp
 		.src('./src/styling/main.scss')
 		.pipe(sourcemaps.init())

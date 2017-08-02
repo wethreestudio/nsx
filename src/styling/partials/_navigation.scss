@@ -6,38 +6,106 @@
 	background-color: $color-brand-botticelli;
 	z-index: 9999;
 	outline: 2px solid rgba($color-brand-botticelli, 0.75);
+	transform: translate3d(0,0,0);
+
+	@media (max-width: $screen-sm-max) {
+		min-height: $grid-gutter-width*2.5;
+	}
 
 	.toplogo {
-
-		margin: $grid-gutter-width*1.25 0;
-		width: 272px;
+		max-width: 272px;
 		display: block;
+		width: 100%;
+		margin-left: $grid-gutter-width/2;
+		margin-right: $grid-gutter-width;
 
-		img {
+		@media (min-width: $screen-md) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		#nsx-logo {
 			width: 100%;
+
+			.nsx-logo-grey * {
+				color: $color-brand-hit;
+				fill: $color-brand-hit;
+			}
+
+			.nsx-logo-blue * {
+				color: $color-brand-regal;
+				fill: $color-brand-regal;
+			}
 		}
 	}
 
-	&.blue-back {
-		background-color: $color-brand-typography;
-		outline: none;
+	.navbar-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: $navbar-height;
+
+		@media (max-width: $screen-sm-max) {
+			float: none;
+			margin-right: -$grid-gutter-width/2;
+			margin-left: -$grid-gutter-width/2;
+			height: $grid-gutter-width*2.5;
+
+			&:before,
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.navbar-toggle {
+		border-radius: 0;
+		border: 0;
+
+		@media (max-width: $screen-sm-max) {
+			display: block;
+		}
+
+		@media (min-width: $screen-sm) {
+			margin-right: 0;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+		}
+	}
+
+	.nav > li {
+		position: static;
 	}
 
 	.navbar-nav {
-		display: flex;
-		flex-grow: 1;
-		justify-content: center;
+		@media (max-width: $screen-sm-max) {
+			float: none;
+			overflow: hidden;
+			margin: 0;
+		}
+
+		@media (min-width: $screen-md) {
+			display: flex;
+			flex-grow: 1;
+			justify-content: center;
+		}
 
 		> li {
-			height: 100%;
+			float: none;
 			position: relative;
 
-			> span {
-				display: flex;
-				height: 100%;
+			@media (min-width: $screen-md) {
+				height: $navbar-height;
+				position: static;
+			}
 
-				> a {
-					height: 100%;
+			> a,
+			> .login-item {
+				@media (min-width: $screen-md) {
+					height: $navbar-height;
 					font-weight: 500;
 					text-transform: uppercase;
 					padding: 0 $grid-gutter-width/2;
@@ -47,49 +115,163 @@
 					position: relative;
 					cursor: pointer;
 					flex-grow: 1;
-
-					@media (min-width: $screen-lg) {
-						padding: 0 $grid-gutter-width;
-					}
+					text-decoration: none;
 				}
 
-				button {
-					min-width: $grid-gutter-width;
-
-					@media (min-width: $screen-md) {
-						display: none;
-					}
+				@media (min-width: $screen-lg) {
+					padding: 0 $grid-gutter-width;
 				}
 			}
 
-			&.active > span > a,
-			> span > a:focus,
-			> span > a:hover {
-				&:after {
-					height: 4px;
-					background-color: $color-brand-picton;
-					content: '';
-					position: absolute;
-					bottom: $grid-gutter-width;
-					left: $grid-gutter-width*0.125;
-					right: $grid-gutter-width*0.125;
-				}
-			}
-
-			.dropdown-holder {
-				background-color: $color-brand-typography;
-				color: white;
-				position: absolute;
-				z-index: 9999;
-				top: $navbar-height;
-				left: 0;
-				right: 0;
-				box-shadow: none;
-				border: 0;
+			> button {
+				min-width: $grid-gutter-width;
 
 				@media (min-width: $screen-md) {
-					&.collapse {
-						display: block !important;
+					display: none;
+				}
+			}
+
+			&.active > a,
+			&:focus > a,
+			&:hover > a,
+			&:focus > .login-item,
+			&:hover > .login-item {
+				color: $color-brand-regal;
+
+				@media (min-width: $screen-md) {
+					color: white;
+
+					&:after {
+						height: 4px;
+						background-color: $color-brand-picton;
+						content: '';
+						position: absolute;
+						bottom: $grid-gutter-width;
+						left: $grid-gutter-width*0.125;
+						right: $grid-gutter-width*0.125;
+					}
+				}
+			}
+
+			.dropdown-menu {
+				ul {
+					list-style: none;
+					padding: 0;
+				}
+				
+				@media (min-width: $screen-md) {
+					color: white;
+					display: none;
+					padding-bottom: 1rem;				
+					background-color: $color-brand-typography;
+					color: white;
+					position: absolute;
+					z-index: 9999;
+					top: $navbar-height;
+					left: 0;
+					right: 0;
+					box-shadow: none;
+					border: 0;
+					height: auto !important;
+
+					ul {
+						margin: 0;
+						padding: 0;
+					}
+
+					li {
+						margin: 0;
+						padding: 0;
+					}
+
+					a {
+						color: white;
+					}
+				}
+			}
+
+			@media (min-width: $screen-md) {
+				ul.sub-nav {
+					border-top: 2px solid rgba($color-brand-botticelli, 0.75);
+					padding: 1rem 0;
+					overflow: hidden;
+
+					> li {
+						padding: 0.5rem 1rem;
+						float: left;
+
+						&:first-child {
+							padding-left: 0;
+						}
+
+						h4 {
+							margin: 0 0 0.5rem;
+						}
+
+						li {
+							padding: 0.5rem 0;
+						}
+
+						ul {
+							padding-right: 1rem;
+						}
+					}
+
+					&-right {
+						display: flex;
+						justify-content: flex-end;
+
+						> li {
+							float: none;
+						}
+					}
+				}
+
+				.login-dropdown {
+					padding: 0 0 1rem;
+
+					&:before {
+						background-color: rgba($color-brand-botticelli, 0.75);
+						height: 2px;
+						content: '';
+						display: block;
+						margin: 0 $grid-gutter-width/2;
+					}
+
+					h4 {
+						margin: 1.5rem 0 1rem;
+					}
+
+					p {
+						margin: 1rem 0 0.5rem;
+					}
+
+					form {
+						padding-right: 1rem;
+					}
+				}
+			}
+
+			&.dropdown .dropdown-menu {
+				@media (max-width: $screen-sm-max) {
+					display: none;
+				}
+			}
+
+			&.dropdown.open .dropdown-menu {
+				display: block;
+				height: auto !important;
+
+				@media (min-width: $screen-md) {
+					display: none;
+				}
+			}
+
+			&:focus,
+			&:hover {
+				> .dropdown-menu {
+					@media (min-width: $screen-md) {
+						display: block;
 					}
 				}
 			}
@@ -97,16 +279,59 @@
 	}
 
 	.navbar-collapse {
-		display: flex;
-		min-height: $grid-gutter-width*4;
-		max-height: $grid-gutter-width*4;
-		position: relative;
+		@media (max-width: $screen-sm-max) {
+			margin-left: -$grid-gutter-width/2;
+			margin-right: -$grid-gutter-width/2;
 
-		&.collapse {
-			display: none !important;
+			&.collapse {
+				display: none !important;
+				height: 0px !important;
+				overflow: hidden !important;
 
-			@media (min-width: $screen-md) {
+				&.in {
+					display: block !important;
+					height: auto !important;
+					overflow: visible !important;
+				}
+			}
+		}
+
+		@media (min-width: $screen-md) {
+			display: flex !important;
+			min-height: $grid-gutter-width*4;
+			max-height: $grid-gutter-width*4;
+			padding: 0;
+
+			&.collapse {
 				display: flex !important;
+			}
+
+			&.topsearch-open {
+				position: relative;
+			}
+		}
+	}
+
+	&.blue-back {
+		@media (min-width: $screen-md) {
+			background-color: $color-brand-typography;
+			outline: none;
+
+			.navbar-nav > li > a,
+			.navbar-nav > li > .login-item {
+				color: white;
+			}
+
+			#nsx-logo {
+				.nsx-logo-grey * {
+					color: white;
+					fill: white;
+				}
+
+				.nsx-logo-blue * {
+					color: white;
+					fill: white;
+				}
 			}
 		}
 	}
@@ -124,14 +349,9 @@
 
 
 
-.topnav.blue-back .user_navLogin_top b {
-	color: #fff;
-}
-
 .nav_logout {
 	margin-left: 10px;
 }
-
 
 .top-small-links {
 	float: right !important;
@@ -143,97 +363,6 @@
 	}
 }
 
-.navbar-toggle.menu-open:before {
-	content: "\f00d";
-	color: $color-brand-botticelli;
-	font-size: 24px;
-}
-
-/* search */
-.hero-banner-cont {
-	margin: 0 auto;
-	padding: 0;
-}
-
-.why_list {}
-
-.why-list-on-nav {
-	padding: 0px !important;
-	list-style: none !important;
-	margin-bottom: 0;
-}
-
-ul.why-list-on-nav li {
-	a {
-		&:hover {
-			text-decoration: none;
-			background-color: rgba(0, 15, 100, 0.5);
-		}
-
-		padding: 10px 15px;
-		display: block;
-		width: 100%;
-		min-width: 100%;
-		color: white;
-		text-transform: uppercase;
-		font-size: 12px;
-		background-color: rgb(0, 0, 0);
-		font-weight: bold;
-	}
-
-	margin: 0px 0px 2px 0px;
-}
-
-ul {
-	&.listing-menu, &.investing-menu, &.market-data-menu {}
-
-	&.login-menu {
-		width: 440px;
-	}
-}
-
-.nav-popup-heading {
-	border-top: 0px solid #abc5d6;
-	padding: 20px 0 0 0;
-	
-	color: #fff;
-}
-
-/* other nav */
-.reverse-logo {
-	display: none;
-}
-
-.navbar-toggle.collapsed {
-	background-color: transparent !important;
-}
-
-.nav-popup-menu {
-	float: left;
-	margin: 15px 10px 30px 27px;
-	padding-left: 0px;
-	border-top: 2px solid #abc5d6;
-	padding: 10px 0 0 0;
-
-	span a {
-		color: #fff;
-		font-weight: 500;
-		
-		text-transform: capitalize;
-	}
-
-	li {
-		list-style-type: none;
-		line-height: 2.5;
-	}
-
-	&.horizontal li {
-		list-style-type: none;
-		line-height: 2.5;
-		display: inline-block;
-		margin-right: 32px;
-	}
-}
 .navbar.navbar-default.second_navbar {
 	.navbar-nav > li > a {
 		color: $color-brand-typography;
@@ -266,41 +395,6 @@ ul {
 	&.active > a {
 		color: #fff;
 		background-color: $color-brand-typography !important;
-	}
-}
-
-.blue-back {
-	background-color: $color-brand-typography;
-
-	* {
-		&.vanilla-logo {
-			display: none;
-		}
-
-		&.reverse-logo {
-			display: block;
-		}
-
-		span.heading {
-			color: #fff;
-		}
-	}
-
-	> div > div > ul > li {
-		&.dropdown > a, > span {
-			color: #fff;
-		}
-
-		background-color: $color-brand-typography !important;
-		color: $color-brand-botticelli !important;
-	}
-
-	.topsearch-btn {
-		/*background-image:url('/images/search_reverse.png') !important*/
-	}
-
-	> div > div > ul > li.active > a {
-		color: #fff !important;
 	}
 }
 

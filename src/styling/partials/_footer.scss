@@ -39,7 +39,7 @@
 	&:before {
 		content: '';
 		height: 2px;
-		background: white;
+		background: rgba($color-brand-botticelli, 0.75);
 		display: block;
 
 		@media (min-width: $screen-sm) {

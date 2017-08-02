@@ -1,54 +1,99 @@
 .topsearch {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-items: stretch;
+
+	@media (max-width: $screen-sm-max) {
+		width: 100%;
+	}
+
 	&-form {
-		display: none;
+		@media (max-width: $screen-sm-max) {
+			width: 100%;
+		}
+
+		@media (min-width: $screen-md) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: $grid-gutter-width*2.5;
+			bottom: 0;
+			background-color: $color-brand-botticelli;
+			z-index: 5;
+		}
 
 		form {
 			display: flex;
 			justify-content: flex-end;
+			height: 100%;
+			align-items: center;
+		}
+	}
+
+	&-toggle {
+		@media (max-width: $screen-sm-max) {
+			display: none;
+		}
+
+		@media (min-width: $screen-md) {
+			height: 100%;
+			background-color: transparent;
+			border: 0;
+			padding: 0;
+			margin: 0;
+			border-radius: 0;
+			box-shadow: none;
+			width: $grid-gutter-width*2;
+			outline: none;
+
+			.close {
+				display: none;
+			}
 		}
 	}
 
 	.topsearch-input {
-		min-width: 255px;
 		border: 0;
+		border-radius: 0;
+		box-shadow: none;
 		color: $color-brand-typography;
 		font-weight: bold;
 		border-bottom: 2px solid #abc5d6;
-		padding: $grid-gutter-width/2;
+		padding: $grid-gutter-width/2 $grid-gutter-width/2 $grid-gutter-width/2 0;
 		background-color: transparent;
-	}
 
-	.topsearch-btn {
-		border: 0;
-		height: 100%;
-		display: inline-block;
-		height: 25px;
-		background-size: 100%;
-		background-position: center right !important;
-		width: 45px;
-		border-radius: 0px;
-		float: right;
-		background-color: transparent;
-		font: normal normal normal 14px/1 FontAwesome;
-		font-size: inherit;
-		text-rendering: auto;
-		-webkit-font-smoothing: antialiased;
-		font-size: 25px;
-		color: $color-brand-hit;
-		content: "\f002";
-		color: $color-brand-hit;
-		font-size: 24px;
-	}
-
-	&.visible-search {
-		.topsearch-form {
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			z-index: 10;
+		@media (min-width: $screen-md) {
+			padding: $grid-gutter-width/2;
+			min-width: 255px;
 		}
+	}
+
+	@media (min-width: $screen-md) {
+		.dropdown-menu {
+			display: none;
+			height: auto !important;
+		}
+
+		&.dropdown.open .dropdown-menu {
+			display: block;
+			height: auto !important;
+		}
+
+		&.dropdown.open .topsearch-toggle {
+			.open {
+				display: none;
+			}
+
+			.close {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.blue-back {
+	.topsearch-toggle {
+		color: white;
 	}
 }
