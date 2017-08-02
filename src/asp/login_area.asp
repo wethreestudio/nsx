@@ -12,7 +12,7 @@ End If
 If LCase(Session("PASSWORDACCESS")) <> "yes" Then %>                         
 												
 <div class="row login-dropdown">
-	<div class="login-form col-xs-12 col-sm-6 col-md-4 col-md-offset-8">
+	<div class="login-form col-xs-12 col-sm-6 col-md-4 col-md-offset-8" id="login_area">
 		<h4>Member Login</h4>
 		<form id="loginform" name="loginform" action="<%= SiteRootURL %>/member_pass.asp" method="post" class="noAutoComplete" autocomplete="off" _lpchecked="1">
 			<input name="STATUS" id="STATUS" type="hidden" value="CHKLOGIN">
@@ -21,7 +21,7 @@ If LCase(Session("PASSWORDACCESS")) <> "yes" Then %>
 				<input name="username" id="username" type="text" class="form-control" value="" placeholder="User name" autocomplete="off">
 			</div>
 			<div class="form-group">
-				<input name="fakepassword" id="fakepassword" type="text" class="form-control" value="Password" title="password*" autocomplete="off">
+				<input name="fakepassword" id="fakepassword" type="text" class="form-control" placeholder="Password" autocomplete="off">
 				<input name="password" id="password" type="password" class="form-control" placeholder="Password" style="display:none">
 			</div>
 			<div class="login_area_bottom">
@@ -79,7 +79,7 @@ If LCase(Session("PASSWORDACCESS")) <> "yes" Then %>
 			user_url_text = "Home"
 	end select
 %>
-		<a href="/<%=user_url%>">Account:&nbsp;<strong><%=Session("FULL_NAME")%></strong><span class="msgNo" style="display: none;">2</span></a>
+		<a href="/<%=user_url%>">User:&nbsp;<strong><%=Session("FULL_NAME")%></strong><span class="msgNo" style="display: none;">2</span></a>
 	</li>
 	<li>
 		<a href="/<%=user_url%>"><%=user_url_text%>t</a>

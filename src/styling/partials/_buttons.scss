@@ -1,10 +1,7 @@
-.btn-blue {
-	@extend .btn;
-	@extend .btn-primary;
-}
-
 .btn {
 	height: 36px;
+	border: 0;
+	font-weight: 500;
 
 	&.btn-sm {
 		height: 24px;
@@ -105,4 +102,9 @@
 			cursor: pointer;
 		}
 	}
+}
+
+.btn-blue {
+	@extend .btn;
+	@extend .btn-primary;
 }

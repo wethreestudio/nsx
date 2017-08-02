@@ -38,6 +38,14 @@
 			display: flex;
 			width: 100%;
 
+			&-input {
+				flex-grow: 1;
+			}
+
+			.form-control {
+				width: 100%;
+			}
+
 			@media (min-width: $screen-md) {
 				width: 350px;
 			}
@@ -50,7 +58,7 @@
 		}
 
 		@media (min-width: $screen-md) {
-			height: 100%;
+			height: $grid-gutter-width*4;
 			background-color: transparent;
 			border: 0;
 			padding: 0;

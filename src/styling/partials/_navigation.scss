@@ -12,6 +12,10 @@
 		min-height: $grid-gutter-width*2.5;
 	}
 
+	h4 {
+		font-weight: 500;
+	}
+
 	.toplogo {
 		max-width: 272px;
 		display: block;
@@ -61,6 +65,8 @@
 	.navbar-toggle {
 		border-radius: 0;
 		border: 0;
+		margin-top: 0;
+		margin-bottom: 0;
 
 		@media (max-width: $screen-sm-max) {
 			display: block;
@@ -111,6 +117,7 @@
 
 				@media (max-width: $screen-sm-max) {
 					font-size: 1.5rem;
+					font-weight: 500;
 					margin-right: $grid-gutter-width*1.5;
 				}
 
@@ -157,8 +164,6 @@
 				color: $color-brand-regal;
 
 				@media (min-width: $screen-md) {
-					color: white;
-
 					&:after {
 						height: 4px;
 						background-color: $color-brand-picton;
@@ -184,9 +189,10 @@
 
 						> .row {
 							margin: 0;
-							display: flex;
+							/*display: flex;
+							-webkit-flex-wrap: wrap;
 							flex-wrap: wrap;
-							justify-content: flex-start;
+							justify-content: flex-start;*/
 						}
 					}
 				}
@@ -257,6 +263,7 @@
 				.login-dropdown {
 					h4 {
 						margin: 1.5rem 0 1rem;
+						font-size: 1.25rem;
 					}
 
 					.login-form {
@@ -431,18 +438,6 @@
 
 
 
-
-
-
-
-
-
-
-
-.nav_logout {
-	margin-left: 10px;
-}
-
 .top-small-links {
 	float: right !important;
 	padding: 20px 0 0 0;
@@ -488,31 +483,7 @@
 	}
 }
 
-.btn.btn-default {}
-
-.grey-back-listing {
-	background-color: #ddd;
-	height: 300px;
-	text-align: center;
-}
-
-a {
-	&.navbar-brand {}
-
-	&.top-mobile-logo {
-		display: none;
-	}
-}
-
 .official-list {
-	.btn.nsx-orange {
-		margin: 0;
-		float: right;
-		position: absolute;
-		top: 35px;
-		right: 40px;
-		background: #93dbf1;
-	}
 
 	.rss-link {
 		position: absolute;
@@ -529,10 +500,6 @@ a {
 	
 }
 
-td.align-top {
-	vertical-align: top;
-}
-
 .password-reminder {
 	> tbody > tr > td {
 		border: 0;
@@ -544,81 +511,4 @@ td.align-top {
 	}
 
 	.standard-input, .captcha, .form-group label {}
-}
-
-.navbar-border {
-	border-bottom: solid 5px #0080c5;
-}
-
-#login {
-	height: 230px;
-}
-
-.login-panel {
-	min-width: 250px;
-	border-top: 14px solid #0080c5;
-	border-right: 1px solid #0080c5;
-	border-bottom-right-radius: 0.5em;
-	border-bottom: 3px solid #0080c5;
-	border-left: 1px solid #0080c5;
-	border-bottom-left-radius: 0.5em;
-}
-
-.dropdown-header {
-	display: block;
-	padding-bottom: 30px;
-	height: 10px;
-}
-
-.login-header {
-	font-size: 20px;
-	font-weight: bold;
-	display: inline;
-	float: left;
-}
-
-.forgot-password {
-	font-size: 10px;
-	display: inline;
-	float: right;
-	vertical-align: bottom;
-	padding-top: 10px;
-}
-
-.center-text {
-	text-align: center;
-}
-
-.error-message {
-	font-size: 11px;
-}
-
-.login-register {
-	display: inline-block;
-	color: #fff;
-
-	span a {
-		display: inline;
-	}
-}
-
-.user_navLogin_top {
-	position: relative;
-	width: auto;
-
-	/* right: 0; */
-	height: 15px;
-	float: right;
-	display: block;
-	margin: 10px -32px 0 0;
-
-	ul {
-		list-style: none;
-
-		li {
-			display: inline-block;
-			float: left;
-			font-size: 13px !important;
-		}
-	}
 }
