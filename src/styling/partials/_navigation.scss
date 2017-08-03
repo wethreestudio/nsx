@@ -104,10 +104,36 @@
 			position: relative;
 			border-bottom: 2px solid $color-border;
 
+			@media (max-width: $screen-sm-max) {
+				&.open {
+					border: 0;
+
+					.dropdown-menu {
+						border-top: 2px solid $color-brand-java;	
+					}
+				}
+
+				&.active {
+					border-bottom: 2px solid $color-brand-picton;
+					
+					&.open {
+						border: 0;
+
+						.dropdown-menu {
+							border-top: 2px solid $color-brand-picton;
+						}
+					}
+				}
+			}
+
 			@media (min-width: $screen-md) {
 				height: $navbar-height;
 				position: static;
 				border-bottom: 0;
+
+				.dropdown-menu {
+					border-top: 0;
+				}
 			}
 
 			> a,
@@ -166,12 +192,20 @@
 				@media (min-width: $screen-md) {
 					&:after {
 						height: 4px;
-						background-color: $color-brand-picton;
+						background-color: $color-brand-java;
 						content: '';
 						position: absolute;
 						bottom: $grid-gutter-width;
 						left: $grid-gutter-width*0.125;
 						right: $grid-gutter-width*0.125;
+					}
+				}
+			}
+
+			&.active > a {
+				@media (min-width: $screen-md) {
+					&:after {
+						background-color: $color-brand-picton;
 					}
 				}
 			}

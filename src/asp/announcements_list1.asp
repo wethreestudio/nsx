@@ -107,7 +107,7 @@ Else
   %><a href="/marketdata/announcements?year=3MTHS">Past 3 Months</a><%
 End If  
 
-Response.Write "&nbsp;|&nbsp;"
+Response.Write " | "
 
 
 If ann_year = "6MTHS" Then 
@@ -116,7 +116,7 @@ Else
   %><a href="/marketdata/announcements?year=6MTHS">Past 6 Months</a><%
 End If  
 
-Response.Write "&nbsp;|&nbsp;"
+Response.Write " | "
 
 If ann_year = "12MTHS" Then 
   %><b>Past 12 Months</b><% 
@@ -124,7 +124,7 @@ Else
   %><a href="/marketdata/announcements?year=12MTHS">Past 12 Months</a><%
 End If  
 
-Response.Write "&nbsp;|&nbsp;<br/>"
+Response.Write " | <br/>"
 
 i=0
 sy = Year(Now)
@@ -139,7 +139,7 @@ ey = 2000
 		Else
 			%><a href="/marketdata/announcements?year=<%=i%>"><%=i%></a><%
 		End If 
-		If i > ey Then Response.Write "&nbsp;|&nbsp;"
+		If i > ey Then Response.Write " | "
 	Next
 %>
 </p>
@@ -167,7 +167,6 @@ ey = 2000
 
 <br>
 
-<div class="table-responsive">
 <div class="table-responsive"><table id="myTable" class="tablesorter" width="99%"> 
 <thead> 
 <tr> 
@@ -247,7 +246,7 @@ End If
 %>
 
 </tbody>
-</table></div>
+</table>
 </div>
 <%
 'End If

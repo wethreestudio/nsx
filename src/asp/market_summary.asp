@@ -25,7 +25,6 @@ Sub RenderSummary(sql, empty_message, right_col, right_col_heading, right_col_de
     style = " style=""color:" & c & """ "
   End If
 %>
-<div class="table-responsive">
     <div class="table-responsive"><table class="table tablesorter">
         <thead> 
             <tr> 
@@ -61,7 +60,7 @@ Sub RenderSummary(sql, empty_message, right_col, right_col_heading, right_col_de
   End If
 %>
           </tbody>
-        </table></div>
+        </table>
     </div>
 <%
 End Sub
@@ -93,22 +92,18 @@ Server.Execute "side_menu.asp"
 RenderContent page,"editarea" 
 %>
 
-<div>
+<div class="table-responsive">
 <%
 Server.Execute "/stats_market2.asp"
 %>
 </div>
-<br>
+
+
+<div class="row">
+<div class="col-xs-12 col-md-6">
+<h2>Volume</h2>
+<div class="disclaimer">(latest business day)</div>
 <div class="table-responsive">
-<div class="table-responsive"><table class="table">
-    <tr>
-        <td width="50%">
-            <div style="padding-right:8px">
-            
-            
-            
-            <h2>Volume</h2>
-            <div class="disclaimer">(latest business day)</div>
 <%
 SQL = "SELECT TOP 3 tradingcode, tradedatetime, [open], [last], [sessionmode], [volume], [prvclose], (100 * ([last]-[prvclose])/[prvclose]) AS [change] "
 SQL = SQL & " FROM pricescurrent  "
@@ -118,21 +113,12 @@ SQL = SQL & " ORDER BY volume DESC, tradingcode ASC"
 RenderSummary SQL, "No Trades.", "volume", "Volume", 0, "", "", ""
 
 %>    
-   
-   
-   
-   
-    </div>   
-    </td>
-    <td width="50%">
-      <div style="padding-left:8px">
-      
-      
-      
-     
-   
-      <h2>Value</h2>
-      <div class="disclaimer">(latest business day)</div>
+</div>   
+</div>
+<div class="col-xs-12 col-md-6">
+<h2>Value</h2>
+<div class="disclaimer">(latest business day)</div>
+<div class="table-responsive">
 <%
 SQL = "SELECT TOP 7 tradingcode, tradedatetime, [open], [last], [sessionmode], [volume], [prvclose], (100 * ([last]-[prvclose])/[prvclose]) AS [change], [volume]*[last] AS svalue "
 SQL = SQL & " FROM pricescurrent  "
@@ -141,22 +127,16 @@ SQL = SQL & " ORDER BY (last*volume) DESC, tradingcode ASC"
 
 RenderSummary SQL, "No Trades.", "svalue", "Value", 3, "$", "", ""
 
-%>      
-   
-   
-    </div>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">&nbsp;</td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <div style="padding-right:8px">
-      
-      
-       <h2>Advances</h2>
-      <div class="disclaimer">(latest business day)</div>
+%>        
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-xs-12 col-md-6">
+<h2>Advances</h2>
+<div class="disclaimer">(latest business day)</div>
+<div class="table-responsive">
 <%
 SQL = "SELECT TOP 7 tradingcode, tradedatetime, [open], [last], [sessionmode], [volume], [prvclose], (100 * ([last]-[prvclose])/[prvclose]) AS [change] "
 SQL = SQL & " FROM pricescurrent  "
@@ -167,16 +147,16 @@ RenderSummary SQL, "No Advances.", "change", "Change", 2, "", "%", "green"
 
 %>
 
-     
-     
-     
-     
-      </div>
-    </td>
-    <td width="50%">
-      <div style="padding-left:8px">
-      <h2>Declines</h2>
-      <div class="disclaimer">(latest business day)</div>
+
+
+
+
+</div>
+</div>
+<div class="col-xs-12 col-md-6">
+<h2>Declines</h2>
+<div class="disclaimer">(latest business day)</div>
+<div class="table-responsive">
 <%
 SQL = "SELECT TOP 7 tradingcode, tradedatetime, [open], [last], [sessionmode], [volume], [prvclose], (100 * ([last]-[prvclose])/[prvclose]) AS [change]  "
 SQL = SQL & " FROM pricescurrent  "
@@ -186,33 +166,33 @@ SQL = SQL & " ORDER BY (prvclose*(last-prvclose)) DESC, tradingcode ASC"
 RenderSummary SQL, "No Declines.", "change", "Change", 2, "", "%", "red"
 
 %>      
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">&nbsp;</td>
-  </tr>  
-  <tr style="display:none;">
-    <td width="50%">
-      <div style="padding-right:8px">
-      <h2>Market</h2>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-xs-12 col-md-6">
+<h2>Market</h2>
+<div class="table-responsive">
 <%
 SQL = "SELECT TOP 2 DATEPART(Year, TradeDate), SUM(CASE WHEN AddDelete='D' THEN SaleVolume*-1 ELSE SaleVolume END), SUM(CASE WHEN AddDelete='D' THEN SaleValue*-1 ELSE SaleValue END),  Count(PricesTrades.prid),  SUM(CASE WHEN AddDelete='D' THEN 1 ELSE 0 END) FROM PricesTrades WHERE (((PricesTrades.ExchID)='NCRP' Or (PricesTrades.ExchID)='NPRP' Or (PricesTrades.ExchID)='NDBT' Or (PricesTrades.ExchID)='NMIN' Or (PricesTrades.ExchID)='NRST')) GROUP BY DATEPART(Year, TradeDate) ORDER BY DATEPART(Year, TradeDate) DESC"
 
 ' Response.Write SQL
 %> 
-        </div> 
-        </td>
-        <td width="50%">
-            <div style="padding-left:8px">    
-            <h2>General</h2>
+</div> 
+</div>
+<div class="col-xs-12 col-md-6">
+<h2>General</h2>
+<div class="table-responsive">
 <%
 
 %>  
-            </div>    
-        </td>
-    </tr>
-</table></div>
+</div>
+</div>
+</div>
+
+
+
 </div>
 </div>
 </div>

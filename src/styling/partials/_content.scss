@@ -43,3 +43,9 @@ a.white-contact-button {
     border: 1px solid #ffffff;
   }
 }
+
+.editarea {
+  h1 {
+    @extend h2;
+  }
+}
