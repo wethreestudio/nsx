@@ -47,12 +47,12 @@ alow_robots = "no"
         <tr class="alt">
             <td align="left">Listing Rules - Complete Set - Effective Date April 2011</td>
             <td width="65"><img width="24" height="27" src="/images/pdf-icon.png" alt="PDF" /></td>
-            <td width="90"><a href="/documents/listing_rules/NSXA%20Listing%20Rules%20Complete%201%20April%202011.pdf" class="btn-blue small">Download</a></td>
+            <td width="90"><a href="/documents/listing_rules/NSXA%20Listing%20Rules%20Complete%201%20April%202011.pdf" class="btn btn-primary">Download</a></td>
         </tr>
         <tr>
             <td align="left">Company Forms</td>
             <td width="65">&nbsp;</td>
-            <td width="90"><a href="/company_forms.asp" class="btn-blue small">Link</a></td>
+            <td width="90"><a href="/company_forms.asp" class="btn btn-primary">Link</a></td>
         </tr>
     </tbody>
 </table></div>

@@ -126,9 +126,9 @@ Else
             <td><%=iofferclosedate%></td>
             <td><%=ipdate%></td>
             <td><% if status = "Approved" then%>
-			<a href="/summary/<%=tradingcode%>" class="btn-blue small">view</a>
+			<a href="/summary/<%=tradingcode%>" class="btn btn-primary">view</a>
 			<%else%>
-			<a href="/marketdata/company-directory/<%=tradingcode%>/" class="btn-blue small">view</a>
+			<a href="/marketdata/company-directory/<%=tradingcode%>/" class="btn btn-primary">view</a>
 			
 			<%end if%>
 			</td>

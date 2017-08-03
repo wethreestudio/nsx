@@ -227,7 +227,7 @@ End If
 	response.Write cat_link	
 	
 	%></td>
-	<td><div style="padding:8px"><a href="/partner_profile.asp?id=<%=adId%>" class="btn-blue small">Profile</a></div></td>
+	<td><div style="padding:8px"><a href="/partner_profile.asp?id=<%=adId%>" class="btn btn-primary">Profile</a></div></td>
   </tr> 
 <%
     rs.MoveNext 
@@ -330,7 +330,7 @@ End If
 	
 	
 	%></td>
-	<td><div style="padding:8px"><a href="/partner_profile.asp?id=<%=adId%>" class="btn-blue small">Profile</a></div></td>
+	<td><div style="padding:8px"><a href="/partner_profile.asp?id=<%=adId%>" class="btn btn-primary">Profile</a></div></td>
   </tr> 
 <%
     rs.MoveNext 

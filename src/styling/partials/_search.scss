@@ -46,6 +46,10 @@
 				width: 100%;
 			}
 
+			button {
+				height: 36px;
+			}
+
 			@media (min-width: $screen-md) {
 				width: 350px;
 			}

@@ -237,17 +237,17 @@ end if
 
 <div class="securitylinks" style="padding-top:15px; padding-bottom:15px;" align="center">
   <ul>
-    <li><a href="/company_details.asp?nsxcode=<%=company_code%>" class="btn-blue small">Company Details</a></li>
-    <li><a href="/security_details.asp?nsxcode=<%=security_code%>" class="btn-blue small">Security Details</a></li>
-    <li><a href="/prices_eom.asp?mth=6&tradingcode=<%=security_code%>&coname=<%=coname%>" class="btn-blue small">Month End Prices</a></li>
-    <li><a href="/prices_daily.asp?tradingcode=<%=security_code%>&coname=<%=coname%>" class="btn-blue small">Daily Prices</a></li>
-   <!-- <li><a href="/prices_monthly.asp?tradingcode=<%=security_code%>" class="btn-blue small">Monthly Price History</a></li>-->
-    <li><a href="/security_capital.asp?nsxcode=<%=company_code%>" class="btn-blue small">Capital</a></li>
-    <li><a href="/security_dividends.asp?nsxcode=<%=security_code%>&coname=<%=coname%>" class="btn-blue small">Dividends</a></li>
-	<li><a href="/prices_trades.asp?tradingcode=<%=security_code%>" class="btn-blue small">Trades</a></li> 
-	<li><a href="/statements/<%=company_code%>" class="btn-blue small">Statements</a></li> 
-	<li><a href="http://www.hotcopper.com.au/nsxa/<%=security_code%>" class="btn-blue small" target="_blank">Forum &#x21D7;</a></li>
-	<!-- class="btn-blue small" -->
+    <li><a href="/company_details.asp?nsxcode=<%=company_code%>" class="btn btn-primary">Company Details</a></li>
+    <li><a href="/security_details.asp?nsxcode=<%=security_code%>" class="btn btn-primary">Security Details</a></li>
+    <li><a href="/prices_eom.asp?mth=6&tradingcode=<%=security_code%>&coname=<%=coname%>" class="btn btn-primary">Month End Prices</a></li>
+    <li><a href="/prices_daily.asp?tradingcode=<%=security_code%>&coname=<%=coname%>" class="btn btn-primary">Daily Prices</a></li>
+   <!-- <li><a href="/prices_monthly.asp?tradingcode=<%=security_code%>" class="btn btn-primary">Monthly Price History</a></li>-->
+    <li><a href="/security_capital.asp?nsxcode=<%=company_code%>" class="btn btn-primary">Capital</a></li>
+    <li><a href="/security_dividends.asp?nsxcode=<%=security_code%>&coname=<%=coname%>" class="btn btn-primary">Dividends</a></li>
+	<li><a href="/prices_trades.asp?tradingcode=<%=security_code%>" class="btn btn-primary">Trades</a></li> 
+	<li><a href="/statements/<%=company_code%>" class="btn btn-primary">Statements</a></li> 
+	<li><a href="http://www.hotcopper.com.au/nsxa/<%=security_code%>" class="btn btn-primary" target="_blank">Forum &#x21D7;</a></li>
+	<!-- class="btn btn-primary" -->
 		<!-- li><%
 	'session("nsxcode")=security_code
 	'server.execute "display_almanac.asp"
@@ -935,7 +935,7 @@ if len(offexchangetrading_url) > 0 then
 		%>
         <tr <%=row_class%>>
             <td align="left"><%=ex_name%></td>
-            <td width="150" align="center"><a href="<%=ex_url%>" target="_blank" class="btn-blue small">Go to page</a></td>
+            <td width="150" align="center"><a href="<%=ex_url%>" target="_blank" class="btn btn-primary">Go to page</a></td>
         </tr>
 	<% NEXT ' market
 	%>

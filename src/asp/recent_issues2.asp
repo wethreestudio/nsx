@@ -97,8 +97,8 @@ Else
             <td ><%=datelisted%></td>
 			<td align="right"><%=issueprice%></td>
 			<td align="right"><%=lastprice%></td>
-            <td><a href="/summary/<%=tradingcode%>" class="btn-blue small" title="View market summary">view</a></td>
-            <td><a href="/marketdata/search_by_company?nsxcode=<%=tradingcode%>" class="btn-blue small" title="View Announcements">view</a></td>
+            <td><a href="/summary/<%=tradingcode%>" class="btn btn-primary" title="View market summary">view</a></td>
+            <td><a href="/marketdata/search_by_company?nsxcode=<%=tradingcode%>" class="btn btn-primary" title="View Announcements">view</a></td>
         </tr>
 <%
     rs.MoveNext

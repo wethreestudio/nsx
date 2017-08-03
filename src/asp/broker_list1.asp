@@ -148,7 +148,7 @@ Else
       %>      
       </td>
       
-      <td><div style="padding:8px"><a href="/broker_profile.asp?id=<%=id%>" class="btn-blue small" title="view details on this broker">view</a></div></td>
+      <td><div style="padding:8px"><a href="/broker_profile.asp?id=<%=id%>" class="btn btn-primary" title="view details on this broker">view</a></div></td>
   </tr> 
 <%
     rs.MoveNext 

@@ -94,7 +94,7 @@ Else
   <tr> 
       <td><%=name%></td> 
       <td><%=listedyear%></td>
-      <td><div style="padding:8px"><a href="/adviser_profile.asp?id=<%=id%>" class="btn-blue small" title="view details on this adviser">view</a></div></td>  
+      <td><div style="padding:8px"><a href="/adviser_profile.asp?id=<%=id%>" class="btn btn-primary" title="view details on this adviser">view</a></div></td>  
   </tr> 
 <%
     rs.MoveNext 

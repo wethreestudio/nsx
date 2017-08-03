@@ -531,7 +531,7 @@ if len(offexchangetrading_url) > 0 then
 		%>
         <tr <%=row_class%>>
             <td align="left"><%=ex_name%></td>
-            <td width="150" align="center"><a href="<%=ex_url%>" target="_blank" class="btn-blue small">Go to page</a></td>
+            <td width="150" align="center"><a href="<%=ex_url%>" target="_blank" class="btn btn-primary">Go to page</a></td>
         </tr>
 	<% NEXT ' market
 	%>
