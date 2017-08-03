@@ -232,8 +232,7 @@ courseofsales = GetRows(sql)
 'If VarType(courseofsales) <> 0 Then 
 If VarType(depth_row) <> 0 Then 
 %>
-
- <table class="table">
+ <div class="table-responsive"><table class="table">
     <thead>
         <tr class="header">
             <td align="left">Date/Time</td>
@@ -485,7 +484,7 @@ Next
 %>                  
            
 </tbody>
-</table>
+</table></div>
 <%
 End If
 End If 
@@ -506,8 +505,7 @@ if len(offexchangetrading_url) > 0 then
  <br />
     <div><!--Just a Table Container-->
     <!--Other exchange trading -->
-	<div class="f-w-table table-restyle">
-	<table class="table">
+	<div class="table-responsive"><table class="table">
     <thead>
         <tr>
             <th colspan="2">
@@ -538,8 +536,7 @@ if len(offexchangetrading_url) > 0 then
 	<% NEXT ' market
 	%>
     </tbody>
-</table>
-</div>
+</table></div>
 </div>
 <%
 end if  ' end offexchangetrading_url test
@@ -547,8 +544,7 @@ end if  ' end offexchangetrading_url test
 <!-- /top table -->
 
 <!-- lower table -->
-<div class="b-o-t table-restyle">
-<table id="myTable" class="tablesorter table table-restyle"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter table table-restyle"> 
 <thead> 
 <tr> 
     <th class="text-left">Date</th>
@@ -719,11 +715,11 @@ end if  ' end offexchangetrading_url test
     
        
        if change > 0 and volume<>0 then 
-          	img1 = "<i class=""fa fa-arrow-up"" aria-hidden=""true""></i>"
+          	img1 = img1 = "<img border=""0"" src=""images/up.gif"" style=""vertical-align:middle;padding-left:4px;"" alt="""">"
        	col2 = "color:green"
        
 		elseif change < 0 and volume<>0 then
-			img1= "<i class=""fa fa-arrow-down"" aria-hidden=""true""></i>"
+			img1= "<img border=""0"" src=""images/down.gif"" style=""vertical-align:middle;padding-left:4px;"" alt="""">"
 			col2 = "color:red"
 		
 		else
@@ -739,11 +735,11 @@ end if  ' end offexchangetrading_url test
       	  ' do the daily price change formatting
       	  
         if dailychange > 0 and volume<>0 then 
-          	img2 = "<i class=""fa fa-arrow-up"" aria-hidden=""true""></i>"
+          	img2 = img1 = "<img border=""0"" src=""images/up.gif"" style=""vertical-align:middle;padding-left:4px;"" alt="""">"
        		col3 = "color:green"
        
 		elseif dailychange < 0 and volume<>0 then
-			img2="<i class=""fa fa-arrow-down"" aria-hidden=""true""></i>"
+			img2="<img border=""0"" src=""images/down.gif"" style=""vertical-align:middle;padding-left:4px;"" alt="""">"
 			col3 = "color:red"
 		
 		else
@@ -791,8 +787,7 @@ end if  ' end offexchangetrading_url test
     end if
     %>
 </tbody>
-</table>
-</div>
+</table></div>
 <!-- /lower table -->
 </div>
 </div>
