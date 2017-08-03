@@ -8,7 +8,7 @@ response.cachecontrol = "PRIVATE"
 <%
 objJsIncludes.Add "tablesorter", "/js/jquery.tablesorter.min.js"
 'objJsIncludes.Add "tablesorterp", "/js/addons/pager/jquery.tablesorter.pager.js"
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 'objCssIncludes.Add "tablesorterpcss", "/js/addons/pager/jquery.tablesorter.pager.css"
 %>
 <!--#INCLUDE FILE="header.asp"-->

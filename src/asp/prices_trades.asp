@@ -27,7 +27,7 @@ alow_robots = "no"
 
 objJsIncludes.Add "tablesorter", "/js/jquery.tablesorter.min.js"
 objJsIncludes.Add "tablesorterp", "/js/addons/pager/jquery.tablesorter.pager.js"
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 objCssIncludes.Add "tablesorterpcss", "/js/addons/pager/jquery.tablesorter.pager.css"
 
 ' Get flash company info, Name of company, nsxcode, currentprice, highprice, % change, lowprice, volume, last trade date

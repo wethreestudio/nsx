@@ -10,7 +10,7 @@ page = Request.QueryString("page")
 
 objJsIncludes.Add "tablesorter", "/js/jquery.tablesorter.min.js"
 objJsIncludes.Add "tablesorterp", "/js/addons/pager/jquery.tablesorter.pager.js"
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 objCssIncludes.Add "tablesorterpcss", "/js/addons/pager/jquery.tablesorter.pager.css"
 
 bySecurity = Request.QueryString("bysecurity") ' List brokers by security

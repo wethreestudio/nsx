@@ -19,7 +19,7 @@ Function FormatPrice(p,d)
 End Function
 %>
 <%
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 
 ' Get flash company info, Name of company, nsxcode, currentprice, highprice, % change, lowprice, volume, last trade date
 security_code = UCase(Trim(SafeSqlParameter(request.querystring("tradingcode"))))
@@ -163,6 +163,7 @@ if fh > rc then fh = rc
 
 %>
 <h2><%=UCase(id)%> - <%=coname%> - Daily Price History</h2>
+<div class="row">
 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nopad">
 	<p align="left">If there have been no trades in a security then the last 
 	price used is the Issue or Nominal price on listing otherwise the last price 
@@ -718,16 +719,16 @@ end if  ' end offexchangetrading_url test
     
        
        if change > 0 and volume<>0 then 
-          	img1 = "<img border=""0"" src=""images/up.gif"" style=""vertical-align:middle;padding-left:4px;"" alt="""">"
+          	img1 = "<i class=""fa fa-arrow-up"" aria-hidden=""true""></i>"
        	col2 = "color:green"
        
 		elseif change < 0 and volume<>0 then
-			img1="<img border=""0"" src=""images/down.gif"" style=""vertical-align:middle;padding-left:4px;"" alt="""">"
+			img1= "<i class=""fa fa-arrow-down"" aria-hidden=""true""></i>"
 			col2 = "color:red"
 		
 		else
 			col2 = "" 'color:navy"
-			img1 = "<img border=""0"" src=""images/v2/level.gif"" style=""vertical-align:middle;padding-left:4px;"" alt="""">"
+			img1 = ""
 		end if
 		if change = 0 then 
 			change = "-"
@@ -738,16 +739,16 @@ end if  ' end offexchangetrading_url test
       	  ' do the daily price change formatting
       	  
         if dailychange > 0 and volume<>0 then 
-          	img2 = "<img border=""0"" src=""images/up.gif"" style=""vertical-align:middle;padding-left:4px;"" alt="""">"
+          	img2 = "<i class=""fa fa-arrow-up"" aria-hidden=""true""></i>"
        		col3 = "color:green"
        
 		elseif dailychange < 0 and volume<>0 then
-			img2="<img border=""0"" src=""images/down.gif"" style=""vertical-align:middle;padding-left:4px;"" alt="""">"
+			img2="<i class=""fa fa-arrow-down"" aria-hidden=""true""></i>"
 			col3 = "color:red"
 		
 		else
 			col3 = "" 'color:navy"
-			img2 = "<img border=""0"" src=""images/v2/level.gif"" style=""vertical-align:middle;padding-left:4px;"" alt="""">"
+			img2 = ""
 		end if
 
 		if dailychange = 0 then 
@@ -789,10 +790,11 @@ end if  ' end offexchangetrading_url test
     	  NEXT
     end if
     %>
+</tbody>
 </table>
 </div>
 <!-- /lower table -->
-
+</div>
 </div>
 </div>
 </div>

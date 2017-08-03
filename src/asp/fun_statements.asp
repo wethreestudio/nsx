@@ -8,7 +8,7 @@
 <!--#INCLUDE FILE="include_all.asp"-->
 <!--#INCLUDE FILE="admin/merchtools.asp"-->
 <%
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 objCssIncludes.Add "fun_statements", "/css/fun_statements.css"
 
 ' Get flash company info, Name of company, nsxcode, currentprice, highprice, % change, lowprice, volume, last trade date

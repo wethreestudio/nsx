@@ -9,7 +9,7 @@ page_title = "Index Price History"
 ' alow_robots = "no"
 ' objJsIncludes.Add "marketdata", "js/marketdata.js"
 ' objCssIncludes.Add "marketdata", "css/marketdata.css"
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 %>
 <!--#INCLUDE FILE="header.asp"-->
 

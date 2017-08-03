@@ -14,7 +14,7 @@ If Not isPageValid Then
   Response.Redirect "/"
 End If
 
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 
 Sub RenderSummary(sql, empty_message, right_col, right_col_heading, right_col_decimals, prefix, postfix, c)
   Set conn = GetReaderConn()

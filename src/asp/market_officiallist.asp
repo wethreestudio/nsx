@@ -10,7 +10,7 @@ page_title = "Market Official List"
 ' alow_robots = "no"
 ' objJsIncludes.Add "marketdata", "js/marketdata.js"
 ' objCssIncludes.Add "marketdata", "css/marketdata.css"
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 %>
 <!--#INCLUDE FILE="header.asp"-->
  

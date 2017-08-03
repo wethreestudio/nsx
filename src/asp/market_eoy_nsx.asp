@@ -1,7 +1,7 @@
 <!--#INCLUDE FILE="include_all.asp"-->
 <%
 page_title = "Market Summary"
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 %>
 <!--#INCLUDE FILE="header.asp"-->
 

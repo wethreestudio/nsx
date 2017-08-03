@@ -26,7 +26,7 @@ End If
 page = Request.QueryString("page")
 menu = Request.QueryString("menu")
 
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 hero_banner_class = ""
 If menu = "about" Then
     hero_banner_class = "about-page"

@@ -496,7 +496,8 @@ If VarType(depth_row) <> 0 Then
 
 
 ' Top Tables, Left Table Start
-%>  
+%>
+<div class="row">  
 <div class="col-sm-6 col-md-6 col-lg-6">
 <table class="table">
      <thead>
@@ -669,6 +670,7 @@ Next ' End first table; For rcc = 0 To row_count-1 FOR FIRST TABLE
 
 </tbody>
 </table>
+</div>
 </div>
 
 <table class="table">

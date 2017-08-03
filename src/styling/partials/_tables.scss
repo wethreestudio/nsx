@@ -66,14 +66,6 @@ img.water-mark {
 	}
 }
 
-.brand-name {
-	font-size: 36px;
-	font-weight: bold;
-	color: $color-brand-typography;
-	border-bottom: 2px solid #abc5d6;
-	display: inline-block;
-}
-
 #security-header-top a.nsx-code {
 	background: none repeat scroll 0 0 #F0EEEF;
 	border-left: 1px solid #CCCCCC;
@@ -208,6 +200,11 @@ p {
 	}
 }
 
+
+
+
+
+
 table {
 	width: 100%;
 	border: 0;
@@ -233,9 +230,14 @@ table {
 				color: $color-brand-typography;
 				border-bottom: 2px solid $color-brand-botticelli;
 
+				&:first-child {
+					padding-left: 0;
+				}
+
 				div {
 					padding: 0 !important;
 					margin: 0 !important;
+					display: inline-block;
 				}
 			}
 		}
@@ -245,17 +247,7 @@ table {
 	> thead > tr > td,
 	.sub-header > td {
 		font-weight: bold;
-		vertical-align: bottom;
-	}
-
-	> thead > tr > th {
-		&:first-child {
-			padding-left: 0;
-		}
-
-		&:last-child {
-			padding-right: 0;
-		}
+		vertical-align: top !important;
 	}
 
 	> tfoot > tr > td {
@@ -271,27 +263,101 @@ table {
 
 .table-responsive {
 	overflow-x: auto;
-	min-height: 0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
+	min-height: 0.01%;
 
 	@media screen and (max-width: $screen-xs-max) {
 		width: 100%;
 		overflow-y: hidden;
 		-ms-overflow-style: -ms-autohiding-scrollbar;
 
-		// Tighten up spacing
 		> table {
 			margin-bottom: 0;
 
-			// Ensure the content doesn't wrap
 			> thead,
 			> tbody,
 			> tfoot {
 				> tr {
-				> th,
-				> td {
-					white-space: nowrap;
+					> th,
+					> td {
+						white-space: nowrap;
+					}
 				}
 			}
 		}
+	}
+}
+
+.tablesorter {
+	.header,
+	&-header {
+		cursor: pointer;
+		position: relative;
+		padding-right: 1rem !important;
+
+		&:after {
+			@extend .fa;
+			@extend .fa-sort:before;
+			position: absolute;
+			right: 0.25rem;
+			top: 0.7rem;
+		}
+	}
+
+	.headerSortUp,
+	&-headerSortUp,
+	&-headerAsc {
+		&:after {
+			@extend .fa;
+			@extend .fa-sort-asc:before;
+		}
+	}
+
+	.headerSortDown,
+	&-headerSortDown,
+	&-headerDesc {
+		&:after {
+			@extend .fa;
+			@extend .fa-sort-desc:before;
+		}
+	}
+
+	thead .sorter-false {
+		cursor: default;
+
+		&:after {
+			content: none;
+		}
+	}
+
+	&-processing {
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+		background-image: url('data:image/gif;base64,R0lGODlhFAAUAKEAAO7u7lpaWgAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQBCgACACwAAAAAFAAUAAACQZRvoIDtu1wLQUAlqKTVxqwhXIiBnDg6Y4eyx4lKW5XK7wrLeK3vbq8J2W4T4e1nMhpWrZCTt3xKZ8kgsggdJmUFACH5BAEKAAIALAcAAAALAAcAAAIUVB6ii7jajgCAuUmtovxtXnmdUAAAIfkEAQoAAgAsDQACAAcACwAAAhRUIpmHy/3gUVQAQO9NetuugCFWAAAh+QQBCgACACwNAAcABwALAAACE5QVcZjKbVo6ck2AF95m5/6BSwEAIfkEAQoAAgAsBwANAAsABwAAAhOUH3kr6QaAcSrGWe1VQl+mMUIBACH5BAEKAAIALAIADQALAAcAAAIUlICmh7ncTAgqijkruDiv7n2YUAAAIfkEAQoAAgAsAAAHAAcACwAAAhQUIGmHyedehIoqFXLKfPOAaZdWAAAh+QQFCgACACwAAAIABwALAAACFJQFcJiXb15zLYRl7cla8OtlGGgUADs=') !important;
+	}
+
+	&-filter-row .disabled {
+		cursor: not-allowed;
+	}
+
+	&-filter-row.hideme td {
+		cursor: pointer;
+	}
+
+	&-filter-row.hideme .tablesorter-filter {
+		height: 1px;
+		min-height: 0;
+		border: 0;
+		padding: 0;
+		margin: 0;
+		opacity: 0;
+	}
+
+	.filtered {
+		display: none;
+	}
+
+	&-errorRow td {
+		color: $color-text-danger;
+		cursor: pointer;
 	}
 }

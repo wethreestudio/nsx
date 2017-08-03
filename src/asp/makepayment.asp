@@ -15,7 +15,7 @@ page_title = "Make Payment"
 alow_robots = "no"
 objJsIncludes.Add "validate_js", "js/jquery.validate.js"
 
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 objCssIncludes.Add "tablesorterpcss", "/js/addons/pager/jquery.tablesorter.pager.css"
 
 %>

@@ -17,17 +17,23 @@ var PATH = isDev ? 'http://localhost:3000/' : packageJSON.previewPath;
 
 gulp.task('clean', function() {
 	return gulp
-		.src('./build/**/*.html', {read: false})
+		.src(['./build/**/*.html'], {read: false})
 		.pipe(clean());
 });
 
-gulp.task('copy', ['clean'], function () {
+gulp.task('copy-html', ['copy-fonts'], function () {
 	return gulp
-		.src('./src/**/*.html')
+		.src(['./src/**/*.html'])
 		.pipe(gulp.dest('./build'));
 });
 
-gulp.task('replace', ['copy'], function(){
+gulp.task('copy-fonts', ['clean'], function () {
+	return gulp
+		.src(['./src/fonts/*.*'])
+		.pipe(gulp.dest('./build/fonts'));
+});
+
+gulp.task('replace', ['copy-html'], function(){
 	return gulp
 		.src(['./build/**/*.html'])
 		.pipe(replace('%%PATH%%', PATH))
@@ -70,17 +76,17 @@ gulp.task('browser-sync', function() {
 });
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['clean', 'copy', 'replace', 'sass'], function() {
+gulp.task('serve', ['clean', 'copy-fonts', 'copy-html', 'replace', 'sass'], function() {
 	browserSync.init({
 		server: "./build"
 	});
 
 	gulp.watch("./src/styling/**/*.scss", ['sass']);
-	gulp.watch("./src/**/*.html", ['clean', 'copy', 'replace']).on('change', browserSync.reload);
+	gulp.watch("./src/**/*.html", ['clean', 'copy-fonts', 'copy-html', 'replace']).on('change', browserSync.reload);
 });
 
 // Build and serve locally with watch and browsersync
 gulp.task('default', ['serve']);
 
 // Build for S3 hosting preview
-gulp.task('build-preview', ['clean', 'copy', 'replace', 'sass']);
+gulp.task('build-preview', ['clean', 'copy-fonts', 'copy-html', 'replace', 'sass']);

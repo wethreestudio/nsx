@@ -22,7 +22,7 @@ If Not isCodeValid Then
 End If
 
 coname=ucase(request("coname"))
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 
 ' Get flash company info, Name of company, nsxcode, currentprice, highprice, % change, lowprice, volume, last trade date
 security_code = UCase(Trim(SafeSqlParameter(request.querystring("nsxcode"))))

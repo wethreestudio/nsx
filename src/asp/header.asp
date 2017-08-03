@@ -97,7 +97,6 @@ menu = Request.QueryString("menu")
 		%>
 		<!--<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6874356/6131572/css/fonts.css" />-->
 		<link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
-		<link href="/css/font-awesome.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -453,8 +452,8 @@ menu = Request.QueryString("menu")
 
 					<div class="navbar-form topsearch dropdown" id="topsearch">
 						<button class="topsearch-toggle" data-toggle="dropdown" ria-expanded="false">
-							<i class="fa fa-search open" aria-hidden="true"></i>
-							<i class="fa fa-times close" aria-hidden="true"></i>
+							<i class="fa fa-search fa-lg open" aria-hidden="true"></i>
+							<i class="fa fa-times fa-lg close" aria-hidden="true"></i>
 							<span class="sr-only">Toggle search</span>
 						</button>
 						<div class="topsearch-form dropdown-menu" id="nsx-primary-nav-search">

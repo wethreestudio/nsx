@@ -1,6 +1,6 @@
 <!--#INCLUDE FILE="include_all.asp"-->
 <%
-objCssIncludes.Add "tablesortercss", "/css/table_sort_blue.css"
+
 %>
 <%
 page_title = "Market End Of Day NSX"
