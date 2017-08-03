@@ -268,3 +268,30 @@ table {
 		margin: 0;
 	}
 }
+
+.table-responsive {
+	overflow-x: auto;
+	min-height: 0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
+
+	@media screen and (max-width: $screen-xs-max) {
+		width: 100%;
+		overflow-y: hidden;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+
+		// Tighten up spacing
+		> table {
+			margin-bottom: 0;
+
+			// Ensure the content doesn't wrap
+			> thead,
+			> tbody,
+			> tfoot {
+				> tr {
+				> th,
+				> td {
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+}
