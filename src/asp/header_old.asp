@@ -258,7 +258,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <div id="tiptipcontent" style="display:none"> <!-- market status on hover tip -->
   <div style="height:170px;padding:5px;font-size:12px;line-height:14px;" >
   Market Status: <%=sessionmode%><br><br>
-        <table class="market_status">   
+        <div class="table-responsive"><table class="market_status">   
           <tbody>   
             <tr>   
               <th align="left">Market Phase   
@@ -302,7 +302,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                 <img src="/img/market_red.png" width="9" height="9" alt="Shutdown">Shutdown</td>   <td>23:00 - 02:30</td>   
             </tr>   
           </tbody>
-        </table>
+        </table></div>
   </div>
 </div> <!-- /market status on hover tip -->
 

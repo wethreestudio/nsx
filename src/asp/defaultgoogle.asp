@@ -34,7 +34,7 @@ Application("nsx_daylight_saving")=False
 <body >
 <!--#INCLUDE FILE="headergoogle.asp"-->
 <div id="tooltips" align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -47,7 +47,7 @@ Application("nsx_daylight_saving")=False
   <tr>
     <td valign="top" bgcolor="#FFFFFF" width="200" >
 <div align="center">
-<table cellpadding="4" style="border:1px solid #666666; padding:0; border-collapse: collapse" width="92%" id="table11" border="0">
+<div class="table-responsive"><table cellpadding="4" style="border:1px solid #666666; padding:0; border-collapse: collapse" width="92%" id="table11" border="0">
 	<tr>
 		<td class="plaintext" bgcolor="#959ca0"><font color="#FFFFFF"><b>Quick 
 		Links</b></font></td>
@@ -80,12 +80,12 @@ Application("nsx_daylight_saving")=False
 		<img border="0" src="images/v2/Dpoint1.jpg" name="tz" alt="View the latest exchange news">
 		<a href="news_list.asp" class="mnlinks" onmouseover="spec('tz','imgtdon')" onmouseout="spec('tz','imgtdoff')">What's New</a></font></td>
 	</tr>
-	</table>
+	</table></div>
   
 
 
     <p style="margin-top: 0; margin-bottom: 0"><font size="1">&nbsp;</font><img border="0" src="images/spacer.gif" width="40" height="1"></p>
-<table cellpadding="4" style="border:1px solid #666666; border-collapse: collapse; padding-left:4px; padding-right:4px; padding-top:1px; padding-bottom:1px" width="92%" id="table37" cellspacing="0">
+<div class="table-responsive"><table cellpadding="4" style="border:1px solid #666666; border-collapse: collapse; padding-left:4px; padding-right:4px; padding-top:1px; padding-bottom:1px" width="92%" id="table37" cellspacing="0">
 	<tr>
 		<td class="plaintext" bgcolor="#959CA0">
 		<b><font color="#FFFFFF">Member Services</font></b></td>
@@ -132,10 +132,10 @@ End Function
 		<a href="member_forgot.asp" >Forgot your password?</a></font><input type="hidden" name="STATUS" value="CHKLOGIN"></form>
 		</td>
 	</tr>
-	</table>
+	</table></div>
   
     <p style="margin-top: 0; margin-bottom: 0"><font size="1">&nbsp;</font></p>
-<table cellpadding="4" style="border-collapse: collapse; " width="92%" id="table38" border="1" cellspacing="0">
+<div class="table-responsive"><table cellpadding="4" style="border-collapse: collapse; " width="92%" id="table38" border="1" cellspacing="0">
 	<tr>
 		<td class="plaintext" bgcolor="#959CA0"><font color="#FFFFFF"><b>
 		Newsletter</b></font></td>
@@ -161,7 +161,7 @@ End Function
 		<input type="radio" value="remove" name="action" style="border: 0 solid #000080">Remove</font></form>
 		</td>
 	</tr>
-	</table>
+	</table></div>
   
 
 
@@ -169,7 +169,7 @@ End Function
   
 
 
-      <table cellpadding="2" style="border-collapse: collapse; " width="92%" id="table40">
+      <div class="table-responsive"><table cellpadding="2" style="border-collapse: collapse; " width="92%" id="table40">
 		<tr>
 			<td width="50%" class="plaintext" bgcolor="#959CA0">
 			<p style="margin-top: 5px; margin-bottom: 5px">
@@ -194,7 +194,7 @@ End Function
 			<td width="100%" class="plaintext" colspan="2">
 			<p style="margin-top: 5px; margin-bottom: 5px">&nbsp;</td>
 		</tr>
-</table>
+</table></div>
   
 
 
@@ -232,7 +232,7 @@ their ongoing compliance obligations. <a href="about_nominated_advisers.asp" tit
 about Nominated Advisers.</a>&nbsp; Brokers can provide investor advice to 
 buyers and sellers of shares.&nbsp; 
 <a href="broker_list.asp" title="Broker list and profiles">Click here for a list of NSX Brokers</a>.&nbsp; </p>
-<table width="100%" id="table43" cellspacing="0" cellpadding="4">
+<div class="table-responsive"><table width="100%" id="table43" cellspacing="0" cellpadding="4">
 	<tr>
 		<td bgcolor="#959CA0" class="plaintext"><font color="#FFFFFF"><b>New 
 		Floats </b></font></td>
@@ -241,14 +241,14 @@ buyers and sellers of shares.&nbsp;
 <img border="0" src="images/rss/rss.png" width="36" height="14" align="middle"></a>
 		<font color="#FFFFFF">|</font> <a href="float_list.asp" class=bodylinks title="Click to see full floats list">More</a></td>
 	</tr>
-</table>
+</table></div>
      
           <%session("rsstr")="ftp\rss\nsx_rss_floats.xml"
 			session("rssdesc")=false
 			session("rssmaxx")=11
 			session("rssdate")=false
 			session("rsstitle")=true
-			server.execute "nsxrssreader.asp"%><table width="100%" id="table41" cellspacing="0" cellpadding="4">
+			server.execute "nsxrssreader.asp"%><div class="table-responsive"><table width="100%" id="table41" cellspacing="0" cellpadding="4">
 	<tr>
 		<td bgcolor="#959CA0" class="plaintext"><font color="#FFFFFF"><b>
 		Exchange 
@@ -259,7 +259,7 @@ buyers and sellers of shares.&nbsp;
 <font color="#FFFFFF">|</font>
 <a href="news_list.asp" class=bodylinks title="Click to see full NSX exchange news items.">More</a></td>
 	</tr>
-</table>
+</table></div>
           <%session("rsstr")="ftp\rss\nsx_rss_news.xml"
 			session("rssdesc")=false
 			session("rsstitle")=true
@@ -273,7 +273,7 @@ buyers and sellers of shares.&nbsp;
 
 <div align="center">
   <center>
-      <table cellpadding="4" style="border-collapse: collapse; " width="92%" id="table28" border="1" cellspacing="0">
+      <div class="table-responsive"><table cellpadding="4" style="border-collapse: collapse; " width="92%" id="table28" border="1" cellspacing="0">
         <tr>
           <td width="100%" class="plaintext" bgcolor="#959CA0">
           <font color="#FFFFFF"><b>Market Data</b></font></td>
@@ -308,11 +308,11 @@ End Function
 		</form>
 		</td>
         </tr>
-        </table>
+        </table></div>
       
    <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
     <div align="center">
-    <table width="92%" cellspacing="0" cellpadding="4" border="1" style="border-collapse: collapse" id="table36">
+    <div class="table-responsive"><table width="92%" cellspacing="0" cellpadding="4" border="1" style="border-collapse: collapse" id="table36">
 	<tr>
 		<td width=100% class=plaintext valign="top" bgcolor="#959CA0">
 		<font color="#FFFFFF"><b>Statistics</b></font></td>
@@ -331,8 +331,8 @@ End Function
 		<iframe name="main22" src="stats_general.asp" width="100%" height="210" frameborder="0" scrolling="no" ></iframe>	
 		</td>
 	</tr>  
-      </table>
-<font size="1"><div>&nbsp;<table cellpadding="4" style="padding:0; border-collapse: collapse" width="92%" id="table42" border="1" cellspacing="0">
+      </table></div>
+<font size="1"><div>&nbsp;<div class="table-responsive"><table cellpadding="4" style="padding:0; border-collapse: collapse" width="92%" id="table42" border="1" cellspacing="0">
 	<tr>
 		<td class="plaintext" bgcolor="#959ca0"><font color="#FFFFFF"><b>Desktop 
 		News &amp; Quotes</b></font></td>
@@ -348,13 +348,13 @@ End Function
 		<br>
 &nbsp;</noscript></font></td>
 	</tr>
-	</table>
+	</table></div>
    </div></font>
       <p align="left" style="margin-top: 0; margin-bottom: 0"><font size="1">&nbsp;</font></p>
 
 
       <div align="center">
-      <table cellpadding="2" style="padding:0; border-collapse: collapse" width="92%" id="table39">
+      <div class="table-responsive"><table cellpadding="2" style="padding:0; border-collapse: collapse" width="92%" id="table39">
         <tr>
           <td width="50%" class="plaintext" bgcolor="#959CA0">
           <p style="margin-top: 5px; margin-bottom: 5px"><font color="#FFFFFF">
@@ -385,14 +385,14 @@ End Function
       <p style="margin-top: 5px; margin-bottom: 5px">
       &nbsp;</td>
         </tr>
-        </table>
+        </table></div>
       </div>
 
       </div>
 
       </td>
   </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footergoogle.asp"-->
 

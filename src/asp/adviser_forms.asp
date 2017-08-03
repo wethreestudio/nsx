@@ -1,7 +1,7 @@
 <!--#INCLUDE FILE="include_all.asp"-->
 <!--#INCLUDE FILE="header.asp"-->
     	<div class="container_cont">
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width=797 id="table1" bgcolor="#FFFFFF">
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width=797 id="table1" bgcolor="#FFFFFF">
     <tr>
       <td class="plaintext" colspan="2" bgcolor="#FFFFFF">
       
@@ -16,7 +16,7 @@
         <p>The following forms are provided for your convenience.</p>
         <h2>Adviser Application Documents</h2>
 
-      <table cellpadding="5" style="border-bottom:1px solid #808080; border-collapse: collapse" width="100%" id="table2" cellspacing="1">
+      <div class="table-responsive"><table cellpadding="5" style="border-bottom:1px solid #808080; border-collapse: collapse" width="100%" id="table2" cellspacing="1">
         <tr>
           <th class="plaintext" bgcolor="#666666">
           <p align="left"><img border="0" src="images/nsxdiag.gif" width="22" height="11" align="right"><font color="#FFFFFF">Form Name</font></th>
@@ -44,14 +44,14 @@
           <img border="0" src="images/doc.gif" width="16" height="16">
           <a href="documents/advisers/Application%20for%20Recognition%20as%20a%20Responsible%20Officer_2010.doc">Nominated Adviser Responsible Officer Application</a></td>
         </tr>
-        </table>
+        </table></div>
         <h2>Adviser declaration forms</h2>
         <p align="left">The Nominated Adviser declaration form must be submitted for each 
         company that lists.&nbsp; It is not required as part of the adviser&nbsp; 
         application.&nbsp; The Annual Declaration is submitted at the time of the 
 		Adviser Renewal in July each year.</p>
 
-      <table cellpadding="5" style="border-bottom:1px solid #666666; border-collapse: collapse" width="100%" id="table3" cellspacing="1" >
+      <div class="table-responsive"><table cellpadding="5" style="border-bottom:1px solid #666666; border-collapse: collapse" width="100%" id="table3" cellspacing="1" >
         <tr>
           <th class="plaintext" bgcolor="#666666">
           <p align="left"><img border="0" src="images/nsxdiag.gif" width="22" height="11" align="right"><font color="#FFFFFF">Form Name</font></th>
@@ -67,10 +67,10 @@
           <a href="documents/advisers/Nominated%20Adviser%20Annual%20Statement.doc">Nominated Adviser 
           Annual Declaration to NSX</a></td>
         </tr>
-        </table>
+        </table></div>
       
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

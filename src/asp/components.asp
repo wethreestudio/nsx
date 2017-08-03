@@ -536,7 +536,7 @@ end function
 function PrintFormMain
 %>
 <form name="form1" id="form1" action="<%=Request.Servervariables("script_name")%>" method="get" style="display:inline;">
-<table border="0">
+<div class="table-responsive"><table border="0">
 	<tr>
 		<td valign="top"><fieldset class="form" style="width:650px;">
 		<legend class="form_legend">Scan</legend>
@@ -569,7 +569,7 @@ google_color_text = "000000";
 <a class="FlattrButton" style="display:none;" href="http://www.bier-voting.de/objcheck"></a>
 </td>
 	</tr>
-</table>
+</table></div>
 
 </form>
 <%
@@ -826,7 +826,7 @@ function CheckAll
 	if count>0 then
 		response.write "<a href="""&request.servervariables("script_name")&"?page=2&count="&count&"&countstart="&countend&""">Scan next " & count & " components</a><br>"
 	end if
-	response.write "<table border=""0"" width=""100%""><tr><td valign=""top"">"
+	response.write "<div class="table-responsive"><table border=""0"" width=""100%""><tr><td valign=""top"">"
 	response.write "<fieldset><legend>Installed Components</legend>"
 	response.write resultset
 	response.write "</fieldset>"
@@ -837,7 +837,7 @@ function CheckAll
 		response.write resultset2
 		response.write "</fieldset>"
 	end if
-	response.write "</td></tr></table>"	
+	response.write "</td></tr></table></div>"	
 	response.write "</fieldset>"
 end function
 
@@ -848,7 +848,7 @@ sub PrintListSelect
 	end if
 	response.write "<form method=""post"" action="""&request.servervariables("script_name")&"?page=2&show_desc="&showdesc&""">"
 	response.write "<input type=""submit"" name=""submit"" value=""Scan for selected""> <input type=""button"" onclick=""history.back();"" value=""Cancel"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type=""button"" onclick=""checkAll();"" value=""select all""> <input type=""button"" onclick=""uncheckAll();"" value=""select none"">"
-	response.write "<table border=""0""><tr>"
+	response.write "<div class="table-responsive"><table border=""0""><tr>"
 	do while not objRS.EOF
 		if not instr(objRS.Fields("object"),"KevinKempfer")>0 then
 			if i mod 3 = 0 and i>0 then
@@ -859,7 +859,7 @@ sub PrintListSelect
 		end if
 		objRS.MoveNext
 	loop
-	response.write "</tr></table>"
+	response.write "</tr></table></div>"
 	response.write "<input type=""submit"" name=""submit"" value=""Scan for selected""> <input type=""button"" onclick=""history.back();"" value=""Cancel"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type=""button"" onclick=""checkAll();"" value=""select all""> <input type=""button"" onclick=""uncheckAll();"" value=""select none"">"
 	response.write "</form>"
 end sub

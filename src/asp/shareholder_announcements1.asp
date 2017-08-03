@@ -58,7 +58,7 @@ Server.Execute "side_menu.asp"
 <div style="clear:both;"></div>
 <div class="row">
 
-<table class="table">
+<div class="table-responsive"><table class="table">
 <tr>
     <td>
     <a target="_blank" href="http://www.asx.com.au/asx/statistics/announcements.do?by=asxCode&amp;asxCode=nsx&amp;timeframe=D&amp;period=W">
@@ -79,7 +79,7 @@ Lodged during <%=ii%></a>
 </td></tr>
 <%next%>
 </tr>
-</table>
+</table></div>
 </div>
 </div>
 <div style="clear:both;"></div>

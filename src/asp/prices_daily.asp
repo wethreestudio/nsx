@@ -232,7 +232,7 @@ courseofsales = GetRows(sql)
 'If VarType(courseofsales) <> 0 Then 
 If VarType(depth_row) <> 0 Then 
 %>
- <div class="table-responsive"><table class="table">
+ <div class="table-responsive"><div class="table-responsive"><table class="table">
     <thead>
         <tr class="header">
             <td align="left">Date/Time</td>
@@ -484,7 +484,7 @@ Next
 %>                  
            
 </tbody>
-</table></div>
+</table></div></div>
 <%
 End If
 End If 
@@ -505,7 +505,7 @@ if len(offexchangetrading_url) > 0 then
  <br />
     <div><!--Just a Table Container-->
     <!--Other exchange trading -->
-	<div class="table-responsive"><table class="table">
+	<div class="table-responsive"><div class="table-responsive"><table class="table">
     <thead>
         <tr>
             <th colspan="2">
@@ -536,7 +536,7 @@ if len(offexchangetrading_url) > 0 then
 	<% NEXT ' market
 	%>
     </tbody>
-</table></div>
+</table></div></div>
 </div>
 <%
 end if  ' end offexchangetrading_url test
@@ -544,7 +544,7 @@ end if  ' end offexchangetrading_url test
 <!-- /top table -->
 
 <!-- lower table -->
-<div class="table-responsive"><table id="myTable" class="tablesorter table table-restyle"> 
+<div class="table-responsive"><div class="table-responsive"><table id="myTable" class="tablesorter table table-restyle"> 
 <thead> 
 <tr> 
     <th class="text-left">Date</th>
@@ -787,7 +787,7 @@ end if  ' end offexchangetrading_url test
     end if
     %>
 </tbody>
-</table></div>
+</table></div></div>
 <!-- /lower table -->
 </div>
 </div>

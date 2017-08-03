@@ -19,7 +19,7 @@ if group<>"YES" then group="no"
 
 eml = ""
 fh = ubound(sec)
-eml= eml & "<table  align=center id=table1 background=images/prices/light-Row.png cellspacing=0 cellpadding=0>"
+eml= eml & "<div class="table-responsive"><table  align=center id=table1 background=images/prices/light-Row.png cellspacing=0 cellpadding=0>"
 
 jj=0
 FOR jj = 0 to fh
@@ -78,7 +78,7 @@ for ii = 0 to fh2
 	NEXT
 NEXT
 
-    eml= eml & "</table>"
+    eml= eml & "</table></div>"
 		
 
 

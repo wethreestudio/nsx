@@ -14,7 +14,7 @@ page_title = "Company Forms"
 <h1>Company Forms</h1>
 <div>&nbsp;</div>
 <div class="f-w-table">
-<table>
+<div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="5">
@@ -113,10 +113,10 @@ page_title = "Company Forms"
             <td width="90">&nbsp;</td>
         </tr>
     </tbody>
-</table>
+</table></div>
 </div>
 <div class="f-w-table">
-<table>
+<div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="5">
@@ -176,10 +176,10 @@ page_title = "Company Forms"
             <td width="90"><a class="btn-blue small" href="/documents/class_orders/co08-15.pdf">Download</a></td>
         </tr>
     </tbody>
-</table>
+</table></div>
 </div>
 <div class="f-w-table">
-<table>
+<div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="5">
@@ -209,10 +209,10 @@ page_title = "Company Forms"
             <td width="90"><a class="btn-blue small" href="/documents/issuers/NSX%20Change%20in%20Directors%20Interests.doc">Download</a></td>
         </tr>
     </tbody>
-</table>
+</table></div>
 </div>
 <div class="f-w-table">
-<table>
+<div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="5">
@@ -252,10 +252,10 @@ page_title = "Company Forms"
             <td width="90"><a class="btn-blue small" href="/documents/issuers/asic605.doc">Download</a></td>
         </tr>
     </tbody>
-</table>
+</table></div>
 </div>
 <div class="f-w-table">
-<table>
+<div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="5">
@@ -300,7 +300,7 @@ page_title = "Company Forms"
             <td width="90"><a class="btn-blue small" href="/documents/issuers/asic6025.doc">Download</a></td>
         </tr>
     </tbody>
-</table>
+</table></div>
 </div>
 
 

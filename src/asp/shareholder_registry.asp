@@ -4,7 +4,7 @@
 %>
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
-	<table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
+	<div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
 		<tr>
 			<td class="plaintext" valign="top" align="center" width="150"><!--#INCLUDE FILE="shareholder_lmenu.asp"-->
       		</td>
@@ -32,5 +32,5 @@
 			
 			<p>&nbsp;</td>
 		</tr>
-	</table></div>
+	</table></div></div>
   <!--#INCLUDE FILE="footer.asp"-->

@@ -55,7 +55,7 @@
 	
 
     
-    strHTML = "<table bgcolor=white  cellspacing='0' cellpadding='3' width='100%'>"
+    strHTML = "<div class="table-responsive"><table bgcolor=white  cellspacing='0' cellpadding='3' width='100%'>"
    
 
     For Each objItem In objItemList
@@ -74,7 +74,7 @@
         strHTML = strHTML & "</font></font></td>"
          strHTML = strHTML & "</tr>"
     Next
-    strHTML = strHTML & "</table>"
+    strHTML = strHTML & "</table></div>"
    
 
 

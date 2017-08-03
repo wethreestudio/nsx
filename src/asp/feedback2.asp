@@ -10,7 +10,7 @@ alow_robots = "no"
 
 
 <div class="container_cont">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="2" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -110,7 +110,7 @@ least one contact method.</font>
     </h2>
     <dl>
       <dd>
-      <table border="0" cellpadding="0" width="70%" cellspacing="0" bgcolor="#FFFFFF">
+      <div class="table-responsive"><table border="0" cellpadding="0" width="70%" cellspacing="0" bgcolor="#FFFFFF">
         <tr>
           <td width="20%" align="left" class="textlabel" bgcolor="#FFFFFF">Name&nbsp;&nbsp;</td>
           <td width="80%" bgcolor="#FFFFFF"><tt><font face="Arial" size="2">
@@ -129,7 +129,7 @@ least one contact method.</font>
           <input type="text" size="20" maxlength="256" name="UserTel" style="border: 1 solid #6D7BA0;background-color:#EEEEEE">
           </font></tt></td>
         </tr>
-      </table></dd>
+      </table></div></dd>
     </dl>
     <dl>
       <dd><font face="Arial" size="2">
@@ -162,6 +162,6 @@ least one contact method.</font>
 
     </td>
   </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

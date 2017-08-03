@@ -20,7 +20,7 @@ Below is a list of Nominated Advisers and a list of securities attached to those
 </p>
 
 
-  <table width="100%" cellspacing="0" cellpadding="0" >
+  <div class="table-responsive"><table width="100%" cellspacing="0" cellpadding="0" >
 <%
 
 errmsg=""
@@ -113,14 +113,14 @@ if fh > rc then fh = rc
   <tr>
     <td width="100%" class="plaintext">&nbsp;</td>
   </tr>
-  </table>
+  </table></div>
 
   
   
   
   
   
-<table id="myTable" class="tablesorter1" width="99%"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter1" width="99%"> 
 <tbody>
 <%  if WEOF then %>
   <tr>
@@ -163,7 +163,7 @@ END IF ' if ther are records
 
 
  </tbody> 
-</table>
+</table></div>
 </div>
 
 </div>

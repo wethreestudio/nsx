@@ -43,7 +43,7 @@ Set rs = conn.Execute(sql)
 %>
     <form method="POST" action="user_portfolio_save.asp?portfolioname=<%=portfolioname%>">
       <p><input type="submit" value="Save and View Portfolio"></p>
-    	<table width="100%" cellpadding="0">
+    	<div class="table-responsive"><table width="100%" cellpadding="0">
         <tr>
           <td><b>Security<br>Code</b></td>
           <td align="center"><b>Number of<br>Securities Held</b></td>
@@ -150,7 +150,7 @@ End If
     ii = ii+1
   Next
 %>        
-      </table>
+      </table></div>
       <p><input type="submit" value="Save and View Portfolio"></p>
     </form>    
 

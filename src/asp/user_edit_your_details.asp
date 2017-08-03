@@ -34,7 +34,7 @@ CmdEditUser.Open SQL, ConnPasswords
 
  
 <form method="POST" action="user_save_your_details.asp" cellpadding="3">
-	<table width="100%">
+	<div class="table-responsive"><table width="100%">
     <tr>
       <td><b>Name:</b></td>
       <td>
@@ -118,7 +118,7 @@ CmdEditUser.Open SQL, ConnPasswords
         <input type="submit" value="Save User Info">
       </td>
     </tr>
-  </table>
+  </table></div>
 </form>
 
 <%

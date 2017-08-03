@@ -89,7 +89,7 @@ if month(date)=3 or month(date)=9 then
 
   
 			<h2>Time Table for Financial Report Lodgments:</h2>
-			<table  width="100%" id="table2" cellspacing="1" cellpadding="3" >
+			<div class="table-responsive"><table  width="100%" id="table2" cellspacing="1" cellpadding="3" >
 				<tr>
 					<td class="plaintext" bgcolor="#666666" align="center">
 					<b><font color="#FFFFFF">Balance <br>
@@ -158,8 +158,8 @@ if month(date)=3 or month(date)=9 then
 					<td class="plaintext" align="center" bgcolor="#EEEEEE" nowrap ><%=fmtddmm(rep_dec)%></td>
 					<td class="plaintext" align="center" bgcolor="#EEEEEE" nowrap ><%=fmtddmm(agm_dec)%></td>
 				</tr>
-			</table>
-			<table border="0" id="table3" cellspacing="0" cellpadding="0">
+			</table></div>
+			<div class="table-responsive"><table border="0" id="table3" cellspacing="0" cellpadding="0">
 				<tr>
 					<td bgcolor="#FF3333" class="plaintext" align="center">
 					<font color="#FFFFFF" size="1"><b>Due Now</b></font></td>
@@ -178,6 +178,6 @@ if month(date)=3 or month(date)=9 then
 					</td>
 
 				</tr>
-			</table>
+			</table></div>
 			<a href="company_calendar.asp" title="Full reporting calendar and information">Reporting information</a> 
       <% end if ' month date%>

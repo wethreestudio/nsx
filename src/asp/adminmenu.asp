@@ -31,20 +31,20 @@ end if
 
 &nbsp;
         <div align="center">
-			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<div class="table-responsive"><table border="0" cellpadding="0" cellspacing="0" width="100%">
 				<tr>
 					<td class="plaintext" width="315">
 					<p>Welcome<font size="3" face="Arial"> </font><b>
 					<font face="Arial" size="2"> <%=Session("fname")%></font></b><font size="3" face="Arial">.&nbsp;</font> The following options are available: 
               		<hr noshade size="1" color="#000000"></td>
 					<td valign="top" rowspan="11" width="185" align="right">
-					<table width="175" border="0" cellspacing="1" style="border: 1 solid #000000" bgcolor="#FFFFFF">
+					<div class="table-responsive"><table width="175" border="0" cellspacing="1" style="border: 1 solid #000000" bgcolor="#FFFFFF">
 						<tr >
 							<td bgcolor="#CCCCCC" class="rhlinks">
 							<font face="Verdana" size="1"><b>
 							<a href="member_end.asp">Logout</a></b></font> </td>
 						</tr>
-					</table></td>
+					</table></div></td>
 				</tr>
 				<tr>
 					<td width="315" class="plaintext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -352,7 +352,7 @@ end if
 						<p><font color="#000080">Calculate NSX Listing Fees</font></p>
 					</td>
 				</tr>
-			</table></div>
+			</table></div></div>
 <p>
 &nbsp;
 <p>&nbsp;

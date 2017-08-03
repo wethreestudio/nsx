@@ -25,7 +25,7 @@ alow_robots = "no"
 
 
      <div class="f-w-table">
-<table>
+<div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="5">
@@ -55,7 +55,7 @@ alow_robots = "no"
             <td width="90"><a href="/company_forms.asp" class="btn-blue small">Link</a></td>
         </tr>
     </tbody>
-</table>
+</table></div>
 </div>
 
 

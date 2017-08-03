@@ -23,7 +23,7 @@
 <body >
 
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="5" bgcolor="#FFFFFF"></td>
   </tr>
@@ -100,7 +100,7 @@
 <p>&nbsp;
     </td>
   </tr>
-</table>
+</table></div>
 </div>
 
         

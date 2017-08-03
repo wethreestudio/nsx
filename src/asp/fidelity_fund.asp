@@ -8,7 +8,7 @@ page_title = "Announcements List"
 %>
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont"> 
-<table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
+<div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
   <tr>
     <td class="plaintext" colspan="2" bgcolor="#FFFFFF">
     
@@ -47,6 +47,6 @@ page_title = "Announcements List"
     
     <p>&nbsp;</td>
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

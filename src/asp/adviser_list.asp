@@ -4,7 +4,7 @@
 board=ucase(trim(request("region")))
 %>
     	<div class="container_cont">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -22,7 +22,7 @@ board=ucase(trim(request("region")))
 	<a href="adviser_list_print.asp?region=<%=board%>">Printable Contact Sheet</a> 
 	| <a href="adviser_list_by_security.asp">Adviser List by Security</a>
 <div align="center">
-  <table width="100%" cellspacing="0" cellpadding="0" >
+  <div class="table-responsive"><table width="100%" cellspacing="0" cellpadding="0" >
 <!--#INCLUDE FILE="admin/merchtools.asp"-->
 
 <%
@@ -123,9 +123,9 @@ if fh > rc then fh = rc
 	The number of registered Nominated Advisers is <%=rc+1%>.
     </td>
   </tr>
-  </table>
+  </table></div>
 
-  <table width="100%" cellspacing="0" cellpadding="5" style="border-bottom:1px solid #808080; ">
+  <div class="table-responsive"><table width="100%" cellspacing="0" cellpadding="5" style="border-bottom:1px solid #808080; ">
  
 <%  if WEOF then %>
 	
@@ -200,7 +200,7 @@ if fh > rc then fh = rc
 
 
   
-</table>
+</table></div>
 </div>
 
 
@@ -209,6 +209,6 @@ if fh > rc then fh = rc
     </td>
     
   </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

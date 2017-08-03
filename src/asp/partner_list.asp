@@ -155,7 +155,7 @@ Else
 
 <b>Featured</b><br>
 <div> 
-<table id="myTable" class="tablesorter" width="99%"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter" width="99%"> 
 <thead> 
 <tr> 
     <th>Partner</th>
@@ -236,7 +236,7 @@ End If
 
 %>
 </tbody>
-</table>
+</table></div>
 
 </div>
 <br><br>
@@ -258,7 +258,7 @@ If rs.EOF Then
 Else
 %>
 <div> 
-<table id="myTable" class="tablesorter" width="99%"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter" width="99%"> 
 <thead> 
 <tr> 
     <th>Partner</th>
@@ -338,7 +338,7 @@ End If
 
 %>
 </tbody>
-</table>
+</table></div>
 
 </div>
 <%

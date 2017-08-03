@@ -194,7 +194,7 @@ if fh > rc then fh = rc
 <body >
 <% if len(exchid)<>0 then server.execute "company_header_v2_" & exchid & ".asp"%>
 <div align="center">
-<table border="0" width="797" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="797" cellspacing="0" cellpadding="0">
 	<tr>
 		<td valign="top" rowspan="3" bgcolor="#FFFFFF" width="175">
 		<%if len(exchid)<>0 then server.execute "company_lmenu_v2_" & exchid & ".asp"%>
@@ -215,7 +215,7 @@ if fh > rc then fh = rc
 			</font></i></b>
 			You look after the following companies<b><font face="Arial" size="3" color="#6D7BA0"><i> <%=nsxcodes%></i></font></b><font size="2" face="Arial">.</font><p>The listed company services area allows you to:</blockquote>
 		<blockquote>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -241,11 +241,11 @@ if fh > rc then fh = rc
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
 					<td valign="top" width="100%">logout from your account.<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 <% if exchid = "NSX" or exchid="SIMV" then %>
 		
 			<h2>Time Table for Financial Report Lodgments:</h2>
-			<table  width=500 id="table2" cellspacing="1" cellpadding="3" >
+			<div class="table-responsive"><table  width=500 id="table2" cellspacing="1" cellpadding="3" >
 			<% if exchid = "NSX" then%>
 				<tr>
 				<td class="plaintext" bgcolor="#666666" align="center" width="71" >
@@ -387,8 +387,8 @@ if fh > rc then fh = rc
 	<% NEXT
 	end if
 	%>
-			</table>
-			<table border="0" width="300" id="table3" cellspacing="0" cellpadding="0">
+			</table></div>
+			<div class="table-responsive"><table border="0" width="300" id="table3" cellspacing="0" cellpadding="0">
 				<tr>
 					<td bordercolor="#FF0000" bgcolor="#FF3333" class="plaintext" align="center">
 					<font color="#FFFFFF" size="1"><b>Due Now</b></font></td>
@@ -404,7 +404,7 @@ if fh > rc then fh = rc
 					</font>
 					</td>
 				</tr>
-			</table>
+			</table></div>
 <% end if
 if exchid = "NSX"  then %>
 			<h2>DUAL LODGEMENT RELIEF</h2>
@@ -425,7 +425,7 @@ if exchid = "NSX"  then %>
 			lodged with ASIC must also be lodged with NSX at the same time.</p>
 			<h2>REQUIRED DOCUMENTS</h2>
 			<h2>Half Year Reports</h2>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -437,9 +437,9 @@ if exchid = "NSX"  then %>
 					<td valign="top" width="100%">Appendix 3 (for information not included in the statutory 
 				report).<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 			<h2>Preliminary Final Report</h2>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -447,18 +447,18 @@ if exchid = "NSX"  then %>
 					(not required if the <u>statutory annual</u> report is 
 					lodged before the preliminary due date)<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 			<h2>Annual Reports</h2>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
 					<td valign="top" width="100%">Statutory Report.<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 			<h2>Reporting to members (at least 31 days before meeting -&nbsp; 
 			28days notice/3days postage)</h2>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -490,9 +490,9 @@ if exchid = "NSX"  then %>
 					<td valign="top" width="100%">Other documentation required 
 					to be reviewed by shareholders<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 			<h2>Annual General Meeting</h2>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -509,9 +509,9 @@ if exchid = "NSX"  then %>
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
 					<td valign="top" width="100%">CEO's Address (if prepared).<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 			<h2>Further Information</h2>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -520,12 +520,12 @@ if exchid = "NSX"  then %>
 					<a href="documents/practice_notes/PN09-PeriodicDisclosure.pdf">
 					Periodic Disclosure Practice Note</a> #9<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 <% end if %>
 		</blockquote>
     
     </td>
-</table>
+</table></div>
 </div>
 <% if len(exchid)<>0 then server.execute "company_footer_v2_" & exchid & ".asp"%>
 </body>

@@ -58,7 +58,7 @@ If rs.EOF Then
   %><p>You don't currently have any securities in your portfolio. <a href="user_portfolio_edit.asp">Click here</a> to add securities to your portfolio.<%
 Else
 %>
-      <table class="tablesorter" id="myTable">
+      <div class="table-responsive"><table class="tablesorter" id="myTable">
         <thead> 
           <tr> 
             <th class="header">Code</th>
@@ -128,7 +128,7 @@ Else
             <td align="right"><%=ColorChange(totalpricechange,2,"$","")%></td>     
           </tr>
         </tfoot>                                
-      </table>
+      </table></div>
       <div style="width:100%;padding-top:15px;text-align:right;">
         <input type="button" name="edit" value="Edit Portfolio &amp; Alerts" onclick="window.location.href='user_portfolio_edit.asp?portfolioname=default'" />
       </div>

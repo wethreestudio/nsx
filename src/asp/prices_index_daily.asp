@@ -146,7 +146,7 @@ End If
 	
 	
 
-<table id="myTable" class="tablesorter" width="99%">
+<div class="table-responsive"><table id="myTable" class="tablesorter" width="99%">
   <thead>
     <tr> 
       <th width="100">Date<br>&nbsp;</th>
@@ -305,7 +305,7 @@ End If
     
       
     </tbody>      
-  </table>
+  </table></div>
   </div>
 </div>
 			</div></div>

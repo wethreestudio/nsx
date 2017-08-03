@@ -138,7 +138,7 @@ Server.Execute "content_lower_nav.asp"
 <br>
 
 <div class="f-w-table">
-<table>
+<div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="6">
@@ -210,7 +210,7 @@ Server.Execute "content_lower_nav.asp"
 					<td><%=fmtddmm(agm_dec)%></td>
 				</tr>
     </tbody>
-</table>
+</table></div>
 
 
 
@@ -219,7 +219,7 @@ Server.Execute "content_lower_nav.asp"
 
 <div class="editarea">
 <div style="padding-bottom:8px;">
-<table>
+<div class="table-responsive"><table>
 <tr>
   <td><div style="padding:5px;"><span class="calendar-key-due-now">Due Now</span></div></td>
   <td><div style="padding:5px;"><span class="calendar-key-due-soon">Due Soon</span></div></td>
@@ -232,7 +232,7 @@ End If
 %>
 				</tr>
 
-</table>
+</table></div>
 </div>
 
 <h2>Dual Lodgement Relief</h2>

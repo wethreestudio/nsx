@@ -28,7 +28,7 @@
 <body >
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -38,7 +38,7 @@
   <tr>
     <td valign="top" bgcolor="#FFFFFF" width="200" >
 <div align="center">
-<table cellpadding="5" style="border-collapse: collapse; " width="90%" id="table11">
+<div class="table-responsive"><table cellpadding="5" style="border-collapse: collapse; " width="90%" id="table11">
 	<tr>
 		<td class="plaintext" bgcolor="#959ca0"><font color="#FFFFFF"><b>Quick 
 		Links</b></font></td>
@@ -136,12 +136,12 @@ End Function
 		
 		</td>
 	</tr>
-	</table>
+	</table></div>
   
 
 
       <div align="center">
-      <table cellpadding="0" style="border-collapse: collapse; " width="90%" id="table12">
+      <div class="table-responsive"><table cellpadding="0" style="border-collapse: collapse; " width="90%" id="table12">
         <tr>
           <td width="100%" class="plaintext" bgcolor="#959CA0">
           <p style="margin-top: 5px; margin-bottom: 5px"><font color="#FFFFFF">
@@ -158,7 +158,7 @@ End Function
       <font size="1">
 		<a href="events_list.asp">More Events</a>&nbsp; </font></td>
         </tr>
-        </table>
+        </table></div>
       </div>
   
 
@@ -169,7 +169,7 @@ End Function
 
     </td>
     <td class="plaintext" valign="top" bgcolor="#FFFFFF" width="410">
-<table border="1" width="100%" id="table13" cellspacing="0" cellpadding="0" >
+<div class="table-responsive"><table border="1" width="100%" id="table13" cellspacing="0" cellpadding="0" >
 	<tr>
 		<td class="plaintext">
 		<p align="center"><b><font color="#FF3333">Important Notice<br>
@@ -179,7 +179,7 @@ End Function
 		the new domain on the day of the move.&nbsp; Please update your links 
 		and email addresses accordingly. </font></b></td>
 	</tr>
-</table>
+</table></div>
 <p align="justify"><b><font size="3">NSX is a stock exchange 
 	established specifically for the listing of small to medium sized companies.</font></b></p>
 <h2 align="justify">About NSX</h2>
@@ -217,11 +217,11 @@ their ongoing compliance obligations. <a href="about_nominated_advisers.asp">Cli
 
 
 
-  <table border="0" cellpadding="4" style="border-collapse: collapse" width="100%">
+  <div class="table-responsive"><table border="0" cellpadding="4" style="border-collapse: collapse" width="100%">
     <tr>
       <td width="100%" class="plaintext" valign="top">
     <div align="center">
-    <table width="90%" cellspacing="0" cellpadding="4">
+    <div class="table-responsive"><table width="90%" cellspacing="0" cellpadding="4">
 	<tr>
 		<td width=100% class=plaintext valign="top" bgcolor="#959CA0">
 		<font color="#FFFFFF"><b>Statistics</b></font></td>
@@ -238,13 +238,13 @@ their ongoing compliance obligations. <a href="about_nominated_advisers.asp">Cli
 		<iframe name="main" src="stats_general.asp" width="100%" height="210" frameborder="0" scrolling="no" ></iframe>	
 		</td>
 	</tr>  
-      </table>
+      </table></div>
 
       </div>
 
       </td>
     </tr>
-  </table>
+  </table></div>
 <div align="center">
   <center>
   <!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="VBScript" Type="text/vbscript"><!--
@@ -260,11 +260,11 @@ function FrontPage_Form3_onsubmit()
   FrontPage_Form3_onsubmit = True 
 End Function
 --></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" name="FrontPage_Form3" style="margin-top: 0; margin-bottom: 0" action="market_get.asp" language="JavaScript">
-  <table width="100%" id="table8">
+  <div class="table-responsive"><table width="100%" id="table8">
     <tr>
       <td width="100%" class="plaintext">
       <div align="center">
-      <table cellpadding="5" style="border-collapse: collapse;" width="90%" id="table9">
+      <div class="table-responsive"><table cellpadding="5" style="border-collapse: collapse;" width="90%" id="table9">
         <tr>
           <td width="100%" class="plaintext" bgcolor="#959CA0">
           <font color="#FFFFFF"><b>Market Data</b></font></td>
@@ -284,19 +284,19 @@ End Function
 		</select> <input onmouseover="spec2('FrontPage_Form3','prices','imggoon')" onmouseout="spec2('FrontPage_Form3','prices','imggooff')" src="images/v2/LGOBOX1.jpg" name="prices" type="image"  align="middle" alt="Retrieve Delayed Trading Data." border="0"><br>
 		<font size="1"><a href="market_officiallist.asp" >Find a code</a></font></td>
         </tr>
-        </table>
+        </table></div>
       </div>
       </td>
     </tr>
-  </table>
+  </table></div>
   </form>
 <div align="center">
   <center>
-  <table border="0" cellpadding="4" style="border-collapse: collapse" width="100%">
+  <div class="table-responsive"><table border="0" cellpadding="4" style="border-collapse: collapse" width="100%">
     <tr>
       <td width="100%" class="plaintext">
       <div align="center">
-      <table cellpadding="0" style="border-collapse: collapse;" width="90%" id="table5">
+      <div class="table-responsive"><table cellpadding="0" style="border-collapse: collapse;" width="90%" id="table5">
         <tr>
           <td width="100%" class="plaintext" bgcolor="#959CA0">
           <p style="margin-top: 5px; margin-bottom: 5px"><font color="#FFFFFF">
@@ -315,11 +315,11 @@ End Function
 		<img border="0" src="images/rss/rss.png" width="36" height="14" align="middle"></a>
 		<font size="1">| <a href="whatis_rss.asp">What is RSS?</a></font></td>
         </tr>
-        </table>
+        </table></div>
       </div>
       </td>
     </tr>
-  </table>
+  </table></div>
   </center>
 </div>
 
@@ -327,7 +327,7 @@ End Function
 
     </td>
   </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 

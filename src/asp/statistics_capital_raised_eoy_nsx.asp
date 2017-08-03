@@ -128,7 +128,7 @@ if fh > rc then fh = rc
 </p>
 
 
-<table id="myTable" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter"> 
 <thead> 
 <tr> 
 	<th align=right style="text-align:right;">Date</th> 
@@ -179,7 +179,7 @@ cl = array(" class=""odd"""," class=""even""")
     %>
      
       </tbody>
-      </table>
+      </table></div>
 <p> Note: Includes primary and secondary issues </p>
 </div>
 </div>

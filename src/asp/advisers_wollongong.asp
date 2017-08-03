@@ -33,7 +33,7 @@ enterprises, high technology, stock, exchange, stock exchange, Australian, NSX, 
 <body >
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellpadding="0" style="border-collapse: collapse" >
+<div class="table-responsive"><table border="0" width="100%" cellpadding="0" style="border-collapse: collapse" >
   <tr>
     <td valign="top" rowspan="4" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"-->
  
@@ -52,7 +52,7 @@ enterprises, high technology, stock, exchange, stock exchange, Australian, NSX, 
   <tr>
     <td class="plaintext" valign="top" bgcolor="#FFFFFF">
     <div align="left">
-    <table align=left border="0" width="100%" cellpadding="0" style="border-collapse: collapse" align="left">
+    <div class="table-responsive"><table align=left border="0" width="100%" cellpadding="0" style="border-collapse: collapse" align="left">
 <tr>
 <td class="plaintext">
 
@@ -60,7 +60,7 @@ enterprises, high technology, stock, exchange, stock exchange, Australian, NSX, 
 <div align="center">
 
 
-<table width="80%" cellspacing="0" cellpadding="0" style="border: 1px dotted #808080">
+<div class="table-responsive"><table width="80%" cellspacing="0" cellpadding="0" style="border: 1px dotted #808080">
 <!--#INCLUDE FILE="admin/merchtools.asp"-->
 <!--#INCLUDE FILE="include/sql_functions.asp"-->
 <%
@@ -216,7 +216,7 @@ if fh > rc then fh = rc
 </td></tr>
 
   
-</table>
+</table></div>
 
 <p>&nbsp;</div>
 
@@ -224,17 +224,17 @@ if fh > rc then fh = rc
     
   </tr>
   
-  </table>
+  </table></div>
     </td>
 </tr>     
    
-      </table>
+      </table></div>
     </div>
     </div>
     </td>
     
   </tr>
-</table>
+</table></div>
 <!--#INCLUDE FILE="footer.asp"-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
 <p>&nbsp;&nbsp; </p>

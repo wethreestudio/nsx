@@ -55,7 +55,7 @@ function startupload() {
 
 <% if len(exchid)<>0 then server.execute "company_header_v2_" & exchid & ".asp"%>
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="200" valign="top" rowspan="3" bgcolor="#FFFFFF"><%if len(exchid)<>0 then server.execute "company_lmenu_v2_" & exchid & ".asp"%></td>
   </tr>
@@ -196,7 +196,7 @@ End Function
     end if
     
 %>
-  <table border="0" cellpadding="2" bgcolor="#FFFFFF" cellspacing="0" width="400" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
+  <div class="table-responsive"><table border="0" cellpadding="2" bgcolor="#FFFFFF" cellspacing="0" width="400" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
     <tr>
       <td bgcolor="#FFFFFF" class="textlabel" style="line-height: 100%" nowrap colspan="2">&nbsp;&nbsp;&nbsp;&nbsp; Available
         Securities:<br>
@@ -469,7 +469,7 @@ End Function
       <td bgcolor="#FFFFFF" style="line-height: 100%">
       <input type="button" value="Upload" name="B1" onclick="startupload()" style="background-color: #FFFFFF; color: #6D7BA0; font-weight: bold"><p>&nbsp;</td>
     </tr>
-  </table>
+  </table></div>
     </center>
   </div>
   
@@ -520,7 +520,7 @@ Upload.&nbsp; You will need to upgrade to the latest browser version or check
         
     
 
-</table>
+</table></div>
 </div>
 <% if len(exchid)<>0 then server.execute "company_footer_v2_" & exchid & ".asp"%>
 </body>

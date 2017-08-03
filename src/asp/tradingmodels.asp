@@ -5,7 +5,7 @@ Response.End
 %>
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width="797" id="table1" bgcolor="#FFFFFF">
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="797" id="table1" bgcolor="#FFFFFF">
     <tr>
       <td  colspan="2" bgcolor="#FFFFFF">
       <blockquote><h1>TRADING MODELS</H1></blockquote>
@@ -37,18 +37,18 @@ Trading windows is currently restricted to property-based managed investment sch
 
 <p>We are always open to discussing your particular requirements to provide the best possible solution to your needs.</p>
 <div align="center"><!--#INCLUDE FILE="header_tables.asp"-->
-		<table cellpadding="5" style="border-collapse: collapse; border-bottom-style:solid; border-bottom-width:1px" width="720" id="table2" bordercolor="#808080">
+		<div class="table-responsive"><table cellpadding="5" style="border-collapse: collapse; border-bottom-style:solid; border-bottom-width:1px" width="720" id="table2" bordercolor="#808080">
 		<tr ><td class="plaintextbold" bgcolor="#666666">&nbsp;</td><td class="plaintextwbold" bgcolor="#666666">Conventional</td><td class="plaintextwbold" bgcolor="#666666">Closed Market</td><td class="plaintextwbold" bgcolor="#666666">Trading Windows</td></tr>
 		<tr bgcolor="#EEEEEE"><td class="plaintextbold">Daily trading hours</td><td>Full Day</td><td>Full Day</td><td>Full Day</td></tr>
 		<tr><td class="plaintextbold">Trading cycle</td><td>Open every business day</td><td>Open every business day</td><td>Two six week trading cycles per year</td></tr>
 		<tr bgcolor="#EEEEEE"><td class="plaintextbold">Share ownership</td><td>No restrictions</td><td>Restricted to a particular group</td><td>No restrictions</td></tr>
-		</table>
+		</table></div>
       </blockquote>
 	  <br>
 <br>
       </td>
     </tr>
-  </table>
+  </table></div>
   </div>
 </div>
 

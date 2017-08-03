@@ -97,7 +97,7 @@ end if
 
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="200" valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="company_lmenu.asp"--></td>
   </tr>
@@ -337,7 +337,7 @@ end if
       
     
 
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 <p>&nbsp;&nbsp;</p>

@@ -9,7 +9,7 @@ page_title = "Market Statistics"
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
 <div class="table-responsive">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 	<tr>
 		<td valign="top" rowspan="4" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"-->
 		</td>
@@ -43,7 +43,7 @@ page_title = "Market Statistics"
 		<p>&nbsp;
     </td>
 	</tr>
-</table>
+</table></div>
 </div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

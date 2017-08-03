@@ -9,7 +9,7 @@ page_title = "Company Research"
 %>
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -130,7 +130,7 @@ if fh > rc then fh = rc
 
 <div align="center">
 
-<table width="100%" bgcolor="#FFFFFF" cellpadding="2" style="border-bottom:1px solid #666666; border-collapse: collapse">
+<div class="table-responsive"><table width="100%" bgcolor="#FFFFFF" cellpadding="2" style="border-bottom:1px solid #666666; border-collapse: collapse">
         <tr>
           <td class="plaintext" bgcolor="#666666"><font color="#FFFFFF"><b>Code</b></font></td>
           <td class="plaintext" bgcolor="#666666">
@@ -220,11 +220,11 @@ if fh > rc then fh = rc
     	  NEXT
     end if
     %>
-      </table>
+      </table></div>
 </div>
 <p>&nbsp;</td>
     
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

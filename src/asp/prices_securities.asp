@@ -43,7 +43,7 @@ End Function
 
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="4" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -190,7 +190,7 @@ tradedatetime = maxdate
 
 
 <div align="center">
-<table  cellspacing="0" width="100%" bgcolor="#FFFFFF" cellpadding="3" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
+<div class="table-responsive"><table  cellspacing="0" width="100%" bgcolor="#FFFFFF" cellpadding="3" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
         <tr>
           <td valign="top" class="plaintext" bgcolor="#666666">
 			<font color="#FFFFFF"><b>CODE</b></font></td>
@@ -408,7 +408,7 @@ tradedatetime = maxdate
     
       
       
-      </table>
+      </table></div>
 
 
 
@@ -428,7 +428,7 @@ tradedatetime = maxdate
     </td>
     
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

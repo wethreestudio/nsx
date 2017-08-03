@@ -25,7 +25,7 @@
 
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -45,7 +45,7 @@
 	<b>NSX.&nbsp; </b>The newsletter is free.</p>
 	<p>&nbsp;<font face="Arial" size="2"><b>TOPICS MAY INCLUDE</b></font></p>
 	
-		<table border="0" cellpadding="0" cellspacing="0" width="100%" msimagelist>
+		<div class="table-responsive"><table border="0" cellpadding="0" cellspacing="0" width="100%" msimagelist>
 			<tr msimagelist>
 				<td valign="top" width="42" msimagelist>
 				<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -146,7 +146,7 @@ End Function
 --></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" name="FrontPage_Form1" action="thecall_thx.asp">
   <div align="center">
 
-  <table border="0" cellpadding="2" width="100%" style="border-bottom:1px solid #666666; border-collapse: collapse; border-left-width:1px; border-right-width:1px; border-top-width:1px" >
+  <div class="table-responsive"><table border="0" cellpadding="2" width="100%" style="border-bottom:1px solid #666666; border-collapse: collapse; border-left-width:1px; border-right-width:1px; border-top-width:1px" >
         <tr>
           <td align="left" bgcolor="#FFFFFF" class="textlabel" width="20%">&nbsp;Name&nbsp;&nbsp;</td>
 
@@ -264,7 +264,7 @@ End Function
           <input type="submit" value="Send Request" name="B1" style="color: #6D7BA0; font-weight: bold; font-size: 10pt; font-family: Arial; background-color: #FFFFFF"></td>
         </tr>
 
-      </table>
+      </table></div>
     </div>
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   </p>
@@ -273,7 +273,7 @@ End Function
     		</td>
     
   </tr>
-  </table>
+  </table></div>
 	</div>
 <!--#INCLUDE FILE="footer.asp"-->
 </body>

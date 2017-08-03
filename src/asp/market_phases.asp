@@ -9,7 +9,7 @@ objCssIncludes.Add "marketdata", "css/marketdata.css"
 %>
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"
   bgcolor="#FFFFFF">
     <tr>
       <td colspan="2" bgcolor="#FFFFFF">
@@ -25,7 +25,7 @@ objCssIncludes.Add "marketdata", "css/marketdata.css"
         Australian Eastern Standard Time.</p>
         <h2>Market Phases Table</h2>
         
-        <table align="center" cellpadding="5"
+        <div class="table-responsive"><table align="center" cellpadding="5"
         style="border-bottom:1px solid #666666; border-collapse: collapse" width="100%"
         id="table2">
           <tr>
@@ -144,9 +144,9 @@ objCssIncludes.Add "marketdata", "css/marketdata.css"
               <img border="0" src="images/nsxdiag.gif" width="22" height="11" align="right" alt="" />
             </td>
           </tr>
-        </table>
+        </table></div>
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

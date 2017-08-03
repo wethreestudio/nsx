@@ -109,7 +109,7 @@ if fh > rc then fh = rc
 
 <div align="center">
 
-<table cellspacing="0" cellpadding="3" width="100%">
+<div class="table-responsive"><table cellspacing="0" cellpadding="3" width="100%">
   <%  if WEOF then %>
 	
   <tr>
@@ -194,7 +194,7 @@ if fh > rc then fh = rc
   <% NEXT
 	end if
 	%>
-</table>
+</table></div>
     
   </div>
 

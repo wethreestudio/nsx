@@ -2,7 +2,7 @@
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_default">
 <div class="editarea">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 	<tr>
 		<td class="textheader" bgcolor="#FFFFFF" >
 		
@@ -134,7 +134,7 @@ if todayfile<>"" then
 click to save file to disk</a>
 
 <div align="center">
-<table border="0" style="border-collapse: collapse" width="650" cellpadding="0" cellspacing="1">
+<div class="table-responsive"><table border="0" style="border-collapse: collapse" width="650" cellpadding="0" cellspacing="1">
   <tr>
   <td class="plaintext" bgcolor="#666666" colspan=8><font color="#FFFFFF"><b><%=coname & " (" & todayfile & ")"%></b></font></td>
   </tr>
@@ -226,7 +226,7 @@ click to save file to disk</a>
     </td>
   </tr>
 
-	</table>
+	</table></div>
 </div>
 <p>
 <%
@@ -247,7 +247,7 @@ end if
 
 
 %>    </td>
-</table>
+</table></div>
 </div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

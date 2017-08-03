@@ -333,7 +333,7 @@ $(document).ready(function()
 </div>
 
 
-<table id="myTable" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter"> 
 <thead> 
 <tr> 
     <th>NSX<br>Code</th> 
@@ -522,7 +522,7 @@ End If
 Set rs = Nothing
 %>  
 </tbody> 
-</table> 
+</table></div> 
 
 
 <%

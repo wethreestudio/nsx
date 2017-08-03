@@ -188,7 +188,7 @@ If nsxcode2 <> "" Then
 
 <br>
 
-<table id="myTable" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter"> 
 <thead> 
 <tr> 
     <th width="80">Code</th>
@@ -251,7 +251,7 @@ End If
 End If
 %>
 </tbody>
-</table>
+</table></div>
 </div>
 <%
 End If

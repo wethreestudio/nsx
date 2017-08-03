@@ -127,7 +127,7 @@ Server.Execute "content_lower_nav.asp"
 
 
 <div style="float:right;width:99%;">
-<table id="myTable" class="tablesorter" style="width:100%">
+<div class="table-responsive"><table id="myTable" class="tablesorter" style="width:100%">
 <thead> 
 <tr> 
     <th width="160">Date Approved</th>
@@ -220,7 +220,7 @@ Else
 End If
 %>
 </tbody>
-</table>
+</table></div>
 </div>
 
 

@@ -111,7 +111,7 @@ end if
 
 <% if len(exchid)<>0 then server.execute "company_header_v2_" & exchid & ".asp"%>
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="200" valign="top" rowspan="3" bgcolor="#FFFFFF"><%if len(exchid)<>0 then server.execute "company_lmenu_v2_" & exchid & ".asp"%></td>
   </tr>
@@ -378,7 +378,7 @@ end if
       
     
 
-</table>
+</table></div>
 </div>
 <% if len(exchid)<>0 then server.execute "company_footer_v2_" & exchid & ".asp"%>
 <p>&nbsp;&nbsp;</p>

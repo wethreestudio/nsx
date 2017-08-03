@@ -6,7 +6,7 @@
 <title>NSX</title>
 </head>
   <body>
-    <table border="1" >
+    <div class="table-responsive"><table border="1" >
 <%
 
 
@@ -166,6 +166,6 @@ Else
 <%  
 End If
 %> 	
-    </table>
+    </table></div>
   </body>
 </html>

@@ -97,7 +97,7 @@ if fh > rc then fh = rc
 
 %>
 
-<table cellspacing="0" cellpadding="5" width="100%" >
+<div class="table-responsive"><table cellspacing="0" cellpadding="5" width="100%" >
   <tr>
     <td width="100%" class="plaintext" bgcolor="#959CA0"><font color="#FFFFFF">
 	<b>Latest News Items </b></font></td>
@@ -132,8 +132,8 @@ if fh > rc then fh = rc
 
 
   
-</table>
-    </table>
+</table></div>
+    </table></div>
 </div>
 </body>
 </html>

@@ -148,7 +148,7 @@ if rc >= 0 then
 
 
 %>
-<table id="prices_123" aling=center cellspacing="0" width="650" bgcolor="#FFFFFF" style="border-bottom:1px solid #808080; ">
+<div class="table-responsive"><table id="prices_123" aling=center cellspacing="0" width="650" bgcolor="#FFFFFF" style="border-bottom:1px solid #808080; ">
         <tr>
           <td valign="top" class="plaintext" bgcolor="#666666">
 			<font color="#FFFFFF"><b>NSX CODE</b></font></td>
@@ -550,7 +550,7 @@ if rc >= 0 then
 
 %>
 <tr><td colspan=16> 
-<table id="prices_1234" cellspacing="0" width="650" bgcolor="#FFFFFF">
+<div class="table-responsive"><table id="prices_1234" cellspacing="0" width="650" bgcolor="#FFFFFF">
 <tr>
           <td class="plaintext"  rowspan="2"  bgcolor="#666666">
 			<font color="#FFFFFF">&nbsp;<b>MARKET DEPTH</b></td>
@@ -654,7 +654,7 @@ if rc >= 0 then
      
      %>&nbsp;</td>
     </tr>
-</table>
+</table></div>
  </td></tr>   
 
 <%		end if
@@ -665,7 +665,7 @@ if rc >= 0 then
   end if
     %>
       
-      </table>
+      </table></div>
 
 </body>
 

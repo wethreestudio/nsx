@@ -34,7 +34,7 @@ response.cachecontrol = "PRIVATE"
 
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -53,7 +53,7 @@ id = ucase(request.querystring("tradingcode"))
 
 %>
 </p>
-<table>
+<div class="table-responsive"><table>
 
 
 
@@ -69,7 +69,7 @@ id = ucase(request.querystring("tradingcode"))
 		</td>
 	</tr>
     
-      </table>
+      </table></div>
 
 
 
@@ -81,7 +81,7 @@ id = ucase(request.querystring("tradingcode"))
     </td>
     
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

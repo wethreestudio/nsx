@@ -42,12 +42,12 @@ page_title = id & " - Chart"
 <p>
 Daily index for the last <%= Server.HTMLEncode(tday) %> values represented by a line.
 </p>
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 
   <tr>
     <td class="plaintext" valign="top" bgcolor="#FFFFFF" align="center">
     
-<table align="center">
+<div class="table-responsive"><table align="center">
 <tr><td>
 
 <%
@@ -276,12 +276,12 @@ end if
     </td>
       </tr>
   
-    </table>
+    </table></div>
 
 &nbsp;
 </td>
 </tr>
-</table>
+</table></div>
 </div>
 </div>
 </div>

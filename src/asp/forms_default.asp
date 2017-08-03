@@ -2,7 +2,7 @@
 
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
     <tr>
       <td class="plaintext" colspan="2" bgcolor="#FFFFFF">
       
@@ -17,7 +17,7 @@
       <td class="plaintext" valign="top">
       
         <p>The following forms are provided for your convenience.</p>
-		<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+		<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 			<!--msimagelist--><tr>
 				<!--msimagelist--><td valign="top" width="42">
 				<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -47,7 +47,7 @@
 				<td valign="top" width="100%"><a href="company_calendar.asp">Financial Reporting 
 			Timetable</a><!--msimagelist--></td>
 			</tr>
-			<!--msimagelist--></table>
+			<!--msimagelist--></table></div>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
@@ -56,6 +56,6 @@
       
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

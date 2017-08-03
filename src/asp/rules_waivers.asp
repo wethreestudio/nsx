@@ -10,7 +10,7 @@
 <div class="container_cont">
 <div class="editarea">
 <h1>Waivers</h1>
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 
   <tr>
     <td class="plaintext" valign="top" bgcolor="#FFFFFF">
@@ -20,7 +20,7 @@
     &nbsp; Sort By: <a href="rules_waivers.asp?sort=approval">Date Approved</a> |
     			<a href="rules_waivers.asp?sort=issuer">Issuer</a>
 	<div align="center">
-		<table border="0" width="100%" cellpadding="2" style="border-collapse: collapse" >
+		<div class="table-responsive"><table border="0" width="100%" cellpadding="2" style="border-collapse: collapse" >
 <!--#INCLUDE FILE="admin/merchtools.asp"-->
 
 <%
@@ -111,11 +111,11 @@ if fh > rc then fh = rc
 </td>
   </tr>
 
-</table>
+</table></div>
 	</div>
 	
 	<div align="center">
-<table style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666" width="100%" cellspacing="0" cellpadding="5">
+<div class="table-responsive"><table style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666" width="100%" cellspacing="0" cellpadding="5">
   <tr>
     <td width="10%" class="plaintext" bgcolor="#666666"><font color="#FFFFFF"><b>DATE APPROVED</b></font></td>
     <td width="90%" class="plaintext" bgcolor="#666666">
@@ -167,7 +167,7 @@ if fh > rc then fh = rc
 
 
   
-</table>
+</table></div>
     
     
     <p>&nbsp;</div>
@@ -175,7 +175,7 @@ if fh > rc then fh = rc
     
     </td>
   </tr>
-</table>
+</table></div>
 </div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

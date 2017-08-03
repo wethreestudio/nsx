@@ -27,12 +27,12 @@ alow_robots = "no"
 
 
 
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td class="plaintext" valign="top" bgcolor="#FFFFFF">
     
     <div align="center">
-<table width="100%" cellspacing="0" cellpadding="5">
+<div class="table-responsive"><table width="100%" cellspacing="0" cellpadding="5">
 
 
 <%
@@ -108,10 +108,10 @@ if fh > rc then fh = rc
       <%end if%>
 </td>
   </tr>
-</table>
+</table></div>
 </div>
 	<div align="center">
-<table width="100%" cellspacing="0" cellpadding="5" style="border-bottom:1px solid #666666; ">
+<div class="table-responsive"><table width="100%" cellspacing="0" cellpadding="5" style="border-bottom:1px solid #666666; ">
   <tr>
     <td width="10%" class="plaintext" bgcolor="#666666"><font color="#FFFFFF"><b>DATE</b></font></td>
     <td width="90%" class="plaintext" bgcolor="#666666"><font color="#FFFFFF"><b>ARTICLE</b></font></td>
@@ -149,7 +149,7 @@ if fh > rc then fh = rc
 
 
   
-</table>
+</table></div>
     
     
     <p>&nbsp;</div>
@@ -157,6 +157,6 @@ if fh > rc then fh = rc
     
     </td>
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

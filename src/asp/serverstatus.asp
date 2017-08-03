@@ -96,7 +96,7 @@ Set objWinHttp = Nothing
 ' I do it first as plain HTML (which gets interpretted by the
 ' browser like any other HTML) and then as source (by HTML
 ' encoding it so the tags display instead of rendering)
-' The <h1>s and <table>s are just for appearence.
+' The <h1>s and <div class="table-responsive"><table>s are just for appearence.
 
 ' get server 2 status
 
@@ -112,7 +112,7 @@ strHTMLNSX1 = split(strHTMLNSX1,cr)
 strHTMLNSX2 = split(strHTMLNSX2,cr)
 
 rc = ubound(strHTMLNSX1)
-eml=eml & "<table bgcolor=#FFFFFF align=center border=0 width=797 cellspacing=0 cellpadding=0>"
+eml=eml & "<div class="table-responsive"><table bgcolor=#FFFFFF align=center border=0 width=797 cellspacing=0 cellpadding=0>"
 eml = eml & "<tr><td colspan=3 class=plaintext><h1>Server Status as at " & now+daylightsaving & "</h1></td><tr>"
 eml = eml & "<tr><td class=plaintext align=right><b>Name</b></td><td align=right class=plaintext><b>Size Check</b></td><td align=right class=plaintext><b>Date Check</b></td>"
 ii = 0
@@ -156,7 +156,7 @@ for ii = 0 to rc-1
 NEXT
 if datecount > 0.8 or sizecount >0.8 then emlflag = true
 
-eml=eml & "</table>"
+eml=eml & "</table></div>"
 
 
 

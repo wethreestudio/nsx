@@ -411,11 +411,11 @@ comName = comDetails(2)
 comCat = comDetails(3)
 comCat2 = comDetails(4)
 %>
-<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<div class="table-responsive"><table border="0" cellpadding="2" cellspacing="0" width="100%">
   <tr>
     <td bgcolor="#000080"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b><font color="#FFFFFF">Component Details</font></b></font></td>
   </tr>
-</table>
+</table></div>
 <%
 Set b = New ProgIDInfo
 Set a = b.LoadProgID(comCreate)
@@ -438,7 +438,7 @@ if a.Description <> "" then
       <% end if %>
 <font size="2" face="Verdana, Arial, Helvetica, sans-serif"><p align="center"><a href=# onClick="self.close();"><b>Close Window</b></a></p>
 </font>
-<table border="0" width="98%" cellpadding="2" align="center">
+<div class="table-responsive"><table border="0" width="98%" cellpadding="2" align="center">
        
   <tr> 
     <td width="200%">
@@ -451,15 +451,15 @@ if a.Description <> "" then
         inc.</a> <br>
         All Rights Reserved.</b></font> </td>
   </tr>
-</table>
+</table></div>
 <% else %>
-<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="3">
   <tr> 
     <td width="100%" bgcolor="#000080">
       <div align="center"><b><font face="Arial, Helvetica, sans-serif" size="4" color="mintcream">ASP Component Test</font></b></div>
     </td>
   </tr>
-</table>
+</table></div>
 <font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
 <p align="center">This Component Test simply checks to see if the various components 
   are installed by trying to create the server object the component uses. It does 
@@ -475,7 +475,7 @@ if a.Description <> "" then
 <% end if %>
 </font> 
 <p></p>
-<table border="0" align="center" width="75%" cellpadding="4">
+<div class="table-responsive"><table border="0" align="center" width="75%" cellpadding="4">
   <form name="Subscribe" method="post" action="http://www.pensaworks.com/mailinglist.asp">
   <tr>
     <td bgcolor="#CCCCCC">
@@ -494,12 +494,12 @@ if a.Description <> "" then
     </td>
   </tr>
   </form>
-</table>
+</table></div>
 <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
 <p align="center"><b>Please wait while testing <%=(UBound(com) + 1)%> components. This may take a few seconds to load.</b></p>
 </font>
 <% Response.flush() %>
-<table border="0" align="center" cellspacing="2" cellpadding="4">
+<div class="table-responsive"><table border="0" align="center" cellspacing="2" cellpadding="4">
 <tr>
     <td colspan="5">
       <form name="ShowCOMs" method="post" action="<%=Mid(request.servervariables("SCRIPT_NAME"), InstrRev(request.servervariables("SCRIPT_NAME"), "/") + 1)%>">
@@ -599,12 +599,12 @@ installed = "" : comCreate = "" : comURL = "" : comName = "" : comCat = "" : com
     </td>
   </tr>
 <% end if %>
-</table>
+</table></div>
 	<div align="center">
   <p>&nbsp;</p>
   <p><font size="3" face="Verdana, Arial, Helvetica, sans-serif">You have a total of <b><%=installedCOMs%></b> COMs installed out of <b><%=onNum%></b> checked.</font></p>
 </div>
-	<table border="0" width="98%" cellpadding="2" align="center">
+	<div class="table-responsive"><table border="0" width="98%" cellpadding="2" align="center">
        
   <tr> 
     <td width="200%">
@@ -617,7 +617,7 @@ installed = "" : comCreate = "" : comURL = "" : comName = "" : comCat = "" : com
         inc.</a> <br>
         All Rights Reserved.</b></font> </td>
   </tr>
-</table>
+</table></div>
 <% end if %>
 </BODY>
 </HTML>

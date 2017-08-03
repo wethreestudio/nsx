@@ -39,7 +39,7 @@
 
 <% if len(exchid)<>0 then server.execute "company_header_v2_" & exchid & ".asp"%>
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="200" valign="top" rowspan="3" bgcolor="#FFFFFF"><%if len(exchid)<> 0 then server.execute "company_lmenu_v2_" & exchid & ".asp"%></td>
   </tr>
@@ -59,7 +59,7 @@
       <p> &nbsp;
       <div align="center">
         <center>
-      <table border="0" cellspacing="1" width="90%" >
+      <div class="table-responsive"><table border="0" cellspacing="1" width="90%" >
   <tr>
     <td valign="top" width="100%" class="highlightbox">
       <p><font color="#FFFFFF"><font size="2" face="Arial"><b>Warning: </b> Y</font><font size="2">ou 
@@ -70,7 +70,7 @@
 		log in again.</font></font></p>
     </td>
   </tr>
-</table>
+</table></div>
         </center>
       </div>
 <% 
@@ -85,7 +85,7 @@ CmdEditUser.Open SQL, ConnPasswords
   <input type="hidden" name="ID" value="<% =ID %>">
   <div align="center">
     <center>
-	<table border="0" width="450" cellspacing="1" bgcolor="#FFFFFF" cellpadding="0" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
+	<div class="table-responsive"><table border="0" width="450" cellspacing="1" bgcolor="#FFFFFF" cellpadding="0" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
     <center>
     <tr>
       <td bgcolor="#FFFFFF" align="right" class="textlabel">
@@ -198,7 +198,7 @@ CmdEditUser.Open SQL, ConnPasswords
 		&nbsp;&nbsp;&nbsp; </td>
       <td bgcolor="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp; </td>
     </tr>
-      </table>
+      </table></div>
     </center>
     </div>
   </center>
@@ -218,7 +218,7 @@ Set ConnPasswords = Nothing
       
     
 
-</table>
+</table></div>
 </div>
 <% if len(exchid)<>0 then server.execute "company_footer_v2_" & exchid & ".asp"%>
 </body>

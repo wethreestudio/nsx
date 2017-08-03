@@ -83,7 +83,7 @@ End Function
 	
 
     
-    strHTML = "<table bgcolor=white  cellspacing='0' cellpadding='3' width='100%'>"
+    strHTML = "<div class="table-responsive"><table bgcolor=white  cellspacing='0' cellpadding='3' width='100%'>"
  
 	kk = 0
     For Each objItem In objItemList
@@ -129,7 +129,7 @@ End Function
         strHTML = strHTML & "</tr>"
     
    Next
-    strHTML = strHTML & "</table>"
+    strHTML = strHTML & "</table></div>"
    
 
 

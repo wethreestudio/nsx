@@ -22,7 +22,7 @@ FP_LCID = 1033 %>
 <h1>Raw Trading Data - Latest Trades First</h1>
 <h2>View Only</h2>
 <p>&nbsp;</p>
-<table width="100%" border="1" bgcolor="#FFFFFF">
+<div class="table-responsive"><table width="100%" border="1" bgcolor="#FFFFFF">
 	<thead>
 		<tr>
 			<th ALIGN="LEFT"><b><font size="1" face="Arial Narrow">prid</font></b></th>
@@ -148,7 +148,7 @@ fp_iRegion=BOTID
 		</tr>
 		<!--webbot bot="DatabaseRegionEnd" b-tableformat="TRUE" b-menuformat="FALSE" u-dbrgn2="_fpclass/fpdbrgn2.inc" i-groupsize="50" clientside tag="TBODY" preview="&lt;tr&gt;&lt;td colspan=64 bgcolor=&quot;#FFFF00&quot; width=&quot;100%&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;This is the end of a Database Results region.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;TR&gt;&lt;TD VALIGN=MIDDLE COLSPAN=64&gt;&lt;NOBR&gt;&lt;INPUT TYPE=Button VALUE=&quot;  |&lt;  &quot;&gt;&lt;INPUT TYPE=Button VALUE=&quot;   &lt;  &quot;&gt;&lt;INPUT TYPE=Button VALUE=&quot;  &gt;   &quot;&gt;&lt;INPUT TYPE=Button VALUE=&quot;  &gt;|  &quot;&gt;  [1/50]&lt;/NOBR&gt;&lt;BR&gt;&lt;/td&gt;&lt;/tr&gt;" startspan --><!--#include file="_fpclass/fpdbrgn2.inc"-->
 <!--webbot bot="DatabaseRegionEnd" endspan --></tbody>
-</table>
+</table></div>
 <p>&nbsp;</p>
 </body>
 

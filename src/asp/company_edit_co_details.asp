@@ -55,7 +55,7 @@ Server.Execute "company_side_menu.asp"
     	
 
 <form method="POST" action="company_save_co_details.asp?ID=<%=nsxcode%>">
-<table width=500 border="0" cellspacing="1" cellpadding="0" bgcolor="#FFFFFF" style="border: 1 solid #000000">
+<div class="table-responsive"><table width=500 border="0" cellspacing="1" cellpadding="0" bgcolor="#FFFFFF" style="border: 1 solid #000000">
 
 <tr>
 <td align="left" colspan="2" class="textheader" width="625" bgcolor="#666666">
@@ -258,10 +258,10 @@ Postal Address</td>
 <br>
 &nbsp;</td>
 </tr>
-</table>
+</table></div>
 
 <!--
-<table width=500 border="0" cellspacing="1" bgcolor="#FFFFFF" style="border: 1 solid #000000">
+<div class="table-responsive"><table width=500 border="0" cellspacing="1" bgcolor="#FFFFFF" style="border: 1 solid #000000">
 <tr>
 <td bgcolor="#808080" colspan="2" class="textheader" width="625">
 
@@ -311,11 +311,11 @@ Email</td>
 <textarea rows="10" name="agDirectors" cols="35"><%=CmdDD("agDirectors")%></textarea>
 </td>
 </tr>
-</table>
+</table></div>
 -->
 
 
-<table width=500 border="0" cellspacing="1" bgcolor="#FFFFFF" style="border: 1 solid #000000">
+<div class="table-responsive"><table width=500 border="0" cellspacing="1" bgcolor="#FFFFFF" style="border: 1 solid #000000">
 <tr>
 <td bgcolor="#808080" colspan="2" class="textheader" width="625">
 <font color="#FFFFFF">Corporate Details</font>
@@ -410,8 +410,8 @@ Email</td>
 <textarea rows="6" name="agtrustee" cols="35"><%=CmdDD("agtrustee")%></textarea>
 </td>
 </tr>
-</table>
-<table width=500 border="0" cellspacing="1" bgcolor="#FFFFFF" style="border: 1 solid #000000">
+</table></div>
+<div class="table-responsive"><table width=500 border="0" cellspacing="1" bgcolor="#FFFFFF" style="border: 1 solid #000000">
 <tr>
 <td bgcolor="#808080" class="textheader" width="625">
 <font color="#FFFFFF">Profile Details
@@ -428,7 +428,7 @@ Email</td>
 <td bgcolor="#EEEEEE" align="left" valign="middle" width="625" class="textlabel">
 <input type="submit" value="Save details" name="B1" style="background-color: #FFFFFF; color: #808080; font-family: Verdana; font-size: 10pt; font-weight: bold"></td>
 </tr>
-</table>
+</table></div>
 </form>
 
 <%

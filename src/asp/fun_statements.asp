@@ -166,7 +166,7 @@ Issuername = AnnRows(5,0)
 issuercode = AnnRows(1,0)
 Logo = trim(AnnRows(8,0) & " " )
 response.write "<h1>Annual Statements for " & IssuerName & " (" & issuercode & ")</h1>"
-response.write "<div  style='padding-top;8px;padding-bottom:8px;'><table width='99%'><tr>"
+response.write "<div  style='padding-top;8px;padding-bottom:8px;'><div class="table-responsive"><table width='99%'><tr>"
 'response.write "<span style='display:inline-block; vertical-align:bottom;'>"
 if len(Logo)> 0 then
 	response.write "<td width='50%'><img src='/images/company_images/" & logo &"' ></td>"
@@ -175,7 +175,7 @@ if len(Logo)> 0 then
 end if
 
 response.write "<td width='50%' align=right style='vertical-align:bottom'><a href='fun_statement_download.asp?nsxcode=" & nsxcode & "&format=XLS' class='blue-link'>View Spreadsheet</a></td>"
-response.write "</tr></table></div>"
+response.write "</tr></table></div></div>"
 Dim table_values
 table_values=array()
 ItemRowsCount = 200 ' should be same as number of accounts in chart of accounts.  Need to make this dynamic.
@@ -301,7 +301,7 @@ ReDim table_values(AnnRowsCount+3,ItemRowsCount+3)
   ' format statement array for output
   table_values_rows = ubound(table_values,2)
   table_values_cols = AnnRowsCount+3
-  response.write "<table class='tablesorter' id='myTable' width='99%'>" & vbCRLF
+  response.write "<div class="table-responsive"><table class='tablesorter' id='myTable' width='99%'>" & vbCRLF
   lap = 1
   cl = array("odd","even")
   for z = 0 to table_values_rows
@@ -415,7 +415,7 @@ ReDim table_values(AnnRowsCount+3,ItemRowsCount+3)
 		end if
 		if z = 2 then response.write "<tbody>"
 	NEXT ' z row
-	response.write "</tbody></table>"
+	response.write "</tbody></table></div>"
 
 
   

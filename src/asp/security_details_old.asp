@@ -376,7 +376,7 @@ DeferredDeliveryIndicator = ""
 
 <h1><%=remcrlf(coName)%></h1> 
 
-<table id="myTable" class="tablesorter" width="99%">
+<div class="table-responsive"><table id="myTable" class="tablesorter" width="99%">
 <tbody> 
   <% if tradingcode<>"" then%>
   <tr <%=trClass()%>>
@@ -570,7 +570,7 @@ DeferredDeliveryIndicator = ""
   </tr>
   <%end if%>
   </tbody>
-</table>
+</table></div>
 
 <% NEXT
 	end if

@@ -11,7 +11,7 @@ page_title = "Shareholder Announcements"
 %><!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont"> 
 <div class="editarea">
-<table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
+<div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
   <tr>
     <td class="plaintext" valign="top" align="center" width="150"><!--#INCLUDE FILE="shareholder_lmenu.asp"--></td>
     <td class="plaintext" valign="top">
@@ -20,7 +20,7 @@ page_title = "Shareholder Announcements"
 		ANNOUNCEMENTS</b></font>&nbsp;</p>
     
     <div align="center">
-    <table border="1" cellpadding="5" cellspacing="5" style="border-collapse: collapse; border-left-width: 0px; border-right-width: 0px; border-top-width: 0px" width="80%" id="table2">
+    <div class="table-responsive"><table border="1" cellpadding="5" cellspacing="5" style="border-collapse: collapse; border-left-width: 0px; border-right-width: 0px; border-top-width: 0px" width="80%" id="table2">
       <tr>
         <td style="border-style: none; border-width: medium" class="plaintext" bgcolor="#666666">
         <font color="#FFFFFF"><b>NSX releases statutory documents to the 
@@ -50,12 +50,12 @@ Lodged during <%=ii%></a></li>
   <%next%>
 </ul></td>
       </tr>
-    </table>
+    </table></div>
     </div>
     <p>&nbsp;</p>
     <p>&nbsp;</td>
   </tr>
-  </table>
+  </table></div>
 </div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

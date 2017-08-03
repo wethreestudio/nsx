@@ -25,7 +25,7 @@
 
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="4" bgcolor="#FFFFFF">
 	<!--#INCLUDE FILE="lmenu.asp"--></td>
@@ -46,7 +46,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
  <b>THE INDEX</b>&nbsp;&nbsp;
 	
-		<table border="0" width="240" cellspacing="0" cellpadding="0" style="border: 1px dotted #808080">
+		<div class="table-responsive"><table border="0" width="240" cellspacing="0" cellpadding="0" style="border: 1px dotted #808080">
 			<tr>
 				<td width="50%" class="plaintext" bgcolor="#666666">
 				<font color="#FFFFFF"><b>DATE <br>(END OF MONTH)</b></font></td>
@@ -148,7 +148,7 @@
 				<img border="0" src="images/v2/line.jpg" width="100%" height="2">
 				</td>
 			</tr>
-		</table>
+		</table></div>
 		<ul>
 			<li><a href="indices2004.asp">Index for 2004</a></li>
 			<li><a href="indices2003.asp">Index for 2003</a></li>
@@ -171,7 +171,7 @@ made&nbsp;for capital changes excluding&nbsp;dividends.</font></p>
     </td>
     
   </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

@@ -7,7 +7,7 @@
 
 <body>
 
-<table width=500>
+<div class="table-responsive"><table width=500>
 <tr>
 <td>
 
@@ -123,7 +123,7 @@ end if
 
 </td>
 
-</tr></table>
+</tr></table></div>
 
 
 <p>&test;</p>

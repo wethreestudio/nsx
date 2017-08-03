@@ -31,7 +31,7 @@
 <body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" style="background-color: #DDDDDD">
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
     <tr>
       <td class="plaintext" colspan="2" bgcolor="#FFFFFF">
       
@@ -45,7 +45,7 @@
       <td class="plaintext" valign="top">
       
         <div align="right">
-          <table border="0" cellpadding="5" style="border-collapse: collapse; border: 1px dotted #808080; " width="250" id="table2" align="right" cellspacing="5">
+          <div class="table-responsive"><table border="0" cellpadding="5" style="border-collapse: collapse; border: 1px dotted #808080; " width="250" id="table2" align="right" cellspacing="5">
             <tr>
               <td class="plaintext" bgcolor="#666666">
               <p align="center">
@@ -53,7 +53,7 @@
             </tr>
             <tr>
               <td class="plaintext">
-              <table style="border-collapse: collapse" width="100%" id="table4" cellpadding="3">
+              <div class="table-responsive"><table style="border-collapse: collapse" width="100%" id="table4" cellpadding="3">
                 <tr>
                   <td class="plaintext"><b>Mkt Cap.</b></td>
                   <td class="plaintext" align="right"><b>&nbsp;2 mil</b></td>
@@ -102,10 +102,10 @@
 					<a href="documents/practice_notes/PN01-ListingFees2005.pdf">
 					Practice Note #1</a> for the exact calculation of fees.</td>
                 </tr>
-                </table>
+                </table></div>
               </td>
             </tr>
-          </table>
+          </table></div>
         </div>
         <p>Fees are calculated on the NSX market capitalisation of the quoted 
         security using a sliding scale. </p>
@@ -121,7 +121,7 @@
 		<p>Additional fees are required to be paid when newly issued or 
 		restricted securities are to be quoted.</p>
         <div align="right">
-          <table border="0" cellpadding="5" style="border-collapse: collapse; border: 1px dotted #808080; " width="250" id="table5" align="right" cellspacing="5">
+          <div class="table-responsive"><table border="0" cellpadding="5" style="border-collapse: collapse; border: 1px dotted #808080; " width="250" id="table5" align="right" cellspacing="5">
             <tr>
               <td class="plaintext" bgcolor="#666666">
               <p align="center">
@@ -131,7 +131,7 @@
             <tr>
               <td class="plaintext">
               <FORM id=form1 method="get" action="#">
-<TABLE class=contenttable cellSpacing=0 cellPadding=0 width="100%" id="table6">
+<div class="table-responsive"><table class=contenttable cellSpacing=0 cellPadding=0 width="100%" id="table6">
   <TBODY>
   <TR>
     <TD class="plaintext" colSpan=2><b>
@@ -189,10 +189,10 @@
     <TD class=plaintext id=dvFeePayHeader colSpan=2><b>Application Fee Payable $</b></TD></TR>
   <TR>
     <TD class="plaintext" id=dvPayableAmount colSpan=2 align="right" bgcolor="#DDDDDD">$5,000.00</TD>
-    </TR></TBODY></TABLE></FORM>              
+    </TR></TBODY></table></div></FORM>              
   </td>
             </tr>
-          </table>
+          </table></div>
         </div>
         <p><font color="#FF9933"><b>Minimum Share Price</b></font></p>
         <p>There is no minimum price per share for shares listed on the NSX. All 
@@ -234,7 +234,7 @@
       
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 

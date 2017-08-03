@@ -168,7 +168,7 @@ ey = 2000
 <br>
 
 <div class="table-responsive">
-<table id="myTable" class="tablesorter" width="99%"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter" width="99%"> 
 <thead> 
 <tr> 
     <th>Security</th>
@@ -247,7 +247,7 @@ End If
 %>
 
 </tbody>
-</table>
+</table></div>
 </div>
 <%
 'End If

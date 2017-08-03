@@ -35,7 +35,7 @@ Server.Execute "side_menu.asp"
         
 
 <div align="center" class="f-w-table">
-<table >
+<div class="table-responsive"><table >
 
 <!--#INCLUDE FILE="admin/merchtools.asp"-->
 
@@ -180,7 +180,7 @@ ConnPasswords.Close
 Set ConnPasswords = Nothing
 	%>
   </tbody>
-</table>
+</table></div>
     
 	</div>
     

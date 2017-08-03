@@ -76,7 +76,7 @@ Server.Execute "side_menu.asp"
   RenderContent page,"editarea" 
 %>
 
-<table id="myTable" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter"> 
 <thead> 
 <tr> 
     <th>Code</th> 
@@ -125,7 +125,7 @@ End If
 
 %>
 </tbody>
-</table>
+</table></div>
 </div>
 <div style="clear:both;"></div>
 </div>

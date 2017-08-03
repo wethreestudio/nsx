@@ -31,7 +31,7 @@ response.write eml
 
 
 %>
-<table width=788>
+<div class="table-responsive"><table width=788>
 <tr>
 <td clss=plaintext>
 <script type="text/javascript">
@@ -127,12 +127,12 @@ memoryscroller.style.left=parseInt(memorywidth)+8+"px"
 
 if (iedom){
 with (document){
-document.write('<table border="0" cellspacing="0" cellpadding="0" style="'+combinedcssTable+'"><td>')
+document.write('<div class="table-responsive"><table border="0" cellspacing="0" cellpadding="0" style="'+combinedcssTable+'"><td>')
 write('<div style="position:relative;overflow:hidden;'+combinedcss+'" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=memoryspeed">')
 write('<div id="memoryscroller" style="position:absolute;left:0px;top:0px;" '+divonclick+'></div>')
 write('</div>')
-document.write('</td></table>')
+document.write('</td></table></div>')
 }
 }
 </script>
-<%=market%></td></tr></table>
+<%=market%></td></tr></table></div>

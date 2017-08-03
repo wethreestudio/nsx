@@ -60,7 +60,7 @@ document.forms[fname].all[imagename].src=eval(objectsrc+".src");
 </script>
 <%  region=ucase(trim(request.querystring("region") & " "))%>
  <div align="center">
-   <table border="0" cellpadding="0" style="border-collapse: collapse" width="797" id="table1" bgcolor="#FFFFFF">
+   <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="797" id="table1" bgcolor="#FFFFFF">
      <tr>
        <td bgcolor="#959CA0" >
     <p align="right">
@@ -155,13 +155,13 @@ document.forms[fname].all[imagename].src=eval(objectsrc+".src");
      
      %>
      <td height="60" bgcolor="#FFFFFF" background="<%=bk%>">
-	<table width="100%" id="table2" cellspacing="0" cellpadding="0" style="border-collapse: collapse">
+	<div class="table-responsive"><table width="100%" id="table2" cellspacing="0" cellpadding="0" style="border-collapse: collapse">
 		<tr>
 			<td>&nbsp;&nbsp; <a href="http://www.nsxa.com.au">
     <img border="0" src="images/NSX-LOGOx150.gif" width="150" height="37" title="NSX Home"></a></td>
 			<td align="right">&nbsp;</td>
 		</tr>
-	</table>
+	</table></div>
 		</td>
      </tr>
      <tr>
@@ -185,7 +185,7 @@ bot="Ws4FpEx" endspan  -->
         &nbsp;<input type="hidden" name="mode" value="phrase"></form>
        </td>
      </tr>
-   </table>
+   </table></div>
  </div>
 
  

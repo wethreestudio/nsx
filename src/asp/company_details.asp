@@ -240,7 +240,7 @@ End If
 
 
     
-<table id="myTable" class="tablesorter" width="99%"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter" width="99%"> 
 <tbody> 
   <% if agacn<>"" then%>
   <tr <%=trClass()%>>
@@ -507,7 +507,7 @@ End If
   <%end if%>
 
   </tbody>
-</table>
+</table></div>
 
 <% 
 	Next

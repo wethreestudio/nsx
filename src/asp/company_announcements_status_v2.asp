@@ -32,7 +32,7 @@
 
 <% if len(exchid)<>0 then server.execute "company_header_v2_" & exchid & ".asp"%>
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="4" bgcolor="#FFFFFF" width="170" align="center">
 	<%if len(exchid)<>0 then server.execute "company_lmenu_v2_" & exchid & ".asp"%></td>
@@ -57,7 +57,7 @@ entities report market significant events to the Exchange. This information is i
 
     <td class="plaintext" valign="top" bgcolor="#FFFFFF">
 <div align="center">
-<table width="550" cellpadding="5">
+<div class="table-responsive"><table width="550" cellpadding="5">
 <!--#INCLUDE FILE="admin/merchtools.asp"-->
 
 <%
@@ -193,10 +193,10 @@ if fh > rc then fh = rc
       <%end if%>
     </td>
   </tr>
-</table>
+</table></div>
 
 <div align="center">
-<table border="0" cellspacing="0" cellpadding="5"  width="550" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
+<div class="table-responsive"><table border="0" cellspacing="0" cellpadding="5"  width="550" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
   <tr>
     <td class="plaintext" width="55" bgcolor="#666666"><font color="#FFFFFF"><b>
 	FLAG</b></font></td>
@@ -331,7 +331,7 @@ if fh > rc then fh = rc
 </td></tr>
 
   
-</table>
+</table></div>
     
     
     </div>
@@ -352,7 +352,7 @@ if fh > rc then fh = rc
     
     
 
-</table>
+</table></div>
 </div>
 <% if len(exchid)<>0 then server.execute "company_footer_v2_" & exchid & ".asp"%>
 </body>

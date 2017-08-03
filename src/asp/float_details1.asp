@@ -223,7 +223,7 @@ If Len(Trim(agshortdesc & " ")) > 0 Then
 End If
 %>
 <div class="f-w-table">
-<table>
+<div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="5">
@@ -349,13 +349,13 @@ End If
         </tr>
 <%end if%>
     </tbody>
-</table>
+</table></div>
 </div>
 <%
 is_odd = true
 %>
 <div class="f-w-table">
-<table>
+<div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="5">
@@ -493,7 +493,7 @@ is_odd = true
         </tr>
 <%end if%>
     </tbody>
-</table>
+</table></div>
 </div>
 
 

@@ -117,7 +117,7 @@ if fh > rc then fh = rc
 
 <div align="center">
 <div class="table-responsive">
-<table id="myTable" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter"> 
 <thead>
          <tr>
           <th align=right style="text-align:right;">Date</th>
@@ -172,7 +172,7 @@ if fh > rc then fh = rc
     	  NEXT
     end if
     %>
-</tbody></table></div>
+</tbody></table></div></div>
 </div>
 </div>
 </div>

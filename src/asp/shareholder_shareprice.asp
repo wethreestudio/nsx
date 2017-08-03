@@ -23,7 +23,7 @@
 <body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" style="background-color: #DDDDDD">
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" cellpadding="0" style="border-collapse: collapse" width="800" id="table1"  bgcolor="#FFFFFF">
+<div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="800" id="table1"  bgcolor="#FFFFFF">
   <tr>
     <td class="plaintext" valign="top"></td>
     <td class="plaintext" valign="top">
@@ -47,7 +47,7 @@
 &nbsp;</p>
     <p>&nbsp;</td>
   </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 

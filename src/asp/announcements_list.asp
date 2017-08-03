@@ -12,7 +12,7 @@ page_title = "Announcements List"
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont"> 
 
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="4" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -37,7 +37,7 @@ The NSX Listing Rules requires that listed entities report market significant ev
 
     <td class="plaintext" valign="top" bgcolor="#FFFFFF" width="100%">
 <div align="center">
-<table width="100%" cellspacing="2" cellpadding="5">
+<div class="table-responsive"><table width="100%" cellspacing="2" cellpadding="5">
 <!--#INCLUDE FILE="admin/merchtools.asp"-->
 
 
@@ -174,10 +174,10 @@ if fh > rc then fh = rc
       <%end if%>
     </td>
   </tr>
-</table>
+</table></div>
 
 <div align="center">
-<table border="0" cellspacing="0" cellpadding="5"  width="100%" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
+<div class="table-responsive"><table border="0" cellspacing="0" cellpadding="5"  width="100%" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
   <tr>
     <td class="plaintext" width="30" bgcolor="#666666"><font color="#FFFFFF"><b>ISSUER</b></font></td>
     <td class="plaintext" width="100" bgcolor="#666666"><font color="#FFFFFF"><b>&nbsp;</b></font></td>
@@ -315,7 +315,7 @@ if fh > rc then fh = rc
 </td></tr>
 
   
-</table>
+</table></div>
     
     
     </div>
@@ -336,6 +336,6 @@ if fh > rc then fh = rc
     
     
 
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

@@ -41,7 +41,7 @@ document.forms[fname].all[imagename].src=eval(objectsrc+".src");
 //-->
 </script>
  <div align="center">
-   <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
+   <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
      <tr>
        <td bgcolor="#959CA0" >
     <p align="right"><a class="bodylinks" href="GoldCoast_Default.asp">Gold Coast Home</a> 
@@ -114,6 +114,6 @@ bot="Ws4FpEx" endspan  -->
         &nbsp;<input type="hidden" name="mode" value="phrase"></form>
        </td>
      </tr>
-   </table>
+   </table></div>
  </div>
  

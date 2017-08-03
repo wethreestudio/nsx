@@ -1,7 +1,7 @@
 <!--#INCLUDE FILE="include_all.asp"-->
 <!--#INCLUDE FILE="header.asp"-->
     	<div class="container_cont">
-  <table  cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
+  <div class="table-responsive"><table  cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
     <tr>
       <td class="plaintext" colspan="2" bgcolor="#FFFFFF">
 		
@@ -17,7 +17,7 @@
 		<p>No fees</p>
 		<h2>Per Organisation Fees</h2>
 
-        <table cellpadding="5" style="border-bottom:1px solid #808080; border-collapse: collapse; " width="100%" id="table2">
+        <div class="table-responsive"><table cellpadding="5" style="border-bottom:1px solid #808080; border-collapse: collapse; " width="100%" id="table2">
 			<tr>
 				<td bgcolor="#666666" class="plaintext" ><b>
 				<font color="#FFFFFF">Application and Annual Fees</font></b></td>
@@ -44,7 +44,7 @@
 				<td class="plaintext" align="right"  bgcolor="#EEEEEE">1,100</td>
 				<td class="plaintext" align="right"  bgcolor="#EEEEEE"><img border="0" src="images/nsxdiag.gif" width="22" height="11" align="right">&nbsp;</td>
 			</tr>
-		</table>
+		</table></div>
 		<p>All fees are payable in advance and are non-refundable.</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
@@ -57,6 +57,6 @@
 		
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

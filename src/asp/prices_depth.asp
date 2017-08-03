@@ -19,7 +19,7 @@ End Function
 
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="4" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -164,7 +164,7 @@ tradedatetime = alldata(1,1)
 	
 
 <div align="center">
-<table id="prices_123" class="sortable" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="border-bottom:1px solid #808080; " cellpadding="3">
+<div class="table-responsive"><table id="prices_123" class="sortable" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="border-bottom:1px solid #808080; " cellpadding="3">
         <tr>
           <td class="plaintext" bgcolor="#666666" rowspan="2" width="131">
 			<font color="#FFFFFF"><b>NSX CODE</b></font></td>
@@ -385,7 +385,7 @@ tradedatetime = alldata(1,1)
      
  
       
-      </table>
+      </table></div>
 </div>
 
 
@@ -400,6 +400,6 @@ tradedatetime = alldata(1,1)
     </td>
     
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

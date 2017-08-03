@@ -121,7 +121,7 @@ Number of Listed Securities: <b><%=formatnumber(rc+1,0)%></b><br><br>
 </div>
 
 
-<table id="myTable" class="tablesorter1" width="99%"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter1" width="99%"> 
 
 
         <%
@@ -152,7 +152,7 @@ Number of Listed Securities: <b><%=formatnumber(rc+1,0)%></b><br><br>
 		lapstart = false
 		else
 		if prvcode <> nsxcode then
-			response.write "  </table>" & vbCrLf
+			response.write "  </table></div>" & vbCrLf
       response.write " </td>" & vbCrLf
       response.write "</tr>" & vbCrLf  & vbCrLf
 			lap = (-lap)+1
@@ -168,7 +168,7 @@ Number of Listed Securities: <b><%=formatnumber(rc+1,0)%></b><br><br>
   <tr<%=c%>> 
      <td width=20 class="plaintext" valign="top"><a href="company_details.asp?nsxcode=<%=nsxcode%>" title="click for company details"><%=nsxcode %></a></td>
      <td width=700 class="plaintext" valign="top"><a href="company_details.asp?nsxcode=<%=nsxcode%>" title="click for company details"><%=Server.HTMLEncode(CoName)%></a><br>
-		<table width="100%" class="ol_inner" >
+		<div class="table-responsive"><table width="100%" class="ol_inner" >
 	   <tr class="ol_inner">
           <td class="ol_inner" valign="top" width="100" >Code</td>
           <td class="ol_inner" valign="top" width="100" >ISIN</td>
@@ -207,7 +207,7 @@ Number of Listed Securities: <b><%=formatnumber(rc+1,0)%></b><br><br>
   
 NEXT
 		  %>
-		  </table>
+		  </table></div>
 		  <%
 		  
 end if
@@ -217,7 +217,7 @@ end if
     </td>
     
   </tr>
-</table>
+</table></div>
 
 
 <div class="pagebar">Pages:&nbsp;

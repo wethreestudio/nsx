@@ -45,7 +45,7 @@ tday = 200
 <div align="center" >
 	
 
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -74,7 +74,7 @@ your browser.</span></font></p>
     tradingcode=request.querystring("tradingcode")
     
     %>
-<table align=center>
+<div class="table-responsive"><table align=center>
 <!--#INCLUDE FILE="admin/merchtools.asp"-->
 <%
 
@@ -259,7 +259,7 @@ if rc>0 then
   <tr><td>No Records available</td></tr>
       
     <%end if%>
-    </table>
+    </table></div>
 
 
 
@@ -271,7 +271,7 @@ if rc>0 then
     </td>
     
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

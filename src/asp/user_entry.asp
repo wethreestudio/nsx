@@ -31,7 +31,7 @@ Response.End
 
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 	<tr>
 		<td valign="top" rowspan="3" bgcolor="#FFFFFF" width="175">
 		</td>
@@ -47,7 +47,7 @@ Response.End
 		
 			<p>The with myNSX user services you can:
 		
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif"></td>
@@ -98,7 +98,7 @@ Response.End
 					<td valign="top" width="100%">logout from your
           session.<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 			<p>In order to use the SMS or Email services you must have a valid 
 			mobile number and email address.</p>
 			<p>If you are not already a user then please
@@ -130,7 +130,7 @@ Response.End
 
     
     </td>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

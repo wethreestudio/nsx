@@ -4,7 +4,7 @@
 %>
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
-	<table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
+	<div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
 		<tr>
 			<td class="plaintext" valign="top" align="center" width="150"><!--#INCLUDE FILE="shareholder_lmenu.asp"-->
       		</td>
@@ -13,7 +13,7 @@
 				<p><b><font size="4" color="#FF9933"><br></font></b>
 				ISSUED CAPITAL - as at 11 
 				August 2010</b></font></p>
-				<table width="550" id="table2" cellspacing="0" cellpadding="5">
+				<div class="table-responsive"><table width="550" id="table2" cellspacing="0" cellpadding="5">
 					<tr>
 						<td bgcolor="#666666" class="plaintext">
 						<font color="#FFFFFF"><b>Security</b></font></td>
@@ -54,9 +54,9 @@
 						<td class="plaintext" align="right" bgcolor="#DDDDDD">
 						Unquoted</td>
 					</tr>
-				</table>
+				</table></div>
 			
 			</td>
 		</tr>
-	</table></div>
+	</table></div></div>
   <!--#INCLUDE FILE="footer.asp"-->

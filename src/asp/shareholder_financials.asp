@@ -8,7 +8,7 @@ page_title = "Shareholder Announcements"
 %><!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont"> 
 <div class="editarea">
-<table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
+<div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
   <tr>
     <td class="plaintext" valign="top" align="center" width="150"><!--#INCLUDE FILE="shareholder_lmenu.asp"--></td>
     <td class="plaintext" valign="top">
@@ -17,7 +17,7 @@ page_title = "Shareholder Announcements"
 		FINANCIAL REPORTS AND MEETING DOCUMENTS</b></font></p>
 	
 		<div align="center">
-			<table border="0" width="600" id="table4" cellpadding="2">
+			<div class="table-responsive"><table border="0" width="600" id="table4" cellpadding="2">
 				<tr>
 					<td class="plaintext" bgcolor="#666666" width="615" colspan="2">
 					<font color="#FFFFFF"><b>2011 </b></font></td>
@@ -616,13 +616,13 @@ page_title = "Shareholder Announcements"
         <img border="0" src="images/icons/pdf.gif"></a> 
 					Annual Report June 30 2000</td>
 				</tr>
-			</table>
+			</table></div>
 			<p>&nbsp;</p>
 			<p>&nbsp;</div>
 
     </td>
   </tr>
-  </table>
+  </table></div>
   
 </div>
 </div>

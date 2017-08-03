@@ -34,7 +34,7 @@ enterprises, high technology, stock, exchange, stock exchange, Australian, NSX, 
 <body >
 
 <!--#INCLUDE FILE="../wgeneral/header.asp"-->
-<table border="0" width="1000" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="1000" cellspacing="0" cellpadding="0">
   <tr>
     <td width="160" valign="top" rowspan="4"><!--#INCLUDE FILE="../wgeneral/lmenu.asp"--></td>
   </tr>
@@ -180,7 +180,7 @@ agLogo=alldata(27,jj)
 
 
     
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td class="plaintext" bgcolor="#6D7BA0" height="4"><b><font size="3" color="#FFFFFF">&nbsp;<%=remcrlf(ucase(coname))%> 
     (ISSUER)</font></b></td>
@@ -199,8 +199,8 @@ agLogo=alldata(27,jj)
   <tr><td>&nbsp;</td></tr>
   <tr><td>&nbsp;</td></tr>
   <tr><td>&nbsp;</td></tr>
-</table>
-    <table border="0" cellpadding="0" cellspacing="5" bgcolor="#FFFFFF" width="470">
+</table></div>
+    <div class="table-responsive"><table border="0" cellpadding="0" cellspacing="5" bgcolor="#FFFFFF" width="470">
   <tr>
     <td bgcolor="#FFFFFF" valign="top" class="textlabel" width="150">
       Trading Code:
@@ -499,7 +499,7 @@ agLogo=alldata(27,jj)
     </td>
   </tr>
   
-</table>
+</table></div>
 
    
 
@@ -515,7 +515,7 @@ agLogo=alldata(27,jj)
     </td>
     
   </tr>
-</table>
+</table></div>
 <!--#INCLUDE FILE="../wgeneral/footer.asp"-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
 <p>&nbsp;&nbsp; </p>

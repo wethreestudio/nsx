@@ -1,9 +1,9 @@
 <div align="center">&nbsp;
-<table border="0" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666" id="table1" width="165" cellspacing="0">
+<div class="table-responsive"><table border="0" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666" id="table1" width="165" cellspacing="0">
 		<!-- MSTableType="layout" -->
 		<tr>
 			<td class="plaintext" height="49">
-			<table cellpadding="0" cellspacing="0" border="0" width="100%" >
+			<div class="table-responsive"><table cellpadding="0" cellspacing="0" border="0" width="100%" >
 				<!-- MSCellFormattingTableID="2" -->
 				<tr>
 					<td width="10">
@@ -25,7 +25,7 @@
 			<span style="text-decoration: none">Company
 Home</span></a><b> </b></td>
 				</tr>
-			</table>
+			</table></div>
 			</td>
 		</tr>
 		<tr>
@@ -157,5 +157,5 @@ Rules</span></a></td>
 			<a href="member_end.asp" onmouseover="spec('terms4','imgtdon')" onmouseout="spec('terms4','imgtdoff')">
 			<span style="text-decoration: none">Logout</span></a></td>
 		</tr>
-	</table>
+	</table></div>
 	<p>&nbsp;</div>

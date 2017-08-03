@@ -65,7 +65,7 @@ rc = rs.recordcount
  
 <h2>All Advisers (<%=rc%>)</h2> 
 
-<table id="myTable" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter"> 
 <thead> 
 <tr> 
     <th>Adviser</th> 
@@ -103,7 +103,7 @@ End If
 
 %>
 </tbody>
-</table>  
+</table></div>  
 <br>
 <div class="editarea">
 <p>For a printable contact sheet please <a href="/adviser_list_print.asp">click here</a></p>

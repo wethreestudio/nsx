@@ -33,7 +33,7 @@ response.cachecontrol = "PRIVATE"
 <body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" style="background-color: #FFFFFF" >
 
 <div align==center>
-<table cellspacing=0 border="0" width="165" id="table100" cellpadding="5" >
+<div class="table-responsive"><table cellspacing=0 border="0" width="165" id="table100" cellpadding="5" >
 	<tr>
 		<td class=plaintext bgcolor=#959CA0><font color="#FFFFFF"><b>Advances</b></font></td>
 		<td class=plaintext bgcolor=#959CA0 align="right">
@@ -126,7 +126,7 @@ end if
 DATA_PATH = Server.Mappath("newsxdb\newsxdb.mdb")
 %>
 
-</table>
+</table></div>
 </div>
 </body>
 </html>

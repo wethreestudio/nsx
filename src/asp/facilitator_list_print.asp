@@ -28,7 +28,7 @@
 <body bgcolor=white >
 
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -108,7 +108,7 @@ if fh > rc then fh = rc
    
 
 
-  <table width="100%" cellspacing="1" cellpadding="5" style="border-bottom:1px solid #808080; ">
+  <div class="table-responsive"><table width="100%" cellspacing="1" cellpadding="5" style="border-bottom:1px solid #808080; ">
  
 <%  if WEOF then %>
 	
@@ -180,11 +180,11 @@ if fh > rc then fh = rc
   lap = lap + 2
   if lap >= 14 and (jj+1) <= rc then
   	lap = 0
-  	response.write "</table><p class=breakhere>&nbsp;</p>"
+  	response.write "</table></div><p class=breakhere>&nbsp;</p>"
 
   	%>
   	
-  	  <table width="100%" cellspacing="1" cellpadding="5" style="border-bottom:1px solid #808080; ">
+  	  <div class="table-responsive"><table width="100%" cellspacing="1" cellpadding="5" style="border-bottom:1px solid #808080; ">
   	
   	<%
   	
@@ -196,7 +196,7 @@ if fh > rc then fh = rc
 
 
   
-</table>
+</table></div>
 </div>
 
 
@@ -205,7 +205,7 @@ if fh > rc then fh = rc
     </td>
     
   </tr>
-  </table>
+  </table></div>
 </div>
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

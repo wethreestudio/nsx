@@ -159,4 +159,4 @@ end if ' application timeout
 eml_ind = Application("http_cache_nsxind_content_" & displayboard)
 'response.write eml_ind & displayboard & " " & strcached & " " & Application("http_cache_nsxind_expires_" & displayboard)
 %>
-<table width=788><tr><td class=plaintext><%=eml_ind%></td></tr></table>
+<div class="table-responsive"><table width=788><tr><td class=plaintext><%=eml_ind%></td></tr></table></div>

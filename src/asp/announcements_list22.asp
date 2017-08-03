@@ -164,7 +164,7 @@ rs.Open SQL, conn, adOpenForwardOnly, adLockReadOnly
 Dim alt
 alt = true
 %>
-<table class="tablesorter">
+<div class="table-responsive"><table class="tablesorter">
 <thead> 
 <tr> 
     <th>Issuer</th>
@@ -213,7 +213,7 @@ Set conn = Nothing
 </tbody>
 
 
-</table>
+</table></div>
 
 
 </div>

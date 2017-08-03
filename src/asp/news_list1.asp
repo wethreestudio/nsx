@@ -68,12 +68,12 @@ Server.Execute "side_menu.asp"
 </div>
 
 <div >
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td class="plaintext" valign="top" bgcolor="#FFFFFF">
     
     <div align="center">
-<table width="100%" cellspacing="0" cellpadding="5">
+<div class="table-responsive"><table width="100%" cellspacing="0" cellpadding="5">
 
 
 <%
@@ -160,10 +160,10 @@ if fh > rc then fh = rc
     </div>  
 </td>
   </tr>
-</table>
+</table></div>
 </div>
 	<div align="center">
-<table class="tablesorter" style="width:100%">
+<div class="table-responsive"><table class="tablesorter" style="width:100%">
   <thead>
   <tr>
     <th align="left" width="150">Date</th>
@@ -199,11 +199,11 @@ If jj Mod 2 = 0 Then c = ""
 	end if
 	%>
   </tbody>
-</table>
+</table></div>
 <p>&nbsp;</div>
 </td>
 </tr>
-</table>
+</table></div>
 </div>
 </div>
 <div style="clear:both;"></div>

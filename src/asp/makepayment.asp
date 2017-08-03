@@ -80,7 +80,7 @@ $(document).ready(function () {
 	<input type="hidden" name="business" value="accounts@nsx.com.au">
 	<input type="hidden" name="currency_code" value="AUD">
 	<!-- input type="hidden" name="handling" id="handling" value="0" -->
-	<table id="myTable" class="tablesorter">
+	<div class="table-responsive"><table id="myTable" class="tablesorter">
 		<tr>
 			<td style="width:180px"><label for="invoice_number"><b>Invoice number</b></label></td>
 			<td><input type="text" id="invoice_number" name="item_name" value="<%=invoice_number%>"></td>
@@ -94,7 +94,7 @@ $(document).ready(function () {
 			<td><input type="submit" border="0" name="submit" id="send_click" value="Send Payment" alt="Pay your NSX invoice by Credit Card"></td>
 		</tr>
 <tr><td colspan="2"><small>Notes: A 3% handling fee is automatically added to all Credit Card and PayPal payments. </small></td></tr>		
-	</table>
+	</table></div>
 	
 </form>
 </div>

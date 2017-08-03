@@ -26,7 +26,7 @@
 
 <body >
 <div id="tooltips" align="center">
-<table cellspacing="0" cellpadding="0" border="0" width="797">
+<div class="table-responsive"><table cellspacing="0" cellpadding="0" border="0" width="797">
   <tbody><tr>
     <td bgcolor="#FFFFFF" valign="top" rowspan="3"></td>
   </tr>
@@ -42,7 +42,7 @@
 	</p>
 	</td>
    </tr> 
-</tbody></table>
+</tbody></table></div>
  </td></tr>   
 
 
@@ -52,7 +52,7 @@
     
       
       
-      </tbody></table>
+      </tbody></table></div>
 
 
 
@@ -64,7 +64,7 @@
 	</td>
     
   </tr>
-</tbody></table>
+</tbody></table></div>
 
 </div>
 

@@ -1,7 +1,7 @@
 <!--#INCLUDE FILE="include_all.asp"-->
 <!--#INCLUDE FILE="header.asp"-->
     	<div class="container_cont">
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
     <tr>
       <td class="plaintext" colspan="2" bgcolor="#FFFFFF">
       
@@ -40,7 +40,7 @@
 		</p>
 		<p>The badge is available to be incorporated into various Facilitator 
 		communications such as:</p>
-		<table border="0" width="50%" id="table2" cellspacing="3" cellpadding="5">
+		<div class="table-responsive"><table border="0" width="50%" id="table2" cellspacing="3" cellpadding="5">
 			<tr>
 				<td class="plaintext">
 				<img border="0" src="images/broker_page1_bullet.gif" width="20" height="15">Annual 
@@ -71,7 +71,7 @@
 				<img border="0" src="images/broker_page1_bullet.gif" width="20" height="15">Product 
 				brochures, packaging, letter head.</td>
 			</tr>
-		</table>
+		</table></div>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
@@ -80,6 +80,6 @@
       
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

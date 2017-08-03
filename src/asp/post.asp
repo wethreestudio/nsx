@@ -62,8 +62,8 @@ Set objWinHttp = Nothing
 <p>
 <strong>The Response:</strong>
 </p>
-<table border="1">
+<div class="table-responsive"><table border="1">
 <tr><td>
 <%= strResponseText %>
 </td></tr>
-</table>
+</table></div>

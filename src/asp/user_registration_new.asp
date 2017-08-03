@@ -16,7 +16,7 @@ alow_robots = "no"
 %>
 
   <div align="center">
-<table width="90%" cellspacing="1" border="0">
+<div class="table-responsive"><table width="90%" cellspacing="1" border="0">
   <tbody><tr>
     <td width="500" valign="top" class="highlightbox">
       <p><font>This is a free service.&nbsp; Registration is 
@@ -24,12 +24,12 @@ alow_robots = "no"
 		disclaimer below.</font></p>
     </td>
   </tr>
-</tbody></table>
+</tbody></table></div>
 </div>
 
 <form action="user_registration_new.asp" method="post">
   <div align="center">
-	<table border="0" width="450" cellspacing="1" bgcolor="#FFFFFF" cellpadding="0">
+	<div class="table-responsive"><table border="0" width="450" cellspacing="1" bgcolor="#FFFFFF" cellpadding="0">
     <center>
     	<tr>
 			<td align="right">First Name:</td>
@@ -76,7 +76,7 @@ alow_robots = "no"
 			register your interest in receiving alerts to an overseas mobile 
 			phone.</td>
 		</tr>
-	</table></div>
+	</table></div></div>
 
   <div align="center"><p>
 	<input type="submit" value="Register" style="color: #6D7BA0; background-color: #FFFFFF; font-family: arial; font-size: 10pt; font-weight: bold"></p>

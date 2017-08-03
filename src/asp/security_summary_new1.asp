@@ -499,7 +499,7 @@ If VarType(depth_row) <> 0 Then
 %>
 <div class="row">  
 <div class="col-sm-6 col-md-6 col-lg-6">
-<table class="table">
+<div class="table-responsive"><table class="table">
      <thead>
        <tr class="header">
          <th colspan="3"><p>BIDS</p></th>
@@ -584,7 +584,7 @@ End if
 <% Next %>
 
 </tbody>
-</table>
+</table></div>
 </div>
 <%
 ' End Top Tables, Left Table
@@ -599,7 +599,7 @@ End if
 ' Start Top Tables, Right Table
 %>
 <div class="col-sm-6 col-md-6 col-lg-6">
-<table class="table">
+<div class="table-responsive"><table class="table">
      <thead>
        <tr class="header">
          <th colspan="3"><p>OFFERS</p></th>
@@ -669,11 +669,11 @@ Next ' End first table; For rcc = 0 To row_count-1 FOR FIRST TABLE
 %> 
 
 </tbody>
-</table>
+</table></div>
 </div>
 </div>
 
-<table class="table">
+<div class="table-responsive"><table class="table">
     <thead>
         <tr class="header">
             <th colspan="6"><p>TRADES</p></th>
@@ -821,7 +821,7 @@ Next ' End first table; For rcc = 0 To row_count-1 FOR FIRST TABLE
 Next                  
 %>               
 </tbody>
-</table>
+</table></div>
 <%
 End If
 End If 
@@ -840,7 +840,7 @@ if len(offexchangetrading_url) > 0 then
     <div>
         <!--Other exchange trading -->
 	    <div class="f-w-table">
-	    <table>
+	    <div class="table-responsive"><table>
         <thead>
             <tr>
                 <th colspan="2">
@@ -870,7 +870,7 @@ if len(offexchangetrading_url) > 0 then
 <%  NEXT ' markets_count
 	%>
             </tbody>
-            </table>
+            </table></div>
         </div>
 	</div>
 <%

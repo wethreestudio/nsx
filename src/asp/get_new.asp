@@ -86,31 +86,31 @@ Set objWinHttp = Nothing
 ' I do it first as plain HTML (which gets interpretted by the
 ' browser like any other HTML) and then as source (by HTML
 ' encoding it so the tags display instead of rendering)
-' The <h1>s and <table>s are just for appearence.
+' The <h1>s and <div class="table-responsive"><table>s are just for appearence.
 %>
 
 <h1>Here's The Page:</h1>
-<table border="1">
+<div class="table-responsive"><table border="1">
 <tr><td>
 <%= strHTML %>
 </td></tr>
-</table>
+</table></div>
 
 <br />
 
 <h1>Here's The Code:</h1>
-<table border="1">
+<div class="table-responsive"><table border="1">
 <tr><td>
 <pre>
 
 <%= Server.HTMLEncode(strHTML) %>
 </pre>
 </td></tr>
-</table>
+</table></div>
 
 
 <h1>Here's The Code:</h1>
-<table border="1">
+<div class="table-responsive"><table border="1">
 <tr><td>
 <pre>
 <% aa=split(strHTML,",")
@@ -122,4 +122,4 @@ next
 %>
 </pre>
 </td></tr>
-</table>
+</table></div>

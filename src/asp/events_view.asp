@@ -31,7 +31,7 @@ End Function
 <!--#INCLUDE FILE="header.asp"-->
  
 <div class="container_cont">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -47,7 +47,7 @@ End Function
     
     &nbsp;
 	<div align="center">
-<table width="100%" cellpadding="5" style="border-bottom:1px solid #666666; " cellspacing="0">
+<div class="table-responsive"><table width="100%" cellpadding="5" style="border-bottom:1px solid #666666; " cellspacing="0">
 
 
 <%
@@ -136,7 +136,7 @@ CmdDD.Open SQL, ConnPasswords,1,3
 
 
   
-</table>
+</table></div>
     
     
 	</div>
@@ -149,7 +149,7 @@ CmdDD.Open SQL, ConnPasswords,1,3
 <p align="center">&nbsp;</p>
     </td>
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 

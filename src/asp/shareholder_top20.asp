@@ -4,7 +4,7 @@
 %>
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
-	<table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
+	<div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
 		<tr>
 			<td class="plaintext" valign="top" align="center" width="150"><!--#INCLUDE FILE="shareholder_lmenu.asp"-->
       		</td>
@@ -14,7 +14,7 @@
 				at 30 November 2011</font></b></p>
 				<p><b><font size="2" color="#FF9933">Fully paid ordinary 
 				securities</font></b></p>
-				<table width="550" id="table2" cellspacing="0" cellpadding="5">
+				<div class="table-responsive"><table width="550" id="table2" cellspacing="0" cellpadding="5">
 					<tr>
 						<td bgcolor="#666666" class="plaintext" width="399">
 						<font color="#FFFFFF"><b>Holder</b></font></td>
@@ -25,7 +25,7 @@
 					</tr>
 					<tr>
 						<td class="plaintext" colspan="3">
-						<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 538px" id="table4">
+						<div class="table-responsive"><table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 538px" id="table4">
 							<colgroup>
 								<col width="64" span="3" style="width:48pt">
 							</colgroup>
@@ -219,11 +219,11 @@
 								<td align="right" style="font-size: 8.0pt; font-weight: 700; font-family: Arial, sans-serif; color: black; font-style: normal; text-decoration: none; text-align: general; vertical-align: bottom; white-space: nowrap; border: medium none; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="86">
 								99,059,556</td>
 							</tr>
-						</table>
+						</table></div>
 						<p>&nbsp;</td>
 					</tr>
-				</table>
+				</table></div>
 			</td>
 		</tr>
-	</table></div>
+	</table></div></div>
   <!--#INCLUDE FILE="footer.asp"-->

@@ -24,7 +24,7 @@
 
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -34,7 +34,7 @@
   <tr>
     <td valign="top" bgcolor="#FFFFFF" width="200" >
 <div align="center">
-<table cellpadding="5" style="border-collapse: collapse; " width="90%" id="table11">
+<div class="table-responsive"><table cellpadding="5" style="border-collapse: collapse; " width="90%" id="table11">
 	<tr>
 		<td class="plaintext" bgcolor="#959ca0"><font color="#FFFFFF"><b>Quick 
 		Links</b></font></td>
@@ -132,12 +132,12 @@ End Function
 		
 		</td>
 	</tr>
-	</table>
+	</table></div>
   
 
 
       <div align="center">
-      <table cellpadding="0" style="border-collapse: collapse; " width="90%" id="table12">
+      <div class="table-responsive"><table cellpadding="0" style="border-collapse: collapse; " width="90%" id="table12">
         <tr>
           <td width="100%" class="plaintext" bgcolor="#959CA0">
           <p style="margin-top: 5px; margin-bottom: 5px"><font color="#FFFFFF">
@@ -154,7 +154,7 @@ End Function
       <font size="1">
 		<a href="events_notify.asp">Add an Event</a> | <a href="events_list.asp">More Events</a>&nbsp; </font></td>
         </tr>
-        </table>
+        </table></div>
       </div>
   
 
@@ -195,11 +195,11 @@ their ongoing compliance obligations. <a href="about_nominated_advisers.asp">Cli
 
 
 
-  <table border="0" cellpadding="4" style="border-collapse: collapse" width="100%">
+  <div class="table-responsive"><table border="0" cellpadding="4" style="border-collapse: collapse" width="100%">
     <tr>
       <td width="100%" class="plaintext">
       <div align="center">
-      <table cellpadding="5" style="border-collapse: collapse; " width="90%">
+      <div class="table-responsive"><table cellpadding="5" style="border-collapse: collapse; " width="90%">
         <tr>
           <td width="34%" class="plaintext" bgcolor="#959CA0">
           <font color="#FFFFFF"><b>Statistics</b></font></td>
@@ -265,11 +265,11 @@ their ongoing compliance obligations. <a href="about_nominated_advisers.asp">Cli
 <font size="1">Market Hrs: 9am to 2:30pm<br>
 Office Hrs: 8am to 5pm</font></td>
         </tr>
-      </table>
+      </table></div>
       </div>
       </td>
     </tr>
-  </table>
+  </table></div>
 <div align="center">
   <center>
   <!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="VBScript" Type="text/vbscript"><!--
@@ -285,11 +285,11 @@ function FrontPage_Form3_onsubmit()
   FrontPage_Form3_onsubmit = True 
 End Function
 --></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" name="FrontPage_Form3" style="margin-top: 0; margin-bottom: 0" action="market_get.asp" language="JavaScript">
-  <table width="100%" id="table8">
+  <div class="table-responsive"><table width="100%" id="table8">
     <tr>
       <td width="100%" class="plaintext">
       <div align="center">
-      <table cellpadding="5" style="border-collapse: collapse; " width="90%" id="table9">
+      <div class="table-responsive"><table cellpadding="5" style="border-collapse: collapse; " width="90%" id="table9">
         <tr>
           <td width="100%" class="plaintext" bgcolor="#959CA0">
           <font color="#FFFFFF"><b>Market Data</b></font></td>
@@ -309,19 +309,19 @@ End Function
 		</select> <input onmouseover="spec2('FrontPage_Form3','prices','imggoon')" onmouseout="spec2('FrontPage_Form3','prices','imggooff')" src="images/v2/LGOBOX1.jpg" name="prices" type="image"  align="middle" alt="Retrieve Delayed Trading Data." border="0"><br>
 		<font size="1"><a href="market_officiallist.asp" >Find a code</a></font></td>
         </tr>
-        </table>
+        </table></div>
       </div>
       </td>
     </tr>
-  </table>
+  </table></div>
   </form>
 <div align="center">
   <center>
-  <table border="0" cellpadding="4" style="border-collapse: collapse" width="100%">
+  <div class="table-responsive"><table border="0" cellpadding="4" style="border-collapse: collapse" width="100%">
     <tr>
       <td width="100%" class="plaintext">
       <div align="center">
-      <table cellpadding="0" style="border-collapse: collapse; " width="90%" id="table5">
+      <div class="table-responsive"><table cellpadding="0" style="border-collapse: collapse; " width="90%" id="table5">
         <tr>
           <td width="100%" class="plaintext" bgcolor="#959CA0">
           <p style="margin-top: 5px; margin-bottom: 5px"><font color="#FFFFFF">
@@ -339,11 +339,11 @@ End Function
 		<img border="0" src="images/rss/rss.png" width="36" height="14" align="middle"></a>
 		<font size="1">| <a href="whatis_rss.asp">What is RSS?</a></font></td>
         </tr>
-        </table>
+        </table></div>
       </div>
       </td>
     </tr>
-  </table>
+  </table></div>
   </center>
 </div>
 
@@ -351,7 +351,7 @@ End Function
 
     </td>
   </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 

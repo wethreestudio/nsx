@@ -25,9 +25,9 @@ if len(exchid) = 0 then exchid = "SIMV"
 <div align="center" bgcolor=white>
 <% if len(exchid)<>0 then server.execute "company_header_v2_" & exchid & ".asp"%>
 <div bgcolor=white> <!-- input form -->
-<table align=center bgcolor=white width=797>
+<div class="table-responsive"><table align=center bgcolor=white width=797>
 <tr><td align=center><p>&nbsp;</p>
-<table align=center bgcolor=white cellpadding="4" style="border:1px solid #666666; border-collapse: collapse; padding-left:4px; padding-right:4px; padding-top:1px; padding-bottom:1px" width="200px" id="table37" cellspacing="0">
+<div class="table-responsive"><table align=center bgcolor=white cellpadding="4" style="border:1px solid #666666; border-collapse: collapse; padding-left:4px; padding-right:4px; padding-top:1px; padding-bottom:1px" width="200px" id="table37" cellspacing="0">
 	<tr>
 		<td class="plaintext" bgcolor="#959CA0">
 		<b><font color="#FFFFFF">Member Services</font></b></td>
@@ -91,8 +91,8 @@ End Function
 		%>"></form>
 		</td>
 	</tr>
-	</table>
-<p>&nbsp;</p></td></tr></table>
+	</table></div>
+<p>&nbsp;</p></td></tr></table></div>
 <% if len(exchid)<>0 then server.execute "company_footer_v2_" & exchid & ".asp"%>
 </div>
 </div>

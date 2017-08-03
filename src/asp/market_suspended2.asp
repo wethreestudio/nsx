@@ -114,7 +114,7 @@ Server.Execute "side_menu.asp"
 
 <h2>Suspended Listings</h2>
 <br />
-<table id="myTable" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter"> 
 <thead> 
 <tr> 
     <th>Code</th> 
@@ -163,7 +163,7 @@ End If
 
 %>
 </tbody>
-</table>
+</table></div>
 <br />
 <!-- /suspended -->
 
@@ -206,7 +206,7 @@ End If
 </div>
 
 <!-- delisted -->
-<table id="myTable_delisted" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable_delisted" class="tablesorter"> 
 <thead> 
 <tr> 
     <th>Code</th> 
@@ -264,7 +264,7 @@ End If
 
 %>
 </tbody>
-</table>  
+</table></div>  
 <!-- /delisted -->
 
 </div>

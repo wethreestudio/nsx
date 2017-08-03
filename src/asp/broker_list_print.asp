@@ -14,7 +14,7 @@
 <body>
 
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td  class="textheader" bgcolor="#FFFFFF" >
     <h1>NSX PARTICIPANT CONTACT SHEET</h1>
@@ -89,7 +89,7 @@ if fh > rc then fh = rc
    
 
 
-  <table width="100%" cellspacing="1" cellpadding="5" style="border-bottom:1px solid #808080; ">
+  <div class="table-responsive"><table width="100%" cellspacing="1" cellpadding="5" style="border-bottom:1px solid #808080; ">
  
 <%  if WEOF then %>
 	
@@ -181,11 +181,11 @@ end if
   lap = lap + 2
   if lap >= 14 and (jj+1) <= rc then
   	lap = 0
-  	response.write "</table><p class=breakhere>&nbsp;</p>"
+  	response.write "</table></div><p class=breakhere>&nbsp;</p>"
 
   	%>
   	
-  	  <table width="100%" cellspacing="1" cellpadding="5" style="border-bottom:1px solid #808080; ">
+  	  <div class="table-responsive"><table width="100%" cellspacing="1" cellpadding="5" style="border-bottom:1px solid #808080; ">
   	
   	<%
   	
@@ -197,13 +197,13 @@ end if
 
 
   
-</table>
+</table></div>
 </div>
 
     </td>
     
   </tr>
-  </table>
+  </table></div>
 </div>
 
 <p>&nbsp;</p>

@@ -99,7 +99,7 @@ alow_robots = "no"
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
 <div class="editarea">
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
     <tr>
       <td colspan="2"><h1>REPORTING CALENDAR</h1></td>
     </tr>
@@ -108,7 +108,7 @@ alow_robots = "no"
       <td class="plaintext" valign="top">
       
 			<h2>Time Table for Financial Report Lodgments:</h2>
-			<table  width="100%" id="table2" cellspacing="1" cellpadding="3" >
+			<div class="table-responsive"><table  width="100%" id="table2" cellspacing="1" cellpadding="3" >
 				<tr>
 					<td class="plaintext" bgcolor="#666666" align="center" width="83">
 					<b><font color="#FFFFFF">Balance Date</font></b></td>
@@ -176,8 +176,8 @@ alow_robots = "no"
 					<td class="plaintext" align="center" bgcolor="#EEEEEE" nowrap width="83" ><%=fmtddmm(rep_dec)%></td>
 					<td class="plaintext" align="center" bgcolor="#EEEEEE" nowrap width="84" ><%=fmtddmm(agm_dec)%></td>
 				</tr>
-			</table>
-			<table border="0" width="300" id="table3" cellspacing="0" cellpadding="0">
+			</table></div>
+			<div class="table-responsive"><table border="0" width="300" id="table3" cellspacing="0" cellpadding="0">
 				<tr>
 					<td bgcolor="#FF3333" class="plaintext" align="center">
 					<font color="#FFFFFF" size="1"><b>Due Now</b></font></td>
@@ -194,7 +194,7 @@ alow_robots = "no"
 					</td>
 
 				</tr>
-			</table>
+			</table></div>
 			<h2>DUAL LODGEMENT RELIEF</h2>
 			<p>Please note that NSX has applied for and obtained dual lodgement 
 			relief from ASIC.&nbsp; This relief <u>only</u> relates to annual 
@@ -213,7 +213,7 @@ alow_robots = "no"
 			lodged with ASIC must also be lodged with NSX at the same time.</p>
 			<h2>REQUIRED DOCUMENTS</h2>
 			<h2>Half Year Reports</h2>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -225,9 +225,9 @@ alow_robots = "no"
 					<td valign="top" width="100%">Appendix 3 (for information not included in the statutory 
 				report).<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 			<h2>Preliminary Final Report</h2>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -235,18 +235,18 @@ alow_robots = "no"
 					(not required if the <u>statutory annual</u> report is 
 					lodged before the preliminary due date)<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 			<h2>Annual Reports</h2>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
 					<td valign="top" width="100%">Statutory Report.<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 			<h2>Reporting to members (at least 31 days before meeting -&nbsp; 
 			28days notice/3days postage)</h2>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -278,9 +278,9 @@ alow_robots = "no"
 					<td valign="top" width="100%">Other documentation required 
 					to be reviewed by shareholders<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 			<h2>Annual General Meeting</h2>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -297,9 +297,9 @@ alow_robots = "no"
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
 					<td valign="top" width="100%">CEO's Address (if prepared).<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 			<h2>Further Information</h2>
-			<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 				<!--msimagelist--><tr>
 					<!--msimagelist--><td valign="top" width="42">
 					<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -308,12 +308,12 @@ alow_robots = "no"
 					<a href="documents/practice_notes/PN09-PeriodicDisclosure.pdf">
 					Periodic Disclosure Practice Note</a> #9<!--msimagelist--></td>
 				</tr>
-				<!--msimagelist--></table>
+				<!--msimagelist--></table></div>
 			<p>&nbsp;</p>
       
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

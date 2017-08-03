@@ -59,7 +59,7 @@ document.forms[fname].all[imagename].src=eval(objectsrc+".src");
 
 <%  region=ucase(trim(request.querystring("region") & " "))%>
  <div align="center">
-   <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1">
+   <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1">
      <tr>
        <td align=center><!-- PUT THIS TAG IN DESIRED LOCATION OF SLOT top_of_home_page
      --><script type="text/javascript">GA_googleFillSlot("top_of_home_page");</script>
@@ -180,7 +180,7 @@ bot="Ws4FpEx" endspan  -->
         &nbsp;<input type="hidden" name="mode" value="phrase"></form>
        </td>
      </tr>
-   </table>
+   </table></div>
  </div>
 
  

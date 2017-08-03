@@ -131,7 +131,7 @@ Below are the 200 most recent announcemnts for <%=UCase(ImpolodeCollection(nsxco
 
 
 
-<table id="myTable" class="tablesorter" width="99%"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter" width="99%"> 
 <thead> 
 <tr> 
     <th>Code</th>
@@ -228,7 +228,7 @@ End If
 %>
 
 </tbody>
-</table>
+</table></div>
 </div>
 <%
 End If

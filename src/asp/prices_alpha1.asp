@@ -311,7 +311,7 @@ Sector: <a href="prices_alpha.asp?nsxcode=&amp;board=ncrp&amp;region=<%=displayb
 </div>
 
 
-<table id="myTable" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter"> 
 <thead> 
 <tr> 
     <th>NSX<br>Code</th> 
@@ -499,7 +499,7 @@ End If
 Set rs = Nothing
 %>  
 </tbody> 
-</table> 
+</table></div> 
 
 <h2>Note</h2>
 <ol>

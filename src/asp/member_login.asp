@@ -51,7 +51,7 @@ page_title = "Member Login"
 	<form method="POST" action="/member_check.asp">
 		<input type="hidden" name="capform" value="1">
 		<input type="hidden" name="STATUS" value="CHKLOGIN">
-		<table class="form1">
+		<div class="table-responsive"><table class="form1">
 			<tr>
 				<td nowrap="nowrap"><b>NSX Username:</b></td>
 				<td><input type="text" id="USERNAME" name="USERNAME" size="50" class="TextBox" value="<%= UserName %>"></td>
@@ -69,7 +69,7 @@ page_title = "Member Login"
 				<td><input type="submit" value="Sign-in" id="B1">&nbsp;<a href="/member_forgot.asp">Forgot your username or password?</a>
 				</td>
 			</tr>
-		</table>
+		</table></div>
 	</form>
 </div>
 </div>

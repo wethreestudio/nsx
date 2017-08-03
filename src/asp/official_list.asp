@@ -27,7 +27,7 @@ Sub RenderSummary(sql, empty_message, right_col, right_col_heading, right_col_de
     style = " style=""color:" & c & """ "
   End If
 %>
-<table class="tablesorter">
+<div class="table-responsive"><table class="tablesorter">
     <thead> 
         <tr> 
             <th>Code</th>
@@ -60,7 +60,7 @@ Sub RenderSummary(sql, empty_message, right_col, right_col_heading, right_col_de
   End If
 %>
 </tbody>
-</table>  
+</table></div>  
 
 <%
 End Sub
@@ -179,7 +179,7 @@ Number of Listed Securities: <b><%=formatnumber(rc+1,0)%></b>
 </div>
 
 <div class="table-responsive">
-<table id="myTable" class="tablesorter1 table">
+<div class="table-responsive"><table id="myTable" class="tablesorter1 table">
         <%
 		prvcode =""
 		lapend = false
@@ -216,7 +216,7 @@ Number of Listed Securities: <b><%=formatnumber(rc+1,0)%></b>
 		lapstart = false
 		else
 		if prvcode <> nsxcode then
-			response.write "  </table>" & vbCrLf
+			response.write "  </table></div>" & vbCrLf
       response.write " </td>" & vbCrLf
       response.write "</tr>" & vbCrLf  & vbCrLf
 			lap = (-lap)+1
@@ -232,7 +232,7 @@ Number of Listed Securities: <b><%=formatnumber(rc+1,0)%></b>
   <tr<%=c%>> 
      <td width=20 class="plaintext" valign="top"><a href="/marketdata/company-directory/<%=nsxcode%>/" title="click for company details"><%=nsxcode %></a></td>
      <td width=700 class="plaintext" valign="top"><a href="/marketdata/company-directory/details/<%=nsxcode%>/" title="click for company details"><%=Server.HTMLEncode(CoName)%></a> (issuer listed on: <%=aglisteddate%>)<br>
-		<table class="ol_inner" border=0 >
+		<div class="table-responsive"><table class="ol_inner" border=0 >
 	   <tr class="ol_inner">
           <td class="ol_inner" valign="top" width="100" >Code</td>
           <td class="ol_inner" valign="top" width="100" >ISIN</td>
@@ -274,14 +274,14 @@ prvcode = nsxcode
   
 NEXT
 		  %>
-		  </table>
+		  </table></div>
 		  <%
 		  
 end if
     %>
             </td>
         </tr>
-    </table>
+    </table></div>
 </div>
 <div class="pagebar">Pages:&nbsp;
       <%if currentpage > 1 then %>

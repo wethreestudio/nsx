@@ -4,7 +4,7 @@
 %>
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
     <tr>
       <td class="plaintext" colspan="2" bgcolor="#FFFFFF">
       
@@ -41,7 +41,7 @@
         <h2><font color="#FF9933">Benefits for Investors</font></h2>
         <p>With CHESS**, investors, stockbrokers and listed companies enjoy a 
         number of benefits: </p>
-        <!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 			<!--msimagelist--><tr>
 				<!--msimagelist--><td valign="top" width="42">
 				<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -79,7 +79,7 @@
 				<td valign="top" width="100%">An internationally competitive share market. 
 				<!--msimagelist--></td>
 			</tr>
-			<!--msimagelist--></table>
+			<!--msimagelist--></table></div>
         <p>When shares are held in an uncertificated form, you do not have to 
         worry about the security of share certificates, reconciling holdings or 
         forwarding them to your stockbroker. You can provide access for the 
@@ -111,6 +111,6 @@
       
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

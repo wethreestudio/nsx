@@ -1,5 +1,5 @@
  <div align="center">
-   <table border="0" cellpadding="0" style="border-collapse: collapse" width="797" id="table1" bgcolor="#FFFFFF">
+   <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="797" id="table1" bgcolor="#FFFFFF">
      <tr>   
      <td height="200" bgcolor="#FFFFFF"  >
 		<blockquote>

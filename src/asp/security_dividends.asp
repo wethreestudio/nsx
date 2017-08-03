@@ -117,7 +117,7 @@ Server.Execute "content_lower_nav.asp"
 <div class="editarea">
 
 <h1><%=UCase(id)%> - <%=coname%> - Dividend Details</h1>
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 
 
   <tr>
@@ -194,7 +194,7 @@ if fh > rc then fh = rc
 <%  if WEOF then %>
  There is no record available.
   <% else %>
-<table id="myTable" class="tablesorter" width="99%">
+<div class="table-responsive"><table id="myTable" class="tablesorter" width="99%">
 
 <thead>
   <tr>
@@ -293,13 +293,13 @@ NEXT %>
 <hr noshade color=#808080 width=99% size=1>
 </td></tr>
 </tbody>
-</table>
+</table></div>
 
 <%
 	end if
 	%>
 	</tbody>
-</table>
+</table></div>
 
 </div>
 </div>

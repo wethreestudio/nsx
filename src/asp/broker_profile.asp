@@ -151,7 +151,7 @@ if fh > rc then fh = rc
   
 <div class="small-table">
 <div class="datagrid">
-<table cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table cellspacing="0" cellpadding="0">
     <thead>
         <tr>
             <th style="text-align:left;padding-left:5px;">Contact Details</th>
@@ -161,7 +161,7 @@ if fh > rc then fh = rc
         <tr>
             <td>
 
-<table width="100%">
+<div class="table-responsive"><table width="100%">
   <tbody>
 <%
 If Len(Trim(Address)) > 0 Then
@@ -217,11 +217,11 @@ End If
     </tbody>
     
     
-    </table>
+    </table></div>
 			</td>
         </tr>
     </tbody>
-</table>
+</table></div>
 </div>
 </div>  
   
@@ -229,11 +229,11 @@ End If
   
   
   
-    <table>
+    <div class="table-responsive"><table>
 
 
 
-</table>  
+</table></div>  
   </div>
 
 

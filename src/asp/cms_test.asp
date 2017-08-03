@@ -45,7 +45,7 @@ Server.Execute "side_menu.asp"
 <div style="float:right;width:280px;">
 <div class="small-table">
 <div class="datagrid">
-<table cellspacing="0">
+<div class="table-responsive"><table cellspacing="0">
     <thead>
         <tr>
             <th colspan="5" style="text-align:left;padding-left:5px;">Fee Examples</th>
@@ -75,7 +75,7 @@ Server.Execute "side_menu.asp"
             <td>20.225</td>
         </tr>
     </tbody>
-</table>
+</table></div>
 </div>
 </div>
 
@@ -83,7 +83,7 @@ Server.Execute "side_menu.asp"
 
 <div class="small-table">
 <div class="datagrid">
-<table cellspacing="0">
+<div class="table-responsive"><table cellspacing="0">
     <thead>
         <tr>
             <th style="text-align:left;padding-left:5px;">Equity Fee Calculator</th>
@@ -93,7 +93,7 @@ Server.Execute "side_menu.asp"
         <tr>
             <td>
 <form action="#" method="get" id="nsxfees">
-<table width="100%">
+<div class="table-responsive"><table width="100%">
   <tbody>
   <tr>
     <td><b>
@@ -165,11 +165,11 @@ Server.Execute "side_menu.asp"
 		</td>
     </tr>
     
-    </tbody></table></form>
+    </tbody></table></div></form>
 			</td>
         </tr>
     </tbody>
-</table>
+</table></div>
 </div>
 </div>
 </div>

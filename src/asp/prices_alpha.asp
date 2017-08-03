@@ -347,7 +347,7 @@ Server.Execute "side_menu.asp"
 	        </form>
         </div>
 <div class="table-responsive">
-<table id="myTable" class="table tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="table tablesorter"> 
         <thead> 
         <tr> 
             <th>NSX<br>Code</th> 
@@ -534,7 +534,7 @@ End If
 Set rs = Nothing
 %>  
 </tbody> 
-</table>
+</table></div>
 </div>
 
 <h2>Notes</h2>

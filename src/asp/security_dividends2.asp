@@ -103,7 +103,7 @@ if fh > rc then fh = rc
   		
   
 
-<table border="0" width="100%" cellspacing="0" cellpadding="3" align=center>
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="3" align=center>
   <tr>
     <td class="plaintext" nowarp align=left><b><font color="#FFFFFF">Security</font></b></td>
     <td class="plaintext" nowrap align=right><font color="#FFFFFF"><b>Amount $/s</b></font></td>
@@ -190,7 +190,7 @@ NEXT %>
 <tr>
 <td colspan="8">&nbsp;</td>
 </tr>
-</table>
+</table></div>
 
 
 

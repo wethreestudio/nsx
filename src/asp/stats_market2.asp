@@ -1,4 +1,4 @@
-<table class="tablesorter" style="width:100%">
+<div class="table-responsive"><table class="tablesorter" style="width:100%">
 <%
 
 cr=vbCRLF
@@ -116,4 +116,4 @@ Else
 End If
 %> 	 
     </tbody>  
-</table>
+</table></div>

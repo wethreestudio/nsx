@@ -41,7 +41,7 @@ alow_robots = "no"
   
   <form method="POST" action="<%= Application("nsx_SiteRootURL") %>/user_save_registration.asp" name="FrontPage_Form1">
     <div align="center">
-      <table border="0" width="450" bgcolor="#FFFFFF" cellpadding="3" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
+      <div class="table-responsive"><table border="0" width="450" bgcolor="#FFFFFF" cellpadding="3" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
       <tr>
       	<td align="right">Username:</td>
       	<td align="left"><input type="text" name="username" size="20" maxlength="100" value="<%=Server.HTMLEncode(session("username"))%>"> *</td>
@@ -83,7 +83,7 @@ alow_robots = "no"
           </p>
         </td>
       </tr>
-      </table></div>
+      </table></div></div>
       <div align="center">
       <input type="submit" name="register" id="register" value="Register" class="btn nsx-blue request-kit popup">
     </div>

@@ -49,7 +49,7 @@ Filter:&nbsp;<a href="/companies_pre_listed/sponsoring_broker_list">All Sponsori
  
 <h2>Sponsoring Brokers by Security</h2> 
 
-<table id="myTable" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter"> 
 <thead> 
 <tr> 
     <th>Broker</th> 
@@ -89,7 +89,7 @@ End If
 
 %>
 </tbody>
-</table>  
+</table></div>  
   
 <%  
   Else
@@ -100,7 +100,7 @@ Filter:&nbsp;<a href="/companies_pre_listed/sponsoring_broker_list?bysecurity=1"
 </div>
 <h2>All Sponsoring Brokers</h2>
 <div> 
-<table id="myTable" class="tablesorter" width="99%"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter" width="99%"> 
 <thead> 
 <tr> 
     <th>Broker</th> 
@@ -134,7 +134,7 @@ Else
 End If
 %>
 </tbody>
-</table>
+</table></div>
 </div>
 <%
   End If

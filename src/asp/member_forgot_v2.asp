@@ -38,7 +38,7 @@ End Function
 <!--#INCLUDE FILE="header.asp"-->
 <%end if%>
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="4" bgcolor="#FFFFFF"><%if session("exchid")="NSX" then%>
 <!--#INCLUDE FILE="lmenu.asp"-->
@@ -54,7 +54,7 @@ End Function
   <tr>
     <td class="plaintext" valign="top" bgcolor="#FFFFFF">
     <form method="POST" action="member_forgot_check_v2.asp">
-  <table border="0" cellspacing="0" cellpadding="0">
+  <div class="table-responsive"><table border="0" cellspacing="0" cellpadding="0">
     <tr> 
       <td valign="top"> 
         
@@ -74,7 +74,7 @@ End Function
 				
       </td>
     </tr>
-    </table>
+    </table></div>
 </form>
     
 
@@ -102,7 +102,7 @@ End Function
 <p>&nbsp;
     </td>
   </tr>
-</table>
+</table></div>
 </div>
 <%if session("exchid")="NSX" then%>
 <!--#INCLUDE FILE="footer.asp"-->

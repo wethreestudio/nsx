@@ -137,7 +137,7 @@ PrintSearchBox "NSX Company Search", "company", "350", "Enter company name or co
 
 
 
-<table id="myTable" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter"> 
 <thead> 
 <tr> 
     <th>Code</th> 
@@ -195,7 +195,7 @@ End If
 
 %>
 </tbody>
-</table>  
+</table></div>  
 
 </div>
 </div>

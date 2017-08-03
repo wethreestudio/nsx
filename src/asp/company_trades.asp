@@ -186,7 +186,7 @@ if todayfile<>"" then
 		<img border="0" src="images/broker_page1_bullet.gif" width="20" height="15"><a href="ftp/profiles/company_<%=todayfile%>.xls" target=_blank>Right click to save file to disk or left click to view</a>
 
 <div align="center">
-<table border="0" style="border-collapse: collapse" width="100%" cellpadding="0" cellspacing="1">
+<div class="table-responsive"><table border="0" style="border-collapse: collapse" width="100%" cellpadding="0" cellspacing="1">
   <tr>
   <td class="plaintext" bgcolor="#666666" colspan=9><font color="#FFFFFF"><b><%=coname & " (" & todayfile & ")"%></b></font></td>
   </tr>
@@ -299,7 +299,7 @@ if todayfile<>"" then
 	<b>Total Value:</b> $<%=formatnumber(totvalue,2)%>&nbsp;</td>
   </tr>
 
-	</table>
+	</table></div>
 </div>
 
 <%

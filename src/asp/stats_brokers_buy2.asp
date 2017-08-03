@@ -44,7 +44,7 @@ ELSE
   lap=0
   
 %>
-<table id="myTable" class="tablesorter" width="90%"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter" width="90%"> 
 <thead>
 	<tr>
 		<th align="left">Brokers (<%=choose%>)</th>
@@ -124,5 +124,5 @@ end if
 
 %>
 </tbody>
-</table>
+</table></div>
 <p>&nbsp;</p>

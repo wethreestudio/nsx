@@ -44,14 +44,14 @@ tday = 200
 <div align="center" id="backgroundchartexecute" style="position:relative;z-index:0;">
 	
 
-<table border="0" width="797" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="797" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="2" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
   <tr>
     <td class="plaintext" valign="top" bgcolor="#FFFFFF">
   
-<table align=center>
+<div class="table-responsive"><table align=center>
 <!--#INCLUDE FILE="admin/merchtools.asp"-->
 <%
 DATA_PATH = Server.Mappath("newsxdb\nsxprices.mdb")
@@ -205,7 +205,7 @@ if rc>0 then
   <tr><td>No Records available</td></tr>
       
     <%end if%>
-    </table>
+    </table></div>
 
 
 
@@ -220,7 +220,7 @@ The charts utilise Java which is required to be installed and operational within
 your browser.</td>
     
   </tr>
-</table>
+</table></div>
 </div>
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

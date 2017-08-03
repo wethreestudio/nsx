@@ -387,7 +387,7 @@ Server.Execute "content_lower_nav.asp"
 </div>
         
 <div class="table-responsive">
-<table id="myTable" class="tablesorter table"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter table"> 
     <thead> 
         <tr> 
             <th>NSX<br>Code</th> 
@@ -568,7 +568,7 @@ End If
 Set rs = Nothing
 %>  
 </tbody> 
-</table>
+</table></div>
 </div>
 </div>
 <!-- /prices alpha -->

@@ -9,7 +9,7 @@ alow_robots = "no"
 %>
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
     <tr>
       <td class="plaintext" colspan="2" bgcolor="#FFFFFF">
       
@@ -23,7 +23,7 @@ alow_robots = "no"
       <td class="plaintext" valign="top">
       
         <div align="right">
-          <table border="0" cellpadding="5" style="border-collapse: collapse; border: 1px dotted #808080; " width="250" id="table2" align="right" cellspacing="5">
+          <div class="table-responsive"><table border="0" cellpadding="5" style="border-collapse: collapse; border: 1px dotted #808080; " width="250" id="table2" align="right" cellspacing="5">
             <tr>
               <td class="plaintext" bgcolor="#666666">
               <p align="center"><font color="#FFFFFF"><img border="0" src="images/nsxdiag.gif" width="22" height="11" align="right"></font></td>
@@ -32,7 +32,7 @@ alow_robots = "no"
               <td class="plaintext" bgcolor="#DDDDDD">
               <p align="left"><i>‘</i><img border="0" src="images/brochure/porcess300.jpg" width="300" height="670"></td>
             </tr>
-          </table>
+          </table></div>
         </div>
         <p>The method of how to list is determined by the type of security to be 
         listed. For example, if capital is to be raised or not or if a special 
@@ -67,6 +67,6 @@ alow_robots = "no"
       
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

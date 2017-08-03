@@ -118,7 +118,7 @@ if fh > rc then fh = rc
 
 
 <div align="center">
-<table cellspacing="0" width="100%" bgcolor="#FFFFFF" cellpadding="5" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666" >
+<div class="table-responsive"><table cellspacing="0" width="100%" bgcolor="#FFFFFF" cellpadding="5" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666" >
         <tr>
           <td class="plaintext" bgcolor="#666666"><font color="#FFFFFF"><b>CODE</b></font></td>
           <td class="plaintext" bgcolor="#666666">
@@ -182,7 +182,7 @@ if fh > rc then fh = rc
     end if
     %>
       
-      </table>
+      </table></div>
 
 
 

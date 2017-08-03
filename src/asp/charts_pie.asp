@@ -7,7 +7,7 @@
 
 <body>
 
-<table>
+<div class="table-responsive"><table>
 <tr>
 <td>
 
@@ -55,7 +55,7 @@
 
 </tr>
 
-</table>
+</table></div>
 
 </body>
 

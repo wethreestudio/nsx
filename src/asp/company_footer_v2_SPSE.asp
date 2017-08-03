@@ -14,7 +14,7 @@ yy = year(xx)
 cnvddmmyyyy = dd &"-"& mm & "-" & yy
 End Function
 %>
-<table align=center border="0" width="797" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table align=center border="0" width="797" cellspacing="0" cellpadding="0">
   <tr>
     <td width="100%" class="bodylinks" bgcolor="white" valign="top" align=right>
     <p class=plaintext align="left"><font size="1"><br>
@@ -34,6 +34,6 @@ End Function
     %>
     </td>
 	</tr>
-	  </table>
+	  </table></div>
    
 

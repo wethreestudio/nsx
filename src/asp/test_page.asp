@@ -22,7 +22,7 @@ objJsIncludes.Add "cms_page", "/js/cms_page.js"
 <div class="prop min600px"></div>
 <div style="float:left;width:750px;">
 
-<table width="100%">
+<div class="table-responsive"><table width="100%">
 <tr>
 <td class="steps_left">
 <div class="step">STEP 1</div>
@@ -87,7 +87,7 @@ After your capital raising documents have been lodged with ASIC or your Informat
 After completing your capital raising (if applicable) the official quotation of your companies securities can commence on NSX for market trading.
 </td>
 </tr>
-</table>
+</table></div>
 
 
 

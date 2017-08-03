@@ -140,7 +140,7 @@ if fh > rc then fh = rc
 <!-- End Pager -->
 
 
-<table id="myTable" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter"> 
 <thead> 
 <tr> 
 	<th>Date<br>&nbsp;</th> 
@@ -359,7 +359,7 @@ cl = array(" class=""odd"""," class=""even""")
     
       
       
-      </table>
+      </table></div>
 
 </div>
 </div>

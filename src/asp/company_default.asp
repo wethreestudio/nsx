@@ -171,7 +171,7 @@ Dim rc
 rc = 0
 %>
 <div class="f-w-table">
-  <table>
+  <div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="7">
@@ -298,13 +298,13 @@ Else
   Next
 End If
 %>
-  </table>
+  </table></div>
 </div>
 
 
 <div class="editarea">
 <div style="padding-bottom:8px;">
-<table>
+<div class="table-responsive"><table>
 <tr>
   <td><div style="padding:5px;"><span style="padding:2px;background:#ff0000;color:#ffffff;font-weight:bold;">Due Now</span></div></td>
   <td><div style="padding:5px;"><span style="padding:2px;background:#008000;color:#ffffff;font-weight:bold;">Due Soon</span></div></td>
@@ -317,7 +317,7 @@ End If
 %>
 				</tr>
 
-</table>
+</table></div>
 </div>
 		
 			

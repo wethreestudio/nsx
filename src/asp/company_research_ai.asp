@@ -39,7 +39,7 @@ response.cachecontrol = "PRIVATE"
 
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -61,7 +61,7 @@ id = ucase(request.querystring("tradingcode"))
 
 %>
 </p>
-<table align=center width=100%>
+<div class="table-responsive"><table align=center width=100%>
 
 
 
@@ -77,7 +77,7 @@ id = ucase(request.querystring("tradingcode"))
 		</td>
 	</tr>
     
-      </table>
+      </table></div>
 
 
 
@@ -92,7 +92,7 @@ NSX takes no responsibility for the content
 provided by Australian Investor.</td>
     
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 

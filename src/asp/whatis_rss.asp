@@ -9,7 +9,7 @@ page_title = "RSS Feeds"
 <!--#INCLUDE FILE="header.asp"-->
     	
 <div class="container_cont"> 
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
     <tr>
       <td class="plaintext" colspan="2" bgcolor="#FFFFFF">
       
@@ -44,7 +44,7 @@ page_title = "RSS Feeds"
 		available.&nbsp; Some readers are designed with 
 		user interfaces that resemble e-mail inboxes instead of browsers.&nbsp; Whatever your preference, all RSS readers are used to collect, update, 
 		and display RSS feeds.&nbsp;&nbsp; Here are a few that you may find useful: </p>
-		<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+		<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 			<!--msimagelist--><tr>
 				<!--msimagelist--><td valign="top" width="42">
 				<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -100,7 +100,7 @@ page_title = "RSS Feeds"
 			quotes.&nbsp; Its Free.<br>
 			<a href="http://widgets.yahoo.com/gallery/view.php?widget=41953"><img src="images/rss/41953-chit.png" alt="Get National Stock Exchange of Australia Announcements at the Yahoo! Widget gallery!" border="0"></a><!--msimagelist--></td>
 			</tr>
-			<!--msimagelist--></table>
+			<!--msimagelist--></table></div>
 		<h2>Find and subscribe to syndicated content </h2>
 		<p>Subscribing to a <u>R</u>eally 
 		<u>S</u>imple <u>S</u>yndication (RSS) feed is similar to subscribing to a magazine.&nbsp; 
@@ -124,7 +124,7 @@ page_title = "RSS Feeds"
 		how often you wish to check for updates and in what format to display 
 		the content.</p>
 		<h2>Available NSX RSS Feeds</h2>
-		<table border="0" width="699" id="table2" cellspacing="1" cellpadding="2">
+		<div class="table-responsive"><table border="0" width="699" id="table2" cellspacing="1" cellpadding="2">
 			<tr>
 				<td class="plaintext" width="350" nowrap>
 				<img border="0" src="images/broker_page1_bullet.gif" width="20" height="15">Prices 
@@ -253,7 +253,7 @@ page_title = "RSS Feeds"
 				<td class="plaintext" width="694" nowrap colspan="4">
 				&nbsp;</td>
 			</tr>
-		</table>
+		</table></div>
       	<h2>Updating Feeds</h2>
 		<p>Use your feed reading software to automatically update these feeds.&nbsp; 
 		Please do not set an update frequency below <b>30</b> minutes.</p>
@@ -292,6 +292,6 @@ page_title = "RSS Feeds"
 		<p>&nbsp;
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

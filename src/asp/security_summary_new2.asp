@@ -501,7 +501,7 @@ If PRowCount >= 0 And VarType(PRow) <> 0 Then
 				
     <div style=" width:996px; margin:auto;">
     	<div class="security-values">
-          <table>
+          <div class="table-responsive"><table>
             <thead>
               <tr>
                 <th><%
@@ -564,7 +564,7 @@ If PRowCount >= 0 And VarType(PRow) <> 0 Then
                 <td><%=status%></td>
               </tr>
             </tbody>
-          </table>
+          </table></div>
 		</div>
     </div>
 	
@@ -600,7 +600,7 @@ courseofsales = GetRows(sql)
 If VarType(depth_row) <> 0 Then 
 %>
 
-            <table>
+            <div class="table-responsive"><table>
                 <thead>
                   <tr class="header">
                     <th colspan="3"><p>BIDS</p></th>
@@ -778,7 +778,7 @@ Next
                   
                   
 </tbody>
-</table>
+</table></div>
 <%
 End If
   End If 

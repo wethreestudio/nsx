@@ -60,7 +60,7 @@ Set rs = conn.Execute(sql)
 
 %>
 <div class="f-w-table">
-<table>
+<div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="7">
@@ -113,7 +113,7 @@ Else
 End If
 %>    
     </tbody>
-</table>
+</table></div>
 </div>
 <%
   RenderContent page & "_1","editarea" 

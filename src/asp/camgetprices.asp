@@ -22,7 +22,7 @@ lbls = array("Florin Mining","Illuminator Inv","Pritchard Equity","Winpar Holdin
 'lbls = array("Bidgee Finance","Winpar Holdings")
 eml = ""
 fh = ubound(codes)
-eml= eml & "<table width=90% align=center id=table1 background=images/prices/light-Row.png cellspacing=0 cellpadding=0>"
+eml= eml & "<div class="table-responsive"><table width=90% align=center id=table1 background=images/prices/light-Row.png cellspacing=0 cellpadding=0>"
 
 FOR jj = 0 to fh
 	objXmlHttp.open "GET", "http://www.nsxa.com.au/prices_nsx.asp?group=NO&nsxcode=" & codes(jj) & "&fmt=txt", False
@@ -162,7 +162,7 @@ Set objWinHttp = Server.CreateObject("WinHttp.WinHttpRequest.5.1")
 
 
 
-	eml= eml & "</table>"
+	eml= eml & "</table></div>"
 		If objXmlHttp.Status = "200" Then
 				Application.Lock
 		

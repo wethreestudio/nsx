@@ -9,7 +9,7 @@ page_title = "Investors - How to trade"
 <!--#INCLUDE FILE="header.asp"-->
  
 <div class="container_cont"> 
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
     <tr>
       <td class="plaintext" colspan="2" bgcolor="#FFFFFF">
       
@@ -33,7 +33,7 @@ page_title = "Investors - How to trade"
 		<p>CHESS reduces the amount of paperwork by providing for electronic 
         settlement of share transactions.&nbsp; With CHESS, investors,<br>
         stockbrokers and listed companies enjoy a number of benefits: </p>
-		<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+		<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 			<!--msimagelist--><tr>
 				<!--msimagelist--><td valign="top" width="42">
 				<img src="images/broker_page1_bullet.gif" width="20" height="15" hspace="11" alt="bullet"></td>
@@ -69,7 +69,7 @@ page_title = "Investors - How to trade"
 				<td valign="top" width="100%">An internationally competitive share market. 
 				<!--msimagelist--></td>
 			</tr>
-			<!--msimagelist--></table>
+			<!--msimagelist--></table></div>
 		<p>When shares are held in an un-certificated form, you do not have to 
         worry about the security of share certificates, reconciling<br>
 		holdings or 
@@ -87,6 +87,6 @@ page_title = "Investors - How to trade"
 		
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

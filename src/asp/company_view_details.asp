@@ -198,7 +198,7 @@ balancedate=alldata(93,jj)
 
 
     
-<table cellpadding="5" cellspacing="0" bgcolor=#FFFFFF width="100%" style="border-bottom:1px solid #666666; ">
+<div class="table-responsive"><table cellpadding="5" cellspacing="0" bgcolor=#FFFFFF width="100%" style="border-bottom:1px solid #666666; ">
   <% 
   lap = 0
   cl = array("#FFFFFF","#EEEEEE")  
@@ -494,7 +494,7 @@ balancedate=alldata(93,jj)
     <td bgcolor="<%=cl(lap)%>" valign="top" width="80%" class="plaintext"><%=adjtextarea(balancedate)%></td>
   </tr>
   <%lap = (-lap)+1%><%end if%>
-</table>
+</table></div>
 
 <% NEXT
 	end if
@@ -503,7 +503,7 @@ balancedate=alldata(93,jj)
     </td>
     
   </tr>
-</table>
+</table></div>
 
 
 

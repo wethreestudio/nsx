@@ -180,7 +180,7 @@ end if
 %>
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
-<table border="0" width="797" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="797" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -234,7 +234,7 @@ end if
 <p>
 <%end if%>	
 
-<table id="prices_123" cellpadding=1 class="sortable" cellspacing="1" width="720" bgcolor="#FFFFFF" style="border-bottom:1px solid #808080; ">
+<div class="table-responsive"><table id="prices_123" cellpadding=1 class="sortable" cellspacing="1" width="720" bgcolor="#FFFFFF" style="border-bottom:1px solid #808080; ">
         <tr>
           <td valign="top" class="plaintext" bgcolor="#666666">
 			<font color="#FFFFFF"><b>INDEX</b></font></td>        
@@ -413,10 +413,10 @@ end if
 NEXT
 	end if
 %>
-</table>
+</table></div>
 	<p><font face="Arial, helvetica, sans-serif" size="2"><b>Index Method:</b> 
 	Price average weighted by the&nbsp;number of shares held if a $1,000&nbsp;parcel of 
 	shares was purchased on date of listing.</font></p>
-	<p>&nbsp;</table>
+	<p>&nbsp;</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

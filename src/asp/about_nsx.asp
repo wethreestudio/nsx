@@ -9,7 +9,7 @@ page_title = "About the NSX"
 <!--#INCLUDE FILE="header.asp"-->
     	
 <div class="container_cont">    	     	     	 
-  <table border="0" width="100%" cellspacing="0" cellpadding="0">     
+  <div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">     
     <tr>         
       <td valign="top" rowspan="3" bgcolor="#FFFFFF">      
         <!--#INCLUDE FILE="lmenu.asp"--></td>     
@@ -69,7 +69,7 @@ page_title = "About the NSX"
         </p>      
             </td>     
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <!--#INCLUDE FILE="footer.asp"-->

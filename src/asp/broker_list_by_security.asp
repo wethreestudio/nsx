@@ -18,7 +18,7 @@ alow_robots = "no"
 <p><b>Other Options</b>: <a href="broker_list.asp">Alphabetical Broker List</a>| <a href="broker_list_print.asp?region=<%=board%>">Printable Contact Sheet</a></p>
 
 
-  <table width="100%" cellspacing="0" cellpadding="0" >
+  <div class="table-responsive"><table width="100%" cellspacing="0" cellpadding="0" >
 <!--#INCLUDE FILE="admin/merchtools.asp"-->
 
 <%
@@ -111,9 +111,9 @@ if fh > rc then fh = rc
   <tr>
     <td width="100%" class="plaintext">&nbsp;</td>
   </tr>
-  </table>
+  </table></div>
 
-  <table width="100%" cellspacing="0" cellpadding="5" style="border-bottom:1px solid #808080; ">
+  <div class="table-responsive"><table width="100%" cellspacing="0" cellpadding="5" style="border-bottom:1px solid #808080; ">
  
 <%  if WEOF then %>
 	
@@ -157,7 +157,7 @@ END IF ' if ther are records
 
 
   
-</table>
+</table></div>
 </div>
 
 </div>

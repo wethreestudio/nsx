@@ -25,7 +25,7 @@
 
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -47,7 +47,7 @@
 		related event notifications such as conferences, seminars and workshops.&nbsp; 
 		This is a free service.
 	<form action='events_submit.asp' method="POST" name="eventsnotify">
-  <table border="0" cellpadding="2" cellspacing="2" width=622 align="center">
+  <div class="table-responsive"><table border="0" cellpadding="2" cellspacing="2" width=622 align="center">
     <tr>
       <td class=textlabel width=20 valign="top">Title:</td>
       <td class=textbox width="80%">
@@ -103,7 +103,7 @@
 
     
     
-  </table>
+  </table></div>
   </form>
 
 
@@ -111,7 +111,7 @@
 <p align="center">Please only submit your event notice once.&nbsp; </p>
     </td>
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 

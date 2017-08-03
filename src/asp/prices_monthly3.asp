@@ -9,7 +9,7 @@ alow_robots = "no" ' long running script?
 id = request.querystring("tradingcode")
 %>
 <h1><%=id%> Monthly Price History</h1>
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 
 
 <%
@@ -123,7 +123,7 @@ if fh > rc then fh = rc
 </p>
 
 
-<table border="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" cellpadding="2" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
+<div class="table-responsive"><table border="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" cellpadding="2" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
         <tr>
           <td valign="top" class="plaintext" align="left" bgcolor="#666666">
 			<font color="#FFFFFF"><b>DATE</b></font></td>
@@ -360,14 +360,14 @@ cl = array("#EEEEEE","#FFFFFF")
     
       
       
-      </table>
+      </table></div>
 
 
 
     </td>
     
   </tr>
-</table>
+</table></div>
 </div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

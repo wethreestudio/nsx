@@ -61,7 +61,7 @@ if fh > rc then fh = rc
 </p>
 
 
-<table width="100%" cellspacing="0" style="border-bottom:1px solid #808080; " cellpadding="5">
+<div class="table-responsive"><table width="100%" cellspacing="0" style="border-bottom:1px solid #808080; " cellpadding="5">
   <tr>
     <td class="plaintext" bgcolor="#666666"><font color="#FFFFFF"><b>CODE</b></font></td>
     <td class="plaintext" bgcolor="#666666"><font color="#FFFFFF"><img border="0" src="images/nsxdiag.gif" width="22" height="11" align="right" alt=""><b>SECURITY</b></font></td>
@@ -96,7 +96,7 @@ if fh > rc then fh = rc
     next
   end if
 %>
-</table>
+</table></div>
 <p>&nbsp;</p>
 <h2>Disclaimer</h2>
 <p>
@@ -112,7 +112,7 @@ on this information in any way.</li>
 </p>
 <p>
 During the exposure period from the date of lodgment of the Prospectus at the Australian Securities & Investments Commission:
-<table border="0" cellspacing="0" width="100%" cellpadding="5" style="border: 1px dotted #808080">
+<div class="table-responsive"><table border="0" cellspacing="0" width="100%" cellpadding="5" style="border: 1px dotted #808080">
 			<tr>
 				<td valign="top" bgcolor="#eeeeee">(a)</td>
 				<td valign="top" bgcolor="#eeeeee">A Company will not process any applications received until after the exposure period;</td>
@@ -133,7 +133,7 @@ During the exposure period from the date of lodgment of the Prospectus at the Au
 				<td valign="top" bgcolor="#eeeeee"></td>
 				<td valign="top" bgcolor="#eeeeee">(iii) in those circumstances, any application that has been received may need to be dealt with in accordance with section 724 of the Corporations Act 2001.</td>
 			</tr>
-		</table>
+		</table></div>
 </P>
 
 

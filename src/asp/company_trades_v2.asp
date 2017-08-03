@@ -37,7 +37,7 @@
 
 <% if len(exchid)<>0 then server.execute "company_header_v2_" & exchid & ".asp"%>
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 	<tr>
 		<td valign="top" rowspan="3" bgcolor="#FFFFFF" width="175"><%if len(exchid)<>0 then server.execute "company_lmenu_v2_" & exchid & ".asp"%>
 		</td>
@@ -199,7 +199,7 @@ if todayfile<>"" then
 		<img border="0" src="images/broker_page1_bullet.gif" width="20" height="15"><a href="ftp/profiles/company_<%=todayfile%>.xls" target=_blank>Right click to save file to disk or left click to view</a>
 
 <div align="center">
-<table border="0" style="border-collapse: collapse" width="550" cellpadding="0" cellspacing="1">
+<div class="table-responsive"><table border="0" style="border-collapse: collapse" width="550" cellpadding="0" cellspacing="1">
   <tr>
   <td class="plaintext" bgcolor="#666666" colspan=9><font color="#FFFFFF"><b><%=coname & " (" & todayfile & ")"%></b></font></td>
   </tr>
@@ -312,7 +312,7 @@ if todayfile<>"" then
 	<b>Total Value:</b> $<%=formatnumber(totvalue,2)%>&nbsp;</td>
   </tr>
 
-	</table>
+	</table></div>
 </div>
 <p>
 <%
@@ -336,7 +336,7 @@ ConnPasswords.Close
 Set ConnPasswords = Nothing
 
 %>    </td>
-</table>
+</table></div>
 </div>
 <% if len(exchid)<>0 then server.execute "company_footer_v2_" & exchid & ".asp"%>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

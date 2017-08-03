@@ -4,7 +4,7 @@
 %>
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
-<table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
+<div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
   <tr>
     <td class="plaintext" valign="top" align="center"><!--#INCLUDE FILE="shareholder_lmenu.asp"--></td>
     <td class="plaintext" valign="top">
@@ -74,7 +74,7 @@ NEXT
 
 set objXmlHttp  = nothing
 set rst = nothing
-%>Last Trade Date: <%=lastdate%><table width="560" id="table2" cellspacing="0" cellpadding="2" style="border-bottom: 2px solid #333333; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+%>Last Trade Date: <%=lastdate%><div class="table-responsive"><table width="560" id="table2" cellspacing="0" cellpadding="2" style="border-bottom: 2px solid #333333; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
 			<tr>
 				<td class="plaintext" bgcolor="#666666"><b>
 				<font color="#FFFFFF">Last</font></b></td>
@@ -116,7 +116,7 @@ set rst = nothing
 				<td class="plaintext" nowrap><%=range%></td>
 				<td class="plaintext" nowrap bgcolor="#DDDDDD"><%=mktcap%></td>
 			</tr>
-		</table>
+		</table></div>
 		<h2>6 Month Share Chart</h2>
 		<%
 		enddate = date
@@ -130,7 +130,7 @@ set rst = nothing
 
     </td>
   </tr>
-  </table>
+  </table></div>
 </div>
 
 <!--#INCLUDE FILE="footer.asp"-->

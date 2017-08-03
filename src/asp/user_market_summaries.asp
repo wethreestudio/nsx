@@ -65,7 +65,7 @@ emailindices=alldata(4,0)
 
 		<b>Market Summaries</b><br>
 		Select which end of day market summaries you would like to receive:<br>
-			<table width="100%" id="table1">
+			<div class="table-responsive"><table width="100%" id="table1">
 				<tr>
 					<td valign="top">
 					<input type="checkbox" name="smseod" value="true" <%if smseod = true then response.write " CHECKED"%>> </td>
@@ -110,7 +110,7 @@ emailindices=alldata(4,0)
 		your <a href="/user_edit_your_details.asp">profile</a> to take advantage 
 		of SMS and email services </td>
 				</tr>
-			</table>		
+			</table></div>		
 			
 
 

@@ -5,7 +5,7 @@
 <!--#INCLUDE FILE="include_all.asp"-->
 <!--#INCLUDE FILE="header.asp"-->
     	<div class="container_cont">
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1"  bgcolor="#FFFFFF">
     <tr>
       <td class="plaintext" colspan="2" bgcolor="#FFFFFF">
       
@@ -68,6 +68,6 @@
 		<a href="whatis_nsxbadge.asp">NSX Badge</a> page.</p>
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

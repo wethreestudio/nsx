@@ -137,7 +137,7 @@ If maxpages > 1 Then
       <a href="/download_trades.aspx?nsxcode=<%=id%>&amp;format=CSV">Download Trades as CSV</a>
 </p>
 
-<table id="myTable" class="tablesorter" width="99%">
+<div class="table-responsive"><table id="myTable" class="tablesorter" width="99%">
 <thead>
         <tr>
           <th valign="top" align="left">Date<br>&nbsp;</th>
@@ -396,7 +396,7 @@ If maxpages > 1 Then
     
 </tbody>      
       
-      </table>
+      </table></div>
 
 </div>
 

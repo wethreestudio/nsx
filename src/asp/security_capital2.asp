@@ -107,7 +107,7 @@ if fh > rc then fh = rc
 <% else %>
   
  
-<table id="myTable" class="tablesorter" width="99%">
+<div class="table-responsive"><table id="myTable" class="tablesorter" width="99%">
 <thead>
         <tr>
           <th valign="top" align="left">Security</th>
@@ -203,7 +203,7 @@ NEXT %>
 </tr>
 
 </tbody>
-</table>
+</table></div>
 
 
 <%

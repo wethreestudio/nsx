@@ -176,7 +176,7 @@ CmdDD.Open SQL, ConnPasswords ',1,3
 
 <!--#INCLUDE FILE="header.asp"-->
     	<div class="container_cont">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 	<tr>
 		<td valign="top" rowspan="3" bgcolor="#FFFFFF">
 		</td>
@@ -191,7 +191,7 @@ CmdDD.Open SQL, ConnPasswords ',1,3
 		<td class="plaintext" valign="top" bgcolor="#FFFFFF" style="line-height: 150%">
 		
 			<h2>Time Table for Financial Report Lodgments as at: <%=now%></h2>
-			<table  width="100%" id="table2" cellspacing="1" cellpadding="3" >
+			<div class="table-responsive"><table  width="100%" id="table2" cellspacing="1" cellpadding="3" >
 				<tr>
 				<td class="plaintext" bgcolor="#666666" align="center" colspan="2" >
 					<p align="left">
@@ -348,8 +348,8 @@ CmdDD.Close
 	'NEXT
 	end if
 	%>
-			</table>
-			<table border="0" width="300" id="table3" cellspacing="0" cellpadding="0">
+			</table></div>
+			<div class="table-responsive"><table border="0" width="300" id="table3" cellspacing="0" cellpadding="0">
 				<tr>
 					<td bgcolor="#FF3333" class="plaintext" align="center">
 					<font color="#FFFFFF" size="1"><b>Due Now</b></font></td>
@@ -365,12 +365,12 @@ CmdDD.Close
 					</font>
 					</td>
 				</tr>
-			</table>
+			</table></div>
 
 		
     
     </td>
-</table>
+</table></div>
 </div>
 <%
 ConnPasswords.Close()

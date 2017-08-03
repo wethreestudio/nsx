@@ -17,7 +17,7 @@ page_title = "Rules &amp; Practice Notes"
 </strong></p>
 </div>
 <div class="f-w-table">
-<table>
+<div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="5">
@@ -160,7 +160,7 @@ page_title = "Rules &amp; Practice Notes"
             <td width="90"><a class="btn-blue small" href="/documents/practice_notes/PN18-Timetables.pdf">Download</a></td>
         </tr>
     </tbody>
-</table>
+</table></div>
 </div>
 
 

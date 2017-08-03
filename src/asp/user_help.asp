@@ -37,7 +37,7 @@ OpenWin = this.open('https://bne075v.server-secure.com/vs19698_secure/'+page, "b
 
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="200" valign="top" rowspan="3" bgcolor="#FFFFFF">
 	<!--#INCLUDE FILE="company_lmenu.asp"--></td>
@@ -59,7 +59,7 @@ OpenWin = this.open('https://bne075v.server-secure.com/vs19698_secure/'+page, "b
       announcement</font></b></h2>
 		<p><font size="2" face="Arial">Currently the NSX accepts
       announcements in the following formats:</font></p>
-		<!--msimagelist--><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
+		<!--msimagelist--><div class="table-responsive"><table class="plaintext" border="0" cellpadding="0" cellspacing="0" width="100%">
 			<!--msimagelist--><tr>
 				<!--msimagelist--><td valign="top" width="42">
 				<img src="images/broker_page1_bullet.gif"></td>
@@ -67,7 +67,7 @@ OpenWin = this.open('https://bne075v.server-secure.com/vs19698_secure/'+page, "b
 			<img border="0" src="images/icons/pdf.gif" align="middle"> </b>Adobe Acrobat (PDF),&nbsp;&nbsp;(unlocked 
 			file)</font><!--msimagelist--></td>
 			</tr>
-			<!--msimagelist--></table>
+			<!--msimagelist--></table></div>
 		<p><font size="2" face="Arial">Other formats can be supported or
       removed as required.&nbsp; The preferred format is Adobe PDF as this
 offers the highest level of security, format presentation and cross platform
@@ -100,7 +100,7 @@ doing so.</font>
       
     
 
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

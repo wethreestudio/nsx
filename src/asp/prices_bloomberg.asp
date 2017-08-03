@@ -206,7 +206,7 @@ end if
 <body >
 
 <div id="tooltips" align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"></td>
   </tr>
@@ -218,7 +218,7 @@ end if
     <td class="plaintext" valign="top" bgcolor="#FFFFFF">
 
 	<div align="right">
-		<table border="0" width="100" id="table1" align="right" style="border: 1px dotted #C0C0C0">
+		<div class="table-responsive"><table border="0" width="100" id="table1" align="right" style="border: 1px dotted #C0C0C0">
 			<%if len(tradingcodes)<=0 then %>
 			<tr>
 				<td class="plaintext" bgcolor="#808080">
@@ -237,7 +237,7 @@ end if
 				<td class="plaintext" align="center"><b><font color="<%=secmodecolor%>" size="4"><%=secmode%></font></b></td>
 			</tr>
 	<%end if%>
-		</table>
+		</table></div>
 	</div>
 	
 	<h1 align="left"> 
@@ -295,7 +295,7 @@ if rc >= 0 then
 	
 <div align="center">
 
-<table id="prices_123" cellpadding=2 class="sortable" cellspacing="0" width="100%" bgcolor="#FFFFFF" >
+<div class="table-responsive"><table id="prices_123" cellpadding=2 class="sortable" cellspacing="0" width="100%" bgcolor="#FFFFFF" >
         <tr><td>&nbsp;</td></tr>
         <tr>
           <td valign="top" class="plaintext" bgcolor="#666666">
@@ -674,7 +674,7 @@ if rc >= 0 then
     
       
       
-      </table>
+      </table></div>
 
 
 
@@ -688,7 +688,7 @@ if rc >= 0 then
 <p>&nbsp;</td>
     
   </tr>
-</table>
+</table></div>
 </div>
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

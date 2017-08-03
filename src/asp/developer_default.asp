@@ -7,7 +7,7 @@ cl = array("#EEEEEE","#FFFFFF")
 <!--#INCLUDE FILE="header.asp"-->
 <div class="container_cont">
 <div class="editarea">
-  <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
+  <div class="table-responsive"><table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table1" bgcolor="#FFFFFF">
     <tr>
       <td class="plaintext" colspan="2" bgcolor="#FFFFFF">
       
@@ -25,7 +25,7 @@ cl = array("#EEEEEE","#FFFFFF")
 		Workstation and Feed API's that are available.&nbsp; Releases include 
 		documentation for each feed.&nbsp; The interfaces cover the NSXA, SIM 
 		VSE and SPSE (Fiji) markets.</p>
-		<table border="0" width="100%" id="table4" cellspacing="1" cellpadding="2">
+		<div class="table-responsive"><table border="0" width="100%" id="table4" cellspacing="1" cellpadding="2">
   <tr >
 				<td class="plaintext" width="80%" nowrap>
 				<h2>Trader Workstation - Graphical User Interface </h2>
@@ -43,10 +43,10 @@ cl = array("#EEEEEE","#FFFFFF")
 				<td class="plaintext" width="10%" align="right">
 				6.50mb</td>
 			</tr>
-  		</table>
+  		</table></div>
 		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
 		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
-		<table border="0" width="100%" id="table11" cellspacing="1" cellpadding="2">
+		<div class="table-responsive"><table border="0" width="100%" id="table11" cellspacing="1" cellpadding="2">
   <tr >
 				<td class="plaintext" width="50%" nowrap>
 				<h2>NETS API - Windows - Release v1-1-17 - 23 March 2011<br>
@@ -128,9 +128,9 @@ cl = array("#EEEEEE","#FFFFFF")
 				<td class="plaintext" width="10%" align="right">
 				15mb</td>
 			</tr>
-  		</table>
+  		</table></div>
       	<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
-		<table border="0" width="100%" id="table9" cellspacing="1" cellpadding="2">
+		<div class="table-responsive"><table border="0" width="100%" id="table9" cellspacing="1" cellpadding="2">
   <tr >
 				<td class="plaintext" width="50%" nowrap>
 				<h2>NETS API - Windows - Release v1-1-4-2 - 21 May 2010<br>
@@ -180,9 +180,9 @@ cl = array("#EEEEEE","#FFFFFF")
 				<td class="plaintext" width="10%" align="right">
 				21mb</td>
 			</tr>
-		</table>
+		</table></div>
       	<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
-		<table border="0" width="100%" id="table10" cellspacing="1" cellpadding="2">
+		<div class="table-responsive"><table border="0" width="100%" id="table10" cellspacing="1" cellpadding="2">
 			<tr>
 				<td class="plaintext" width="50%" nowrap>
 				<h2>NETS API - Linux - Release v1-1-4-2 - 3 Oct 2008</h2>
@@ -205,9 +205,9 @@ cl = array("#EEEEEE","#FFFFFF")
 				<td class="plaintext" width="10%" align="right">
 				5mb</td>
 			</tr>
-  		</table>
+  		</table></div>
 		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
-		<table border="0" width="100%" id="table8" cellspacing="1" cellpadding="2">
+		<div class="table-responsive"><table border="0" width="100%" id="table8" cellspacing="1" cellpadding="2">
 			<tr>
 				<td class="plaintext" width="50%" nowrap>
 				<h2>NETS API - Linux - Release v1-0-6 - 27 July 2007</h2>
@@ -256,7 +256,7 @@ cl = array("#EEEEEE","#FFFFFF")
 				<td class="plaintext" width="10%" align="right">
 				5mb</td>
 			</tr>
-		</table>
+		</table></div>
 		<h2>Accreditation for above APIs</h2>
 		<p>New information vendors and developers of software are required to be 
 		accredited for usage of the NETS API.&nbsp; Please see the following 
@@ -300,7 +300,7 @@ cl = array("#EEEEEE","#FFFFFF")
 		provided by NASDAQ OMX.<p>&nbsp;
       </td>
     </tr>
-  </table>
+  </table></div>
 </div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

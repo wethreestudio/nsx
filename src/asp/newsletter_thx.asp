@@ -18,7 +18,7 @@ objCssIncludes.Add "jquery_autocomplete_css", "/css/jquery.autocomplete.css"
 <h1>NSX Newsletter</h1>    	
     	
     	
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 
   <tr>
     <td width="100%" class="textheader" bgcolor="#FFFFFF" height="30">
@@ -76,6 +76,6 @@ in order to preserve your privacy.
 <p>&nbsp;
     </td>
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->

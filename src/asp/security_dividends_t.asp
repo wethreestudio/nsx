@@ -15,7 +15,7 @@ coname=ucase(request("coname"))
 <div class="editarea">
 
 <h1><%=UCase(id)%> Dividend Details</h1>
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 
 
   <tr>
@@ -86,13 +86,13 @@ if fh > rc then fh = rc
 %>
 
 
-<table border="0" width="100%" cellspacing="0" cellpadding="3" align=center>
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="3" align=center>
 
 <%  if WEOF then %>
 	 
    <tr><td class=plaintext>There is no record available.
    </td></tr>
-   </table>
+   </table></div>
   <% else %>
   
   		
@@ -187,7 +187,7 @@ NEXT %>
 <td class=plaintext colspan=8>
 <hr noshade color=#808080 width=710 size=1>
 </td></tr>
-</table>
+</table></div>
 
 
 
@@ -195,7 +195,7 @@ NEXT %>
 <%
 	end if
 	%>
-</table>
+</table></div>
 
 
 	

@@ -68,7 +68,7 @@ rc = rs.recordcount
 <h2>All Brokers (<%=rc%>)</h2>
 <div>
 <div class="table-responsive">
-<table id="myTable" class="table tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="table tablesorter"> 
 <thead> 
 <tr> 
     <th>Broker</th>
@@ -156,7 +156,7 @@ Else
 End If
 %>
 </tbody>
-</table>
+</table></div>
 </div>
 <br>
 <div class="editarea">

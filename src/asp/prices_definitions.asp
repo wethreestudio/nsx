@@ -47,7 +47,7 @@ Server.Execute "content_lower_nav.asp"
 
     	
 <div class="f-w-table">
-<table>
+<div class="table-responsive"><table>
     <thead>
         <tr>
             <th colspan="5">
@@ -162,7 +162,7 @@ The international securities identification number (ISIN) is a code which unique
                          
                        
     </tbody>
-</table>
+</table></div>
 </div>    	
     	
 

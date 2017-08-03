@@ -27,7 +27,7 @@ response.cachecontrol = "PRIVATE"
 <link rel="shortcut icon" href="favicon.ico" ></head>
 
 <body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" style="background-color: #FFFFFF" >
-<table cellpadding="4" style="border-collapse: collapse; " width="100%">
+<div class="table-responsive"><table cellpadding="4" style="border-collapse: collapse; " width="100%">
 	<tr>
 		<td class="plaintext" bgcolor="#959CA0">
 		<font color="#FFFFFF"><b>General</b></font></td>
@@ -78,7 +78,7 @@ response.cachecontrol = "PRIVATE"
 		4.15pm AEST. Hours includes CSPA and
 		AHA phases.&nbsp;</font></td>
 	</tr><%lap = (-lap)+1%>
-</table>
+</table></div>
 
 
 </body>

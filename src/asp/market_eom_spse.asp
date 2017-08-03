@@ -32,7 +32,7 @@ response.cachecontrol = "PRIVATE"
 <body >
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="4" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -140,7 +140,7 @@ if fh > rc then fh = rc
 
 <div align="center">
 
-<table  bgcolor="#FFFFFF"  cellpadding="5" style="border-bottom:1px solid #666666; border-collapse: collapse" width="100%">
+<div class="table-responsive"><table  bgcolor="#FFFFFF"  cellpadding="5" style="border-bottom:1px solid #666666; border-collapse: collapse" width="100%">
         <tr>
           <td valign="top" class="plaintext" bgcolor="#666666"><p align="right"><font color="#FFFFFF"><b><br><br>
           DATE</b></font></td>
@@ -215,7 +215,7 @@ if fh > rc then fh = rc
     
       
       
-      </table>
+      </table></div>
 
 
 
@@ -235,7 +235,7 @@ if fh > rc then fh = rc
     </td>
     
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

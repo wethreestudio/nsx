@@ -199,7 +199,7 @@ end if
 
 <div align="center">
 <!--#INCLUDE FILE="header.asp"-->
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -211,7 +211,7 @@ end if
     <td class="plaintext" valign="top" bgcolor="#FFFFFF">
 
 	<div align="right">
-		<table border="0" width="100" id="table1" align="right" style="border: 1px dotted #C0C0C0">
+		<div class="table-responsive"><table border="0" width="100" id="table1" align="right" style="border: 1px dotted #C0C0C0">
 			<%if len(tradingcodes)<=0 then %>
 			<tr>
 				<td class="plaintext" bgcolor="#808080">
@@ -230,7 +230,7 @@ end if
 				<td class="plaintext" align="center"><b><font color="<%=secmodecolor%>" size="4"><%=secmode%></font></b></td>
 			</tr>
 	<%end if%>
-		</table>
+		</table></div>
 	</div>
 	
 	<h1 align="left"> 
@@ -290,7 +290,7 @@ if rc >= 0 then
 <p>Boards: <a href="prices_alpha.asp?nsxcode=<%=tradingcodes%>&currentpage=<%=currentpage%>" >All</a> | <a href="prices_alpha.asp?nsxcode=<%=tradingcodes%>&currentpage=<%=currentpage%>&board=ncrp" >Corporate</a> | <a href="prices_alpha.asp?nsxcode=<%=tradingcodes%>&currentpage=<%=currentpage%>&board=nprp" >Property</a> | <a href="prices_alpha.asp?nsxcode=<%=tradingcodes%>&currentpage=<%=currentpage%>&board=debt" >Debt</a><br>
 <%end if%>	
 
-<table id="prices_123" cellpadding=1 class="sortable" cellspacing="1" width="100%" bgcolor="#FFFFFF" style="border-bottom:1px solid #808080; ">
+<div class="table-responsive"><table id="prices_123" cellpadding=1 class="sortable" cellspacing="1" width="100%" bgcolor="#FFFFFF" style="border-bottom:1px solid #808080; ">
         <tr>
           <td valign="top" class="plaintext" bgcolor="#666666">
 			<font color="#FFFFFF"><b>NSX CODE</b></font></td>
@@ -635,7 +635,7 @@ if rc >= 0 then
 
 %>
 <tr><td colspan=16> 
-<table id="prices_123" cellspacing="0" width="718" bgcolor="#FFFFFF" cellpadding="1">
+<div class="table-responsive"><table id="prices_123" cellspacing="0" width="718" bgcolor="#FFFFFF" cellpadding="1">
 <tr>
           
           <td valign="top" class="plaintext" align="center" bgcolor="#666666" colspan="3">
@@ -853,7 +853,7 @@ end if
     <td colspan=4 bgcolor="#FFFFFF" class="plaintext" align="right" valign="top"><a href="prices_trades.asp?tradingcode=<%=tradingcode%>&coname=<%=issuedescription%>">All Trades</a></td>
     </tr>
     
-</table>
+</table></div>
  </td></tr>   
 
 <%		end if
@@ -874,7 +874,7 @@ end if
     
       
       
-      </table>
+      </table></div>
 
 
 
@@ -888,7 +888,7 @@ end if
 <p>&nbsp;</td>
     
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

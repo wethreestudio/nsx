@@ -1,4 +1,4 @@
-<table align=center border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table align=center border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="100%" class="bodylinks" bgcolor="#005596" valign="top" align=right>
     <font color="#FFFFFF" size="1">&nbsp;Australian Market 
@@ -38,7 +38,7 @@ pageTracker._trackPageview();
     
     </td>
   </tr>
-  </table>
+  </table></div>
   <script type="text/javascript"><!--
 google_ad_client = "pub-6491527947593959";
 /* 468x60, created 7/2/09 */

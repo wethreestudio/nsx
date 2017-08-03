@@ -219,7 +219,7 @@ Server.Execute "content_lower_nav.asp"
 
 
 <br>
-<table id="myTable" class="tablesorter"> 
+<div class="table-responsive"><table id="myTable" class="tablesorter"> 
 <thead> 
 <tr> 
     <th>Date/Time</th> 
@@ -382,7 +382,7 @@ Else
 End If
 %>
 </tbody>
-</table>
+</table></div>
 <p>
 <b>Note:</b> When manipulating cancelled trades the cancelled trade notification line plus the original trade line should be taken into account as a pair. Information on cancelled trades is given for clarity only.
 </p>

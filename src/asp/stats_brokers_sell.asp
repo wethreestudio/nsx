@@ -77,7 +77,7 @@ ELSE
   lap=0
   
 %>
-<table cellspacing=0 border="0" width="165" id="table100" cellpadding="5" >
+<div class="table-responsive"><table cellspacing=0 border="0" width="165" id="table100" cellpadding="5" >
 	<tr>
 		<td class=plaintext bgcolor=#959CA0><font color="#FFFFFF"><b>Brokers (<%=choose%>)</b></font></td>
 		<td class=plaintext bgcolor=#959CA0 align="right"><font color="#FFFFFF"><b>Trades (No.)</b></font></td>
@@ -144,7 +144,7 @@ end if
 
 %>
 
-</table>
+</table></div>
 </div>
 </body>
 </html>

@@ -1,13 +1,13 @@
 <div align="center">&nbsp;
-<table cellpadding="2"  id="table1" width="153" cellspacing="5" height="187" >
+<div class="table-responsive"><table cellpadding="2"  id="table1" width="153" cellspacing="5" height="187" >
 		<!-- MSTableType="layout" -->
 		<tr>
 			<td class="plaintext" height="177" valign=TOP width="139" nowrap>
-			<table cellpadding="0" cellspacing="0" width="142" height="176">
+			<div class="table-responsive"><table cellpadding="0" cellspacing="0" width="142" height="176">
 				<!-- MSCellFormattingTableID="2" -->
 				<tr>
 					<td width="137">
-			<table cellpadding="0" cellspacing="0" border="0" width="100%" >
+			<div class="table-responsive"><table cellpadding="0" cellspacing="0" border="0" width="100%" >
 				<tr>
 					<td class=plaintext bgcolor="#808080" nowrap width="100%">
 					<!-- MSCellFormattingType="header" -->
@@ -72,7 +72,7 @@
 					<a href="shareholder_eis.asp" style="text-decoration: none" onmouseover="spec('terms10','imgtdon')" onmouseout="spec('terms10','imgtdoff')">
 					<span style="text-decoration: none" >Share Plans</span></a></td>
 				</tr>
-			</table>
+			</table></div>
 					</td>
 					<td height="171" width="5">
 					<img alt="" width="5" height="171" src="images/border_images/MsoPnl_sh_b_232.jpg"></td>
@@ -81,8 +81,8 @@
 					<td colspan="2" height="5">
 					<img alt="" width="142" height="5" src="images/border_images/MsoPnl_sh_r_231.jpg"></td>
 				</tr>
-			</table>
+			</table></div>
 			</td>
 		</tr>
-		</table>
+		</table></div>
 </div>

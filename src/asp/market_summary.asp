@@ -26,7 +26,7 @@ Sub RenderSummary(sql, empty_message, right_col, right_col_heading, right_col_de
   End If
 %>
 <div class="table-responsive">
-    <table class="table tablesorter">
+    <div class="table-responsive"><table class="table tablesorter">
         <thead> 
             <tr> 
                 <th>Code</th>
@@ -61,7 +61,7 @@ Sub RenderSummary(sql, empty_message, right_col, right_col_heading, right_col_de
   End If
 %>
           </tbody>
-        </table>
+        </table></div>
     </div>
 <%
 End Sub
@@ -100,7 +100,7 @@ Server.Execute "/stats_market2.asp"
 </div>
 <br>
 <div class="table-responsive">
-<table class="table">
+<div class="table-responsive"><table class="table">
     <tr>
         <td width="50%">
             <div style="padding-right:8px">
@@ -212,7 +212,7 @@ SQL = "SELECT TOP 2 DATEPART(Year, TradeDate), SUM(CASE WHEN AddDelete='D' THEN 
             </div>    
         </td>
     </tr>
-</table>
+</table></div>
 </div>
 </div>
 </div>

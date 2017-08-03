@@ -300,7 +300,7 @@ enterprises, high technology, stock, exchange, stock exchange, Australian, NSX, 
 <body  style="background-color: #DDDDDD">
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
   <tr>
     <td valign="top" rowspan="3"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -349,7 +349,7 @@ the NSX may collect and retain about your organisation.</p>
 <p>&nbsp;
     </td>
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->   
 </body>

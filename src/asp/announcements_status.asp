@@ -26,7 +26,7 @@ Server.Execute "company_side_menu.asp"
     
 <p>The NSX Listing Rules requires that listed entities report market significant events to the NSX. This information is important to keep the market informed of their activities.&nbsp;&nbsp;
 </p>
-<table width="100%">
+<div class="table-responsive"><table width="100%">
 <%
 
 ' day light saving
@@ -162,10 +162,10 @@ if fh > rc then fh = rc
       <%end if%>
     </td>
   </tr>
-</table>
+</table></div>
 
 
-<table border="0" cellspacing="0" cellpadding="5"  width="100%" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
+<div class="table-responsive"><table border="0" cellspacing="0" cellpadding="5"  width="100%" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #666666">
   <tr>
     <td width="55" bgcolor="#666666"><font color="#FFFFFF"><b>FLAG</b></font></td>
     <td bgcolor="#666666"><font color="#FFFFFF"><b>HEADLINE</b></font></td>
@@ -308,7 +308,7 @@ if fh > rc then fh = rc
 </td></tr>
 
   
-</table>
+</table></div>
     
 
 				

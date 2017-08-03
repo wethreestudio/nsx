@@ -34,7 +34,7 @@ response.cachecontrol = "PRIVATE"
 <body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" style="background-color: #FFFFFF" >
 
 <div align==center>
-<table cellspacing=0 border="0" width="165" id="table100" cellpadding="5" >
+<div class="table-responsive"><table cellspacing=0 border="0" width="165" id="table100" cellpadding="5" >
 	
 
 <%
@@ -212,7 +212,7 @@ end if
     	  
     	  	
     	  	
-    	  	</table>
+    	  	</table></div>
 </div>
 </body>
 </html>

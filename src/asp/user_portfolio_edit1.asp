@@ -45,7 +45,7 @@ Set rs = conn.Execute(sql)
       <input type="hidden" name="returnurl" id="returnurl" value="user_portfolio_view1.asp">
       <p><input type="submit" value="Save and View Portfolio"></p>
 	  <div class="f-w-table" >
-    	<table >
+    	<div class="table-responsive"><table >
 		<thead>
         <tr>
           <th>Security<br>Code</th>
@@ -175,7 +175,7 @@ End If
   Next
 %>        
       </tbody>
-	  </table>
+	  </table></div>
 	  </div>
       <p><input type="submit" value="Save and View Portfolio"></p>
     </form>    

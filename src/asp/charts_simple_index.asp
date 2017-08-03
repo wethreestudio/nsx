@@ -35,7 +35,7 @@ response.cachecontrol = "PRIVATE"
 
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="4" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -60,7 +60,7 @@ tday = 100
 Last <%=tday%> trading days for <b><%=coname%> (<%=id%>)</b>
 </p>
 <!--#INCLUDE FILE="admin/merchtools.asp"-->
-<table>
+<div class="table-responsive"><table>
 
 
 
@@ -355,7 +355,7 @@ end function
     </td>
       </tr>
       
-      </table>
+      </table></div>
 
 
 
@@ -367,7 +367,7 @@ end function
     </td>
     
   </tr>
-</table>
+</table></div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

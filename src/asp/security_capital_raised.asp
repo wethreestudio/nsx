@@ -35,7 +35,7 @@ coname=ucase(request("coname"))
 <body >
 <!--#INCLUDE FILE="header.asp"-->
 <div align="center">
-<table border="0" width="797" cellspacing="0" cellpadding="0">
+<div class="table-responsive"><table border="0" width="797" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" rowspan="3" bgcolor="#FFFFFF"><!--#INCLUDE FILE="lmenu.asp"--></td>
   </tr>
@@ -131,7 +131,7 @@ if fh > rc then fh = rc
 	</blockquote>
 	<div align="center">
 <!--#INCLUDE FILE="header_tables.asp"-->  
-<table border="0" width="720" cellspacing="0" cellpadding="3">
+<div class="table-responsive"><table border="0" width="720" cellspacing="0" cellpadding="3">
   <tr>
     <td class="plaintext" bgcolor="#666666" height="4"><b><font color="#FFFFFF">Security</font></b></td>
     <td class="plaintext" bgcolor="#666666" height="4" nowrap><font color="#FFFFFF"><b>
@@ -294,7 +294,7 @@ Current <%=tradingcode%> Issued Capital: <%=formatnumber(unlisted+listed,0)%>
 <hr noshade color="#808080" width="700" size="1">
 </td></tr>
 
-</table>
+</table></div>
 
 
 	</div>
