@@ -43,3 +43,17 @@ a.white-contact-button {
     border: 1px solid #ffffff;
   }
 }
+
+.official-list {
+  .rss-link {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+  }
+}
+
+.img-responsive {
+  > img {
+    @extend .img-responsive;
+  }
+}

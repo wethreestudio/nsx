@@ -152,7 +152,7 @@ Else
     End If
 %>
   <tr> 
-      <td><%=tradingcode%></td> 
+      <td><h3><%=tradingcode%></h3></td> 
       <td><a href="/summary/<%=tradingcode%>"><%=issuedescription%></a></td> 
       <td><%=issuestopped%><span style="display:none">;<%=isd%></span></td> 
   </tr> 
@@ -253,7 +253,7 @@ Else
     End If
 %>
   <tr> 
-      <td><%=tradingcode%></td> 
+      <td><h3><%=tradingcode%></h3></td> 
       <td><a href="/summary/<%=tradingcode%>"><%=Server.HTMLEncode(issuedescription)%></a></td> 
       <td><%=issuestopped%><span style="display:none">;<%=isd%></span></td> 
   </tr> 

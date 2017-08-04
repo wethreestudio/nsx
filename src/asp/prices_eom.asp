@@ -143,7 +143,7 @@ mn_fl = UCase(Left(mn, 1))
 mn_rl = LCase(Right(mn, mn_len - 1))
 %>
 
-<h1><%=Server.HTMLEncode(ucase(id))%> - <%=coname%> - <%=mn_fl & mn_rl%> Month End Price History</h1>
+<h2><%=Server.HTMLEncode(ucase(id))%> - <%=coname%> - <%=mn_fl & mn_rl%> Month End Price History</h2>
 
 
 

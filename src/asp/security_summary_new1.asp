@@ -413,7 +413,7 @@ If PRowCount >= 0 And VarType(PRow) <> 0 Then
 <script type="text/javascript" src="js/hs/modules/exporting.js"></script> 
 
 <!-- graph -->
-<div id="cd" style="width:100%; height:350px; position:relative">  
+<div id="cd" style="width:100%; height:350px; position:relative" class="graph">  
     <div style="display:none;width:220px;position:absolute;top:9px;left:340px;z-index:100000;" id="hideshowann">
         <input style="vertical-align:middle" type="checkbox" id="showann" checked>
         <label class="editarea" style="padding-left:5px; cursor:default;" for="showann">Show Announcements</label>
@@ -425,13 +425,13 @@ If PRowCount >= 0 And VarType(PRow) <> 0 Then
 
 <div style="width:100%; margin:auto">
     <div class="security-values">
-        <div class="brand-name">
+        <h2 class="brand-name">
             <%If Len(coName) > 0 Then
 		    Response.Write Server.HTMLEncode(left(coName,70))
 		    Else
 		    Response.Write "&nbsp;"
 		    End If%>
-        </div>
+        </h2>
 
         <div class="securities-table">
             <ul>
@@ -502,7 +502,7 @@ If VarType(depth_row) <> 0 Then
 <div class="table-responsive"><table class="table">
      <thead>
        <tr class="header">
-         <th colspan="3"><p>BIDS</p></th>
+         <th colspan="3"><h3>BIDS</h3></th>
        </tr>
      </thead>
      <tbody>
@@ -602,7 +602,7 @@ End if
 <div class="table-responsive"><table class="table">
      <thead>
        <tr class="header">
-         <th colspan="3"><p>OFFERS</p></th>
+         <th colspan="3"><h3>OFFERS</h3></th>
        </tr>
      </thead>
      <tbody>
@@ -676,7 +676,7 @@ Next ' End first table; For rcc = 0 To row_count-1 FOR FIRST TABLE
 <div class="table-responsive"><table class="table">
     <thead>
         <tr class="header">
-            <th colspan="6"><p>TRADES</p></th>
+            <th colspan="6"><h3>TRADES</h3></th>
         </tr>
     </thead>
     <tbody>

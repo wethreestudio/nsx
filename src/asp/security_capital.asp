@@ -138,7 +138,7 @@ Server.Execute "content_lower_nav.asp"
             <div class="subpage-center">
 <div class="editarea">
 
-<h1>Issued Capital Details - <%=coname%></h1>
+<h2>Issued Capital Details - <%=coname%></h2>
 
 <%
 errmsg=""
@@ -299,16 +299,14 @@ end if
 prvcode = tradingcode
 NEXT %>
 
-<tr>
-	<td colspan="8" style="background-color:#C1C1C1;color:#fff;font-weight:bold;">
-		Total <%=tradingcode%> Listed: <%=formatnumber(listed,0)%><br>
-		Total <%=tradingcode%> Unlisted: <%=formatnumber(unlisted,0)%><br>
-		Current <%=tradingcode%> Issued Capital: <%=formatnumber(unlisted+listed,0)%>
-	</td>
-</tr>
-
 </tbody>
 </table></div>
+
+<p>
+<b>Total <%=tradingcode%> Listed:</b> <%=formatnumber(listed,0)%><br>
+<b>Total <%=tradingcode%> Unlisted:</b> <%=formatnumber(unlisted,0)%><br>
+<b>Current <%=tradingcode%> Issued Capital:</b> <%=formatnumber(unlisted+listed,0)%>
+</p>
 
 
 <%

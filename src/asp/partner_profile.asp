@@ -133,125 +133,85 @@ if fh > rc then fh = rc
       	  
       	  
 %>
-
-
-
-<div class="editarea">
-  <div style="float:right;">
-  
-  
-<div class="small-table">
-<div class="datagrid">
-<div class="table-responsive"><table cellspacing="0" cellpadding="0">
-    <thead>
-        <tr>
-            <th style="text-align:left;padding-left:5px;">Contact Details</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-
-<div class="table-responsive"><table width="100%">
-  <tbody>
-<% If Len(Trim(Address)) > 0 Then %>
-  <tr>
-    <td width="90px"><b>Street Address:</b></td>
-    <td><%=remcrlf(Address)%></td>
-  </tr>
-<% End If %>
-<%If Len(Trim(pobox)) > 0 Then%>
-  <tr>
-    <td><b>Postal Address:</b></td>
-    <td><%=remcrlf(pobox)%></td>
-  </tr>
-  <tr>
-  <% End If %>
-    <td><b>Web:</b></td>
-    <td>
-      <% if instr(websites," http:")> 0 then websites=replace(websites & " "," ","<br>http:")
-      response.write websites %>
-    </td>
-  </tr>
-  <tr>
-  <%If Len(Trim(agemail)) > 0 Then%>
-    <td><b>Email:</b></td>
-    <td><%=agemail%></td>
-  </tr>
-<% End If %>
-<%If Len(Trim(phone)) > 0 Then%>
-  <tr>
-    <td><b>Phone:</b></td>
-    <td><%=remcrlf(phone)%></td>
-  </tr>
-  <% End If %>
-<%If Len(Trim(fax)) > 0 Then%>
-  <tr>
-    <td><b>Fax:</b></td>
-    <td><%=remcrlf(fax)%></td>
-  </tr>
-  <% End If 
-If Len(Trim(contact_name)) > 0 Then
-  %>
-  <tr>
-    <td><b>Contact Name:</b>
-    <td><%=contact_name%></td>
-  </tr>
-<% End If %>   
-    </tbody>
-    
-    
-    </table></div>
-			</td>
-        </tr>
-    </tbody>
-</table></div>
-</div>
-</div>  
-  
-  
-  
-  
-  
-    <div class="table-responsive"><table>
-
-
-
-</table></div>  
-  </div>
-
-
-
-
-  <h1><%=remcrlf(ucase(agname))%></h1>
-  <div style="width:100%;"><%=strapline%></div>
-  <div style="width:100%;padding:5px;"><%=remcrlf(logo)%></div>
-  <div style="width:100%;"><%=remcrlf(shortdesc)%></div>
-<%  
-If Len(about) < 10 Then about = Replace(about & " ","<p>&nbsp;</p>","")
-If Trim(about & " ") <> "" Then
-%>
-  <h2>About</h2>
-  <p><%=remcrlf(about)%></p>
-<%
-End If
-If Len(services) < 10 Then services = Replace(services & " ","<p>&nbsp;</p>","")
-If Trim(services & " ") <> "" Then
-%>
-  <h2>Services</h2>
-  <p><%=remcrlf(services)%></p>
-<%
-End If
-If Len(History) < 10 Then History = Replace(History & " ","<p>&nbsp;</p>","")
-If Trim(History & " ") <> "" Then
-%>
-  <h2>History</h2>
-  <p><%=remcrlf(History)%></p>
-<%
-End If
-%> 
-</div>
- 
+    <div class="editarea">
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+          <h1 id="broker-title"><%=remcrlf(ucase(agname))%></h1>
+          <h4><%=strapline%></h4>
+          <p><strong><%=remcrlf(shortdesc)%></strong></p>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="img-responsive h1"><%=remcrlf(logo)%></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+          <%  
+          If Len(about) < 10 Then about = Replace(about & " ","<p>&nbsp;</p>","")
+          If Trim(about & " ") <> "" Then
+          %>
+          <h2>About</h2>
+          <p><%=remcrlf(about)%></p>
+          <%
+          End If
+          If Len(services) < 10 Then services = Replace(services & " ","<p>&nbsp;</p>","")
+          If Trim(services & " ") <> "" Then
+          %>
+          <h2>Services</h2>
+          <p><%=remcrlf(services)%></p>
+          <%
+          End If
+          If Len(History) < 10 Then History = Replace(History & " ","<p>&nbsp;</p>","")
+          If Trim(History & " ") <> "" Then
+          %>
+          <h2>History</h2>
+          <p><%=remcrlf(History)%></p>
+          <%
+          End If
+          %> 
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <h3>Contact Details</h3>
+          <dl>
+            <%
+            If Len(Trim(Address)) > 0 Then
+            %>
+            <dt><b>Street Address:</b></dt>
+            <dd><%=remcrlf(Address)%></dd>
+            <%
+            End If
+            %>
+            <%
+            'If Len(Trim(pobox)) > 0 Then
+            %>
+            <dt><b>Postal Address:</b></dt>
+            <dd><%=remcrlf(pobox)%></dd>
+            <%
+            'End If
+            %>
+            <dt><b>Web:</b></dt>
+            <dd><% if instr(websites," http:")> 0 then websites=replace(websites & " "," ","<br>http:")
+            response.write websites %></dd>
+            <%If Len(Trim(agemail)) > 0 Then%>
+            <dt><b>Email:</b></dt>
+            <dd><%=agemail%></dd>
+            <% End If %>
+            <%If Len(Trim(phone)) > 0 Then%>
+            <dt><b>Phone:</b></dt>
+            <dd><%=remcrlf(phone)%></dd>
+            <% End If %>
+            <%If Len(Trim(fax)) > 0 Then%>
+            <dt><b>Fax:</b></dt>
+            <dd><%=remcrlf(fax)%></dd>
+            <% End If %>
+            <% If Len(Trim(contact_name)) > 0 Then %>
+            <dt><b>Contact Name:</b></dt>
+            <dd><%=contact_name%></dd>
+            <% End If %>  
+          </dl>
+        </div>
+      </div>
+    </div>
 
 <% NEXT
 	end if
@@ -260,3 +220,12 @@ End If
 </div>
 </div>
 <!--#INCLUDE FILE="footer.asp"-->
+<script>
+String.prototype.toProperCase = function () {
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+// Title case on heading
+$(document).ready(function () { 
+  $("#broker-title").text($("#broker-title").text().toProperCase());
+});
+</script>

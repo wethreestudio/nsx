@@ -464,7 +464,7 @@ Else
 		tradestatus = rs("tradestatus")
 		status2 = trim(ucase(tradestatus & " " & smode & " " & quotebasis )) ' status flag
 		if status2 <> "" then
-			status = "<a href=""/marketdata/search_by_company?nsxcode=" & rs("tradingcode") & " "  & """ title='Click here for news'>" & status2 & "</a>&nbsp;" 
+			status = "<a href=""/marketdata/company-directory/" & rs("tradingcode") & "/"" title='Click here for news'>" & status2 & "</a>&nbsp;" 
 		end if
 		
 		' DIV YIELD % calculation

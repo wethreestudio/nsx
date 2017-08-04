@@ -166,7 +166,7 @@ Issuername = AnnRows(5,0)
 issuercode = AnnRows(1,0)
 Logo = trim(AnnRows(8,0) & " " )
 response.write "<h1>Annual Statements for " & IssuerName & " (" & issuercode & ")</h1>"
-response.write "<div  style='padding-top;8px;padding-bottom:8px;'><div class="table-responsive"><table width='99%'><tr>"
+response.write "<div  style='padding-top;8px;padding-bottom:8px;'><div class='table-responsive'><table width='99%'><tr>"
 'response.write "<span style='display:inline-block; vertical-align:bottom;'>"
 if len(Logo)> 0 then
 	response.write "<td width='50%'><img src='/images/company_images/" & logo &"' ></td>"

@@ -1,0 +1,19 @@
+.graph {
+	overflow: hidden;
+}
+
+.graph-responsive {
+	overflow-x: auto;
+	min-height: 0.01%;
+
+	@media screen and (max-width: $screen-xs-max) {
+		width: 100%;
+		overflow-y: hidden;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+
+		.highcharts-container {
+			margin-bottom: 0;
+			min-width: $screen-sm;
+		}
+	}
+}

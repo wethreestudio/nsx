@@ -116,7 +116,7 @@ Server.Execute "content_lower_nav.asp"
             <div class="subpage-center">
 <div class="editarea">
 
-<h1><%=UCase(id)%> - <%=coname%> - Dividend Details</h1>
+<h2><%=UCase(id)%> - <%=coname%> - Dividend Details</h2>
 <div class="table-responsive"><table border="0" width="100%" cellspacing="0" cellpadding="0">
 
 

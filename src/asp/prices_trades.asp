@@ -172,7 +172,7 @@ Server.Execute "content_lower_nav.asp"
             <div class="subpage-center">
 
 <div class="editarea">
-<h1>Trading History for <%=issuedesc & " (" & tradingcode & ")"%></h1>
+<h2>Trading History for <%=issuedesc & " (" & tradingcode & ")"%></h2>
 <p>Full trading history is displayed up to the close of business for the previous business day.</p>
 	<div >Download Trade Table 
        <a href="/download_trades.aspx?nsxcode=<%=tradingcode%>&amp;format=XLS" class="blue-link">Excel</a> 

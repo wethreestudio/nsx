@@ -65,7 +65,7 @@ Server.Execute "content_lower_nav.asp"
 <!-- CONTENT -->
 <div class="container subpage">
     <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-7">
         <div class="subpage-center">
             <%
             RenderContent page, "editarea" 
@@ -73,7 +73,7 @@ Server.Execute "content_lower_nav.asp"
         </div>
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-5">
     <div class="small-table side-table">
         <div class="datagrid">
             <div class="table-responsive"><table cellspacing="0" cellpadding="0">
