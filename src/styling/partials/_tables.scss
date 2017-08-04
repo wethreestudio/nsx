@@ -59,6 +59,15 @@ table {
 	}
 }
 
+.table-nested {
+	margin: 0;
+
+	> tbody > tr:last-child > td {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+}
+
 .table-responsive {
 	overflow-x: auto;
 	min-height: 0.01%;
@@ -70,6 +79,7 @@ table {
 
 		> table {
 			margin-bottom: 0;
+			min-width: $screen-sm;
 		}
 	}
 }
@@ -144,7 +154,7 @@ table {
 	}
 
 	&-errorRow td {
-		color: $color-text-danger;
+		color: $brand-danger;
 		cursor: pointer;
 	}
 }

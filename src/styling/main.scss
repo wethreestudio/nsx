@@ -25,6 +25,8 @@
 $brand-primary: $color-brand-regal;
 $brand-success: $color-brand-java;
 $brand-info: $color-brand-picton;
+/*$brand-warning: ;*/
+$brand-danger: red;
 $grid-gutter-width: 24px;
 $border-radius-base: 0;
 $border-radius-large: 0;
@@ -113,7 +115,7 @@ $cursor-disabled: not-allowed;
 @import 'partials/forms';
 @import 'partials/hero';
 @import 'partials/home';
-@import 'partials/listing';
+@import 'partials/company';
 @import 'partials/navigation';
 @import 'partials/page';
 @import 'partials/pagination';

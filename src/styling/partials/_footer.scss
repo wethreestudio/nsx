@@ -5,7 +5,11 @@
 	color: #fff;
 
 	a {
-		color: #fff;		
+		color: #fff;
+
+		&:focus {
+			outline: 2px solid rgba(white, 0.5) !important;
+		}
 	}
 }
 
@@ -94,7 +98,7 @@
 
 .footer-right {
 	a {
-		display: inline-block;
+		display: inline;
 		margin-right: 1rem;
 
 		&:last-of-type {

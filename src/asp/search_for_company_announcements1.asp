@@ -165,9 +165,9 @@ Else
        
 %>
   <tr> 
-      <td width="80px"><a href="/summary/<%=nsxcode2%>"><b><%=tradingcode%></b></a><%
+      <td width="80px"><a href="/summary/<%=nsxcode2%>"><h3><%=tradingcode%></h3></a><%
 If annPriceSensitive Then
-%><br><span style="color:green;font-size:10px">Price Sensitive</span><%
+%><small class="text-success">Price Sensitive</small><%
 End If
       %></td>
       <td><a href="/ftp/news/<%=annFile%>"><%=annTitle%></a><br>|<%=annPrecise%>|</td> 

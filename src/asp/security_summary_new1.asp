@@ -102,12 +102,12 @@ page_title = flashdata_coName & " " & UCase(security_code) & " - Security Summar
 Server.Execute "side_menu.asp"
 %>
 
-<div class="hero-banner subpage">
+<div class="hero-banner hero-banner-company subpage">
     <div class="hero-banner-img"></div>
     <div class="container hero-banner-cont">
         <div class="container hero-banner-content-holder subpage">
             <div class="col-sm-12 hero-banner-left comp-info">
-                <h1><%=flashdata_coName%></h1>
+                <h1><span><%=flashdata_coName%></span></h1>
                 <div class="comp-info">
                     <div class="comp-info-large">
                         <span class="large"><%=security_code%></span><span class="large"><%=FormatPrice(flashdata_last,3)%></span>

@@ -63,15 +63,6 @@
 	
 	//var titleVal = $("h1").text();
 	//console.log(titleVal);
-	
-	
-// Title case on heading
-$(document).ready(function () {	
-	
-	$(".hero-banner-content-holder.subpage h1").text($(".hero-banner-content-holder h1").text().toTitleCase());
-});
-	
-	
 $(document).ready(function () {
     $("#request-btn").click(function(){ $('div#Listing-PopUp').animate({opacity: 'toggle'}, 'slow');});
     $('#ret').val(encodeURI(document.URL));

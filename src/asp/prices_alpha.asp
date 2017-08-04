@@ -346,7 +346,6 @@ Server.Execute "side_menu.asp"
 	        </span>
 	        </form>
         </div>
-<div class="table-responsive">
 <div class="table-responsive"><table id="myTable" class="table tablesorter"> 
         <thead> 
         <tr> 
@@ -509,7 +508,7 @@ Else
 	
 %>                     	 
 <tr> 
-	<td><a href="/summary/<%=rs("tradingcode")%>" title="Click for more detail. <%=rs("issuedescription")%>"><%=rs("tradingcode")%></a></td> 
+	<td><a href="/summary/<%=rs("tradingcode")%>" title="Click for more detail. <%=rs("issuedescription")%>"><h3><%=rs("tradingcode")%></h3></a></td> 
     <td align="right"><%=FormatValue(rs("last"),3)%></td> 
     <td align="right"><%=FormatValue(rs("bidqty"),0)%></td> 
     <td align="right"><%=FormatValue(rs("bid"),3)%></td> 
@@ -535,9 +534,8 @@ Set rs = Nothing
 %>  
 </tbody> 
 </table></div>
-</div>
 
-<h2>Notes</h2>
+<h4>Notes</h4>
 <ol>
 <li>Click column headings to sort, click again to reverse sort order.</li>
 <li>Press the <b>Shift</b> key while clicking headings to sort using multiple columns.</li>

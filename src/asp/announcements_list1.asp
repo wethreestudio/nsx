@@ -228,9 +228,9 @@ Else
 	ttl = Replace(rs("annTitle"),"&", "&amp;")
 %>
   <tr<%=c%>> 
-      <td width="80"><a href="/summary/<%=rs("tradingcode")%>"><b><%=UCase(rs("tradingcode"))%></b></a><%
+      <td width="80"><a href="/summary/<%=rs("tradingcode")%>"><h3><%=UCase(rs("tradingcode"))%></h3></a><%
 If rs("annPriceSensitive") = "True" Then
-%><br><span style="color:green;font-size:10px">Price Sensitive</span><%
+%><small class="text-success">Price Sensitive</small><%
 End If
       %></td>
       <td><a href="/ftp/news/<%=rs("annFile")%>"><%=ttl%></a><br><%=prec%></td> 

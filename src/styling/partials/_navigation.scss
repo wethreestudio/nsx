@@ -141,6 +141,10 @@
 				padding: $grid-gutter-width/2 0;
 				display: block;
 
+				&:focus {
+					color: $color-brand-typography;
+				}
+
 				@media (max-width: $screen-sm-max) {
 					font-size: 1.5rem;
 					font-weight: 500;
@@ -259,6 +263,7 @@
 
 					a {
 						color: white;
+						font-weight: normal;
 					}
 				}
 			}
@@ -472,15 +477,6 @@
 
 
 
-.top-small-links {
-	float: right !important;
-	padding: 20px 0 0 0;
-
-	li a {
-		font-size: 11px;
-		font-weight: bold;
-	}
-}
 
 .navbar.navbar-default.second_navbar {
 	.navbar-nav > li > a {
@@ -524,25 +520,4 @@
 		top: 35px;
 		right: 10px;
 	}
-}
-
-.standard-input {
-	line-height: 2.5;
-	color: #666;
-	padding: 18px 10px;
-	border-radius: 0;
-	
-}
-
-.password-reminder {
-	> tbody > tr > td {
-		border: 0;
-	}
-
-	td {
-		line-height: 2.5;
-		vertical-align: middle;
-	}
-
-	.standard-input, .captcha, .form-group label {}
 }

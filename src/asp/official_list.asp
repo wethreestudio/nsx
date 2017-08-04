@@ -178,7 +178,6 @@ Number of Listed Securities: <b><%=formatnumber(rc+1,0)%></b>
       <%end if%>
 </div>
 
-<div class="table-responsive">
 <div class="table-responsive"><table id="myTable" class="tablesorter1 table">
         <%
 		prvcode =""
@@ -230,32 +229,32 @@ Number of Listed Securities: <b><%=formatnumber(rc+1,0)%></b>
     row_counter = row_counter + 1
 %>
   <tr<%=c%>> 
-     <td width=20 class="plaintext" valign="top"><a href="/marketdata/company-directory/<%=nsxcode%>/" title="click for company details"><%=nsxcode %></a></td>
+     <td width=20 class="plaintext" valign="top"><a href="/marketdata/company-directory/<%=nsxcode%>/" title="click for company details"><h3><%=nsxcode %></h3></a></td>
      <td width=700 class="plaintext" valign="top"><a href="/marketdata/company-directory/details/<%=nsxcode%>/" title="click for company details"><%=Server.HTMLEncode(CoName)%></a> (issuer listed on: <%=aglisteddate%>)<br>
-		<div class="table-responsive"><table class="ol_inner" border=0 >
-	   <tr class="ol_inner">
-          <td class="ol_inner" valign="top" width="100" >Code</td>
-          <td class="ol_inner" valign="top" width="100" >ISIN</td>
-		  <td class="ol_inner" valign="top" width="220" >FIGI</td>
-          <td class="ol_inner" valign="top" width="300" >Adviser</td>
-		<td  class="ol_inner" valign="top" width="100" >Status</td>
-          <td class="ol_inner" valign="top" nowrap align="right">Security Listed On</td>
+		<table class="ol_inner table-nested" border=0 >
+	   <tr class="ol_inner sub-header">
+          <td class="ol_inner" valign="top" width="5%">Code</td>
+          <td class="ol_inner" valign="top" width="15%">ISIN</td>
+		  <td class="ol_inner" valign="top" width="20%">FIGI</td>
+          <td class="ol_inner" valign="top" width="40%">Adviser</td>
+		<td  class="ol_inner" valign="top" width="10%">Status</td>
+          <td class="ol_inner" valign="top" nowrap align="right" width="10%">Security Listed On</td>
         </tr>
 <%
   end if
 %>
 	 <tr class="ol_inner" >
-	 <td class="ol_inner" valign="top" width="100"><%=tradingcode %></td>
-	 <td class="ol_inner" valign="top" width="100"><%=isin%>&nbsp;</td>
-	 <td class="ol_inner" valign="top" width="100"><%=bbgid%>&nbsp;</td>
-     <td class="ol_inner" valign="top" width="200"><%
+	 <td class="ol_inner" valign="top" width="5%"><%=tradingcode %></td>
+	 <td class="ol_inner" valign="top" width="20%"><%=isin%></td>
+	 <td class="ol_inner" valign="top" width="15%"><%=bbgid%></td>
+     <td class="ol_inner" valign="top" width="40%"><%
 		bb =  adjtextarea(advisers) & "<BR>"
 		cc = instr(bb,"<BR>")-1
        response.write Server.HTMLEncode(left(bb,cc))
 
-     %>&nbsp;</td>
+     %></td>
     
-     <td  class="ol_inner" valign="top" width="100"><%
+     <td  class="ol_inner" valign="top" width="10%"><%
 		bb = ucase(adjtextarea(issuestatus))
 		if bb = "ACTIVE" then 
 			response.write ""
@@ -263,9 +262,9 @@ Number of Listed Securities: <b><%=formatnumber(rc+1,0)%></b>
 			response.write bb
 		end if
 	
-         %>&nbsp;</td>
+         %></td>
     
-     <td class="ol_inner" valign="top" nowrap align="right"><%=issuestarted%>&nbsp;</td>
+     <td class="ol_inner" valign="top" nowrap align="right" width="10%"><%=issuestarted%></td>
     </tr>
     
 	<%
@@ -274,14 +273,14 @@ prvcode = nsxcode
   
 NEXT
 		  %>
-		  </table></div>
+		  </table>
 		  <%
 		  
 end if
     %>
             </td>
         </tr>
-    </table></div>
+    </table>
 </div>
 <div class="pagebar">Pages:&nbsp;
       <%if currentpage > 1 then %>

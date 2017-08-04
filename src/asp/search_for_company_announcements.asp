@@ -121,12 +121,12 @@ $(document).ready(function()
 Server.Execute "side_menu.asp"
 %>
 
-<div class="hero-banner subpage">
+<div class="hero-banner hero-banner-company subpage">
     <div class="hero-banner-img"></div>
     <div class="container hero-banner-cont">
         <div class="container hero-banner-content-holder subpage">
             <div class="col-sm-12 hero-banner-left comp-info">
-                <h1><%=flashdata_coName%></h1>
+                <h1><span><%=flashdata_coName%></span></h1>
                 <div class="comp-info">
                     <div class="comp-info-large">
                         <span class="large"><%=security_code%></span><span class="large"><%=FormatPrice(flashdata_last,3)%></span>
@@ -235,9 +235,9 @@ Else
     If i Mod 2 = 0 Then c = ""
 %>
   <tr<%=c%>> 
-      <td><a href="/summary/<%=rs("tradingcode")%>"><b><%=UCase(rs("tradingcode"))%></b></a><%
+      <td><a href="/summary/<%=rs("tradingcode")%>"><h3><%=UCase(rs("tradingcode"))%></h3></a><%
 If rs("annPriceSensitive") = "True" Then
-%><br><span style="color:green;font-size:10px">Price Sensitive</span><%
+%><small class="text-success">Price Sensitive</small><%
 End If
       %></td>
       <td><a href="/ftp/news/<%=rs("annFile")%>"><%=Server.HTMLEncode(rs("annTitle"))%></a><br><%=Server.HTMLEncode(rs("annPrecise"))%></td> 
