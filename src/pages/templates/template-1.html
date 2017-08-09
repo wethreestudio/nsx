@@ -1,76 +1,11 @@
-﻿<!--#INCLUDE FILE="stock_ticker.asp"--><%
-Response.CodePage = 65001
-' check domain and set domain analytics code properly
-sitedomain =  trim(Request.ServerVariables("SERVER_NAME") & " ")
-'googleaccount = "UA-9560336-2" ' nsxa.com.au
-googleaccount = "UA-76513446-2" ' nsxa.com.au
-googledomain = "nsxa.com.au"
-if instr(sitedomain,"nsx.com.au") > 0 then
-'googleaccount = "UA-9560336-1"
-googleaccount = "UA-76513446-1"
-googledomain = "nsx.com.au"
-end if
-'response.write sitedomain
-' set base url
-If UCase(Session("PASSWORDACCESS")) = "YES" Then
-Response.AddHeader "X-SignIn", Session.SessionID
-Else
-Response.AddHeader "X-SignIn", "0"
-End If
-Dim SiteRootURL
-Dim ssl
-If Request.ServerVariables("HTTPS") = "on" Then ' And Application("SSL") = "1" Then
-'SiteRootURL = Application("nsx_SSLSiteRootURL")
-SiteRootURL = "https://www." & googledomain
-ssl = "https://"
-Else
-SiteRootURL = Application("nsx_SiteRootURL")
-'SiteRootURL = "http://www." & googledomain
-ssl = "http://"
-End If
-session("googledomain") = googledomain
-menu2 = Request.QueryString("menu")
-if len(menu2) = 0 then menu2 = session("menu")
-' Return true if page (p) is the currently selected page
-Function IsActive(p)
-IsActive = false
-If p = menu2 Then
-IsActive = true
-End If
-End Function
-' not used
-Function GetActivePage(name)
-'Response.Write(name)
-css_class = ""
-strReturnURL = Request.ServerVariables("SCRIPT_NAME")
-'Response.Write(strReturnURL)
-If name = strReturnURL Then
-css_class = "active"
-End If
-'Response.Write(css_class)
-End Function
-'Response.Write(Request.ServerVariables("SCRIPT_NAME"))
-page = Request.QueryString("page")
-menu = Request.QueryString("menu")
-'Response.Write(", menu=[" + menu + "]")
-'Response.Write("page=[" + page + "]")
-%>
 <!DOCTYPE html>
 <html>
 	<head>
-		<base href="<%= SiteRootURL %>" target="_self">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<% If alow_robots <> "yes" Then
-		%><meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
-		<% End If
-		If Len(meta_description) > 0 Then
-		%><meta name="description" content="<%=meta_description%>">
-		<% End If
-		If Len(meta_keywords) > 0 Then
-		%><meta name="keywords" content="<%=meta_keywords%>">
-		<% End If %>
+		<meta name="description" content="Official site of the National Stock Exchange of Australia, the market of choice for innovative and growth style Australian and International companies.">
+		<meta name="keywords" content="NSX, equities, company floats, IPO, investing, brokers, listed companies, stock exchange, Newcastle NSW">
 		<link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png">
 		<link rel="alternate" type="application/rss+xml" title="NSX Company Announcements" href="/ftp/rss/nsx_rss_announcements.xml">
@@ -79,23 +14,7 @@ menu = Request.QueryString("menu")
 		<link rel="alternate" type="application/rss+xml" title="NSX Official List" href="/ftp/rss/nsx_rss_officiallist.xml">
 		<link rel="alternate" type="application/rss+xml" title="NSX Weekly Diary" href="/ftp/rss/nsx_rss_diary.xml">
 		<link rel="alternate" type="application/rss+xml" title="NSX Prices Table" href="/ftp/rss/nsx_rss_prices.xml">
-		<title><%= page_title %></title>
-		<%
-		' Replaced with allstyles.css
-		'<link rel="stylesheet" href="/css/style.css" type="text/css" media="all">
-		'<link rel="stylesheet" href="/css/li-scroller.css" type="text/css" media="all">
-		'<link rel="stylesheet" href="/css/smoothness/jquery-ui-1.8.17.custom.css" type="text/css" media="all">
-		'<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/base/jquery-ui.css" type="text/css" media="all">
-		'<link rel="stylesheet" href="/css/jquery.jscrollpane.css" type="text/css" media="all">
-		'<!-- Anything Slider -->
-		'<link rel="stylesheet" href="/css/anythingslider.css" type="text/css" media="all">
-		'<script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-		'<link rel="stylesheet" href="/css/allstyles.min.css" type="text/css" media="all">
-		'<script type="text/javascript" src="/js/jquery-migrate-3.0.0XXX.min.js"></script>
-		'<script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
-		'<script type="text/javascript" src="js/jquery.min.js"></script>
-		%>
-		<!--<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6874356/6131572/css/fonts.css" />-->
+		<title>The New NSX</title>
 		<link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -103,157 +22,59 @@ menu = Request.QueryString("menu")
 		<![endif]-->
 		<script type="text/javascript" src="/js/jquery-1.9.1.js"></script>
 		<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="bootstrap-3.3.7/js/carousel.js"></script>
+		<script type="text/javascript" src="/bootstrap-3.3.7/js/carousel.js"></script>
 		<link rel="stylesheet" href="/css/main.css" type="text/css" media="all">
-		<%
-		' removed google scripts to speed up access in china.
-		'<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/base/jquery-ui.css" type="text/css" media="all">
-		%>
 		<link rel="stylesheet" href="/css/smoothness/jquery-ui-1.8.17.custom.css" type="text/css" media="all">
-		<%
-		' Additional CSS Includes
-		For Each cssInclude In objCssIncludes
-		%><link rel="stylesheet" href="<%=CStr(objCssIncludes(cssInclude))%>" type="text/css" media="all">
-		<%
-		Next
-		%>
-		<%
-		'<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-		'<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-		'<script type="text/javascript" src="/js/jquery-ui-1.8.17.custom.min.js"></script>
-		'<script type="text/javascript" src="/js/jquery.cycle.all.js"></script>
-		'<script type="text/javascript" src="/js/hoverIntent.js"></script>
-		'<script type="text/javascript" src="/js/custom.js"></script>
-		'<script type="text/javascript" src="/js/jquery.li-scroller.1.0.js"></script>
-		'<script type="text/javascript" src="/js/jquery.tipTip.minified.js"></script>
-		'<script type="text/javascript" src="/js/functions.js"></script>
-		'<script type="text/javascript" src="/js/jquery.labelify.js"></script>
-		'<script type="text/javascript" src="/js/jquery.corner.js"></script>
-		'<script type="text/javascript" src="/js/chart_encode.js"></script>
-		'<script type="text/javascript" src="/js/jquery.jcarousellite.pauseOnHover.min.js"></script>
-		'<script type="text/javascript" src="/js/jquery.mousewheel.js"></script>
-		'<script type="text/javascript" src="/js/jquery.jscrollpane.min.js"></script>
-		<!-- Anything Slider -->
-		'<script type="text/javascript" src="/js/jquery.anythingslider.js"></script>
-		%>
-		<%
-		' removed google scripts to speed up access in china.
-		'<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-		'<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-		%>
 		<script type="text/javascript" src="/js/alljavascript.js"></script>
 		<script type="text/javascript" src="/js/header.js.asp"></script>
-		<script type="text/javascript" src="/js/jquery.validate.js"></script>
 		<script type="text/javascript">
-		$(document).ready(function () {
-			$('.noAutoComplete').attr('autocomplete', 'off');
-		<%
-		If Session("PopupMsg") <> "" Then
-			%>
-			alert('<%= Server.HTMLEncode(Session("PopupMsg")) %>');
-		<%
-			Session("PopupMsg") = ""
-		End If
-		%>
-		});
+			$(document).ready(function () {
+				$('.noAutoComplete').attr('autocomplete', 'off');
 			
-		String.prototype.toTitleCase = function(){
-			var smallWords = /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|vs?\.?|via)$/i;
-			return this.replace(/[A-Za-z0-9\u00C0-\u00FF]+[^\s-]*/g, function(match, index, title){
-				if (index > 0 && index + match.length !== title.length &&
-					match.search(smallWords) > -1 && title.charAt(index - 2) !== ":" &&
-					(title.charAt(index + match.length) !== '-' || title.charAt(index - 1) === '-') &&
-					title.charAt(index - 1).search(/[^\s-]/) < 0) {
-					return match.toLowerCase();
-				}
-				if (match.substr(1).search(/[A-Z]|\../) > -1) {
-					return match;
-				}
-				return match.charAt(0).toUpperCase() + match.substr(1);
 			});
-		};
 		</script>
-		<%
-		' Additional JS Includes
-		For Each jsInclude In objJsIncludes
-		%><script type="text/javascript" src="<%=CStr(objJsIncludes(jsInclude))%>"></script>
-		<%
-		Next
-		%>
-		
 		<script type="text/javascript">
-		var _gaq = _gaq || [];
-		var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-			_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-		_gaq.push(['_setAccount', '<%=googleaccount%>']);
-		_gaq.push(['_setDomainName', '<%=googledomain%>']);
-		_gaq.push(['_trackPageview']);
-		(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
+			var _gaq = _gaq || [];
+			var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+				_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+			_gaq.push(['_setAccount', 'UA-76513446-1']);
+			_gaq.push(['_setDomainName', 'nsx.com.au']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
 		</script>
 		<script>
-		$(document).ready(function() {
-			$("#topnavul li.dropdown").mouseover(function() {
-				$("#topnav").addClass("blue-back");
-			}).mouseout(function() {
-				$("#topnav").removeClass("blue-back")
+			$(document).ready(function() {
+				$("#topnavul li.dropdown").mouseover(function() {
+					$("#topnav").addClass("blue-back");
+				}).mouseout(function() {
+					$("#topnav").removeClass("blue-back")
+				});
+				$('#topnavul li.dropdown').on('shown.bs.dropdown', function () {
+					if ( window.innerWidth < 991 ){
+						window.scrollTo(0, $(this).offset().top );
+					}
+				});
+				$('#nsx-lp-navigation a').on('click', function (e) {
+					e.preventDefault();
+					var targetOffset = $(e.target.hash).offset().top;
+					$('html,body').animate({scrollTop: targetOffset}, 1000);
+				})
+				$('#topsearch .topsearch-toggle').click(function() {
+					$('#nsx-primary-nav').toggleClass('topsearch-open');
+				});
+				$('#topsearch').on('hide.bs.dropdown', function(){
+					if ( $('#nsx-primary-nav').hasClass('topsearch-open') ){
+						$('#nsx-primary-nav').removeClass('topsearch-open');
+					}
+				});
 			});
-			$('#topnavul li.dropdown').on('shown.bs.dropdown', function () {
-				if ( window.innerWidth < 991 ){
-					window.scrollTo(0, $(this).offset().top );
-				}
-			})
-			$('#topsearch .topsearch-toggle').click(function() {
-				$('#nsx-primary-nav').toggleClass('topsearch-open');
-			});
-			$('#topsearch').on('hide.bs.dropdown', function(){
-				if ( $('#nsx-primary-nav').hasClass('topsearch-open') ){
-					$('#nsx-primary-nav').removeClass('topsearch-open');
-				}
-			});
-		});
 		</script>
 	</head>
 	<body>
-		<%
-		mode = MarketMode
-		mode = trim(lcase(mode))
-		img = "market_amber.png"
-		sessionmode = ""
-		If mode = "open" Then
-		img = "market_green.png"
-		sessionmode = "Normal (NML)"
-		ElseIf mode = "halt" Then
-		img = "market_amber.png"
-		sessionmode="Enquiry Only (ENQ)"
-		ElseIf mode = "aha" Then
-		img = "market_amber.png"
-		sessionmode="After Hours Adjust (AHA)"
-		ElseIf mode = "preopen" Then
-		img = "market_amber.png"
-		sessionmode="Pre-Open (PRE)"
-		ElseIf mode = "enquiry" Then
-		img = "market_amber.png"
-		sessionmode="Enquiry Only (ENQ)"
-		Else
-		If Hour(Now()) > 17 Then
-		img = "market_red.png"
-		sessionmode="Shutdown - Maintenance"
-		Else
-		img = "market_amber.png"
-		sessionmode="Enquiry Only (ENQ)"
-		End If
-		End If
-		' if sat or sun then market closed indicator
-		dow = weekday(date)
-		if dow = 7 or dow = 1 then
-		img = "market_red.png"
-		sessionmode="Closed"
-		end if
-		%>
 		<nav class="navbar navbar-default topnav" role="navigation" id="topnav">
 			<div class="container">
 				
@@ -316,7 +137,7 @@ menu = Request.QueryString("menu")
 				</div>
 				<div class="collapse navbar-collapse" id="nsx-primary-nav">
 					<ul class="nav navbar-nav" id="topnavul">
-						<li class="dropdown <% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
+						<li class="dropdown ">
 							<a href="/listing/">LISTING</a>
 							<button data-toggle="dropdown" aria-expanded="false">
 								<i class="fa fa-plus open" aria-hidden="true"></i>
@@ -335,7 +156,7 @@ menu = Request.QueryString("menu")
 								</div>
 							</div>
 						</li>
-						<li class="dropdown <% If IsActive("investors") Then Response.Write("active") End If %> ">
+						<li class="dropdown  ">
 							<a href="/investing/">INVESTING</a>
 							<button data-toggle="dropdown" aria-expanded="false">
 								<i class="fa fa-plus open" aria-hidden="true"></i>
@@ -354,7 +175,7 @@ menu = Request.QueryString("menu")
 								</div>
 							</div>
 						</li>
-						<li class="dropdown <% If IsActive("marketdata") Then Response.Write("active") End If %>">
+						<li class="dropdown ">
 							<a href="/marketdata/">MARKET DATA</a>
 							<button data-toggle="dropdown" aria-expanded="false">
 								<i class="fa fa-plus open" aria-hidden="true"></i>
@@ -375,7 +196,7 @@ menu = Request.QueryString("menu")
 								</div>
 							</div>
 						</li>
-						<li class="dropdown <% If IsActive("brokers_new") or IsActive("regulation") or IsActive("companies") or IsActive("brokers") or IsActive("advisers") or IsActive("exchange") Then Response.Write("active") %> <% If Trim(Request.QueryString("page")) = "regulation" Then Response.Write("active") End If %>">
+						<li class="dropdown ">
 							<a href="/regulation/">REGULATION</a>
 							<button data-toggle="dropdown" aria-expanded="false">
 								<i class="fa fa-plus open" aria-hidden="true"></i>
@@ -428,7 +249,7 @@ menu = Request.QueryString("menu")
 							</div>
 						</li>
 						
-						<% If LCase(Session("PASSWORDACCESS")) <> "yes" Then %>
+						
 						<li class="dropdown">
 							<span class="login-item" tabindex="0"><!--<i class="fa fa-user" aria-hidden="true"></i>&nbsp;Account-->Login</span>
 							<button data-toggle="dropdown" aria-expanded="false">
@@ -440,19 +261,7 @@ menu = Request.QueryString("menu")
 								<div class="container" id="lin"></div>
 							</div>
 						</li>
-						<% Else %>
-						<li class="dropdown">
-							<span class="login-item" tabindex="0"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Account</span>
-							<button data-toggle="dropdown" aria-expanded="false">
-								<i class="fa fa-plus open" aria-hidden="true"></i>
-								<i class="fa fa-minus close" aria-hidden="true"></i>
-								<span class="sr-only">Toggle Login menu</span>
-							</button>
-							<div class="dropdown-menu">
-								<div class="container" id="lin"></div>
-							</div>
-						</li>
-						<% End If %>
+						
 					</ul>
 
 					<div class="navbar-form topsearch dropdown" id="topsearch">
@@ -479,3 +288,242 @@ menu = Request.QueryString("menu")
 				</div><!-- /nav .navbar-collapse -->
 			</div>
 		</nav>
+
+		<div class="subnav-cont content-page-cont">
+			<div class="container">
+				<div class="row"><div class="col-sm-12 leftnav"><div class="subpage-subnav content-page-subnav">
+					<ul class="side-bar-menu" id="nsx-lp-navigation">
+						<li><a href="#section-1">Section 1</a></li>
+						<li><a href="#section-2">Section 2</a></li>
+						<li><a href="#section-3">Section 3</a></li>
+						<li><a href="#section-4">Section 4</a></li>
+						<li><a href="#section-5">Section 5</a></li>
+						<li><a href="#section-6">Section 6</a></li>
+					</ul>
+				</div></div></div>
+			</div><!-- /row -->
+		</div>
+
+		<div class="hero-banner subpage ">
+			<div class="container hero-banner-cont">
+				<div class="container hero-banner-content-holder subpage">
+					<div class="col-sm-12 hero-banner-left">
+						<h1>The New NSX</h1>						
+					</div>
+				</div>
+			</div>
+		</div><!-- /hero-banner -->
+
+		<!-- NSX LANDING PAGE CONTENT -->
+		<div class="nsx-lp-container">
+
+			<div class="nsx-lp-row" id="section-1">
+				<div class="nsx-lp-column-text nsx-lp-column-width-60">
+					<h2>Competition: It was time for a new playbook</h2>
+				</div>
+				<div class="nsx-lp-column-image nsx-lp-column-width-40">
+					<div class="nsx-lp-image" style="background-image: url(/images/banners/pexels-photo-211929_new.jpg);"></div>
+					<span class="sr-only">Image description</span>
+				</div>
+			</div>
+
+			<div class="nsx-lp-row" id="section-2">
+				<div class="nsx-lp-column-image-grid nsx-lp-column-width-60">
+					<div>
+						<div class="nsx-lp-image" style="background-image: url(/images/banners/iStock-506511434.jpg);"></div>
+						<span class="sr-only">Image description</span>
+					</div>
+					<div>
+						<div class="nsx-lp-image" style="background-image: url(/images/banners/iStock-161861470.jpg);"></div>
+						<span class="sr-only">Image description</span>
+					</div>
+					<div>
+						<div class="nsx-lp-image" style="background-image: url(/images/banners/iStock-613550610.jpg);"></div>
+						<span class="sr-only">Image description</span>
+					</div>
+					<div>
+						<div class="nsx-lp-image" style="background-image: url(/images/banners/iStock-155396151.jpg);"></div>
+						<span class="sr-only">Image description</span>
+					</div>
+					<div>
+						<div class="nsx-lp-image" style="background-image: url(/images/banners/pexels-photo-211929_new.jpg);"></div>
+						<span class="sr-only">Image description</span>
+					</div>
+					<div>
+						<div class="nsx-lp-image" style="background-image: url(/images/banners/iStock-506511434.jpg);"></div>
+						<span class="sr-only">Image description</span>
+					</div>
+				</div>
+				<div class="nsx-lp-column-text nsx-lp-column-width-40 nsx-lp-column-order-first">
+					<p>Vestibulum et luctus tortor. Nulla tempor nunc mi, et ultricies turpis imperdiet vitae. Mauris vel bibendum ante, at convallis magna.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus enim. Mauris nunc nisi, suscipit sit amet tortor porta, luctus lobortis lacus. Vestibulum et luctus tortor. Nulla tempor nunc mi, et ultricies turpis imperdiet vitae.</p>
+					<p>Mauris vel bibendum ante, at convallis magna. In massa ipsum, cursus vel tristique eget, tempor a nunc. Vestibulum ut orci purus.</p>
+				</div>
+			</div>
+
+			<div class="nsx-lp-row" id="section-3">
+				<div class="nsx-lp-column-text nsx-lp-column-width-60">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus enim. Mauris nunc nisi, suscipit sit amet tortor porta, luctus lobortis lacus. Vestibulum et luctus tortor. Nulla tempor nunc mi, et ultricies turpis imperdiet vitae. Mauris vel bibendum ante, at convallis magna. In massa ipsum, cursus vel tristique eget, tempor a nunc. Vestibulum ut orci purus.</p>
+					<p>Vestibulum et luctus tortor. Nulla tempor nunc mi, et ultricies turpis imperdiet vitae. Mauris vel bibendum ante, at convallis magna. In massa ipsum, cursus vel tristique eget, tempor a nunc. Vestibulum ut orci purus.</p>
+				</div>
+				<div class="nsx-lp-column-carousel nsx-lp-column-width-40">
+					<div id="carousel-example" class="carousel nsx-carousel slide" data-ride="carousel" data-interval=false>
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner nsx-carousel-inner" role="listbox">
+							<div class="item nsx-carousel-item active">
+								<span class="sr-only">Image description</span>
+								<div class="nsx-lp-image" style="background-image: url(/images/banners/iStock-161861470.jpg);"></div>
+							</div>
+							<div class="item nsx-carousel-item">
+								<span class="sr-only">Image description</span>
+								<div class="nsx-lp-image" style="background-image: url(/images/banners/iStock-613550610.jpg);"></div>
+							</div>
+							<div class="item nsx-carousel-item">
+								<span class="sr-only">Image description</span>
+								<div class="nsx-lp-image" style="background-image: url(/images/banners/iStock-155396151.jpg);"></div>
+							</div>
+							<div class="item nsx-carousel-item">
+								<span class="sr-only">Image description</span>
+								<div class="nsx-lp-image" style="background-image: url(/images/banners/pexels-photo-211929_new.jpg);"></div>
+							</div>
+						</div>
+
+						<div class="nsx-carousel-controls">
+							<!-- Controls -->
+							<a class="nsx-carousel-control-left" href="#carousel-example" role="button" data-slide="prev">
+								<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+								<span class="sr-only">Previous</span>
+							</a>
+							<!-- Indicators -->
+							<ol class="carousel-indicators nsx-carousel-indicators">
+								<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example" data-slide-to="1"></li>
+								<li data-target="#carousel-example" data-slide-to="2"></li>
+								<li data-target="#carousel-example" data-slide-to="3"></li>
+							</ol>
+							<a class="nsx-carousel-control-right" href="#carousel-example" role="button" data-slide="next">
+								<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>					
+				</div>
+			</div>
+
+			<div class="nsx-lp-row" id="section-4">
+				<div class="nsx-lp-column-image nsx-lp-column-width-40">
+					<div class="nsx-lp-image" style="background-image: url(/images/banners/iStock-506511434.jpg);"></div>
+					<span class="sr-only">Image description</span>
+				</div>
+				<div class="nsx-lp-column-text nsx-lp-column-width-60 nsx-lp-column-order-first">
+					<h3>Lorem ipsum dolor sit amet</h3>
+					<ul class="list-unstyled">
+						<li><a class="link-featured" href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><a class="link-featured" href="#">Consectetur adipiscing elit</a></li>
+						<li><a class="link-featured" href="#">Sed eget purus enim</a></li>
+						<li><a class="link-featured" href="#">Suscipit sit amet tortor porta</a></li>
+						<li><a class="link-featured" href="#">Cursus vel tristique eget</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="nsx-lp-row" id="section-5">
+				<div class="nsx-lp-column-text nsx-lp-column-width-60">
+					<p>Our brand provides you with:</p>
+					<ul class="list-unstyled">
+						<li><i class="fa fa-check text-info" aria-hidden="true"></i> Lorem ipsum dolor sit amet</li>
+						<li><i class="fa fa-check text-info" aria-hidden="true"></i> Consectetur adipiscing elit</li>
+						<li><i class="fa fa-check text-info" aria-hidden="true"></i> Sed eget purus enim</li>
+						<li><i class="fa fa-check text-info" aria-hidden="true"></i> Suscipit sit amet tortor porta</li>
+						<li><i class="fa fa-check text-info" aria-hidden="true"></i> Cursus vel tristique eget</li>
+					</ul>
+				</div>
+				<div class="nsx-lp-column-image nsx-lp-column-width-40">
+					<div class="nsx-lp-image" style="background-image: url(/images/banners/iStock-161861470.jpg);"></div>
+					<span class="sr-only">Image description</span>
+				</div>
+			</div>
+
+			<div class="nsx-lp-row" id="section-6">
+				<div class="nsx-lp-column-contact nsx-lp-column-width-40">
+					<svg viewBox="0 0 183 165" xmlns="http://www.w3.org/2000/svg">
+						<title>National Stock Exchange of Australia icon</title>
+						<g id="Canvas" transform="translate(363 781)">
+							<path transform="translate(-363 -781)" d="M 42.3 164.8C 50.2 164.8 56.8 157.8 59.3 154.8L 180.2 0L 140.3 0C 132.4 0 125.8 7 123.3 10L 122.4 11.1L 2.40002 164.8L 42.3 164.8Z"/>
+							<path transform="translate(-363 -781)" d="M 93.6 116.7L 123.4 154.8C 125.9 157.8 132.5 164.8 140.3 164.8L 180.2 164.8L 118.1 85.3L 93.6 116.7Z"/>
+							<path transform="translate(-363 -781)" d="M 89 48.1L 59.2 10C 56.8 7 50.2 0 42.3 0L 2.40002 0L 64.5 79.5L 89 48.1Z"/>
+							<path transform="translate(-363 -781)" d="M 42.3 107.9L 42.3 56.9L 0 2.79999L 0 162L 42.3 107.9Z"/>
+							<path transform="translate(-363 -781)" d="M 140.3 56.9L 140.3 107.9L 182.6 162L 182.6 2.79999L 140.3 56.9Z"/>
+						</g>
+					</svg>
+					<div><a href="#" class="btn btn-default">Contact us</a></div>
+				</div>
+				<div class="nsx-lp-column-text nsx-lp-column-width-60 nsx-lp-column-order-first">
+					<h3>Sit amet</h3>
+					<ul class="list-unstyled">
+						<li><a class="link-featured" href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><a class="link-featured" href="#">Consectetur adipiscing elit</a></li>
+						<li><a class="link-featured" href="#">Sed eget purus enim</a></li>
+						<li><a class="link-featured" href="#">Suscipit sit amet tortor porta</a></li>
+						<li><a class="link-featured" href="#">Cursus vel tristique eget</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<!-- NSX LANDING PAGE CONTENT END -->
+
+
+		<footer class="footer">
+			<div class="subfooter-back">
+				<div class="container subfooter-cont">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 footer-col1">
+							<div class="footer-listing-box">
+								<img class="" src="/images/footer/iStock-474486151.jpg">
+								<div class="footer-listing-button">
+									<button id="request-btn-2" class="btn nsx-orange request-kit" href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'ListingKit', 'PopupClick', 'companies_pre_listed'])">Get listed</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer-col2">
+							<h3>NSX MARKET</h3>
+							 <ul class="sub-footer-links">
+								 <li><a href="/listing/why-list-with-us/">Why List with Us</a></li>
+								 <li><a href="/listing/getting-started/">Getting Started</a></li>
+								 <li><a href="/investing/upcoming-listings/">Upcoming Listings</a></li>
+								 <li><a href="/investing/recent-listings/">Recent Listings</a></li>
+								 <li><a href="/marketdata/market-summary/">Market Summary</a></li>
+							 </ul>
+							 <div class="clearfix"></div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer-col3">
+							<h3><a href="/about/our-business/">ABOUT NSX</a></h3>
+							<ul class="sub-footer-links">
+								<li><a href="/about/our-business/">Our Business</a></li>
+								<li><a href="/about/governance/">Governance</a></li>
+								<li><a href="/about/investor-relations/">Investor Relations</a></li>
+								<li><a href="/about/media-centre/">Media Centre</a></li>
+								<li><a href="/about/contact-us/">Contact us</a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container lower-footer">
+				<div class="row">
+					<div class="footer-bottom-cont">
+						<div class="col-sm-8 footer-left">
+							<span>&copy; Copyright 2017 </span><span>National Stock Exchange of Australia</span> <span class="spacer"><i style="display:none;">-</i>ABN 11 000 902 063</span>
+						</div>
+						<div class="col-sm-3 footer-right">
+							<a href="/privacy.asp">Privacy</a> <a target="_blank" href="/tc.asp">Legal</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,8 +1,18 @@
 .btn {
-	border: 0;
+	border-width: 2px;
 	font-weight: 500;
+	padding: 0.5rem 3rem;
+	font-size: 1.1em;
 
-	&.nsx-orange {
+	.btn-sm {
+		padding: 0.25rem 2rem;
+	}
+
+	.btn-lg {
+		padding: 1rem 4rem;
+	}
+
+	/*&.nsx-orange {
 		padding: 10px 38px;
 		
 		border: 0px;
@@ -92,5 +102,5 @@
 			color: $color-brand-typography;
 			cursor: pointer;
 		}
-	}
+	}*/
 }

@@ -86,6 +86,10 @@
 			background-color: rgba($color-bg-dark-blue, 0.15);
 		}
 
+		@media (min-width: $screen-sm) {
+			padding: 0.75rem 0.75rem 0.75rem;
+		}
+
 		@media (min-width: $screen-md) {
 			padding: 1.5rem 0.75rem 0.75rem;
 		}
@@ -119,19 +123,31 @@
 		background-color: transparent;
 		transition: background .25s ease-in-out;
 		text-transform: uppercase;
+		line-height: 1em;
 
 		&:hover {
 			background-color: rgba($color-bg-dark-blue, 0.15);
-		}
-
-		div {
-			line-height: 1.25rem;
 		}
 
 		.title {
 			@extend .h2;
 			margin-top: 0.5rem;
 			margin-bottom: 0.5rem;
+		}
+
+		@media (min-width: $screen-sm) {
+			font-size: 0.9em;
+			line-height: 1.1em;
+		}
+
+		@media (min-width: $screen-md) {
+			font-size: 0.9em;
+			line-height: 1.1em;
+		}
+
+		@media (min-width: $screen-lg) {
+			font-size: 1.1em;
+			line-height: 1.25em;
 		}
 	}
 }

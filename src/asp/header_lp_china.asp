@@ -201,19 +201,6 @@ menu = Request.QueryString("menu")
 			}).mouseout(function() {
 				$("#topnav").removeClass("blue-back")
 			});
-			$('#topnavul li.dropdown').on('shown.bs.dropdown', function () {
-				if ( window.innerWidth < 991 ){
-					window.scrollTo(0, $(this).offset().top );
-				}
-			})
-			$('#topsearch .topsearch-toggle').click(function() {
-				$('#nsx-primary-nav').toggleClass('topsearch-open');
-			});
-			$('#topsearch').on('hide.bs.dropdown', function(){
-				if ( $('#nsx-primary-nav').hasClass('topsearch-open') ){
-					$('#nsx-primary-nav').removeClass('topsearch-open');
-				}
-			});
 		});
 		</script>
 	</head>
@@ -316,166 +303,22 @@ menu = Request.QueryString("menu")
 				</div>
 				<div class="collapse navbar-collapse" id="nsx-primary-nav">
 					<ul class="nav navbar-nav" id="topnavul">
-						<li class="dropdown <% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
-							<a href="/listing/">LISTING</a>
-							<button data-toggle="dropdown" aria-expanded="false">
-								<i class="fa fa-plus open" aria-hidden="true"></i>
-								<i class="fa fa-minus close" aria-hidden="true"></i>
-								<span class="sr-only">Toggle Listing menu</span>
-							</button>
-							<div class="dropdown-menu">
-								<div class="container">
-									<ul class="sub-nav horizontal">
-										<li><a href="/listing/why-list-with-us/">Why List with Us</a></li>
-										<li><a href="/listing/how-to-list/">How to List</a></li>
-										<li><a href="/listing/getting-started/">Getting Started</a></li>
-										<li><a href="/listing/nominated-adviser/">Nominated Adviser</a></li>
-										<li><a href="/listing/trading-models/">Trading Models</a></li>
-									</ul>
-								</div>
-							</div>
+						<li class="<% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
+							<a href="#statement">声明</a>
 						</li>
-						<li class="dropdown <% If IsActive("investors") Then Response.Write("active") End If %> ">
-							<a href="/investing/">INVESTING</a>
-							<button data-toggle="dropdown" aria-expanded="false">
-								<i class="fa fa-plus open" aria-hidden="true"></i>
-								<i class="fa fa-minus close" aria-hidden="true"></i>
-								<span class="sr-only">Toggle Investing menu</span>
-							</button>
-							<div class="dropdown-menu">
-								<div class="container">
-									<ul class="sub-nav horizontal">
-										<li><a href="/investing/upcoming-listings/">Upcoming Listings</a></li>
-										<li><a href="/investing/recent-listings/">Recent Listings</a></li>
-										<li><a href="/investing/indices/">Indices</a></li>
-										<li><a href="/investing/broker-directory/">Broker Directory</a></li>
-										<li><a href="/investing/security-types/">Security Types</a></li>
-									</ul>
-								</div>
-							</div>
+						<li class="<% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
+							<a href="#listing">上市须知</a>
 						</li>
-						<li class="dropdown <% If IsActive("marketdata") Then Response.Write("active") End If %>">
-							<a href="/marketdata/">MARKET DATA</a>
-							<button data-toggle="dropdown" aria-expanded="false">
-								<i class="fa fa-plus open" aria-hidden="true"></i>
-								<i class="fa fa-minus close" aria-hidden="true"></i>
-								<span class="sr-only">Toggle Market Data menu</span>
-							</button>
-							<div class="dropdown-menu">
-								<div class="container">
-									<ul class="sub-nav horizontal">
-										<li><a href="/marketdata/directory/">Directory</a></li>
-										<li><a href="/marketdata/market-summary/">Market Summary</a></li>
-										<li><a href="/marketdata/prices/">Prices</a></li>
-										<li><a href="/marketdata/announcements/">Announcements</a></li>
-										<li><a href="/marketdata/statistics/">Statistics</a></li>
-										<li><a href="/marketdata/daily-diary/">Daily Diary</a></li>
-										<li><a href="/marketdata/delisted-suspended/">Delisted &amp; Suspended</a></li>
-									</ul>
-								</div>
-							</div>
+						<li class="<% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
+							<a href="#trading">交易须知</a>
 						</li>
-						<li class="dropdown <% If IsActive("brokers_new") or IsActive("regulation") or IsActive("companies") or IsActive("brokers") or IsActive("advisers") or IsActive("exchange") Then Response.Write("active") %> <% If Trim(Request.QueryString("page")) = "regulation" Then Response.Write("active") End If %>">
-							<a href="/regulation/">REGULATION</a>
-							<button data-toggle="dropdown" aria-expanded="false">
-								<i class="fa fa-plus open" aria-hidden="true"></i>
-								<i class="fa fa-minus close" aria-hidden="true"></i>
-								<span class="sr-only">Toggle Regulation menu</span>
-							</button>
-							<div class="dropdown-menu">
-								<div class="container">
-									<ul class="row sub-nav vertical">
-										<li class="col-xs-12 col-sm-6 col-md-3">
-											<h4><a href="/regulation/companies/listing-rules/">Companies</a></h4>
-											<ul>
-												<li><a href="/regulation/companies/listing-rules/">Listing Rules &amp; Practice Notes</a></li>
-												<li><a href="/regulation/companies/company-forms/">Forms</a></li>
-												<li><a href="/regulation/companies/company-fees/">Fees</a></li>
-												<li><a href="/regulation/companies/waivers/">Waivers</a></li>
-												<li><a href="/regulation/companies/reporting-calendar/">Reporting Calendar</a></li>
-											</ul>
-										</li>
-										<li class="col-xs-12 col-sm-6 col-md-3">
-											<h4><a href="/regulation/brokers/business-rules/">Brokers</a></h4>
-											<ul>
-												<li><a href="/regulation/brokers/business-rules/">Business Rules &amp; Practice Notes</a></li>
-												<li><a href="/regulation/brokers/broker-forms/">Forms</a></li>
-												<li><a href="/regulation/brokers/broker-fees/">Fees</a></li>
-												<li><a href="/regulation/brokers/market-access/">Market Access</a></li>
-												<li><a href="/regulation/brokers/broker-supervision/">Broker Supervision</a></li>
-											</ul>
-										</li>
-										<li class="col-xs-12 col-sm-6 col-md-3">
-											<h4><a href="/regulation/advisers/adviser-forms/">Advisers</a></h4>
-											<ul>
-												<li><a href="/regulation/advisers/adviser-forms/">Forms</a></li>
-												<li><a href="/regulation/advisers/adviser-fees/">Fees</a></li>
-											</ul>
-										</li>
-										<li class="col-xs-12 col-sm-6 col-md-3">
-											<h4><a href="/regulation/exchange/trading-codes/">Exchange</a></h4>
-											<ul>
-												<li><a href="/regulation/exchange/trading-codes/">Trading Codes</a></li>
-												<li><a href="/regulation/exchange/trading-hours-and-calendar/">Trading Hours &amp; Calendar</a></li>
-												<li><a href="/regulation/exchange/settlement/">Settlement</a></li>
-												<li><a href="/regulation/exchange/market-supervision/">Market Supervision</a></li>
-												<li><a href="/regulation/exchange/connectivity/">Connectivity</a></li>
-												<li><a href="/regulation/exchange/complaints/">Complaints</a></li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-							</div>
+						<li class="<% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
+							<a href="#suitability">新兴市场企业上市的合宜条件与规则</a>
 						</li>
-						
-						<% If LCase(Session("PASSWORDACCESS")) <> "yes" Then %>
-						<li class="dropdown">
-							<span class="login-item" tabindex="0"><!--<i class="fa fa-user" aria-hidden="true"></i>&nbsp;Account-->Login</span>
-							<button data-toggle="dropdown" aria-expanded="false">
-								<i class="fa fa-plus open" aria-hidden="true"></i>
-								<i class="fa fa-minus close" aria-hidden="true"></i>
-								<span class="sr-only">Toggle Login menu</span>
-							</button>
-							<div class="dropdown-menu">
-								<div class="container" id="lin"></div>
-							</div>
+						<li class="<% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
+							<a href="#contact">联系NSX</a>
 						</li>
-						<% Else %>
-						<li class="dropdown">
-							<span class="login-item" tabindex="0"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Account</span>
-							<button data-toggle="dropdown" aria-expanded="false">
-								<i class="fa fa-plus open" aria-hidden="true"></i>
-								<i class="fa fa-minus close" aria-hidden="true"></i>
-								<span class="sr-only">Toggle Login menu</span>
-							</button>
-							<div class="dropdown-menu">
-								<div class="container" id="lin"></div>
-							</div>
-						</li>
-						<% End If %>
 					</ul>
-
-					<div class="navbar-form topsearch dropdown" id="topsearch">
-						<button class="topsearch-toggle" data-toggle="dropdown" ria-expanded="false">
-							<i class="fa fa-search fa-lg open" aria-hidden="true"></i>
-							<i class="fa fa-times fa-lg close" aria-hidden="true"></i>
-							<span class="sr-only">Toggle search</span>
-						</button>
-						<div class="topsearch-form dropdown-menu" id="nsx-primary-nav-search">
-							<form class="form" role="search" id="marketsearch" name="marketsearch" action="search.asp" method="get">
-								<input name="id" type="hidden" id="id">
-								<input name="t" type="hidden" id="t">
-								<div class="input-group">
-									<div class="input-group-input">
-										<input type="text" class="form-control" id="searchbox" name="q" value="" placeholder="Company code or name">
-									</div>
-									<div class="input-group-btn">
-										<button type="button" class="btn btn-primary" onclick="$('#marketsearch').submit()">Search</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
 				</div><!-- /nav .navbar-collapse -->
 			</div>
 		</nav>

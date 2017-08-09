@@ -165,10 +165,10 @@ page ="home"
                     
 					</a>-->
                
-               <div style="display: block; position: relative; max-width: 457px; min-height:257px">
+               <div>
 				
 				
-					<div style="display: block; position: relative; max-width: 720px;"><div style="padding-top: 56.25%;"><video data-video-id="5443222036001" 
+					<div style="display: block; position: relative;"><div style="padding-top: 56.25%;"><video data-video-id="5443222036001" 
 					data-account="756700387001" 
 					data-player="rkx47VcWbZ" 
 					data-embed="default" 

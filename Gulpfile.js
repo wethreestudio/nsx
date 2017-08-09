@@ -62,7 +62,8 @@ gulp.task('sass', ['replace'], function () {
 		.pipe(browserSync.stream());
 });
 
-gulp.task('browser-sync', function() {
+// Static Server + watching scss/html files
+gulp.task('serve', ['clean', 'copy-fonts', 'copy-html', 'replace', 'sass'], function() {
 	browserSync.init({
 		server: {
 			baseDir: "./build",
@@ -72,13 +73,6 @@ gulp.task('browser-sync', function() {
 				next();
 			}
 		}
-	});
-});
-
-// Static Server + watching scss/html files
-gulp.task('serve', ['clean', 'copy-fonts', 'copy-html', 'replace', 'sass'], function() {
-	browserSync.init({
-		server: "./build"
 	});
 
 	gulp.watch("./src/styling/**/*.scss", ['sass']);

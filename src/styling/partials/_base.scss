@@ -176,3 +176,36 @@ span:focus {
 		background: linear-gradient(rgba(0, 119, 179, 0.2) 1px, transparent 1px) left top / 24px 24px;
 	}
 }
+
+.link {
+	&-featured {
+		line-height: inherit;
+		text-decoration: none;
+		display: inline-block;
+		position: relative;
+
+		&:after {
+			content: '';
+			height: 2px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0.1rem;
+			background-color: $color-brand-java;
+		}
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+
+			&:after {
+				background-color: $color-brand-picton;
+			}
+		}
+	}
+}
+
+@include text-emphasis-variant('.text-primary', $brand-primary);
+@include text-emphasis-variant('.text-success', $brand-success);
+@include text-emphasis-variant('.text-info', $brand-info);
+@include text-emphasis-variant('.text-danger', $brand-danger);
