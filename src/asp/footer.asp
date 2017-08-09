@@ -11,7 +11,7 @@
                     <div class="footer-listing-box">
               	        <img class="" src="images/footer/iStock-474486151.jpg">
               	        <div class="footer-listing-button">
-				            <button id="request-btn-2" class="btn nsx-orange request-kit" href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'ListingKit', 'PopupClick', 'companies_pre_listed'])">Get listed</button>
+				            <button id="request-btn-2" class="btn btn-default" href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'ListingKit', 'PopupClick', 'companies_pre_listed'])">Get listed</button>
 				        </div>
                     </div>
 		        </div>

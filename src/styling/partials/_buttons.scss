@@ -1,7 +1,7 @@
 .btn {
 	border-width: 2px;
 	font-weight: 500;
-	padding: 0.5rem 3rem;
+	padding: 0.5rem 2.5rem;
 	font-size: 1.1em;
 
 	.btn-sm {
@@ -9,98 +9,10 @@
 	}
 
 	.btn-lg {
-		padding: 1rem 4rem;
+		padding: 0.75rem 3rem;
 	}
 
-	/*&.nsx-orange {
-		padding: 10px 38px;
-		
-		border: 0px;
-		outline: none;
-		background: $color-brand-java;
-		background: transparent;
-		color: $color-brand-typography;
-		color: #ffffff;
-		text-decoration: none;
-		border-radius: 0;
-		border: 3px solid $color-brand-java;
-		border: 3px solid #93dbf1;
-		margin: 20px auto;
-		display: block;
-
-		&.small {
-			display: initial;
-			padding: 2px 4px;
-			line-height: 40px;
-		}
-
-		&:hover {
-			background: #93dbf1;
-			color: $color-brand-typography;
-			cursor: pointer;
-		}
-
-		&.request-kit {
-			border: 3px solid #ffffff;
-
-			&:hover {
-				background: #ffffff;
-				border: 3px solid #ffffff;
-			}
-		}
+	&.btn-primary {
+		border: 0;
 	}
-
-	&.nsx-blue {
-		&.request-kit {
-			color: $color-bg-dark-blue;
-			background: none;
-			border: 3px solid $color-bg-dark-blue;
-			border: 3px solid #3281c1;
-
-			&:hover {
-				background: $color-bg-dark-blue;
-				background: #3281c1;
-				color: #ffffff;
-				border: 3px solid $color-brand-regal;
-				border: 3px solid #3281c1;
-			}
-
-			&.popup {
-				color: $color-bg-dark-blue;
-				background: none;
-				border: 3px solid $color-brand-regal;
-
-				&:hover {
-					background: $color-brand-regal;
-					color: #ffffff;
-					border: 3px solid $color-brand-regal;
-				}
-			}
-		}
-
-		background: #93dbf1;
-		padding: 10px 38px;
-		
-		border: 0px;
-		outline: none;
-		background: $color-brand-java;
-		color: $color-brand-typography;
-		text-decoration: none;
-		border-radius: 0;
-		border: 3px solid $color-brand-java;
-		margin: 20px auto;
-		display: block;
-
-		&.small {
-			display: initial;
-			padding: 2px 4px;
-			line-height: 40px;
-		}
-
-		&:hover {
-			background: #93dbf1;
-			color: $color-brand-typography;
-			cursor: pointer;
-		}
-	}*/
 }
