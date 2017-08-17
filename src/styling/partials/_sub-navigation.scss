@@ -3,6 +3,26 @@
 	border-top: 2px solid $color-border;
 	border-bottom: 2px solid $color-border;
 	position: relative;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-webkit-overflow-scrolling: touch;
+	white-space: nowrap;
+	overflow: hidden;
+	overflow-x: auto;
+	
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: 10;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 20px;
+		background: linear-gradient(to right, rgba(239,244,247,0) 0%,rgba(239,244,247,1) 100%);
+	}
 
 	.side-bar-menu {
 		list-style-type: none;
@@ -10,10 +30,17 @@
 		margin: 0;
 		height: $navbar-height - ($grid-gutter-width);
 		font-size: 0.8em;
-		overflow: hidden;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
+		min-width: 100%;
+
+		&:before,
+		&:after {
+			content: '';
+			height: $navbar-height - ($grid-gutter-width);
+			flex-basis: 50%;
+		}
 
 		> li {
 			> a {

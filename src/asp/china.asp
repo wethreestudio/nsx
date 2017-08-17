@@ -34,14 +34,14 @@ page_title = "NSX Chinese Website"
 				<div class="nsx-lp-column-text nsx-lp-column-width-60 nsx-lp-column-order-first">
 					<h2>上市须知</h2>
 					<ul class="list-unstyled">
-						<li><a class="link-featured" href="https://www.nsx.com.au/listing/why-list-with-us/">为何选择在澳大利亚国家证券交易所上市</a></li>
-						<li><a class="link-featured" href="https://www.nsx.com.au/listing/how-to-list/">上市方式和一般准入标准</a></li>
-						<li><a class="link-featured" href="https://www.nsx.com.au/listing/getting-started/">上市程序</a></li>
-						<li><a class="link-featured" href="https://www.nsx.com.au/regulation/companies/company-fees/">上市费用</a></li>
+						<li><a class="link-featured" target="_blank" href="https://www.nsx.com.au/listing/why-list-with-us/">为何选择在澳大利亚国家证券交易所上市</a></li>
+						<li><a class="link-featured" target="_blank" href="https://www.nsx.com.au/listing/how-to-list/">上市方式和一般准入标准</a></li>
+						<li><a class="link-featured" target="_blank" href="https://www.nsx.com.au/listing/getting-started/">上市程序</a></li>
+						<li><a class="link-featured" target="_blank" href="https://www.nsx.com.au/regulation/companies/company-fees/">上市费用</a></li>
 						<li>
 							<strong>指定上市辅导顾问</strong><br />
-							<a class="link-featured" href="https://www.nsx.com.au/listing/nominated-adviser/">指定上市辅导顾问职能</a><br />
-							<a class="link-featured" href="https://www.nsx.com.au/listing/adviser-list/">NSX指定上市辅导顾问名单</a>
+							<a class="link-featured" target="_blank" href="https://www.nsx.com.au/listing/nominated-adviser/">指定上市辅导顾问职能</a><br />
+							<a class="link-featured" target="_blank" href="https://www.nsx.com.au/listing/adviser-list/">NSX指定上市辅导顾问名单</a>
 						</li>
 					</ul>
 				</div>
@@ -53,8 +53,8 @@ page_title = "NSX Chinese Website"
 					<ul>
 						<li><strong>指定经纪人</strong><br />
 						指定经纪人职能: 指定经纪人是指按照客户的委托，为其提供接受并且/或者执行在NSX上市的企业股票交易服务的个人或者机构。<br />
-						<a class="link-featured" href="https://www.nsx.com.au/investing/broker-directory/">NSX指定经纪人名单</a></li>
-						<li><a class="link-featured" href="https://www.nsx.com.au/regulation/exchange/trading-codes/">交易方式和规则</a></li>
+						<a class="link-featured" target="_blank" href="https://www.nsx.com.au/investing/broker-directory/">NSX指定经纪人名单</a></li>
+						<li><a class="link-featured" target="_blank" href="https://www.nsx.com.au/regulation/exchange/trading-codes/">交易方式和规则</a></li>
 					</ul>
 				</div>
 				<div class="nsx-lp-column-image nsx-lp-column-width-40">
@@ -83,23 +83,23 @@ page_title = "NSX Chinese Website"
 					<ul>
 						<li>企业只能使用已向澳大利亚证券与投资委员会（ASIC）提交并符合《公司法》的规范化披露文件进行融资。</li>
 					</ul>
-					<p><a class="link-featured" href="http://asic.gov.au/regulatory-resources/fundraising/raising-funds-in-australia/">ASIC</a><br />
-					<a class="link-featured" href="http://asic.gov.au/regulatory-resources/financial-reporting-and-audit/preparers-of-financial-reports/registered-foreign-companies/">海外企业在澳注册须知</a><br />
-					<a class="link-featured" href="https://www.nsx.com.au/regulation/companies/listing-rules/">企业在澳大利亚国家证券交易所上市的规则及实务指南/应用指引</a></p>
+					<p><a class="link-featured" target="_blank" href="http://asic.gov.au/regulatory-resources/fundraising/raising-funds-in-australia/">ASIC</a><br />
+					<a class="link-featured" target="_blank" href="http://asic.gov.au/regulatory-resources/financial-reporting-and-audit/preparers-of-financial-reports/registered-foreign-companies/">海外企业在澳注册须知</a><br />
+					<a class="link-featured" target="_blank" href="https://www.nsx.com.au/regulation/companies/listing-rules/">企业在澳大利亚国家证券交易所上市的规则及实务指南/应用指引</a></p>
 					<h3>上市企业要求与持续责任</h3>
 					<p>企业在上市之后仍需遵守上市规则，履行相关持续责任。相关持续责任详见NSX的应用指引6、9以及11条。</p>
-					<p><a class="link-featured" href="https://www.nsx.com.au/regulation/companies/listing-rules/">NSX</a><br />
-					<a class="link-featured" href="http://asic.gov.au/regulatory-resources/financial-reporting-and-audit/preparers-of-financial-reports/reporting-obligations-for-public-companies/">ASIC</a></p>
+					<p><a class="link-featured" target="_blank" href="https://www.nsx.com.au/regulation/companies/listing-rules/">NSX</a><br />
+					<a class="link-featured" target="_blank" href="http://asic.gov.au/regulatory-resources/financial-reporting-and-audit/preparers-of-financial-reports/reporting-obligations-for-public-companies/">ASIC</a></p>
 				</div>
 			</div>
 
 			<div class="nsx-lp-row" id="contact">
 				<div class="nsx-lp-column-text nsx-lp-column-width-60 nsx-lp-column-order-first">
-					<h3><a class="link-featured" href="https://www.nsx.com.au/marketdata/announcements/">上市企业市场公告</a></h3>
+					<h3><a class="link-featured" target="_blank" href="https://www.nsx.com.au/marketdata/announcements/">上市企业市场公告</a></h3>
 					<h3>近期上市企业新闻和媒体中心</h3>
 					<ul class="list-unstyled">
-						<li><a class="link-featured" href="https://www.nsx.com.au/about/media-centre/">Media Center</a></li>
-						<li><a class="link-featured" href="https://www.nsx.com.au/investing/recent-listings/">Recent Listings</a></li>
+						<li><a class="link-featured" target="_blank" href="https://www.nsx.com.au/about/media-centre/">Media Center</a></li>
+						<li><a class="link-featured" target="_blank" href="https://www.nsx.com.au/investing/recent-listings/">Recent Listings</a></li>
 					</ul>
 				</div>
 				<div class="nsx-lp-column-contact nsx-lp-column-width-40">
@@ -113,7 +113,7 @@ page_title = "NSX Chinese Website"
 							<path transform="translate(-363 -781)" d="M 140.3 56.9L 140.3 107.9L 182.6 162L 182.6 2.79999L 140.3 56.9Z"/>
 						</g>
 					</svg>
-					<div><a href="https://www.nsx.com.au/about/contact-us/" class="btn btn-default">Contact us</a></div>
+					<div><a target="_blank" href="https://www.nsx.com.au/about/contact-us/" class="btn btn-default">Contact us</a></div>
 				</div>
 			</div>
 
@@ -122,8 +122,9 @@ page_title = "NSX Chinese Website"
 		<script>
 			$('#topnavul a').on('click', function (e) {
 				e.preventDefault();
-				var targetOffset = $(e.target.hash).offset().top;
-				$('html,body').animate({scrollTop: targetOffset}, 1000);
+				var headerOffset = window.innerWidth >= 768 ? 96 : 60;
+				var targetOffset = $(e.target.hash).offset().top - headerOffset;
+				$('html,body').scrollTop(targetOffset);
 			})
 		</script>
 		<!-- NSX LANDING PAGE CONTENT END -->

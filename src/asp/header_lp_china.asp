@@ -58,7 +58,6 @@ menu = Request.QueryString("menu")
 <!DOCTYPE html>
 <html>
 	<head>
-		<base href="<%= SiteRootURL %>" target="_self">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -204,7 +203,7 @@ menu = Request.QueryString("menu")
 		});
 		</script>
 	</head>
-	<body>
+	<body class="nsx-lp">
 		<%
 		mode = MarketMode
 		mode = trim(lcase(mode))
@@ -246,7 +245,7 @@ menu = Request.QueryString("menu")
 				
 				<!-- nav -->
 				<div class="navbar-header">
-					<a class="toplogo" href="/">
+					<a class="toplogo" href="/" target="_blank">
 						<svg viewBox="0 0 1272 165" xmlns="http://www.w3.org/2000/svg" id="nsx-logo">
 							<title>National stock Exchange of Australia logo</title>
 							<g transform="translate(703 255)">

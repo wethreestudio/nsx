@@ -1,4 +1,43 @@
 .nsx-lp {
+	margin-top: $grid-gutter-width*2.5;
+
+	@media (min-width: $screen-md) {
+		margin-top: $navbar-height;
+	}
+
+	#topnav {
+		min-height: $grid-gutter-width*2.5;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+
+		.navbar-nav {
+			min-height: $grid-gutter-width*2.5;
+			> li {
+				min-height: $grid-gutter-width*2.5;
+				a {
+					min-height: $grid-gutter-width*2.5;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $screen-md) {
+		#topnav {
+			min-height: $navbar-height;
+			.navbar-nav {
+				min-height: $navbar-height;
+				> li {
+					min-height: $navbar-height;
+					a {
+						min-height: $navbar-height;
+					}
+				}
+			}
+		}
+	}
+
 	&-container {
 		min-height: $lp-container-height;
 		margin: 0 auto $grid-gutter-width*4;
