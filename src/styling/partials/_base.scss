@@ -140,12 +140,14 @@ h1, h2, h3, h4, h5 {
 
 a {
 	color: $color-brand-regal;
-	text-decoration: none;
+	text-decoration: underline;
 	font-weight: 500;
+	text-decoration-color: $color-brand-java;
 
 	&:hover, &:focus {
 		color: $color-brand-regal;
 		text-decoration: underline;
+		background-color: $color-brand-java;
 	}
 }
 
@@ -177,33 +179,6 @@ span:focus {
 	}
 }
 
-.link {
-	&-featured {
-		line-height: inherit;
-		text-decoration: none;
-		display: inline-block;
-		position: relative;
-
-		&:after {
-			content: '';
-			height: 2px;
-			position: absolute;
-			left: 0;
-			right: 0;
-			bottom: 0.1rem;
-			background-color: $color-brand-java;
-		}
-
-		&:hover,
-		&:focus {
-			text-decoration: none;
-
-			&:after {
-				background-color: $color-brand-picton;
-			}
-		}
-	}
-}
 
 @include text-emphasis-variant('.text-primary', $brand-primary);
 @include text-emphasis-variant('.text-success', $brand-success);

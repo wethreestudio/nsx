@@ -63,6 +63,13 @@
 				flex-grow: 1;
 				text-decoration: none;
 				text-align: center;
+				background-color: transparent;
+				text-decoration: none;
+
+				&:hover,
+				&:focus {
+					background-color: transparent;
+				}
 			}
 
 			&.active > a,

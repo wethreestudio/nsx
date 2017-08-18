@@ -218,7 +218,7 @@ $(document).ready(function () {
             <label for="contactrequested">Contact me as soon as possible.</label>
         </div>
 
-        <input class="btn nsx-orange" type="submit" value="Send">
+        <input class="btn btn-default" type="submit" value="Send">
 
         <div class="spacer"></div>
     </form>

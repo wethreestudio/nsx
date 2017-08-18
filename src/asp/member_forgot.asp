@@ -138,7 +138,7 @@ If Len(Request.QueryString("success")) = 0 Then
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <input type="submit" value="Email It" name="B1" class="btn nsx-blue request-kit popup left">
+                <input type="submit" value="Email It" name="B1" class="btn btn-primary request-kit popup left">
             </div>
         </div>
 

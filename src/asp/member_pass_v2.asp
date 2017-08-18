@@ -681,7 +681,7 @@ $(document).ready(function () {
                             <input id="company" name="company" type="text" placeholder="" class="valid">
                         </div>
                     </div>
-        	        <button id="get-list" type="submit" class="btn nsx-orange request-kit">Get your listing Kit</button>
+        	        <button id="get-list" type="submit" class="btn btn-default request-kit">Get your listing Kit</button>
                     <div class="clearfix"></div>
 		        </div>
                 

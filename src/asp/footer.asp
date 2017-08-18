@@ -193,7 +193,7 @@ $(document).ready(function () {
                             <input id="company" name="company" type="text" placeholder="" class="valid">
                         </div>
                     </div>
-        	        <button id="get-list" type="submit" class="btn nsx-blue request-kit popup">Start now</button>
+        	        <button id="get-list" type="submit" class="btn btn-primary request-kit popup">Start now</button>
                     <div class="clearfix"></div>
 		        </div>
                 

@@ -124,7 +124,7 @@ End If
 					
 <div style="clear:both;height:20px"></div>
 <div id="Listing-Kit-placeholder">
-     	 <button id="request-btn" class="btn nsx-orange request-kit left" onclick="_gaq.push(['_trackEvent', 'ListingKit', 'PopupClick', 'Landing Page']);">Request a Listing Kit</button>
+     	 <button id="request-btn" class="btn btn-default request-kit left" onclick="_gaq.push(['_trackEvent', 'ListingKit', 'PopupClick', 'Landing Page']);">Request a Listing Kit</button>
          <p>We would love to hear about your proposed listing.  Please contact us by requesting a listing kit.</p>
     </div>					
 					

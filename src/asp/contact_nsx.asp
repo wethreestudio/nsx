@@ -238,7 +238,7 @@ $(document).ready(function () {
            
            <label for="contactphone" class="col-lg-2 col-md-2 col-sm-12 control-label text-right"></label>
             <div class="col-lg-10 col-md-10 col-sm-12 text-left">
-                <input class="btn nsx-blue request-kit popup left" type="submit" value="Submit">
+                <input class="btn btn-primary request-kit popup left" type="submit" value="Submit">
             </div>
         </div>
         </div>

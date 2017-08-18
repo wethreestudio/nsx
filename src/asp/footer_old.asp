@@ -183,7 +183,7 @@ $(document).ready(function () {
                 </div>
                 <div class="clear"></div>
             </div>
-        	<button id="get-list" type="submit" class="btn nsx-orange">Get Listing Kit</button>
+        	<button id="get-list" type="submit" class="btn btn-default">Get Listing Kit</button>
 		</div>
         <!-- /fieldset -->
         <p id="call">Or Call <strong>NSX</strong> on <span>+61 (02) 4921 2430</span></p>

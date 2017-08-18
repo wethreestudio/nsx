@@ -26,6 +26,12 @@
 		width: 100%;
 		margin-left: $grid-gutter-width/2;
 		margin-right: $grid-gutter-width;
+		background-color: transparent;
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+		}
 
 		@media (min-width: $screen-md) {
 			margin-left: 0;
@@ -144,9 +150,15 @@
 			> .login-item {
 				padding: $grid-gutter-width/2 0;
 				display: block;
+				background-color: transparent;
+				text-decoration: none;
 
 				&:focus {
 					color: $color-brand-typography;
+				}
+
+				&:hover {
+					background-color: transparent;
 				}
 
 				@media (max-width: $screen-sm-max) {
@@ -206,7 +218,7 @@
 				@media (min-width: $screen-md) {
 					&:after {
 						height: 4px;
-						background-color: $color-brand-java;
+						background-color: $color-brand-picton;
 						content: '';
 						position: absolute;
 						bottom: $grid-gutter-width;
@@ -230,6 +242,10 @@
 					padding: 0;
 				}
 
+				h4 a {
+					text-transform: none;
+				}
+
 				@media (max-width: $screen-sm-max) {
 					> .container {
 						padding: 0;
@@ -246,6 +262,14 @@
 
 					a {
 						font-weight: normal;
+						background-color: transparent;
+						text-decoration: none;
+						text-transform: uppercase;
+
+						&:hover,
+						&:focus {
+							background-color: transparent;
+						}
 					}
 				}
 				
@@ -278,6 +302,15 @@
 					a {
 						color: white;
 						font-weight: normal;
+						background-color: transparent;
+						text-decoration: none;
+						text-transform: uppercase;
+
+						&:hover,
+						&:focus {
+							text-decoration: underline;
+							background-color: transparent;
+						}
 					}
 				}
 			}

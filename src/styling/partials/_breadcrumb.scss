@@ -24,6 +24,14 @@
 
 	a {
 		color: #fff;
+		background-color: transparent;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+			background-color: transparent;
+		}
 	}
 
 	> li + li:before {
