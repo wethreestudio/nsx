@@ -6,19 +6,21 @@
 
 	a {
 		color: #fff;
+		border-bottom: transparent;
 
 		&:focus {
-			outline: 2px solid rgba(white, 0.5) !important;
+			outline: 2px solid $color-brand-picton !important;
+			outline-offset: 0px !important;
 		}
 
 		background-color: transparent;
 		text-decoration: none;
 
-		&:hover,
-		&:focus {
-			text-decoration: underline;
+		&:hover {
+			border-bottom: 2px solid $color-brand-picton;
 			background-color: transparent;
 		}
+
 	}
 }
 

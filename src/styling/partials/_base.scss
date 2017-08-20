@@ -138,6 +138,7 @@ h1, h2, h3, h4, h5 {
 	font-weight: bold;
 }
 
+/*
 a {
 	color: $color-brand-regal;
 	text-decoration: underline;
@@ -150,12 +151,27 @@ a {
 		background-color: $color-brand-java;
 	}
 }
+*/
+
+a {
+	color: $color-brand-regal;
+	text-decoration: none;
+	font-weight: 500;
+	border-bottom: 2px solid $color-brand-java;
+
+	&:hover, &:focus {
+		color: $color-brand-regal;
+		text-decoration: none;
+		background-color: $color-brand-java;
+	}
+}
+
 
 a:focus,
 button:focus,
 span:focus {
-	outline: 2px solid rgba($color-brand-regal, 0.5) !important;
-	outline-offset: -2px !important;
+	outline: 2px solid $color-brand-regal !important;
+	outline-offset: 0px !important;
 
 	&:hover,
 	&:active {
