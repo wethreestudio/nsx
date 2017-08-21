@@ -153,16 +153,20 @@ a {
 }
 */
 
-a {
-	color: $color-brand-regal;
-	text-decoration: none;
-	font-weight: 500;
-	border-bottom: 2px solid $color-brand-java;
-
-	&:hover, &:focus {
+.content-page-cont,
+.content-blue-back,
+.subpage {
+	a {
 		color: $color-brand-regal;
 		text-decoration: none;
-		background-color: $color-brand-java;
+		font-weight: 500;
+		border-bottom: 2px solid $color-brand-java;
+
+		&:hover, &:focus {
+			color: $color-brand-regal;
+			text-decoration: none;
+			background-color: $color-brand-java;
+		}
 	}
 }
 

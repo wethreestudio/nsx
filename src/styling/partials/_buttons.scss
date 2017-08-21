@@ -15,6 +15,13 @@
 
 	&.btn-primary {
 		border: 0;
+		color: white;
+
+		&:hover {
+			color: $color-brand-regal;
+			background-color: #fff;
+			border-color: #fff;
+		}
 	}
 
 	&:hover {
