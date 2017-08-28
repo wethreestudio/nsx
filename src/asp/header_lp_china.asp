@@ -301,21 +301,21 @@ menu = Request.QueryString("menu")
 					</button>
 				</div>
 				<div class="collapse navbar-collapse" id="nsx-primary-nav">
-					<ul class="nav navbar-nav" id="topnavul">
+					<ul class="nav navbar-nav navbar-chinese" id="topnavul">
 						<li class="<% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
-							<a href="#statement">声明</a>
+							<a href="#statement"><strong>声明</strong></a>
 						</li>
 						<li class="<% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
-							<a href="#listing">上市须知</a>
+							<a href="#listing"><strong>上市须知</strong></a>
 						</li>
 						<li class="<% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
-							<a href="#trading">交易须知</a>
+							<a href="#trading"><strong>交易须知</strong></a>
 						</li>
 						<li class="<% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
-							<a href="#suitability">新兴市场企业上市的合宜条件与规则</a>
+							<a href="#suitability"><strong>新兴市场企业上市的合宜条件与规则</strong></a>
 						</li>
 						<li class="<% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
-							<a href="#contact">联系NSX</a>
+							<a href="#contact"><strong>联系我们</strong></a>
 						</li>
 					</ul>
 				</div><!-- /nav .navbar-collapse -->
