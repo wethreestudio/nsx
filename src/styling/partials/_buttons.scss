@@ -13,23 +13,22 @@
 		padding: 0.75rem 3rem;
 	}
 
-	&.btn-primary {
-		border: 0;
-		color: white;
-
-		&:hover {
-			color: $color-brand-regal;
-			background-color: #fff;
-			border-color: #fff;
-		}
-	}
-
 	&:hover {
 		color: $color-brand-regal;
 		background-color: #fff;
 		border-color: #fff;
 	}
 
+	&.btn-primary {
+		border-color: $color-brand-regal;
+		color: white;
+
+		&:hover {
+			color: $color-brand-regal;
+			background-color: #fff;
+			border-color: $color-brand-regal;
+		}
+	}
 }
 
 

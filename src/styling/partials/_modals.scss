@@ -1,0 +1,14 @@
+.modal {
+	&-content {
+		border-radius: 0;
+		border: 0;
+	}
+
+	&-header {
+		border-bottom: 0;
+	}
+
+	&-footer {
+		border-top: 0;
+	}
+}

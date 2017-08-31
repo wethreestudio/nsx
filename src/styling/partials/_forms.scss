@@ -9,5 +9,12 @@ textarea,
 	&:focus {
 		box-shadow: none;
 		border-bottom-color: $color-brand-picton;
+		outline: none;
+	}
+}
+
+.form-group {
+	input {
+		width: 100%;
 	}
 }

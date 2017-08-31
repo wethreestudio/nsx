@@ -98,7 +98,9 @@ $cursor-disabled: not-allowed;
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
 /* NSX Core */
@@ -128,3 +130,4 @@ $cursor-disabled: not-allowed;
 @import 'partials/securities-table';
 @import 'partials/sub-navigation';
 @import 'partials/tables';
+@import 'partials/modals';

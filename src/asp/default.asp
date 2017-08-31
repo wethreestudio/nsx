@@ -21,7 +21,7 @@ page ="home"
             <div class="col-sm-12 hero-banner-left">
 				<h1>Competition:<br> The New Playbook</h1>
                 <!--<a href="/listing/how-to-list/" class="hero-blue-link">List with us</a>-->
-                <a id="request-btn" href="javascript:void(0);" class="btn btn-default" onclick="_gaq.push(['_trackEvent', 'ListingKit', 'PopupClick', '<%=menu%>'])">List with us</a>
+                <a id="request-btn" href="javascript:void(0);" class="btn btn-default" onclick="_gaq.push(['_trackEvent', 'ListingKit', 'PopupClick', '<%=menu%>'])" data-toggle="modal" data-target="#Listing-PopUp">List with us</a>
                 
                 
             </div>
