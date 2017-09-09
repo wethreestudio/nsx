@@ -4,7 +4,7 @@
 	border: 0;
 	margin-bottom: 0;
 	background-color: $color-brand-botticelli;
-	z-index: 9999;
+	z-index: 1000;
 	outline: 2px solid $color-border;
 	transform: translate3d(0,0,0);
 
@@ -367,7 +367,7 @@
 					overflow: hidden;
 
 					> li {
-						padding: 0 0.5rem 1rem;
+						padding: 0 2rem 1rem 0;
 						float: left;
 
 						&:first-child {
@@ -415,6 +415,7 @@
 					p {
 						margin: 1rem 0 0.5rem;
 						font-size: 0.9em;
+						text-transform: uppercase;
 					}
 
 					form {

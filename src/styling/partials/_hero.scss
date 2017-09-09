@@ -62,14 +62,15 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		/* align-items: flex-start; */
 
 		h1 {
-			text-transform: uppercase;
-
 			@media (max-width: $screen-xs-max) {
 				margin-bottom: 1.5rem;
 			}
 		}
+	}
+
+	&.home-page .hero-banner-left {
+		align-items: flex-start;
 	}
 }

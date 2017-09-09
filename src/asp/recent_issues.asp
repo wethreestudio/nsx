@@ -56,7 +56,7 @@ Set rs = conn.Execute(sql)
     <thead>
         <tr>
             <th colspan="7">
-            <p>Recent Listings<span>from 1 January <%=(year(date)-1)  %></span></p>
+            <p>Recent Listings&nbsp;from 1 January <%=(year(date)-1)  %></p>
             </th>
         </tr>
     </thead>

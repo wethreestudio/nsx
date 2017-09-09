@@ -33,6 +33,10 @@ table {
 					padding: 0 !important;
 					margin: 0 !important;
 				}
+
+				select {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -52,12 +56,17 @@ table {
 	h1, h2, h3, h4, h5 {
 		@extend h3;
 		margin: 0;
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 
 	p {
 		@extend body;
 		margin: 0;
+	}
+
+	.btn {
+		padding: 0.25rem 1.5rem;
+		font-size: 0.9em;
 	}
 }
 
@@ -82,6 +91,12 @@ table {
 		> table {
 			margin-bottom: 0;
 			min-width: $screen-sm;
+		}
+
+		&.no-min-width {
+			> table {
+				min-width: auto;
+			}
 		}
 	}
 }

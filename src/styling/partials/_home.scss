@@ -65,10 +65,19 @@
 	}
 
 	.market-announcements {
-		padding: 0;
+		margin: 0 0 $grid-gutter-width 0;
 
-		@media (min-width: $screen-sm) {
-			padding: 0 0.75rem;
+		h2 {
+			padding: 0;
+
+			@media (min-width: $screen-sm) {
+				padding: 0 0.75rem;
+			}
+		}
+
+		.market-announcements-inner {
+			background-color: white;
+			padding: 0.75rem;
 		}
 
 		.market-top-line {

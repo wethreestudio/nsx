@@ -14,7 +14,7 @@ page ="home"
 %>
 <!--#INCLUDE FILE="header.asp"-->
 
-<div class="hero-banner">
+<div class="hero-banner home-page">
     <div class="hero-banner-img"><img src="images/banners/pexels-photo-211929_new.jpg" /></div>
     <div class="container hero-banner-cont">
         <div class="container hero-banner-content-holder">
@@ -69,7 +69,7 @@ page ="home"
     <div class="container lower-blocks">
         <div class="row">
                 
-            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+            <div class="col-sm-8 col-xs-12">
                 <div class="market-data-cont">
                      <h2>MARKET DATA</h2>
                      <div class="market-data">
@@ -98,9 +98,10 @@ page ="home"
                  </div>
             </div><!-- /col -->
                      
-            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+            <div class="col-sm-4 col-xs-12">
 					 <div class="market-announcements">
 					     <h2>MARKET ANNOUNCEMENTS</h2>
+                         <div class="market-announcements-inner">
 					     <ul>
 						     <%
 						    SQL = "SELECT TOP 5 coAnn.tradingcode, coAnn.annid,annPrecise,annFile,annRelease,annTitle,annFileSize,annUpload,coIssues.IssueDescription, annPriceSensitive, coissues.displayboard "
@@ -130,14 +131,15 @@ page ="home"
                         </ul>
 					    <div class="clearfix"></div>
 					    <div class="disclaimer">&nbsp;</div>
-					    <h4><a href="/marketdata/announcements/">All announcements</a></h4>
+                        </div>
+                        <h4><a href="/marketdata/announcements/">All announcements</a></h4>
 					</div>
             </div>
                      
         </div><!-- end first row -->         
                      
         <div class="row">
-            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+            <div class="col-sm-8 col-xs-12">
                 <!-- data graph -->
                 <div class="data-graph"><!-- market data -->
                     <div id="show_index" class="blk_lft fltleft" style="">
@@ -157,7 +159,7 @@ page ="home"
                 </div>
 		    </div><!-- /end market data -->
         
-            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+            <div class="col-sm-4 col-xs-12">
         	    <div class="right_side_bar_one">
                    <!--<a href="/about/media-centre/talk-box/">
                     <img src="images/content-images-544/Talk_Box.jpg"/>

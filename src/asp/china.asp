@@ -63,11 +63,7 @@ page_title = "NSX Chinese Website"
 		</div>
 
 		<div class="nsx-lp-row" id="suitability">
-			<div class="nsx-lp-column-image nsx-lp-column-width-40">
-				<div class="nsx-lp-image" style="background-image: url(/images/banners/iStock-613550610.jpg);"></div>
-				<span class="sr-only"></span>
-			</div>
-			<div class="nsx-lp-column-text nsx-lp-column-width-60 nsx-lp-column-order-first">
+			<div class="nsx-lp-column-text nsx-lp-column-width-100 nsx-lp-column-order-first">
 				<h2>新兴市场企业上市的合宜条件与规则</h2>
 				<h3>上市前期要求</h3>
 				<p>以下文字为NSX上市规则提供补充，并对新兴市场企业在NSX上市的合宜条件作出解释：</p>
@@ -119,7 +115,7 @@ page_title = "NSX Chinese Website"
 				$('#topnavul a').on('click', function (e) {
 					e.preventDefault();
 					var headerOffset = window.innerWidth >= 768 ? 96 : 60;
-					var targetOffset = $(e.target.hash).offset().top - headerOffset;
+					var targetOffset = $(e.currentTarget.hash).offset().top - headerOffset;
 					$('html,body').scrollTop(targetOffset);
 				})
 			</script>

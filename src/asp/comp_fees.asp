@@ -76,7 +76,7 @@ Server.Execute "content_lower_nav.asp"
     <div class="col-sm-5">
     <div class="small-table side-table">
         <div class="datagrid">
-            <div class="table-responsive"><table cellspacing="0" cellpadding="0">
+            <div class="table-responsive no-min-width"><table cellspacing="0" cellpadding="0">
             <thead>
                 <tr>
                     <th colspan="5" style="text-align:left"><h3>Fee Examples (incl GST)</h3></th>
@@ -120,7 +120,7 @@ Server.Execute "content_lower_nav.asp"
 
     <div class="small-table side-table">
         <div class="datagrid">
-    <div class="table-responsive"><table cellspacing="0" cellpadding="0">
+    <div class="table-responsive no-min-width"><table cellspacing="0" cellpadding="0">
         <thead>
             <tr>
                 <th style="text-align:left"><h3>Equity Fee Calculator</h3></th>
@@ -130,7 +130,7 @@ Server.Execute "content_lower_nav.asp"
             <tr>
                 <td>
     <form action="#" method="get" id="nsxfees">
-    <div class="table-responsive"><table width="100%">
+    <table width="100%">
       <tbody>
       <tr>
         <td align="left"><b>Type of Fee</b></td>
@@ -202,7 +202,7 @@ Server.Execute "content_lower_nav.asp"
 		    <td align="right" id="dvNumSecurities" class="plaintextw" colspan="1">10,000,000</td>
         </tr>
     
-        </tbody></table></div></form>
+        </tbody></table></form>
 			    </td>
             </tr>
         </tbody>

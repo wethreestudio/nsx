@@ -33,7 +33,7 @@ If LCase(Session("PASSWORDACCESS")) <> "yes" Then %>
 				<button type="submit" class="btn btn-primary">Submit</button>
 				<p>
 					<a href="<%= Application("nsx_SSLSiteRootURL") %>/member_forgot.asp">Forgot Password?</a><br />
-					<a href="user_save_registration.asp">Don't have an account? Register</a>
+					Don't have an account? <a href="user_save_registration.asp">Register</a>
 				</p>
 			</div>
 		</form>
