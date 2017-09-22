@@ -8,7 +8,7 @@ page_title = "NSX Chinese Website"
 	<div class="container hero-banner-cont">
 		<div class="container hero-banner-content-holder subpage">
 			<div class="col-sm-12 hero-banner-left">
-				<h1>NSX Chinese Website</h1>						
+				<h1>澳大利亚国家证券交易所</h1>						
 			</div>
 		</div>
 	</div>
@@ -64,19 +64,20 @@ page_title = "NSX Chinese Website"
 
 		<div class="nsx-lp-row" id="suitability">
 			<div class="nsx-lp-column-text nsx-lp-column-width-100 nsx-lp-column-order-first">
-				<h2>新兴市场企业上市的合宜条件与规则</h2>
+				<h2>新兴市场企业上市的合适性条件与规则</h2>
 				<h3>上市前期要求</h3>
-				<p>以下文字为NSX上市规则提供补充，并对新兴市场企业在NSX上市的合宜条件作出解释：</p>
+				<p>以下文字为NSX上市规则提供补充，并对新兴市场企业在NSX上市的合适性条件作出解释：</p>
 				<ul>
-					<li>不论企业结构如何，应当至少有一名董事会讲、可以理解并且在商务英语沟通方面有相关经验。与此同时，该名董事之前还应该有作为澳大利亚上市企业董事的经验，并能为现在的企业增添价值。</li>
+					<li>澳大利亚证券与投资委员会（ASIC）建议，不论企业结构如何，应当至少有一名董事会讲、可以理解并且在商务英语沟通方面有相关经验。与此同时，该名董事之前还应该有作为澳大利亚上市企业董事的经验，并能为现在的企业增添价值。</li>
 					<li>如果企业经审计的账目不是在澳大利亚境内准备的，那么该企业需要有一份由一名在澳大利亚境内的会计师对其过去三年的经审计账目出具的会计师调查报告（Investigating Accountant’s Report）。</li>
 					<li>企业能展示出良好的经营水平，或者充足的有形资产并且/或者充足的有潜在价值的无形资产来支持企业的上市申请。</li>
-					<li>企业应该有与其商业规模相匹配的充足营运资本和足以覆盖企业在上市后18个月时间段内的延续经营活动。</li>
+					<li>企业应该有与其商业规模相匹配并且足以覆盖企业在上市后18个月内延续经营活动的充足营运资本。</li>
 					<li>企业应该有一个合理并且获得维护的英文网站，旨在向所有投资者提供有关该企业的商业活动、业务发展和联系方式等信息。</li>
 				</ul>
 				<p>企业在澳融资规定</p>
 				<ul>
-					<li>企业只能使用已向澳大利亚证券与投资委员会（<a class="link-featured" target="_blank" href="http://asic.gov.au/regulatory-resources/fundraising/raising-funds-in-australia/">ASIC</a>）提交并符合《公司法》的规范化披露文件进行融资。</li>
+					<li>企业只能使用已向澳大利亚证券与投资委员会（<a class="link-featured" target="_blank" href="http://asic.gov.au/regulatory-resources/fundraising/raising-funds-in-australia/">ASIC</a>）提交并符合《公司法》的规范化披露文件进行融资。<br /><br />
+					备注：澳大利亚国家证券交易所（NSX）同意依照澳大利亚证券与投资委员会（ASIC）出台的良好上市标准，对证券发行人不提交规范化披露文件进行融资的行为进行限制。上述标准已被澳大利亚所有的上市市场运营者采纳，包括澳大利亚国家证券交易所（NSX）、澳大利亚证券交易所（ASX）以及悉尼证券交易所（SSX）。澳大利亚国家证券交易所（NSX）对合规上市申请披露文件的规则修改将从即日起生效。</li>
 				</ul>
 				<p>
 					<a class="link-featured" target="_blank" href="http://asic.gov.au/regulatory-resources/financial-reporting-and-audit/preparers-of-financial-reports/registered-foreign-companies/">海外企业在澳注册须知</a><br />
