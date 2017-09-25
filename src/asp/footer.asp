@@ -49,7 +49,7 @@
                 <div class="col-sm-8 footer-left">
                     <span>&copy; Copyright <%=Year(Now())%>&nbsp;</span><span>National Stock Exchange of Australia</span> <span class="spacer"><i style="display:none;">-</i>ABN 11 000 902 063</span>
                 </div>
-                <div class="col-sm-3 footer-right">
+                <div class="col-sm-4 footer-right">
                     <a href="/privacy.asp">Privacy</a> <a target="_blank" href="/tc.asp">Legal</a>
                 </div>
                 <div class="clearfix"></div>

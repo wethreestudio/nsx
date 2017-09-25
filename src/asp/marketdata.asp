@@ -89,7 +89,7 @@ Connecting to NSX</div>
         <div class="col-sm-6">
             <div class="market-announcements">
                 <h2>Market Announcements</h2>
-                <ul style="height: 216px !important;">
+                <ul class="market-announcements-inner">
                  <%
                 SQL = "SELECT TOP 3 coAnn.tradingcode, coAnn.annid,annPrecise,annFile,annRelease,annTitle,annFileSize,annUpload,coIssues.IssueDescription, annPriceSensitive, coissues.displayboard "
                 SQL = SQL & " FROM coIssues INNER JOIN coAnn ON coIssues.tradingcode = coAnn.tradingcode "

@@ -3,6 +3,7 @@
 	padding: 0;
 	display: flex;
 	justify-items: stretch;
+	border-radius: 0;
 
 	@media (max-width: $screen-sm-max) {
 		width: 100%;

@@ -211,7 +211,7 @@ Else
     </td>
     <td >Rule: <%=stripTags(SectionNumber) & " " & stripTags(RuleNumber)%><br><b><%=left(ruledescshort,200)%></b><br>
     Issuer: <%=left(stripTags(issuer),150) %> Securities: <%=left(stripTags(RequestedForSecurities),150) %>
-      <a href="<%="rules_waiversview.asp?ID=" & ID%>"><i>More ...</i></a>
+      <a href="<%="rules_waiversview.asp?ID=" & ID%>">More...</a>
     </td>
   </tr>
 <% 

@@ -77,7 +77,7 @@ Server.Execute "side_menu.asp"
     <div class="hero-banner-img"></div>
     <div class="container hero-banner-cont">
         <div class="container hero-banner-content-holder subpage">
-            <div class="col-sm-12 hero-banner-left comp-info">
+            <div class="hero-banner-left comp-info">
                 <h1><span><%=flashdata_coName%></span></h1>
                 <div class="comp-info">
                     <div class="comp-info-large">
@@ -301,7 +301,7 @@ ReDim table_values(AnnRowsCount+3,ItemRowsCount+3)
   ' format statement array for output
   table_values_rows = ubound(table_values,2)
   table_values_cols = AnnRowsCount+3
-  response.write "<div class="table-responsive"><table class='tablesorter' id='myTable' width='99%'>" & vbCRLF
+  response.write "<div class='table-responsive'><table class='tablesorter' id='myTable' width='99%'>" & vbCRLF
   lap = 1
   cl = array("odd","even")
   for z = 0 to table_values_rows

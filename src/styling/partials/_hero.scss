@@ -64,6 +64,8 @@
 		justify-content: center;
 
 		h1 {
+			text-transform: capitalize;
+			
 			@media (max-width: $screen-xs-max) {
 				margin-bottom: 1.5rem;
 			}

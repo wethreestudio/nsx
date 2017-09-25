@@ -335,7 +335,7 @@ menu = Request.QueryString("menu")
 								</div>
 							</div>
 						</li>
-						<li class="dropdown <% If IsActive("investors") Then Response.Write("active") End If %> ">
+						<li class="dropdown <% If IsActive("investing") Then Response.Write("active") End If %> ">
 							<a href="/investing/">INVESTING</a>
 							<button data-toggle="dropdown" aria-expanded="false">
 								<i class="fa fa-plus open" aria-hidden="true"></i>
@@ -375,7 +375,7 @@ menu = Request.QueryString("menu")
 								</div>
 							</div>
 						</li>
-						<li class="dropdown <% If IsActive("brokers_new") or IsActive("regulation") or IsActive("companies") or IsActive("brokers") or IsActive("advisers") or IsActive("exchange") Then Response.Write("active") %> <% If Trim(Request.QueryString("page")) = "regulation" Then Response.Write("active") End If %>">
+						<li class="dropdown <% If IsActive("brokers_new") or IsActive("companies") or IsActive("brokers") or IsActive("advisers") or IsActive("exchange") or IsActive("regulation") Then Response.Write("active") %> <% If Trim(Request.QueryString("page")) = "regulation" Then Response.Write("active") End If %>">
 							<a href="/regulation/">REGULATION</a>
 							<button data-toggle="dropdown" aria-expanded="false">
 								<i class="fa fa-plus open" aria-hidden="true"></i>

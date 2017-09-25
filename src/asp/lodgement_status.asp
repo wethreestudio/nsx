@@ -108,22 +108,24 @@ Below are the 200 most recent announcemnts for <%=UCase(ImpolodeCollection(nsxco
 </div>-->
 
 
-  <form action="javascript:void(0)" method="get">
-	<span>
-        <i class="first fa fa-step-backward"></i>
-        <i class="prev fa fa-backward"></i>
-        <input type="text" class="pagedisplay" style="border:none;width:70px;text-align:center">
-        <i class="next fa fa-forward"></i>
-        <i class="last fa fa-step-forward"></i>
+  <div class="pager2" id="pager"> 
+    <form action="javascript:void(0)" method="get">
+    <span>
+          <i class="first fa fa-step-backward"></i>
+          <i class="prev fa fa-backward"></i>
+          <input type="text" class="pagedisplay" style="border:none;width:70px;text-align:center">
+          <i class="next fa fa-forward"></i>
+          <i class="last fa fa-step-forward"></i>
 
-		<select class="pagesize">
-			<option value="20" selected="selected">20</option>
-			<option value="40">40</option>
-			<option value="100">100</option>
-			<option value="200">200</option>
-		</select>
-	</span>
-	</form>
+      <select class="pagesize">
+        <option value="20" selected="selected">20</option>
+        <option value="40">40</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+      </select>
+    </span>
+    </form>
+  </div>
 </div>
 
 <br>

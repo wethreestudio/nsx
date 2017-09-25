@@ -99,8 +99,8 @@ xf = xd & "-" & xm
 curdte = date
 fmtddmm = xf
 xdd = datediff("d",date,xx)
-if  xdd >=0 and xdd <= 11 then fmtddmm = "<span class=""calendar-key-due-now"">&nbsp;&nbsp;" & xf & "&nbsp;&nbsp;</span>"
-if xdd > 11 and xdd <= 31 then fmtddmm = "<span class=""calendar-key-due-soon"">&nbsp;&nbsp;" & xf & "&nbsp;&nbsp;</span>"
+if  xdd >=0 and xdd <= 11 then fmtddmm = "<span class=""calendar-key-due-now"">" & xf & "</span>"
+if xdd > 11 and xdd <= 31 then fmtddmm = "<span class=""calendar-key-due-soon"">" & xf & "</span>"
 end function
 
 %>
@@ -134,8 +134,7 @@ Server.Execute "content_lower_nav.asp"
   RenderContent page,"editarea" 
 %>
 
-<h1>Reporting Calendar</h1> 
-<br>
+<h2>Reporting Calendar</h2> 
 
 <div class="f-w-table">
 <div class="table-responsive"><table>

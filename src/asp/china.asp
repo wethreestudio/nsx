@@ -5,7 +5,6 @@ page_title = "NSX Chinese Website"
 
 <!-- NSX LANDING PAGE CONTENT -->
 <div class="hero-banner subpage ">
-	<div class="hero-banner-img"><img src="images/banners/china-banner.png"></div>
 	<div class="container hero-banner-cont">
 		<div class="container hero-banner-content-holder subpage">
 			<div class="col-sm-12 hero-banner-left">
@@ -58,7 +57,7 @@ page_title = "NSX Chinese Website"
 				</ul>
 			</div>
 			<div class="nsx-lp-column-image nsx-lp-column-width-40">
-				<div class="nsx-lp-image" style="background-image:url(/images/banners/iStock-161861470.jpg);"></div>
+				<div class="nsx-lp-image" style="background-image:url(/images/banners/canberra.jpg);"></div>
 				<span class="sr-only"></span>
 			</div>
 		</div>

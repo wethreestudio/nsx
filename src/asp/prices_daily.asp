@@ -75,7 +75,7 @@ Server.Execute "side_menu.asp"
     <div class="hero-banner-img"></div>
     <div class="container hero-banner-cont">
         <div class="container hero-banner-content-holder subpage">
-            <div class="col-sm-12 hero-banner-left comp-info">
+            <div class="hero-banner-left comp-info">
                 <h1><span><%=flashdata_coName%></span></h1>
                 <div class="comp-info">
                     <div class="comp-info-large">

@@ -73,7 +73,7 @@
 				}
 			}
 
-			&.active > a,
+			> a.active,
 			&:focus > a,
 			&:hover > a {
 				color: $color-brand-regal;
@@ -86,14 +86,6 @@
 					bottom: 0;
 					left: $grid-gutter-width*0.125;
 					right: $grid-gutter-width*0.125;
-				}
-			}
-
-			&.active > a {
-				font-weight: bold;
-
-				&:after {
-					background-color: $color-brand-picton;
 				}
 			}
 

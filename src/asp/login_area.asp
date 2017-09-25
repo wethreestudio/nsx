@@ -82,7 +82,7 @@ If LCase(Session("PASSWORDACCESS")) <> "yes" Then %>
 		<a href="/<%=user_url%>">User:&nbsp;<strong><%=Session("FULL_NAME")%></strong><span class="msgNo" style="display: none;">2</span></a>
 	</li>
 	<li>
-		<a href="/<%=user_url%>"><%=user_url_text%>t</a>
+		<a href="/<%=user_url%>"><%=user_url_text%></a>
 	</li>
 	<li>
 		<a href="/member_end1.asp">Logout</a>
