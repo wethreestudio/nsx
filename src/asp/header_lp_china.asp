@@ -312,7 +312,7 @@ menu = Request.QueryString("menu")
 							<a href="#trading"><strong>交易须知</strong></a>
 						</li>
 						<li class="<% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
-							<a href="#suitability"><strong>新兴市场企业上市的合宜条件与规则</strong></a>
+							<a href="#suitability"><strong>新兴市场企业上市的合适性条件与规则</strong></a>
 						</li>
 						<li class="<% If IsActive("companies_pre_listed") or IsActive("companies_listed") or IsActive("listing") Then Response.Write("active") End If %>">
 							<a href="#contact"><strong>联系我们</strong></a>

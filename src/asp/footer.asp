@@ -23,7 +23,7 @@
                          <li><a href="/listing/getting-started/">Getting Started</a></li>
                          <li><a href="/investing/upcoming-listings/">Upcoming Listings</a></li>
                          <li><a href="/investing/recent-listings/">Recent Listings</a></li>
-                         <li><a href="/marketdata/market-summary/">Market Summary</a></li>
+                         <li><a href="/china">中文网页</a></li>
                      </ul>
                      <div class="clearfix"></div>
                 </div>
@@ -47,7 +47,7 @@
         <div class="row">
             <div class="footer-bottom-cont">
                 <div class="col-sm-8 footer-left">
-                    <span>&copy; Copyright <%=Year(Now())%> </span><span>National Stock Exchange of Australia</span> <span class="spacer"><i style="display:none;">-</i>ABN 11 000 902 063</span>
+                    <span>&copy; Copyright <%=Year(Now())%>&nbsp;</span><span>National Stock Exchange of Australia</span> <span class="spacer"><i style="display:none;">-</i>ABN 11 000 902 063</span>
                 </div>
                 <div class="col-sm-3 footer-right">
                     <a href="/privacy.asp">Privacy</a> <a target="_blank" href="/tc.asp">Legal</a>

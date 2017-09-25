@@ -46,9 +46,6 @@ gulp.task('sass', ['replace'], function () {
 			browsers: ['last 3 versions', 'ie > 9']
 		})
 	];
-	if ( !isDev ){
-		plugins.push(cssnano());
-	}
 	return gulp
 		.src('./src/styling/main.scss')
 		.pipe(sourcemaps.init())
@@ -60,6 +57,23 @@ gulp.task('sass', ['replace'], function () {
 		.pipe(postcss(plugins))
 		.pipe(gulp.dest('./build/css'))
 		.pipe(browserSync.stream());
+});
+
+gulp.task('sass-build', ['copy-html'], function () {
+	var plugins = [
+		autoprefixer({
+			browsers: ['last 3 versions', 'ie > 9']
+		}),
+		cssnano()
+	];
+	return gulp
+		.src('./src/styling/main.scss')
+		.pipe(sass({
+			errLogToConsole: true,
+			outputStyle: 'expanded'
+		}).on('error', sass.logError))
+		.pipe(postcss(plugins))
+		.pipe(gulp.dest('./build/css'));
 });
 
 // Static Server + watching scss/html files
@@ -84,3 +98,6 @@ gulp.task('default', ['serve']);
 
 // Build for S3 hosting preview
 gulp.task('build-preview', ['clean', 'copy-fonts', 'copy-html', 'replace', 'sass']);
+
+// BBuild production files
+gulp.task('build', ['clean', 'copy-fonts', 'copy-html', 'sass-build']);

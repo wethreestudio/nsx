@@ -40,6 +40,11 @@
 
 			&-input {
 				flex-grow: 1;
+
+				input {
+					border-top-right-radius: 0;
+					border-bottom-right-radius: 0;
+				}
 			}
 
 			.form-control {
@@ -50,6 +55,8 @@
 				height: 36px;
 				padding: 0.25rem 1.5rem;
 				font-size: 0.9em;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
 			}
 
 			@media (min-width: $screen-md) {

@@ -5,6 +5,7 @@ page_title = "NSX Chinese Website"
 
 <!-- NSX LANDING PAGE CONTENT -->
 <div class="hero-banner subpage ">
+	<div class="hero-banner-img"><img src="images/banners/china-banner.png"></div>
 	<div class="container hero-banner-cont">
 		<div class="container hero-banner-content-holder subpage">
 			<div class="col-sm-12 hero-banner-left">
@@ -21,14 +22,14 @@ page_title = "NSX Chinese Website"
 			<h2>声明：该界面是澳大利亚国家证券交易所（NSX）唯一官方中文网站，旨在帮助中文用户进一步加深对澳大利亚国家证券交易所、企业在其上市要求、其市场经营以及联系方式的了解。</h2>
 		</div>
 		<div class="nsx-lp-column-image nsx-lp-column-width-40">
-			<div class="nsx-lp-image" style="background-image: url(/images/banners/pexels-photo-211929_new.jpg);"></div>
+			<div class="nsx-lp-image" style="background-image: url(/images/banners/window.png);"></div>
 			<span class="sr-only"></span>
 		</div>
 	</div>
 
 	<div class="nsx-lp-row" id="listing">
 		<div class="nsx-lp-column-image nsx-lp-column-width-40">
-			<div class="nsx-lp-image" style="background-image: url(/images/banners/iStock-506511434.jpg);"></div>
+			<div class="nsx-lp-image" style="background-image: url(/images/banners/ticker.png);"></div>
 			<span class="sr-only"></span>
 		</div>
 		<div class="nsx-lp-column-text nsx-lp-column-width-60 nsx-lp-column-order-first">
