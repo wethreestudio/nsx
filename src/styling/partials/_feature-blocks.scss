@@ -123,18 +123,46 @@
 	a {
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-end;
+		justify-content: space-between;
 		padding: 0.75rem;
 		font-weight: 900;
 		color: white;
 		background-color: transparent;
 		transition: background .25s ease-in-out;
 		text-transform: uppercase;
-		line-height: 1em;
+		text-decoration-color: transparent;
 
 		&:hover {
 			background-color: rgba($color-bg-dark-blue, 0.23);
+			border: none;
 		}
+
+		.small {
+			font-size: 13px;
+			line-height: 1.5;
+			margin-top: 0;
+			margin-bottom: 0
+		}
+
+		.date {
+			font-size: 13px;
+			line-height: 1;
+			text-align: center;
+		}
+
+		.ipo {
+			margin-top: 0rem;
+    		margin-bottom: 0rem;
+			text-align: center;
+		}
+
+		.lower-box, .link-box {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 0.8em;
+		}
+
+		.lower-box {font-size: 0.8em;}
 
 		.title {
 			@extend .h3;
@@ -147,11 +175,10 @@
 			}
 		}
 
-		@media (max-width: $screen-xs-max) {
-			font-size: 1.1em;
-    		line-height: 1.4em;
+		@media (min-width: $screen-sm) and (max-width: $screen-md-max) { 		
+			.small {display: none;}
 		}
-
+/*
 		@media (min-width: $screen-sm) {
 			font-size: 0.9em;
 			line-height: 1.1em;
@@ -160,11 +187,12 @@
 		@media (min-width: $screen-md) {
 			font-size: 0.9em;
 			line-height: 1.1em;
+
 		}
 
 		@media (min-width: $screen-lg) {
 			font-size: 1.1em;
 			line-height: 1.25em;
-		}
+		}*/
 	}
 }
